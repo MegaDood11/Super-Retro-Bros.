@@ -13,7 +13,7 @@ local config = {
 	gfxheight = 48,
 	gfxwidth = 32,
 	--Hitbox size. Bottom-center-bound to sprite size.
-	width = 64,
+	width = 32,
 	height = 32,
 	--Sprite offset from hitbox for adjusting hitbox anchor on sprite.
 	gfxoffsetx = 0,
