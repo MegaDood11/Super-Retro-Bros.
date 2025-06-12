@@ -1,0 +1,26 @@
+{
+	"style" : "groupbox",
+	"title": "Checkpoint Settings",
+	"layout": [
+		{
+			"control": "pointBox",
+			"type": "int",
+			"name": "textOffset",
+			"title": "Text Offset",
+			"tooltip": "Offset of the text relative to the bottom-center of the block.",
+			"value-default" : {"x":0, "y":0},
+			"value-min": {"x":-9999, "y":-9999},
+			"value-max": {"x": 9999, "y": 9999}
+		},
+		{
+			"control": "pointBox",
+			"type": "int",
+			"name": "playerOffset",
+			"title": "Player Offset",
+			"tooltip": "Offset of the player spawn point relative to the bottom-center of the block.",
+			"value-default" : {"x":0, "y":0},
+			"value-min": {"x":-9999, "y":-9999},
+			"value-max": {"x": 9999, "y": 9999}
+		}
+	]
+}
