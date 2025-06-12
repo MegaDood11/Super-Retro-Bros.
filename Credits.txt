@@ -1,0 +1,22 @@
+Scripts
+-CustomCamera - MDA
+-Coyotetime - MDA
+-Jumpbuffer - MDA
+-Warptransition - MDA
+-extentedKoopas - MDA
+-Playerphysicspatch - Emral
+-Antizip - Emral
+-Spawnzones - Emral
+-newnoturnback - Marioman2007
+-Luigihitsblocksnormally - Megadood
+-SMASpausemenu - Megadood
+
+Graphics
+-Smb1 Mario and Luigi - Nate-O
+-Enemies - Supersledgebro, Lumsht
+
+Music and SFX
+-Ladiesman217
+
+Hud
+-MrNameless

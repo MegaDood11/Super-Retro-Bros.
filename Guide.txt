@@ -1,0 +1,17 @@
+This script adds an NPC that turns blocks into working multi coin blocks from the Mario series.
+
+First, select a regular block and choose what it contains. Coins and NPCs work as you'd expect.
+
+Then, click the NPC and select via the extra settings the number of coins it contains. Also select the how long (in ticks) it will take to count down, and when reaching 0 the coin block combo ends.
+
+After that drag the NPC onto the block. You can press f9 to enable overlapping in the editor if you haven't already.
+
+After that, you're ready to use.
+
+
+
+A few extra things
+- Selecting "coins" in the item box will make them spit out after you hit the block the required number of times.
+- Selecting most NPCs will make them dispense at the end as a reward.
+- Selecting [Empty] will make it dispense nothing at the end, such as in the classic 2D Mario games.
+- Selecting certain NPCs will instead transform the block rather than dispensing a prize. You can add or remove NPCs in a table, just open npc-876.lua to do so.

@@ -1,0 +1,3 @@
+This script adds in the pause screen from Super Mario All-Stars, where pausing will simply well, pause the game.
+
+Special thanks to Marioman2007 for helping with the text effect!!!
