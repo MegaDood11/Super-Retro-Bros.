@@ -10,6 +10,7 @@ Scripts
 -newnoturnback - Marioman2007
 -Luigihitsblocksnormally - Megadood
 -SMASpausemenu - Megadood
+-retroResolution - PlumberGraduate (Fixed for this episode by Deltom)
 
 Graphics
 -Smb1 Mario and Luigi - Nate-O
