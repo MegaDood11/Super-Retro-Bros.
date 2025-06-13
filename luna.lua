@@ -66,6 +66,7 @@ end
 -- Run code every frame (~1/65 second)
 -- (code will be executed before game logic will be processed)
 function onTick() -- every frame of gameplay
+	player:mem(0x154, FIELD_WORD, 0)
 	player.keys.altJump = false -- spinjump
 	if Timer.get() <= 1 then return end
 	Timer.add(-1,true)
