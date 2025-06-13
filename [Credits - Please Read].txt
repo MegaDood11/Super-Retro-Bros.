@@ -26,3 +26,4 @@ Hud
 
 Level Design
 World 2-1 - MegaDood
+World 6-1 - FireSeraphim
