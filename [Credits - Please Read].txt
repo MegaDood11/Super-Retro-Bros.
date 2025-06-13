@@ -16,6 +16,7 @@ Graphics
 -Enemies - Supersledgebro, Lumsht
 -Some Effects - Dr. SVH
 -Bonus BG - Valtteri
+Venus fly trap heads taken from supersledgebro's graphics
 
 Music and SFX
 -Ladiesman217
