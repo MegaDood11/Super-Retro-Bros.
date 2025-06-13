@@ -8,7 +8,7 @@ retroResolution.renderPriority = 10
 
 local screenBuffer = Graphics.CaptureBuffer(512,448)
 local shader = Shader()
-shader:compileFromFile(nil, "scripts/retroResolution.frag")
+shader:compileFromFile(nil, "retroResolution.frag")
 
 function retroResolution.onInitAPI()
     registerEvent(retroResolution, "onCameraUpdate")
