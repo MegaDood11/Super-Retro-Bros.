@@ -1,4 +1,18 @@
+=========================================================================
+Level Design
+=========================================================================
+
+World 1-1 - FireSeraphim
+World 1-2 - FireSeraphim
+World 1-4 - MegaDood
+World 2-1 - MegaDood
+World 6-1 - FireSeraphim
+
+
+=======
 Scripts
+========
+
 -CustomCamera - MDA
 -Coyotetime - MDA
 -Jumpbuffer - MDA
@@ -13,21 +27,21 @@ Scripts
 -retroResolution - PlumberGraduate (Fixed for this episode by Deltomx3)
 -Convenient Firebars - IAmPlayer
 -Perpetual lift (npc-791) - cold soup
+-SMB1 HUD - MrNameless
 
+========
 Graphics
+========
+
 -Smb1 Mario and Luigi - Nate-O
 -Enemies - Supersledgebro, Lumsht
 -Some Effects - Dr. SVH
 -Bonus BG - Valtteri
 Venus fly trap heads taken from supersledgebro's graphics
 
+=============
 Music and SFX
+=============
+
 -Ladiesman217
-
-Hud
--MrNameless
-
-
-Level Design
-World 2-1 - MegaDood
-World 6-1 - FireSeraphim
+-Nintendo
