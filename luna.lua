@@ -40,7 +40,7 @@ Defines.player_grabShellEnabled = false
 -- Physicspatch adjustments that make the game more like SMB1
 ppp.speedXDecelerationModifier = -0.0975
 ppp.groundTouchingDecelerationMultiplier = 1.5
-ppp.groundNotTouchingDecelerationMultiplier = 1.25
+ppp.groundNotTouchingDecelerationMultiplier = 1.1
 
 ppp.accelerationMaxSpeedThereshold = 6
 ppp.accelerationMinSpeedThereshold = 0.1
@@ -53,6 +53,7 @@ smb1HUD.toggles.reserve = false
 smb1HUD.toggles.lives = false
 
 local lastDirection = 1
+local lastDucked = false
 
 -- Run code on level start
 function onStart()
@@ -68,9 +69,25 @@ end
 
 -- Run code every frame (~1/65 second)
 -- (code will be executed before game logic will be processed)
-function onTick() -- every frame of gameplay
-	player:mem(0x154, FIELD_WORD, 0)
+function onTick()
 	player.keys.altJump = false -- spinjump
+	player:mem(0x38, FIELD_WORD, math.min(player:mem(0x38, FIELD_WORD), 5))
+	-- prevents the player getting flung forward whenever they try to move backwards in a forced state
+	if player.forcedState ~= 0 
+	and ((player.speedX < 0 and player.keys.right) 
+	or (player.speedX > 0 and player.keys.left)) 
+	then
+		player.speedX = player.speedX * 0.95
+	end
+	-- prevents the player from ducking/unducking in midair
+	if not player:isGroundTouching() and lastDucked then
+		player.keys.down = KEYS_DOWN
+		player:mem(0x12E,FIELD_BOOL,true)
+	elseif not player:isGroundTouching() then
+		player.keys.down = KEYS_UP
+	end
+	
+	
 	if Timer.get() <= 1 then return end
 	Timer.add(-1,true)
 end
@@ -78,11 +95,12 @@ end
 function onTickEnd()
 	if player:isGroundTouching() or player:isUnderwater() then
 		lastDirection = player.direction
+		lastDucked = player:mem(0x12E,FIELD_BOOL)
 	else
 		player.direction = lastDirection
 	end
-
 end
+
 
 -- Run code when internal event of the SMBX Engine has been triggered
 -- eventName - name of triggered event
