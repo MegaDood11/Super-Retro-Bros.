@@ -6,6 +6,7 @@ World 1-1 - FireSeraphim
 World 1-2 - FireSeraphim
 World 1-4 - MegaDood
 World 2-1 - MegaDood
+World 5-1 - Dor_78
 World 6-1 - FireSeraphim
 World 8-3 - Radiance
 
@@ -31,6 +32,7 @@ Scripts
 -Perpetual lift (npc-791) - cold soup
 -SMB1 HUD - MrNameless
 -Wind - KateBulka
+-Bullet Bills - MDA, edited by LumSht + DeviousQuacks23
 
 ========
 Graphics
