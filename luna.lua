@@ -35,6 +35,7 @@ Defines.gravity = 10
 Defines.player_grav = 0.571
 Defines.jumpheight = 22
 Defines.jumpheight_bounce = 24
+Defines.player_grabShellEnabled = false
 
 -- Physicspatch adjustments that make the game more like SMB1
 ppp.speedXDecelerationModifier = -0.0975
