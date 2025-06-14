@@ -81,11 +81,13 @@ function onTick()
 		player.speedX = player.speedX * 0.95
 	end
 	-- prevents the player from ducking/unducking in midair
-	if not player:isGroundTouching() and lastDucked then
-		player.keys.down = KEYS_DOWN
-		player:mem(0x12E,FIELD_BOOL,true)
-	elseif not player:isGroundTouching() then
-		player.keys.down = KEYS_UP
+	if player.forcedState == 0 then
+		if not player:isGroundTouching() and lastDucked then
+			player.keys.down = KEYS_DOWN
+			player:mem(0x12E,FIELD_BOOL,true)
+		elseif not player:isGroundTouching() then
+			player.keys.down = KEYS_UP
+		end
 	end
 	
 	
