@@ -52,7 +52,7 @@ function blooper.onTickEndNPC(v)
 	end
 	if data.noticecooldown == 0 and player.y - settings.hitboxDuckHeight < v.y and data.blooperstate ~= 3 then
 		data.blooperstate = 2
-		data.noticetimer = 50
+		data.noticetimer = 75
 		if player.x > v.x then
 			v.direction = 1
 		else
@@ -70,8 +70,8 @@ function blooper.onTickEndNPC(v)
 	elseif data.blooperstate == 2 then
 		v.animationFrame = 0
 		data.noticecooldown = 2
-		v.speedX = data.noticetimer * .105 * v.direction
-		v.speedY = data.noticetimer * -.105 - 1
+		v.speedX = data.noticetimer * .0525 * v.direction
+		v.speedY = data.noticetimer * -.0525 - 1
 		if data.noticetimer <= 0 or v.collidesBlockUp then
 			data.noticetimer = 0
 			data.blooperstate = 1
