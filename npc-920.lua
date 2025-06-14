@@ -32,7 +32,7 @@ local config = {
 
 	nohurt=false,
 	nogravity = false,
-	noblockcollision = true,
+	noblockcollision = false,
 	nofireball = false,
 	noiceball = false,
 	noyoshi= false,

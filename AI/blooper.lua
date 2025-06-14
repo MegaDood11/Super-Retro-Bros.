@@ -43,6 +43,20 @@ function blooper.onTickEndNPC(v)
 	end
 	local settings = PlayerSettings.get(playerManager.getBaseID(player.character),player.powerup)
 	
+	if v.collidesBlockBottom then
+		data.blooperstate = 2
+		data.noticetimer = 75
+		if player.x > v.x then
+			v.direction = 1
+		else
+			v.direction = -1
+		end
+		data.determinedirection = math.random(1, 5)
+		if data.determinedirection == 5 then
+			v.direction = v.direction * -1
+		end
+	end
+	
 	v.animationTimer = 0
 	if data.aquatic == true and v.underwater == false then
 		data.blooperstate = 3

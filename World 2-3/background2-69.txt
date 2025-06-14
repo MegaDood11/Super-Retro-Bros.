@@ -1,0 +1,22 @@
+fill-color = #001870
+
+[Clouds]
+img=62
+
+repeatX=true
+alignY=CENTER
+
+parallaxX=0.25
+parallaxY=0.25
+depth=100
+
+
+[BG]
+img=69
+
+repeatX=true
+alignY=BOTTOM
+
+parallaxX=0.5
+parallaxY=0.5
+depth=90
