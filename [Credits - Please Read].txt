@@ -30,6 +30,7 @@ Scripts
 -Convenient Firebars - IAmPlayer
 -Perpetual lift (npc-791) - cold soup
 -SMB1 HUD - MrNameless
+-Wind - KateBulka
 
 ========
 Graphics
