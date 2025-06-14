@@ -11,6 +11,7 @@ Scripts
 -Luigihitsblocksnormally - Megadood
 -SMASpausemenu - Megadood
 -retroResolution - PlumberGraduate (Fixed for this episode by Deltomx3)
+-Convenient Firebars - IAmPlayer
 
 Graphics
 -Smb1 Mario and Luigi - Nate-O
