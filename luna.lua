@@ -40,12 +40,12 @@ Defines.player_grabShellEnabled = false
 -- Physicspatch adjustments that make the game more like SMB1
 ppp.speedXDecelerationModifier = -0.0975
 ppp.groundTouchingDecelerationMultiplier = 1.5
-ppp.groundNotTouchingDecelerationMultiplier = 1.25
+ppp.groundNotTouchingDecelerationMultiplier = 1.6
 
 ppp.accelerationMaxSpeedThereshold = 6
 ppp.accelerationMinSpeedThereshold = 0.1
 ppp.accelerationSpeedDifferenceThereshold = 0.5
-ppp.accelerationMultiplier = 0.9
+ppp.accelerationMultiplier = 1.25
 
 ppp.aerialIdleDeceleration = 1
 
@@ -71,7 +71,8 @@ end
 -- (code will be executed before game logic will be processed)
 function onTick()
 	player.keys.altJump = false -- spinjump
-	player:mem(0x38, FIELD_WORD, math.min(player:mem(0x38, FIELD_WORD), 5))
+	player.reservePowerup = 0
+	player:mem(0x38, FIELD_WORD, math.min(player:mem(0x38, FIELD_WORD), 3))
 	-- prevents the player getting flung forward whenever they try to move backwards in a forced state
 	if player.forcedState ~= 0 
 	and ((player.speedX < 0 and player.keys.right) 
