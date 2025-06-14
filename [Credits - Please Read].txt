@@ -14,10 +14,10 @@ Scripts
 ========
 
 -CustomCamera - MDA
--Coyotetime - MDA
 -Jumpbuffer - MDA
 -Warptransition - MDA
 -extentedKoopas - MDA
+-Coyotetime - Emral
 -Playerphysicspatch - Emral
 -Antizip - Emral
 -Spawnzones - Emral
