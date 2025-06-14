@@ -3,10 +3,10 @@ TL:"FS's 1-2";XTRA:"{\n    \"timer\"\: {\n        \"enable\"\: true\,\n        \
 HEAD_END
 SECTION
 SC:0;L:-200000;R:-199360;T:-200608;B:-200000;MZ:24;MF:"Music/Going Underground.spc|0\;g=2\;e0";BG:10;
-SC:1;L:-180000;R:-169120;T:-180608;B:-180000;MZ:24;MF:"Music/Underground.spc|0\;g=2\;e0";BG:18;SR:1;
-SC:2;L:-160000;R:-156160;T:-160608;B:-160000;MZ:24;MF:"Music/Overworld.spc|0\;g=2\;e0";BG:10;SR:1;
-SC:3;L:-140000;R:-138720;T:-140608;B:-140000;MZ:24;MF:"Music/Bonus.spc|0\;g=2\;e0";BG:17;SR:1;
-SC:4;L:-120000;R:-119360;T:-120480;B:-120000;MZ:24;MF:"Music/Bonus.spc|0\;g=2\;e0";BG:17;SR:1;
+SC:1;L:-180000;R:-169120;T:-180608;B:-180000;MZ:24;MF:"Music/Underground.spc|0\;g=2\;e0";BG:18;XTRA:"{\n    \"newTurnBack\"\: {\n        \"horizontal\"\: 1\n    }\n}\n";
+SC:2;L:-160000;R:-156160;T:-160608;B:-160000;MZ:24;MF:"Music/Overworld.spc|0\;g=2\;e0";BG:10;XTRA:"{\n    \"newTurnBack\"\: {\n        \"horizontal\"\: 1\n    }\n}\n";
+SC:3;L:-140000;R:-138720;T:-140608;B:-140000;MZ:24;MF:"Music/Bonus.spc|0\;g=2\;e0";BG:17;XTRA:"{\n    \"newTurnBack\"\: {\n        \"horizontal\"\: 1\n    }\n}\n";
+SC:4;L:-120000;R:-119360;T:-120480;B:-120000;MZ:24;MF:"Music/Bonus.spc|0\;g=2\;e0";BG:17;XTRA:"{\n    \"newTurnBack\"\: {\n        \"horizontal\"\: 1\n    }\n}\n";
 SECTION_END
 STARTPOINT
 ID:1;X:-199916;Y:-200150;D:1;

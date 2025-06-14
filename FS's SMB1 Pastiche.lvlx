@@ -2,8 +2,8 @@ HEAD
 TL:"FS's SMB1 Pastiche";XTRA:"{\n    \"timer\"\: {\n        \"enable\"\: true\,\n        \"time\"\: 450\n    }\n}\n";CPID:"SMBX2";
 HEAD_END
 SECTION
-SC:0;L:-200000;R:-187200;T:-200608;B:-200000;MZ:24;MF:"FS's SMB1 Pastiche/Athletic.spc|0\;g=2\;e0";BG:10;SR:1;
-SC:1;L:-180000;R:-178720;T:-180576;B:-180000;MZ:24;MF:"FS's SMB1 Pastiche/Bonus.spc|0\;g=2\;e0";BG:17;SR:1;
+SC:0;L:-200000;R:-187200;T:-200608;B:-200000;MZ:24;MF:"FS's SMB1 Pastiche/Athletic.spc|0\;g=2\;e0";BG:10;XTRA:"{\n    \"newTurnBack\"\: {\n        \"horizontal\"\: 1\n    }\n}\n";
+SC:1;L:-180000;R:-178720;T:-180576;B:-180000;MZ:24;MF:"FS's SMB1 Pastiche/Bonus.spc|0\;g=2\;e0";BG:17;XTRA:"{\n    \"newTurnBack\"\: {\n        \"horizontal\"\: 1\n    }\n}\n";
 SECTION_END
 STARTPOINT
 ID:1;X:-199804;Y:-200118;D:1;
@@ -1699,7 +1699,6 @@ ID:88;X:-196986;Y:-200288;D:-1;
 ID:88;X:-197114;Y:-200288;D:-1;
 ID:523;X:-188560;Y:-200208;D:-1;
 ID:466;X:-188352;Y:-200160;D:-1;
-ID:876;X:-199424;Y:-200192;D:-1;XTRA:"{\n    \"blockTime\"\: 192\,\n    \"maxCoins\"\: 99\n}\n";
 ID:876;X:-197984;Y:-200192;D:-1;XTRA:"{\n    \"blockTime\"\: 192\,\n    \"maxCoins\"\: 99\n}\n";
 ID:876;X:-197312;Y:-200288;D:-1;XTRA:"{\n    \"blockTime\"\: 192\,\n    \"maxCoins\"\: 99\n}\n";
 ID:876;X:-192224;Y:-200416;D:-1;XTRA:"{\n    \"blockTime\"\: 192\,\n    \"maxCoins\"\: 99\n}\n";
@@ -1721,6 +1720,7 @@ ID:88;X:-188826;Y:-200352;D:-1;
 ID:88;X:-193850;Y:-200192;D:-1;
 ID:88;X:-193882;Y:-200192;D:-1;
 ID:88;X:-193818;Y:-200192;D:-1;
+ID:876;X:-199424;Y:-200192;D:-1;XTRA:"{\n    \"blockTime\"\: 192\,\n    \"maxCoins\"\: 99\n}\n";
 NPC_END
 DOORS
 IX:-197776;IY:-200288;OX:-179920;OY:-180224;DT:1;ID:3;OD:1;
