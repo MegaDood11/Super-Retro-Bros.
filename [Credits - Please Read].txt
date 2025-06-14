@@ -6,6 +6,7 @@ World 1-1 - FireSeraphim
 World 1-2 - FireSeraphim
 World 1-4 - MegaDood
 World 2-1 - MegaDood
+World 2-3 - MrNameless
 World 5-1 - Dor_78
 World 6-1 - FireSeraphim
 World 8-3 - Radiance
