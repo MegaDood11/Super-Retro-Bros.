@@ -7,6 +7,7 @@ World 1-2 - FireSeraphim
 World 1-4 - MegaDood
 World 2-1 - MegaDood
 World 6-1 - FireSeraphim
+World 8-3 - Radiance
 
 
 =======
@@ -25,6 +26,7 @@ Scripts
 -Luigihitsblocksnormally - Megadood
 -SMASpausemenu - Megadood
 -retroResolution - PlumberGraduate (Fixed for this episode by Deltomx3)
+-Bloopers and Hammer Bros by Murphmario
 -Convenient Firebars - IAmPlayer
 -Perpetual lift (npc-791) - cold soup
 -SMB1 HUD - MrNameless
