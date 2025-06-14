@@ -875,12 +875,14 @@ function cp.onTick()
         if not playerData[p.idx] then
             initData(p)
         end
-
+		
+		p.keys.altJump = false -- spinjump
+		
         local data = playerData[p.idx]
         local currentPowerup = data.currentPowerup
 
         callEvent(currentPowerup, "onTickPowerup", p)
-
+		
         if (currentPowerup and currentPowerup._forceProjectileTimer and p.mount < 2) or p.forcedState == cp.powerUpForcedState then
             if p.character ~= CHARACTER_LINK then
                 p:mem(0x160, FIELD_WORD, 3)
