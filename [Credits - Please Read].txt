@@ -16,6 +16,8 @@ World 8-3 - Radiance
 Scripts
 ========
 
+-General player tweaks - MrNameless + LumSht
+
 -CustomCamera - MDA
 -Jumpbuffer - MDA
 -Warptransition - MDA
@@ -34,6 +36,7 @@ Scripts
 -SMB1 HUD - MrNameless
 -Wind - KateBulka
 -Bullet Bills - MDA, edited by LumSht + DeviousQuacks23
+-Classic Fireballs - MegoZ_ + MrNameless
 
 ========
 Graphics

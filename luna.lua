@@ -28,6 +28,8 @@ local luigiHitsBlocksNormally = require("luigiHitsBlocksNormally")
 
 local retroResolution = require("retroResolution")
 
+local classicFireballs = require("classicFireballs")
+
 -- Physics adjustments that make the game more like SMB1
 Defines.player_walkspeed = 2.4
 Defines.player_runspeed = 5.2
