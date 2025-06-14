@@ -1345,7 +1345,7 @@ ID:770;X:-197600;Y:-200416;D:-1;XTRA:"{\n    \"angle\"\: 180\,\n    \"length\"\:
 ID:770;X:-196400;Y:-200416;D:-1;XTRA:"{\n    \"angle\"\: 180\,\n    \"length\"\: 5\n}\n";
 ID:770;X:-196400;Y:-200224;D:1;XTRA:"{\n    \"angle\"\: 0\,\n    \"length\"\: 5\n}\n";
 ID:770;X:-196064;Y:-200288;D:-1;XTRA:"{\n    \"angle\"\: 180\,\n    \"length\"\: 3\n}\n";
-ID:770;X:-196848;Y:-200224;D:-1;XTRA:"{\n    \"angle\"\: 0\,\n    \"length\"\: 5\n}\n";
+ID:770;X:-196848;Y:-200224;D:-1;XTRA:"{\n    \"angle\"\: 0\,\n    \"length\"\: 4\n}\n";
 ID:75;X:-192896;Y:-200112;D:-1;FD:1;LR:"Toad";
 NPC_END
 LAYERS
