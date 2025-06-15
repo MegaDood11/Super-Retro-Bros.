@@ -38,16 +38,19 @@ Scripts
 -Wind - KateBulka
 -Bullet Bills - MDA, edited by LumSht + DeviousQuacks23
 -Classic Fireballs - MegoZ_ + MrNameless
+-Falling Lift - S.Koopa0
 
 ========
 Graphics
 ========
 
 -Smb1 Mario and Luigi - Nate-O
--Enemies - Supersledgebro, Lumsht
+-Enemies - SuperSledgeBro, Lumsht
 -Some Effects - Dr. SVH
--Bonus BG - Valtteri
-Venus fly trap heads taken from supersledgebro's graphics
+-Bonus BG + Tiles - Valtteri
+-Venus fly trap heads taken from SuperSledgeBro's graphics
+-Dry Bones, Spike Top - SuperSledgeBro + FireSeraphim
+-Rex - REDBIRD030
 
 =============
 Music and SFX
