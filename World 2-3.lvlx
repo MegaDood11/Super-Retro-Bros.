@@ -2,7 +2,7 @@ HEAD
 TL:"2-3 Temple";XTRA:"{\n    \"timer\"\: {\n        \"enable\"\: true\n    }\n}\n";CPID:"SMBX2";
 HEAD_END
 SECTION
-SC:0;L:-200000;R:-188384;T:-200448;B:-200000;MZ:24;MF:"World 2-3/cloudy beach.spc";BG:69;XTRA:"{\n    \"darkness\"\: {\n        \"addbright\"\: false\,\n        \"ambient\"\: \"#d4d4eeff\"\,\n        \"enableDarkness\"\: true\,\n        \"falloff\"\: 3\n    }\,\n    \"effects\"\: {\n        \"weather\"\: 0\,\n        \"weatherCustomPath\"\: \"p_rain_custom.ini\"\,\n        \"weatherPriority\"\: -96\,\n        \"weatherUseCustom\"\: true\n    }\,\n    \"newTurnBack\"\: {\n        \"horizontal\"\: 1\n    }\n}\n";
+SC:0;L:-200000;R:-188384;T:-200448;B:-200000;MZ:24;MF:"World 2-3/underwater-temple.ogg";BG:69;XTRA:"{\n    \"darkness\"\: {\n        \"addbright\"\: false\,\n        \"ambient\"\: \"#d4d4eeff\"\,\n        \"enableDarkness\"\: true\,\n        \"falloff\"\: 3\n    }\,\n    \"effects\"\: {\n        \"weather\"\: 0\,\n        \"weatherCustomPath\"\: \"p_rain_custom.ini\"\,\n        \"weatherPriority\"\: -96\,\n        \"weatherUseCustom\"\: true\n    }\,\n    \"newTurnBack\"\: {\n        \"horizontal\"\: 1\n    }\n}\n";
 SECTION_END
 STARTPOINT
 ID:1;X:-199884;Y:-200150;D:1;
