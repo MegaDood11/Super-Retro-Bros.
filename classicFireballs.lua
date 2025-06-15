@@ -13,31 +13,15 @@ fastFireballs.limit = 2
 fastFireballs.shootingProjectiles = table.map{13,265,171,952}
 
 local isOwned = {}
+local linkChars = table.map{5,12,16}
 local ownedProjectiles = {}
 for i = 1,2 do
 	ownedProjectiles[i] = {}
 end
  
-local function isShootingProjectile(v)
-	local config = NPC.config[v.id]
-	return (
-		(
-			fastFireballs.shootingProjectiles[v.id] -- basegame projectiles 
-			or (
-				v.id >= 751 
-				and config.nohurt 
-				and not config.grabside 
-				and not config.grabtop
-				and not config.powerup
-				and not config.isinteractable		
-			) -- custom powerup projectiles
-		)
-	)
-end
- 
 function fastFireballs.onTickEnd()
     for kp, p in ipairs(Player.get()) do
-        if not p:mem(0x50, FIELD_BOOL) then
+        if not linkChars[p.character] and not p:mem(0x50, FIELD_BOOL) then
 			--Assosiate Fireball to Player
 			if p.keys.run == KEYS_PRESSED or p.keys.altRun == KEYS_PRESSED then
 				for k,v in NPC.iterateIntersecting(p.x - 12, p.y - 34 - math.max(p.speedY,0), p.x + p.width + 8, p.y + p.height + 8) do
@@ -56,7 +40,12 @@ function fastFireballs.onTickEnd()
 			end
 			for i,v in ipairs(ownedProjectiles[p.idx]) do
 				if v.isValid then
-					v.despawnTimer = math.min(v.despawnTimer,1)
+					if v.y+v.height <= v.sectionObj.boundary.top then
+						v.despawnTimer = 10
+						SFX.play(12)
+					else
+						v.despawnTimer = math.min(v.despawnTimer,1)
+					end
 				end
 			end
 		end
