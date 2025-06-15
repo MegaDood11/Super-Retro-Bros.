@@ -52,7 +52,7 @@ Graphics
 -Some Effects - Dr. SVH
 -Bonus BG + Tiles - Valtteri
 -Venus fly trap heads taken from SuperSledgeBro's graphics
--Dry Bones, Spike Top - SuperSledgeBro + FireSeraphim
+-Dry Bones, Thwomp, Spike Top - SuperSledgeBro + FireSeraphim
 -Rex - REDBIRD030
 -Perpetual Lift - Crafink + cold soup
 
