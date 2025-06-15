@@ -30,8 +30,6 @@ Scripts
 -Antizip - Emral
 -Spawnzones - Emral
 -newnoturnback - Marioman2007
--checkpoint blocks - Marioman2007
--customPowerups - Marioman2007 + Emral
 -Luigihitsblocksnormally - Megadood
 -SMASpausemenu - Megadood
 -retroResolution - PlumberGraduate (Fixed for this episode by Deltomx3)
@@ -42,7 +40,7 @@ Scripts
 -Wind - KateBulka
 -Bullet Bills - MDA, edited by LumSht + DeviousQuacks23
 -Classic Fireballs - MegoZ_ + MrNameless
--Falling Lift - S.Koopa0, sprites by FireSeraphim
+-Falling Lift - S.Koopa0
 
 ========
 Graphics
