@@ -123,9 +123,9 @@ function az.onDrawEnd()
 end
 
 function az.onTick()
-    if not az.enabled or player.forcedState ~= 0 then return end
+    if not az.enabled then return end
     if freezeState[player.forcedState] then
-        if hasPressedDown then
+        if hasPressedDown and player.forcedState == 0 then
             player.y = previousY + duckingPlayerHeight
             player:mem(0xD0, FIELD_DFLOAT, 14)
             hasPressedDown = true
