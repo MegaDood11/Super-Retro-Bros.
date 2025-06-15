@@ -51,6 +51,7 @@ Graphics
 -Venus fly trap heads taken from SuperSledgeBro's graphics
 -Dry Bones, Spike Top - SuperSledgeBro + FireSeraphim
 -Rex - REDBIRD030
+-Perpetual Lift - Crafink + cold soup
 
 =============
 Music and SFX
