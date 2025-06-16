@@ -2,7 +2,7 @@ HEAD
 TL:"FS's 4-1";XTRA:"{\n    \"timer\"\: {\n        \"enable\"\: true\,\n        \"time\"\: 450\n    }\n}\n";CPID:"SMBX2";
 HEAD_END
 SECTION
-SC:0;L:-200000;R:-184672;T:-200608;B:-200000;MZ:24;MF:"Music/Athletic.spc|0\;g=2\;e0";BG:34;SR:1;
+SC:0;L:-200000;R:-184672;T:-200608;B:-200000;MZ:24;MF:"Music/Athletic.spc|0\;g=2\;e0";BG:34;XTRA:"{\n    \"newTurnBack\"\: {\n        \"horizontal\"\: 1\n    }\n}\n";
 SC:1;L:-180000;R:-179360;T:-180608;B:-180000;MZ:24;MF:"Music/Bonus.spc|0\;g=2\;e0";BG:17;
 SECTION_END
 STARTPOINT
@@ -1774,6 +1774,8 @@ ID:207;X:-187840;Y:-200384;D:-1;
 ID:207;X:-187840;Y:-200480;D:-1;
 ID:207;X:-187904;Y:-200448;D:-1;
 ID:394;X:-185088;Y:-200128;D:-1;
+ID:162;X:-185504;Y:-200284;D:-1;
+ID:162;X:-185408;Y:-200412;D:-1;
 ID:88;X:-187770;Y:-200160;D:-1;
 ID:88;X:-187802;Y:-200128;D:-1;
 ID:88;X:-187738;Y:-200192;D:-1;
