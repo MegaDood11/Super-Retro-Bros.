@@ -39,20 +39,15 @@ function fastFireballs.onTickEnd()
 				p:mem(0x160, FIELD_WORD,0)
 			end
 			for i,v in ipairs(ownedProjectiles[p.idx]) do
-				if v.isValid then
-					if v.y+v.height <= v.sectionObj.boundary.top then
-						v.despawnTimer = 10
-						SFX.play(12)
-					else
-						v.despawnTimer = math.min(v.despawnTimer,1)
-					end
+				local bounds = v.sectionObj.boundary
+				if ((v.x + v.width < bounds.left) or (v.x > bounds.right)) and v.y+v.height >= bounds.top then
+					v.despawnTimer = math.min(v.despawnTimer,0)
 				end
 			end
 		end
     end
 end
  
-
 function fastFireballs.onNPCKill(eventObj, npc, harmtype)
 	if not fastFireballs.shootingProjectiles[npc.id] then return end
     for _, p in ipairs(Player.get()) do

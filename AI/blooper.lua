@@ -62,34 +62,36 @@ function blooper.onTickEndNPC(v)
 		data.blooperstate = 3
 	elseif data.blooperstate == 3 and v.underwater == true then
 		data.blooperstate = 1
-		data.noticecooldown = 20
+		data.noticecooldown = 60
 	end
-	if data.noticecooldown == 0 and player.y - settings.hitboxDuckHeight < v.y and data.blooperstate ~= 3 then
+	if data.noticecooldown <= 0 and player.y - settings.hitboxDuckHeight < v.y and data.blooperstate ~= 3 then
 		data.blooperstate = 2
-		data.noticetimer = 75
+		data.noticetimer = 105
 		if player.x > v.x then
 			v.direction = 1
 		else
 			v.direction = -1
 		end
+		--[[
 		data.determinedirection = math.random(1, 5)
 		if data.determinedirection == 5 then
 			v.direction = v.direction * -1
 		end
+		--]]
 	end
 	if data.blooperstate == 1 then
 		v.animationFrame = 1
 		v.speedX = 0
-		v.speedY = 1
+		v.speedY = 0.75
 	elseif data.blooperstate == 2 then
 		v.animationFrame = 0
 		data.noticecooldown = 2
-		v.speedX = data.noticetimer * .0525 * v.direction
-		v.speedY = data.noticetimer * -.0525 - 1
+		v.speedX = data.noticetimer * .035 * v.direction
+		v.speedY = data.noticetimer * -.0325
 		if data.noticetimer <= 0 or v.collidesBlockUp then
 			data.noticetimer = 0
 			data.blooperstate = 1
-			data.noticecooldown = 20
+			data.noticecooldown = 60
 		end
 	else
 		v.speedY = Defines.gravity
