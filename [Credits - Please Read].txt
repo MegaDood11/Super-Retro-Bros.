@@ -9,6 +9,7 @@ World 2-1 - MegaDood
 World 2-3 - MrNameless
 World 4-1 - FireSeraphim
 World 4-2 - Dor_78
+World 4-4 - FireSeraphim
 World 5-1 - Dor_78
 World 5-3 - MegaDood
 World 6-1 - FireSeraphim
@@ -26,6 +27,7 @@ Scripts
 -Jumpbuffer - MDA
 -Warptransition - MDA
 -extentedKoopas - MDA
+-kindHurtBlocks - MDA
 -Coyotetime - Emral
 -Playerphysicspatch - Emral
 -Antizip - Emral
@@ -44,6 +46,8 @@ Scripts
 -Falling Lift - S.Koopa0
 -Checkpoint blocks - Marioman2007
 -customPowerups - Marioman2007 + Emral
+-SMB Maze - Radiance + Marioman2007
+
 
 ========
 Graphics
