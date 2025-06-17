@@ -1,4 +1,0 @@
-gfxwidth=32
-gfxheight=28
-frames=4
-framestyle=1
