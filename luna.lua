@@ -32,6 +32,8 @@ local classicFireballs = require("classicFireballs")
 
 local kindHurtBlock = require("kindHurtBlock")
 
+local loadscreen = require("loadscreen")
+
 -- Physics adjustments that make the game more like SMB1
 Defines.player_walkspeed = 2.4
 Defines.player_runspeed = 5.2

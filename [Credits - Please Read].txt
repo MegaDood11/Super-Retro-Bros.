@@ -47,6 +47,7 @@ Scripts
 -Checkpoint blocks - Marioman2007
 -customPowerups - Marioman2007 + Emral
 -SMB Maze - Radiance + Marioman2007
+Loadcscreen - DeviousQuacks + Marioman2007
 
 
 ========
@@ -59,6 +60,7 @@ Graphics
 -Bonus BG + Tiles - Valtteri
 -Venus fly trap heads taken from SuperSledgeBro's graphics
 -Dry Bones, Thwomp, Spike Top, Muncher - SuperSledgeBro + FireSeraphim
+Icicles - SuperSledgeBro + FireSeraphim
 -Rex - REDBIRD030
 -Perpetual Lift - Crafink + cold soup
 
