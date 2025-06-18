@@ -14,7 +14,7 @@ local hasPlayerDecided = false
 local hasCorrectSFXPlayed = false
 local hasWrongSFXPlayed = false
 
-local TELEPORT_X_DELAY = 448
+smb1Maze.teleportXDelay = 448
 
 local bgPosSet = true
 local bgPoses = {}
@@ -71,7 +71,7 @@ local function wrongPath()
     hasPlayerDecided = true
 
     if teleportPointXPos == nil then
-        teleportPointXPos = player.x + TELEPORT_X_DELAY
+        teleportPointXPos = player.x + smb1Maze.teleportXDelay
         SFX.play("smb1Maze/Choice-Wrong.wav")
     end
 end
