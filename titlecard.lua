@@ -4,8 +4,8 @@ local skipIntro = false
 local titlecardActive
 local titlecardTimer = 0
 
-local priority1 = 0
-local priority2 = 0
+local priority1 = 2
+local priority2 = 1
 
 local noJump
 
@@ -15,6 +15,8 @@ local textplus = require("textplus")
 
 local hudFont = textplus.loadFont("smb1HUD/smb1-font.ini")
 
+local smb1HUD = require("smb1HUD")
+
 if imgFile == nil or imgFileHead == nil then
     skipIntro = true
 else
@@ -23,10 +25,10 @@ else
 end
 
 function titlecard.onStart()
-   if Level.filename() ~= GameData.lastPlayedLevel and not skipIntro then
+  -- if Level.filename() ~= GameData.lastPlayedLevel and not skipIntro then
         -- start the intro
 		titlecardActive = true
-    end
+   -- end
 end
 
 function titlecard.onExitLevel(w)
@@ -77,8 +79,10 @@ function titlecard.onDraw()
 	if titlecardActive then
 		
 		titlecardTimer = titlecardTimer + 1
-	
-		if titlecardTimer >= 128 and titlecardTimer <= 160 then
+		
+		if titlecardTimer <= 32 then
+			priority2 = priority2 - 0.0625
+		elseif titlecardTimer >= 128 and titlecardTimer <= 160 then
 			priority2 = priority2 + 0.0625
 		elseif titlecardTimer > 176 and titlecardTimer <= 208 then
 			priority2 = priority2 - 0.0625
@@ -93,27 +97,40 @@ function titlecard.onDraw()
 		
 		Graphics.drawScreen{
 		color = Color.black .. priority2,
-		priority = 1,
+		priority = 3,
 		}
 	
 		--Draw the titlecard
-		imgFileDisplay = Sprite{texture = imgFile, width = 305, height = 206}
-		imgFileDisplay.position = vector(camera.width/6, camera.height/2)
-		imgFileDisplay.width = 305
-		imgFileDisplay.height = 206
+		imgFileDisplay = Sprite{texture = imgFile, width = 206, height = 164}
+		imgFileDisplay.position = vector((camera.width/4) + 16, camera.height/1.75)
+		imgFileDisplay.width = 206
+		imgFileDisplay.height = 164
 		imgFileDisplay:draw{priority = priority1}
 		
 		--Draw the character head
 		imgFileDisplay = Sprite{texture = imgFileHead, width = 36, height = 36}
-		imgFileDisplay.position = vector(camera.width/3, camera.height / 3.25)
+		imgFileDisplay.position = vector(camera.width/3, camera.height / 2.625)
 		imgFileDisplay.width = 36
 		imgFileDisplay.height = 36
 		imgFileDisplay:draw{priority = priority1}
 		
 		--Draw the text
 		textplus.print{
+			x=camera.x + 175,
+			y=camera.y + 120,
+			text="WORLD	".. smb1HUD.currentWorld[1] .. "-" .. smb1HUD.currentWorld[2],
+			color=Color.white,
+			font=hudFont,
+			xscale = 2,
+			yscale = 2,
+			sceneCoords = true,
+			priority = priority1
+		}
+		
+		--Draw the text
+		textplus.print{
 			x=camera.x + 225,
-			y=camera.y + 155,
+			y=camera.y + 185,
 			text="x		".. mem(0x00B2C5AC,FIELD_FLOAT),
 			color=Color.white,
 			font=hudFont,
