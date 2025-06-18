@@ -25,10 +25,10 @@ else
 end
 
 function titlecard.onStart()
-  -- if Level.filename() ~= GameData.lastPlayedLevel and not skipIntro then
+   if Level.filename() ~= GameData.lastPlayedLevel and not skipIntro then
         -- start the intro
 		titlecardActive = true
-   -- end
+    end
 end
 
 function titlecard.onExitLevel(w)
