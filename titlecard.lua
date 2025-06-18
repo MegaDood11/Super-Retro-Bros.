@@ -102,7 +102,7 @@ function titlecard.onDraw()
 	
 		--Draw the titlecard
 		imgFileDisplay = Sprite{texture = imgFile, width = 260, height = 164}
-		imgFileDisplay.position = vector((camera.width/4) + 16, camera.height/1.75)
+		imgFileDisplay.position = vector((camera.width/5) + 16, camera.height/1.75)
 		imgFileDisplay.width = 260
 		imgFileDisplay.height = 164
 		imgFileDisplay:draw{priority = priority1}
