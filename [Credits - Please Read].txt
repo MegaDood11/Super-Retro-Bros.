@@ -53,7 +53,8 @@ Scripts
 -Checkpoint blocks - Marioman2007
 -customPowerups - Marioman2007 + Emral
 -SMB Maze - Radiance + Marioman2007
--Loadcscreen - DeviousQuacks + Marioman2007
+-Loadscreen - DeviousQuacks + Marioman2007
+-Titlecard Script - MegaDood
 
 
 ========
@@ -69,6 +70,7 @@ Graphics
 Icicles - SuperSledgeBro + FireSeraphim
 -Rex - REDBIRD030
 -Perpetual Lift - Crafink + cold soup
+-Titlecards - MegaDood + FireSeraphim
 
 =============
 Music and SFX
