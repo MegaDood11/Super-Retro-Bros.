@@ -3,6 +3,7 @@
 -- Created 11:10 2025-4-21
 --------------------------------------------------
 local warpTransition = require("warpTransition")
+warpTransition.levelStartTransition = warpTransition.TRANSITION_FADE
 
 local customCamera = require("customCamera")
 
@@ -33,6 +34,8 @@ local classicFireballs = require("classicFireballs")
 local kindHurtBlock = require("kindHurtBlock")
 
 local loadscreen = require("loadscreen")
+
+local titlecard = require("titlecard")
 
 -- Physics adjustments that make the game more like SMB1
 Defines.player_walkspeed = 2.4
@@ -98,7 +101,11 @@ function onTick()
 	
 	
 	if Timer.get() <= 1 then return end
-	Timer.add(-1,true)
+	if Level.endState() == 0 then
+		Timer.add(-1,true)
+	else
+		Timer.add(0,true)
+	end
 end
 
 function onTickEnd()
