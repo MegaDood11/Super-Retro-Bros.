@@ -23,6 +23,15 @@ Bonus Levels
 World -1 - FireSeraphim
 
 
+===============
+General Credits
+===============
+
+Super Mario Construct and MFGG, where many songs and tiles were taken from
+Sleepy Dee for overall project management and organisation
+MegaDood for project management as well, as well as quality checking and improving level design in some areas, as well as providing GFX and music improvements
+FireSeraphim, for many graphical additions and ideas, as well as making some of the world map tiles
+
 =======
 Scripts
 ========
