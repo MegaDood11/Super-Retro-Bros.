@@ -1,5 +1,5 @@
 HEAD
-TL:"World  -Weird Level";CPID:"SMBX2";
+TL:"World  -Weird Level";XTRA:"{\n    \"timer\"\: {\n        \"enable\"\: true\,\n        \"time\"\: 400\n    }\n}\n";CPID:"SMBX2";
 HEAD_END
 SECTION
 SC:0;L:-200000;R:-187840;T:-200600;B:-200000;MZ:24;MF:"Music/Swimming.spc|0\;g=2\;e0";BG:42;UW:1;
