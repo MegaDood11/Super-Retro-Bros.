@@ -3,7 +3,7 @@ TL:"grayblasted wastes";XTRA:"{\n    \"timer\"\: {\n        \"enable\"\: true\,\
 HEAD_END
 SECTION
 SC:0;L:-200000;R:-185984;T:-200600;B:-200000;MZ:24;MF:"who up losing they levels/Six-Eight Sorrow.spc|0\;g=1.7\;e0";BG:12;SR:1;
-SC:1;L:-180000;R:-179200;T:-180600;B:-180000;MZ:24;MF:"Music/Bonus.spc";BG:17;
+SC:1;L:-180000;R:-179200;T:-180600;B:-180000;MZ:24;MF:"Music/Bonus.spc|0\;g=2\;e0";BG:17;
 SC:2;L:-160000;R:-159200;T:-160600;B:-160000;MZ:0;MF:"";BG:12;
 SECTION_END
 STARTPOINT
