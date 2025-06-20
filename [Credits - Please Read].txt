@@ -61,6 +61,7 @@ Scripts
 Graphics
 ========
 
+-Mr Rip intro card - Marioman2007
 -Smb1 Mario and Luigi - Nate-O
 -Enemies - SuperSledgeBro, Lumsht
 -Some Effects - Dr. SVH
@@ -70,7 +71,7 @@ Graphics
 Icicles - SuperSledgeBro + FireSeraphim
 -Rex - REDBIRD030
 -Perpetual Lift - Crafink + cold soup
--Titlecards - MegaDood + FireSeraphim
+-Titlecards - MegaDood, FireSeraphim, DeviousQuacks23, cold soup
 
 =============
 Music and SFX

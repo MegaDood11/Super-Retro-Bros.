@@ -1,0 +1,7 @@
+level: cold soup
+
+gfx:
+	16-Bit Lost Levels Revamps: Crafink (imported by MegaDood)
+	Ashen Palette: Crafink (imported by Yingchun Soul)
+music: 
+	Six-Eight Sorrow - SMW Central Production 2: 17923, Pink Gold Peach
