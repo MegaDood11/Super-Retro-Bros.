@@ -21,9 +21,9 @@ end
  
 function fastFireballs.onTickEnd()
     for kp, p in ipairs(Player.get()) do
-        if not linkChars[p.character] and not p:mem(0x50, FIELD_BOOL) then
+        if not linkChars[p.character] and not Cheats.get("flamethrower").active then
 			--Assosiate Fireball to Player
-			if p.keys.run == KEYS_PRESSED or p.keys.altRun == KEYS_PRESSED then
+			if (p.keys.run == KEYS_PRESSED or p.keys.altRun == KEYS_PRESSED) and not p:mem(0x50, FIELD_BOOL) then
 				for k,v in NPC.iterateIntersecting(p.x - 12, p.y - 34 - math.max(p.speedY,0), p.x + p.width + 8, p.y + p.height + 8) do
 					if v.isValid then
 						if fastFireballs.shootingProjectiles[v.id] and not isOwned[v] then
@@ -39,8 +39,7 @@ function fastFireballs.onTickEnd()
 				p:mem(0x160, FIELD_WORD,0)
 			end
 			for i,v in ipairs(ownedProjectiles[p.idx]) do
-				local bounds = v.sectionObj.boundary
-				if ((v.x + v.width < bounds.left) or (v.x > bounds.right)) and v.y+v.height >= bounds.top then
+				if ((v.x + v.width < camera.x) or (v.x > camera.x + camera.width)) and v.y+v.height >= camera.y then
 					v.despawnTimer = math.min(v.despawnTimer,0)
 				end
 			end
