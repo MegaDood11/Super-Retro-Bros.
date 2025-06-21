@@ -1,0 +1,42 @@
+fill-color = #BC6C4A
+
+[back]
+img = back.png
+parallaxX = 0.5
+parallaxY = 1
+repeatX = true
+color = #FFFFFF
+spawnY = 0
+alignY = BOTTOM
+depth = 99
+
+[front]
+img = front.png
+spawnY = 0
+color = #FFFFFF
+parallaxX = 0.75
+parallaxY = 1
+repeatX = true
+alignY = BOTTOM
+depth = 98
+
+[fog]
+img = fog.png
+spawnY = 0
+color = #FFFFFF
+opacity = 0.15
+speedX = -0.7
+parallaxX = 0.85
+parallaxY = 1
+repeatX = true
+alignY = BOTTOM
+priority = 1
+
+[grad]
+img = gra.png
+alignY = MIDDLE
+color = #FFFFFF
+repeatX = true
+depth = 100
+spawnY = 0
+

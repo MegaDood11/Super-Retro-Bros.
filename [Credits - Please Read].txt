@@ -7,6 +7,7 @@ World 1-2 - FireSeraphim
 World 1-4 - MegaDood
 World 2-1 - MegaDood
 World 2-3 - MrNameless
+World 3-1 - Ness-Wednesday
 World 3-2 - DeviousQuacks23
 World 4-1 - FireSeraphim
 World 4-2 - Dor_78

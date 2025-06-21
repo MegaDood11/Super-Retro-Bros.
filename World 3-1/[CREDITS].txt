@@ -1,0 +1,11 @@
+- Tilesets -
+Nitrox - Mystery Ruins
+Sans1m0n - SMB1 Styled SMW Grass
+SuperSledgeBro - Forest BGOs
+
+- BG -
+Nitrox, TheCrushedJoycon, Cube - Forest background
+SuperSledgeBro - NSMB forest background
+
+- Music -
+TheCrushedJoycon - SMC Forest Theme
