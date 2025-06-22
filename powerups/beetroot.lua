@@ -109,7 +109,6 @@ function beetroot.onTickPowerup(p)
 	if not p.data.beetroot then return end
 	
 	local data = p.data.beetroot
-	
 	if not canPlayShootAnim(p) or Level.endState() ~= LEVEL_WIN_TYPE_NONE then return end
 	if p:mem(0x50, FIELD_BOOL) and p:isOnGround() then return end
 	 
@@ -120,8 +119,15 @@ function beetroot.onTickPowerup(p)
 		if p:mem(0x160, FIELD_WORD) > 0 then return end
 	end
 
+	local flamethrowerActive = Cheats.get("flamethrower").active
+	local tryingToShoot = (p.keys.altRun == KEYS_PRESSED or p.keys.run == KEYS_PRESSED or p:mem(0x50, FIELD_BOOL)) 
+	
+	if p.keys.run == KEYS_DOWN and flamethrowerActive then 
+		tryingToShoot = true
+	end
+
 	-- handles spawning the projectile if the player is pressing either run button, spinjumping, or at the apex(?) of link's sword slash animation respectively
-    if ((p.keys.altRun == KEYS_PRESSED or p.keys.run == KEYS_PRESSED or p:mem(0x50, FIELD_BOOL)) and not linkChars[p.character]) or player:mem(0x14, FIELD_WORD) == 2 then
+    if (tryingToShoot and not linkChars[p.character]) or player:mem(0x14, FIELD_WORD) == 2 then
         local dir = p.direction
 		
 		-- reverses the direction the projectile goes when the player is spinjumping to make it be shot """in front""" of the player 
@@ -149,6 +155,9 @@ function beetroot.onTickPowerup(p)
 			v.speedX = ((NPC.config[v.id].speed + 1) + p.speedX/3.5) * dir
 			p:mem(0x162, FIELD_WORD,projectileTimerMax[p.character] + 2)
 			SFX.play(82)
+			if flamethrowerActive then
+				p:mem(0x162, FIELD_WORD,2)
+			end
 		else
 			-- handles making the projectile be held if the player is a SMB2 character & pressed altRun 
 			if smb2Chars[p.character] and p.holdingNPC == nil and p.keys.altRun then 
@@ -173,6 +182,10 @@ function beetroot.onTickPowerup(p)
 			v:mem(0x156, FIELD_WORD, 32) -- gives the NPC i-frames
 			p:mem(0x160, FIELD_WORD,projectileTimerMax[p.character])
 			SFX.play(18)
+	
+			if flamethrowerActive then
+				p:mem(0x160, FIELD_WORD,30)
+			end
 		end
     end
 end
