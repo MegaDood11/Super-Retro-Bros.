@@ -2,7 +2,7 @@ HEAD
 TL:"realm of bowser 2";CPID:"SMBX2";
 HEAD_END
 SECTION
-SC:0;L:-200000;R:-192832;T:-200736;B:-200000;MZ:24;MF:"Music/Last Battle.spc|0\;g=2\;e0";BG:55;XTRA:"{\n    \"newTurnBack\"\: {\n        \"horizontal\"\: 1\n    }\n}\n";
+SC:0;L:-200000;R:-192832;T:-200736;B:-200000;MZ:24;MF:"Music/Last Battle.spc|0\;t=1.25\;g=2\;e0";BG:55;XTRA:"{\n    \"newTurnBack\"\: {\n        \"horizontal\"\: 1\n    }\n}\n";
 SC:1;L:-201376;R:-200352;T:-200736;B:-200000;MZ:24;MF:"Music/Castle.spc|0\;t=0.85\;g=0.75\;e0";BG:55;XTRA:"{\n    \"newTurnBack\"\: {\n        \"horizontal\"\: 1\n    }\n}\n";
 SC:2;L:-192928;R:-191904;T:-201376;B:-200928;MZ:24;MF:"Music/Overworld.spc|0\;t=0.85\;g=2\;e0";BG:62;XTRA:"{\n    \"newTurnBack\"\: {\n        \"horizontal\"\: 1\n    }\n}\n";
 SECTION_END
