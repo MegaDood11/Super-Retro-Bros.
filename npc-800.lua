@@ -353,12 +353,12 @@ function sampleNPC.onNPCHarm(eventObj, v, killReason, culprit)
 		eventObj.cancelled = true
 		if mercyinvincibility == 0 then
 			if type(culprit) == "NPC" then
-				v.currenthealth = v.currenthealth - 1
+				if v.currenthealth then v.currenthealth = v.currenthealth - 1 end
 				v.ai4 = 20
 				mercyinvincibility = 3
 				SFX.play(9)
 			elseif killReason == HARM_TYPE_SWORD then
-				v.currenthealth = v.currenthealth - 1
+				if v.currenthealth then v.currenthealth = v.currenthealth - 1 end
 				v.ai4 = 20
 				SFX.play(9)
 				mercyinvincibility = 3

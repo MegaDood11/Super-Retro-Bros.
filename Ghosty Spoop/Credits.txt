@@ -1,2 +1,2 @@
-Graphics: Supersledgebro
+Graphics: Supersledgebro + Sans1m0n + LinkstormZ
 NPCs: MDA
