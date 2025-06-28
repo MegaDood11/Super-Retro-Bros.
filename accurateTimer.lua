@@ -5,6 +5,7 @@ function timer.onInitAPI()
 	registerEvent(timer, "onDraw")
 	registerEvent(timer, "onLevelExit")
 	registerEvent(timer, "onWarp")
+	registerEvent(timer, "onEvent")
 end
 
 local muteMusic = 0
@@ -32,6 +33,15 @@ end
 function timer.onLevelExit()
 	if Timer.getValue() <= Timer.hurryTime then
 		Audio.ReleaseStream(-1)
+	end
+end
+
+function timer.onEvent(e)
+	if Timer.getValue() <= Timer.hurryTime then
+		Audio.ReleaseStream(-1)
+		isWarping = true
+		Audio.MusicSetTempo(1.375)
+		Audio.MusicSetSpeed(1.15)
 	end
 end
 
