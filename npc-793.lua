@@ -42,6 +42,8 @@ npcManager.setNpcSettings({
 	platformId = id + 1,
 	
 	acceleration = 0.075,
+	
+	notcointransformable = true,
 })
 
 local npcutils = require 'npcs/npcutils'

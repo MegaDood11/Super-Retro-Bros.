@@ -23,6 +23,7 @@ npcManager.setNpcSettings({
 	
 	playerblocktop = true,
 	npcblocktop = true,
+	notcointransformable = true,
 })
 
 local function platformFix(v, p)

@@ -43,6 +43,7 @@ local moveSettings = {
 	
 	despawntime = 95,
 	deatheffect = 10,
+	notcointransformable = true,
 }
 
 local configFile = npcManager.setNpcSettings(moveSettings);

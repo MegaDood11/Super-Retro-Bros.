@@ -25,7 +25,8 @@ local platformSettings = {
 	nowaterphysics = false,
 	harmlessgrab = true,
 	harmlessthrown = true,
-	sinkspeed = 4
+	sinkspeed = 4,
+	notcointransformable = true,
 }
 
 npcManager.setNpcSettings(platformSettings)
