@@ -103,7 +103,7 @@ function onTick()
 	
 	
 	if Timer.get() <= 1 then return end
-	if Level.endState() == 0 then
+	if Level.endState() == 0 and player.forcedState ~= 300 then
 		Timer.add(-1,true)
 	else
 		Timer.add(0,true)
