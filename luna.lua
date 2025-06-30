@@ -84,6 +84,11 @@ function onTick()
 	player.keys.altJump = false -- spinjump
 	player.reservePowerup = 0
 	player:mem(0x38, FIELD_WORD, math.min(player:mem(0x38, FIELD_WORD), 3))
+
+	if player.character == 4 and player.powerup == 3 and player.keys.altRun then
+		player.keys.altRun = false
+	end
+	
 	-- prevents the player getting flung forward whenever they try to move backwards in a forced state
 	if player.forcedState ~= 0 
 	and ((player.speedX < 0 and player.keys.right) 
@@ -100,7 +105,6 @@ function onTick()
 			player.keys.down = KEYS_UP
 		end
 	end
-	
 	
 	if Timer.get() <= 1 then return end
 	if Level.endState() == 0 and player.forcedState ~= 300 then

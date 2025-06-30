@@ -47,6 +47,7 @@ end
 
 function timer.onWarp(warp,p)
     if warp.exitSection ~= currentSection then
+		if Section(currentSection).music == Section(warp.exitSection).music then return end
 		isWarping = true
 		Audio.ReleaseStream(-1)
 		if muteMusic <= 144 then
