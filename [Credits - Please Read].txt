@@ -11,6 +11,7 @@ World 3-1 - Ness-Wednesday
 World 3-2 - DeviousQuacks23
 World 4-1 - FireSeraphim
 World 4-2 - Dor_78
+World 4-3 - GDKeptr
 World 4-4 - FireSeraphim
 World 5-1 - Dor_78
 World 5-3 - MegaDood
@@ -72,7 +73,7 @@ Scripts
 -Titlecard Script - MegaDood
 -Bowser boss + bridge by Murphmario
 -Text block by DeviousQuacks23
-
+-Accurate Timer by MegaDood
 
 ========
 Graphics
