@@ -1,6 +1,6 @@
 local smb1HUD = require("smb1HUD")
 
-smb1HUD.currentWorld = vector("R","L")
+smb1HUD.currentWorld = vector("RIP","LAIR")
 
 -- Run code on level start
 function onStart()
