@@ -71,6 +71,9 @@ local smb2Characters = table.map{CHARACTER_PEACH,CHARACTER_TOAD}
 local hammerPropertiesList = table.unmap(costume.hammerConfig)
 local oldHammerConfig = {}
 
+local doWalkFall = false
+local walkFallTimer = 5
+
 
 -- Detects if the player is on the ground, the redigit way. Sometimes more reliable than just p:isOnGround().
 local function isOnGround(p)
@@ -240,7 +243,7 @@ local animations = {
 	walk = {3,2,1, frameDelay = 4},
 	run  = {18,17,16, frameDelay = 4},
 	walkHolding = {10,9,8, frameDelay = 4},
-	fall = {5},
+	fall = {3},
 	pipeEnter = {36},
 	duckSmall = {8},
 
@@ -249,7 +252,7 @@ local animations = {
 	runSmall  = {18,17,16, frameDelay = 4},
 	walkHoldingSmall = {6,10,5, frameDelay = 4},
 
-	fallSmall = {7},
+	fallSmall = {2},
 
 	-- SMB2 characters (like toad)
 	walkSmallSMB2 = {2,1,   frameDelay = 6},
@@ -313,7 +316,6 @@ local function findAnimation(p)
 			atPSpeed = (data.pSpeed >= characterNeededPSpeeds[p.character])
 		end
 	end
-
 
 	if p.deathTimer > 0 then
 		return nil
@@ -529,16 +531,15 @@ local function findAnimation(p)
 
 
 		if p.holdingNPC == nil then
-			if isSlowFalling(p) then
-				return "slowFall"
-			elseif data.useFallingFrame then
-				if p.powerup == PLAYER_SMALL and not smb2Characters[p.character] then
+			if doWalkFall == true and (p:mem(0x11C, FIELD_WORD) == 0 or walkFallTimer == 0)then
+				if p.powerup == 1 then
 					return "fallSmall"
-				elseif leafPowerups[p.powerup] and p.speedY <= 0 then
-					return "fallLeafUp"
 				else
 					return "fall"
 				end
+			elseif walkFallTimer > 0 and p.speedY < 0 then
+				doWalkFall = false
+				return
 			end
 		end
 
@@ -656,7 +657,19 @@ function costume.onTickEnd()
 
 
 		handleDucking(p)
-
+		
+		--SMB1 falling animation
+		if p:isOnGround() or p:isUnderwater() or p:isClimbing() then
+			if p.keys.jump == 1 or p:mem(0x11C, FIELD_WORD) > 0 then
+				doWalkFall = false
+				walkFallTimer = 0
+			else
+				doWalkFall = true
+				walkFallTimer = 5
+			end
+		elseif walkFallTimer > 0 and player.forcedState == 0 then
+			walkFallTimer = walkFallTimer - 1
+		end
 
 		-- P-Speed
 		if canBuildPSpeed(p) then
