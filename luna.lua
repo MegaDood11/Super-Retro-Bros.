@@ -84,8 +84,12 @@ function onTick()
 	player.keys.altJump = false -- spinjump
 	player.reservePowerup = 0
 	player:mem(0x38, FIELD_WORD, math.min(player:mem(0x38, FIELD_WORD), 3))
+	player:mem(0x18,FIELD_BOOL,false) --Disable Peach's hover
+	if player:mem(0x16,FIELD_WORD) > 2 then --Caps Toad's HP to 2
+		player:mem(0x16,FIELD_WORD,2)
+	end
 
-	if player.character == 4 and player.powerup == 3 and player.keys.altRun then
+	if (player.character > 2 and player.character < 5) and player.powerup == 3 and player.keys.altRun then
 		player.keys.altRun = false
 	end
 	
