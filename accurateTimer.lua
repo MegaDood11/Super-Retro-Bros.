@@ -17,8 +17,10 @@ function timer.onDraw()
 		if not isWarping then Audio.SeizeStream(-1) end
 		muteMusic = muteMusic + 1
 		if muteMusic <= 144 then
+			Audio.MusicVolume(0)
 			Audio.MusicStop()
 		else
+			Audio.MusicVolume(64)
 			Audio.MusicResume()
 			Audio.MusicSetTempo(1.375)
 			Audio.MusicSetSpeed(1.15)
