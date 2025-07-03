@@ -11,7 +11,7 @@
 	Tempest - Made the original beetroot powerup & spritesheets which said spritesheets were used as a base (https://www.smbxgame.com/forums/viewtopic.php?t=17989)
 	SleepyVA - created all of the sprites for Luigi.
 	
-	Version 1.0.0
+	Version 1.5.0
 	
 	NOTE: This requires customPowerups in order to work! Get it from the link above! ^^^
 ]]--
@@ -58,11 +58,8 @@ local smb2Chars = table.map{3,4,6,9,10,11,16}
 -- Link, Snake, and Samus respectively
 local linkChars = table.map{5,12,16}
 
-local animFrames = {11, 11, 11, 11, 12, 12, 12, 12}
-
 -- Projectile cooldown timers for Mario, Luigi, Peach, Toad, and Link respectively
 local projectileTimerMax = {55, 55, 55, 50, 45}
-
 
 -- calls in Marioman2007's Ground Pound if it's in the same level folder as this script (https://www.smbxgame.com/forums/viewtopic.php?t=28456)
 local GP

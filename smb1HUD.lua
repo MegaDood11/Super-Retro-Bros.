@@ -97,7 +97,7 @@ smb1HUD.getValue = {
 		local world = ""
 		if smb1HUD.toggles.world then
 			world = "WORLD<br>"
-			if smb1HUD.currentWorld.x < 10 then
+			if string.len(tostring(smb1HUD.currentWorld.x)) <= 1 then
 				world = world .. " "
 			end
 			world = world .. tostring(smb1HUD.currentWorld.x) .. "-" .. tostring(smb1HUD.currentWorld.y)
