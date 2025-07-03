@@ -1,0 +1,5 @@
+jumphurt=1
+spinjumpsafe=true
+npcblock=0
+speed=0.933
+nowaterphysics=true

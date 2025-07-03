@@ -20,6 +20,8 @@ World 6-3 - cold soup
 World 8-1 - DeviousQuacks23
 World 8-3 - Radiance
 
+World B-2 - MegaDood
+World B-3 - Ness-Wednesday
 World C-1 - Dor_78 + MegaDood
 World C-3 - LumSht + MegaDood
 

@@ -1,0 +1,3 @@
+delay=64
+spawnid=229
+eggysp=5
