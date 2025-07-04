@@ -78,7 +78,8 @@ Scripts
 -Bowser boss + bridge by Murphmario
 -Text block by DeviousQuacks23
 -Accurate Timer by MegaDood
-Bowser Jr. - Ma8lrk
+-Bowser Jr. - Ma8lrk
+-bonusChars.lua - DeviousQuacks23
 
 ========
 Graphics
@@ -96,6 +97,7 @@ Icicles - SuperSledgeBro + FireSeraphim
 -Perpetual Lift - Crafink + cold soup
 -Titlecards - MegaDood, FireSeraphim, DeviousQuacks23, cold soup
 -Edits to powerup forms by Murphmario
+-Bonus Image for Wario - C.Pariah
 
 =============
 Music and SFX
