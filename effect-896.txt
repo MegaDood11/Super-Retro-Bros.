@@ -1,0 +1,7 @@
+[1]
+onTick=TICK_BOWSERJR
+frames=1
+framespeed=8
+framestyle=1
+xAlign=MID
+yAlign=MID

@@ -1,0 +1,153 @@
+{
+	"style" : "groupbox",
+	"title" : "Bowser Jr Settings",
+	"layout": [
+		{
+			"control": "checkbox",
+			"name": "doesgroundpound",
+			"title": "Does Ground Pound?",
+			"tooltip": "If true, Bowser Jr. will do his ground pound attack.",
+			"text-visible": false,
+			"value-default": false
+		},
+		{
+			"control": "checkbox",
+			"name": "doeskoopathrow",
+			"title": "Throws a Koopa Shell?",
+			"tooltip": "If true, Bowser Jr. will throw a koopa shell at the player.",
+			"text-visible": false,
+			"value-default": false
+		},
+		{
+			"control": "checkbox",
+			"name": "doeshammerthrow",
+			"title": "Throws Hammers?",
+			"tooltip": "If true, Bowser Jr. will throw hammers at the player.",
+			"text-visible": false,
+			"value-default": false
+		},
+		{
+			"control": "spinBox",
+			"type": "int",
+			"name": "health",
+			"title": "Health",
+			"tooltip": "Changes how many health points Bowser Jr. has",
+			"value-default": 3,
+			"value-min": 1,
+			"value-max": 99,
+			"single-step": 1
+		},
+		{
+			"control" : "group",
+			"title" : "Tiny Jumps Settings",
+			"name" : "..",
+			"children": [
+				{
+					"control": "spinBox",
+					"type": "double",
+					"name": "speed",
+					"title": "Jump Speed",
+					"tooltip": "Changes the speed of the Bowser Jr when he's doing tiny jumps.",
+					"value-default": 1,
+					"value-min": 0.1,
+					"value-max": 99,
+					"single-step": 0.5
+				},
+				{
+					"control": "spinBox",
+					"type": "double",
+					"name": "jumpheight",
+					"title": "Jump Height",
+					"tooltip": "Changes the jump height of the Bowser Jr when he's doing tiny jumps.",
+					"value-default": 3.4,
+					"value-min": 0.1,
+					"value-max": 99,
+					"single-step": 0.5
+				}
+			]
+		},
+		{
+			"control" : "group",
+			"title" : "Fireball Spitting Settings",
+			"name" : "..",
+			"children": [
+				{
+					"control": "spinBox",
+					"type": "int",
+					"name": "fireamount",
+					"title": "How many fireballs does he shoot?",
+					"tooltip": "Changes the ammount of fireballs shot by Bowser Jr.",
+					"value-default": 3,
+					"value-min": 1,
+					"value-max": 99,
+					"single-step": 1
+				}
+			]
+		},
+		{
+			"control" : "group",
+			"title" : "Ground Pound Settings",
+			"name" : "..",
+			"children": [
+				{
+					"control": "spinBox",
+					"type": "double",
+					"name": "poundheight",
+					"title": "Ground Pound Jump Height",
+					"tooltip": "Changes the jump height Bowser Jr.'s ground pound.",
+					"value-default": 10,
+					"value-min": 10,
+					"value-max": 99,
+					"single-step": 0.5
+				}
+			]
+		},
+		{
+			"control" : "group",
+			"title" : "Koopa Throwing Settings",
+			"name" : "..",
+			"children": [
+				{
+					"control": "spinBox",
+					"type": "double",
+					"name": "koopaspeed",
+					"title": "Koopa Speed",
+					"tooltip": "Changes the speed of Bowser Jr.'s Koopa shell when thrown.",
+					"value-default": 4,
+					"value-min": 0.1,
+					"value-max": 99,
+					"single-step": 0.5
+				},
+				{
+					"control": "spinBox",
+					"type": "double",
+					"name": "koopaspeedy",
+					"title": "Koopa Y Speed",
+					"tooltip": "Changes the vertical speed of Bowser Jr.'s Koopa shell when thrown.",
+					"value-default": 4,
+					"value-min": 0.1,
+					"value-max": 99,
+					"single-step": 0.5
+				}
+			]
+		},
+		{
+			"control" : "group",
+			"title" : "Hammer Throwing Settings",
+			"name" : "..",
+			"children": [
+				{
+					"control": "spinBox",
+					"type": "int",
+					"name": "throwint",
+					"title": "Hammer Throwing Interval",
+					"tooltip": "Changes how often Bowser Jr. throws hammers counted in ticks.",
+					"value-default": 24,
+					"value-min": 1,
+					"value-max": 1000,
+					"single-step": 1
+				}
+			]
+		}
+    ]
+}
