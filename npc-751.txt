@@ -1,2 +1,0 @@
-framestyle=0
-framespeed=8
