@@ -1,6 +1,6 @@
 local smb1HUD = require("smb1HUD")
 
-smb1HUD.currentWorld = vector(5,1)
+smb1HUD.currentWorld = vector(6,1)
 
 function onStart()
 	local warp2 = Warp.get()[4]
