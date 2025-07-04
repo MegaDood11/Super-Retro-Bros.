@@ -1,7 +1,7 @@
 local smb1HUD = require("smb1HUD")
 local endstates = require("game/endstates")
 
-smb1HUD.currentWorld = vector(4,4)
+smb1HUD.currentWorld = vector(5,4)
 
 --Uses lua to trigger the boss fight music
 function onTick()
