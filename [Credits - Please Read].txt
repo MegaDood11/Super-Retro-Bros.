@@ -48,6 +48,7 @@ Scripts
 
 -General player tweaks - MrNameless + LumSht
 
+-Boom Boom - MDA
 -CustomCamera - MDA
 -Jumpbuffer - MDA
 -Warptransition - MDA
