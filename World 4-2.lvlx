@@ -2146,6 +2146,14 @@ ID:106;X:-192352;Y:-200448;D:1;GE:1;GT:1;GD:3;GM:20;
 ID:2;X:-199840;Y:-200096;D:-1;
 ID:176;X:-199872;Y:-200224;D:-1;S1:5;
 ID:465;X:-189920;Y:-200480;D:-1;EA:"Warp Zone Labels Appear 1";
+ID:876;X:-159808;Y:-160096;D:-1;XTRA:"{\n    \"blockTime\"\: 192\,\n    \"maxCoins\"\: 99\n}\n";
+ID:876;X:-159840;Y:-160096;D:-1;XTRA:"{\n    \"blockTime\"\: 192\,\n    \"maxCoins\"\: 99\n}\n";
+ID:876;X:-159872;Y:-160480;D:-1;XTRA:"{\n    \"blockTime\"\: 192\,\n    \"maxCoins\"\: 99\n}\n";
+ID:876;X:-159808;Y:-160512;D:-1;XTRA:"{\n    \"blockTime\"\: 192\,\n    \"maxCoins\"\: 99\n}\n";
+ID:876;X:-159840;Y:-160576;D:-1;XTRA:"{\n    \"blockTime\"\: 192\,\n    \"maxCoins\"\: 99\n}\n";
+ID:876;X:-159904;Y:-160608;D:-1;XTRA:"{\n    \"blockTime\"\: 192\,\n    \"maxCoins\"\: 99\n}\n";
+ID:876;X:-159648;Y:-160480;D:-1;XTRA:"{\n    \"blockTime\"\: 192\,\n    \"maxCoins\"\: 99\n}\n";
+ID:876;X:-160000;Y:-160192;D:-1;XTRA:"{\n    \"blockTime\"\: 192\,\n    \"maxCoins\"\: 99\n}\n";
 NPC_END
 DOORS
 IX:-198048;IY:-200608;OX:-179856;OY:-180096;DT:3;ID:1;OD:1;LR:"Thing";

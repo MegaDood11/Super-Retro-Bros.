@@ -59,10 +59,15 @@ Scripts
 -Antizip - Emral
 -Spawnzones - Emral
 -newnoturnback - Marioman2007
+-Checkpoint blocks - Marioman2007
 -Luigihitsblocksnormally - Megadood
 -SMASpausemenu - Megadood
+-Titlecard Script - MegaDood
+-Accurate Timer by MegaDood
+-bonkFlipsMushrooms.lua by MegaDood
 -retroResolution - PlumberGraduate (Fixed for this episode by Deltomx3)
 -Bloopers and Hammer Bros by Murphmario
+-Bowser boss + bridge by Murphmario
 -Convenient Firebars - IAmPlayer
 -Perpetual lift (npc-791) - cold soup
 -SMB1 HUD - MrNameless
@@ -70,16 +75,12 @@ Scripts
 -Bullet Bills - MDA, edited by LumSht + DeviousQuacks23
 -Classic Fireballs - MegoZ_ + MrNameless
 -Falling Lift - S.Koopa0
--Checkpoint blocks - Marioman2007
 -customPowerups - Marioman2007 + Emral
 -SMB Maze - Radiance + Marioman2007
 -Loadscreen - DeviousQuacks + Marioman2007
--Titlecard Script - MegaDood
--Bowser boss + bridge by Murphmario
 -Text block by DeviousQuacks23
--Accurate Timer by MegaDood
--Bowser Jr. - Ma8lrk
 -bonusChars.lua - DeviousQuacks23
+-Bowser Jr. - Ma8lrk
 
 ========
 Graphics
@@ -106,3 +107,5 @@ Music and SFX
 -Ladiesman217
 -Nintendo
 -Super Mario Construct
+-Deltomx3
+-LumSht
