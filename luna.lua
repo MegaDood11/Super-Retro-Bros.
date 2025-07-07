@@ -137,3 +137,11 @@ end
 function onEvent(eventName)
     --Your code here
 end
+
+local deathOpacity = 0
+function onDraw()
+	if player.deathTimer >= 175 then
+		deathOpacity = math.min(1, deathOpacity + 0.055)
+		Graphics.drawScreen{priority = 5.1, color = Color.black .. deathOpacity}
+	end
+end
