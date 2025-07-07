@@ -80,6 +80,7 @@ Scripts
 -Loadscreen - DeviousQuacks + Marioman2007
 -Text block by DeviousQuacks23
 -bonusChars.lua - DeviousQuacks23
+-Game Over script - DeviousQuacks23
 -Bowser Jr. - Ma8lrk
 
 ========
