@@ -11,4 +11,4 @@ framespeed = 8
 speed = 1.2
 cliffturn = false
 
-shellID = 867
+shellID = 894
