@@ -60,6 +60,7 @@ Scripts
 -Spawnzones - Emral
 -newnoturnback - Marioman2007
 -Checkpoint blocks - Marioman2007
+-minTimer.lua - Marioman2007
 -Luigihitsblocksnormally - Megadood
 -SMASpausemenu - Megadood
 -Titlecard Script - MegaDood
@@ -75,6 +76,7 @@ Scripts
 -Bullet Bills - MDA, edited by LumSht + DeviousQuacks23
 -Classic Fireballs - MegoZ_ + MrNameless
 -Falling Lift - S.Koopa0
+-You vs. Boo Assets - S.Koopa0
 -customPowerups - Marioman2007 + Emral
 -SMB Maze - Radiance + Marioman2007
 -Loadscreen - DeviousQuacks + Marioman2007
@@ -101,6 +103,7 @@ Icicles - SuperSledgeBro + FireSeraphim
 -Edits to powerup forms by Murphmario
 -Bonus Image for Wario - C.Pariah
 -Bonus Image for Toadette - GlacialSiren484
+-Minus Medal - DeviousQuacks23
 
 =============
 Music and SFX
