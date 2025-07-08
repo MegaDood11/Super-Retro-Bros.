@@ -19,10 +19,7 @@ local sampleNPCSettings = {
 	framespeed = 8, -- number of ticks (in-game frames) between animation frame changes
 
 	nowaterphysics = true,
-	
-	speed = 1,
-	luahandlesspeed = true,
-	
+
 	nohurt=true, -- Disables the NPC dealing contact damage to the player
 	nogravity = true,
 	noblockcollision = true,

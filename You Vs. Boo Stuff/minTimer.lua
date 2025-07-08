@@ -320,8 +320,8 @@ function minTimer.create(args)
         type = args.type or minTimer.COUNT_DOWN,
         initValue = args.initValue or 0,
         dontHandleFail = args.dontHandleFail,
-        x = args.x or 400,
-        y = args.y or 600 - ((minTimer.timerBoxHeight + minTimer.timerBoxHeight/2) * (#timers + 1)),
+        x = args.x or 250,
+        y = args.y or 450 - ((minTimer.timerBoxHeight + minTimer.timerBoxHeight/2) * (#timers + 1)),
         
         -- don't touch
         alreadyClosed = false,
