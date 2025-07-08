@@ -1283,13 +1283,13 @@ function extendedKoopas.onInitAPI()
     registerEvent(extendedKoopas,"onTickEnd")
 end
 
-
 -- Register all the original koopas
+
 do
     local defaultKoopaIDs = {
         109,110,111,112, 285, -- smw
         4,6,23,36, -- smb3
-        173,175,612 -- smb
+        173,175 -- smb
     }
     local defaultParakoopaIDs = {
         121,122,123,124, -- smw
