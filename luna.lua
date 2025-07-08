@@ -138,10 +138,32 @@ function onEvent(eventName)
     --Your code here
 end
 
+-- Death related things
+
 local deathOpacity = 0
+
+local img = Graphics.loadImageResolved("hudTimeUp.png")
+local imgw = img.width
+local imgh = img.height
+
 function onDraw()
 	if player.deathTimer >= 175 then
 		deathOpacity = math.min(1, deathOpacity + 0.055)
 		Graphics.drawScreen{priority = 5.1, color = Color.black .. deathOpacity}
+	end
+
+	if Timer.get() <= 0 then
+		if player.deathTimer >= 80 then
+			Graphics.drawBox{
+				texture = img,
+				x = (camera.width/2),
+				y = (camera.height/2),
+				width = imgw,
+				height = imgh,
+				centered = true,
+				priority = 5,
+
+			}
+		end
 	end
 end
