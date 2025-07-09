@@ -10,6 +10,7 @@ local canTrans = false
 local hasTransitioned = false
 local screenOpa = 0
 local hasWon = false
+local racingSection = -1
 
 local startPositionX = {} -- automatically registers itself based on the location of the boo
 local winPosition = { -- register for each section/world
@@ -53,6 +54,8 @@ function onStart()
 	for _,n in ipairs(NPC.get(953)) do
 		startPositionX[n.section] = n.x
 	end
+
+	racingSection = player.section
 end
 
 function onEvent(eventName)
@@ -76,6 +79,7 @@ function onEvent(eventName)
 
 			timer1:start()
 			timer1:addTime(times[player.section+1])
+
 			canMove = false
 
 			blockutils.setBlockFrame(switchBlockID, 1)
@@ -171,7 +175,7 @@ local worldNums = {1, 2, 3, 4, 5, 6, 7, 8, 9, "A", "B", "C", "D", ""}
 function onTick()
 	smb1HUD.currentWorld = vector(worldNums[player.section+1], "R")
 
-	if player.x >= winPosition[player.section+1] then
+	if player.x >= winPosition[racingSection+1] then
 		timer1:close(minTimer.WIN_CLEAR, true) 
 	end
 
