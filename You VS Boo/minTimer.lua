@@ -215,7 +215,7 @@ local function drawTimer(v)
             v.cdOpacity = math.max(v.cdOpacity - 0.05, 0)
         end
 
-        if v.countDownTimer % 32 == 0 then
+        if v.countDownTimer % 65 == 0 then
             if v.anim == minTimer.ANIM_START then
                 if v.countDown > 1 then
                     SFXPlay("countDown")
@@ -232,6 +232,7 @@ local function drawTimer(v)
                     v.showTimer = true
                     v.timeType = minTimer.TIMER_OPEN
                     v.paused = false
+		    v:onStart()
                     Misc.unpause()
                 elseif v.showCDText then
                     v.cdFadeType = 2
@@ -252,7 +253,7 @@ local function drawTimer(v)
             end
 
             if v.showCDText then
-                v.cdText = "Start!"
+                v.cdText = "GO!"
                 offset = 4
             else
                 v.cdText = tostring(v.countDown)
@@ -316,6 +317,7 @@ function minTimer.create(args)
     local entry = {
         draw = args.draw or drawTimer,    -- function that draw this timer
         onEnd = args.onEnd or onEndTimer, -- function that runs when the timer reaches 0 or its max value
+        onStart = args.onStart, -- function that runs when the timer reaches 0 or its max value
         runWhilePaused = args.runWhilePaused,
         type = args.type or minTimer.COUNT_DOWN,
         initValue = args.initValue or 0,
@@ -394,22 +396,23 @@ function thisTimer:close(win, playAnim)
 
     if playAnim then
         if win then
-            self.cdText = "Clear!"
-            self.cdWidth = 248
+            self.cdText = "You Win!"
+            self.cdWidth = 330
         else
-            self.cdText = "Fail!"
-            self.cdWidth = 212
+            self.cdText = "You Lose..."
+            self.cdWidth = 420
         end
         self.anim = minTimer.ANIM_END
         self.showCDText = false
         self.cdScale = 3
         self.cdImgScale = 2
         self.cdHeight = 56
-        self.cdFadeType = 1
-        self.cdOpacity = 1
     else
         self.timeType = minTimer.TIMER_CLOSE
     end
+
+    self.cdFadeType = 1
+    self.cdOpacity = 0
 
     self:onEnd(win)
 end

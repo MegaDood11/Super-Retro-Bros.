@@ -33,8 +33,6 @@ local classicFireballs = require("classicFireballs")
 
 local kindHurtBlock = require("kindHurtBlock")
 
-local loadscreen = require("loadscreen")
-
 local titlecard = require("titlecard")
 
 local accurateTimer = require("accurateTimer")

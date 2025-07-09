@@ -59,6 +59,7 @@ function sampleNPC.onTickEndNPC(v)
 	end
 
 	v.speedY = math.cos(lunatime.tick() / 8) * 1
+	v.despawnTimer = 180
 
 	if data.state == 0 then
 		v.animationFrame = 0 + ((v.direction + 1) * sampleNPCSettings.frames / 2)

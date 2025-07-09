@@ -1,0 +1,14 @@
+gfxwidth=64
+gfxheight=128
+width=64
+height=128
+score=0
+playerblock=1
+npcblocktop=0
+grabtop=0
+nohurt=1
+noyoshi=1
+nogravity=1
+noiceball=1
+frames=1
+framestyle=0
