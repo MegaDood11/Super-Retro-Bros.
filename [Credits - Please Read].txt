@@ -66,7 +66,6 @@ Scripts
 -Titlecard Script - MegaDood
 -Accurate Timer by MegaDood
 -bonkFlipsMushrooms.lua by MegaDood
--You Vs. Boo setup - MegaDood
 -retroResolution - PlumberGraduate (Fixed for this episode by Deltomx3)
 -Bloopers and Hammer Bros by Murphmario
 -Bowser boss + bridge by Murphmario
@@ -84,6 +83,7 @@ Scripts
 -Text block by DeviousQuacks23
 -bonusChars.lua - DeviousQuacks23
 -Game Over script - DeviousQuacks23
+-You Vs. Boo setup - MegaDood + DeviousQuacks23
 -Bowser Jr. - Ma8lrk
 
 ========
