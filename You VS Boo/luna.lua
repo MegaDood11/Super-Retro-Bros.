@@ -54,17 +54,16 @@ function onStart()
 	for _,n in ipairs(NPC.get(953)) do
 		startPositionX[n.section] = n.x
 	end
-	triggerEvent("raceBegin")
 	racingSection = player.section
 end
 
 function onEvent(eventName)
         if eventName == "raceBegin" then
                 local r = Routine.run(function()
-			--SFX.play("SFX/minigame_clear.ogg")
+			SFX.play("SFX/minigame_clear.ogg")
 			canTrans = true
 			canMove = true
-		--	Audio.MusicFadeOut(0, 900)
+			Audio.MusicFadeOut(0, 900)
 
 			Routine.waitFrames(60)
 
@@ -317,18 +316,18 @@ function onDraw()
 	-- Fade into the race
 
 	if canTrans then
-		--[[if not hasTransitioned then
+		if not hasTransitioned then
 			screenOpa = math.min(1, screenOpa + 0.01666)
 			if screenOpa >= 1 then
 				hasTransitioned = true
 			end
-		else]]
+		else
 			screenOpa = math.max(0, screenOpa - 0.025)
 			if screenOpa <= 0 then
 				hasTransitioned = false
 				canTrans = false
 			end
-		--end
+		end
 	end
 
 	if screenOpa > 0 then
