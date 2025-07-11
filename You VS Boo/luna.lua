@@ -14,7 +14,7 @@ local racingSection = -1
 
 local startPositionX = {} -- automatically registers itself based on the location of the boo
 local winPosition = { -- register for each section/world
-	-191840, -- world 1
+	-192064, -- world 1
 	-179616, -- world 2
 	 -- world 3
 	 -- world 4
