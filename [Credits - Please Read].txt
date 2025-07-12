@@ -32,6 +32,10 @@ World -1 - FireSeraphim
 World -4 - DeviousQuacks23
 World -8 - MegaDood
 
+Boo Races
+─────────
+World 1 Race - MegaDood
+
 
 ===============
 General Credits
