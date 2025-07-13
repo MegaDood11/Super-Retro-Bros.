@@ -16,35 +16,35 @@ local startPositionX = {} -- automatically registers itself based on the locatio
 local winPosition = { -- register for each section/world
 	-192064, -- world 1
 	-179616, -- world 2
-	 -- world 3
-	 -- world 4
-	 -- world 5
-	 -- world 6
-	 -- world 7
-	 -- world 8
-	 -- world 9
-	 -- world A
-	 -- world B
-	 -- world C
-	 -- world D
-	 -- world minus
+	-179616, -- world 3
+	-179616, -- world 4
+	-179616, -- world 5
+	-179616, -- world 6
+	-179616, -- world 7
+	-179616, -- world 8
+	-179616, -- world 9
+	-179616, -- world A
+	-179616, -- world B
+	 27808, -- world C
+	-179616, -- world D
+	-179616, -- world minus
 }
 
 local times = { -- register for each section/world
 	minTimer.toTicks{hrs = 0, mins = 0, secs = 42}, -- world 1
 	minTimer.toTicks{hrs = 0, mins = 0, secs = 2}, -- world 2
-	 -- world 3
-	 -- world 4
-	 -- world 5
-	 -- world 6
-	 -- world 7
-	 -- world 8
-	 -- world 9
-	 -- world A
-	 -- world B
-	 -- world C
-	 -- world D
-	 -- world minus
+	minTimer.toTicks{hrs = 0, mins = 0, secs = 2}, -- world 3
+	minTimer.toTicks{hrs = 0, mins = 0, secs = 2}, -- world 4
+	minTimer.toTicks{hrs = 0, mins = 0, secs = 2}, -- world 5
+	minTimer.toTicks{hrs = 0, mins = 0, secs = 2},minTimer.toTicks{hrs = 0, mins = 0, secs = 2}, -- world 6
+	minTimer.toTicks{hrs = 0, mins = 0, secs = 2}, -- world 7
+	minTimer.toTicks{hrs = 0, mins = 0, secs = 2}, -- world 8
+	minTimer.toTicks{hrs = 0, mins = 0, secs = 2}, -- world 9
+	minTimer.toTicks{hrs = 0, mins = 0, secs = 2}, -- world A
+	minTimer.toTicks{hrs = 0, mins = 0, secs = 50}, -- world B
+	minTimer.toTicks{hrs = 0, mins = 0, secs = 2}, -- world C
+	minTimer.toTicks{hrs = 0, mins = 0, secs = 2}, -- world D
+	minTimer.toTicks{hrs = 0, mins = 0, secs = 2}, -- world minus
 }
 
 local timer1 = minTimer.create{initValue = 0} -- create a timer object
@@ -85,8 +85,10 @@ function onEvent(eventName)
 			Block.config[switchBlockID].passthrough = true
 
 			for _,n in ipairs(NPC.get(953)) do
-				n.speedX = (winPosition[n.section+1] - startPositionX[n.section]) / math.floor(times[n.section+1])
-				n.data.state = 1
+				if n.section == player.section then
+					n.speedX = (winPosition[n.section+1] - startPositionX[n.section]) / math.floor(times[n.section+1])
+					n.data.state = 1
+				end
 			end
    		end)
         end
