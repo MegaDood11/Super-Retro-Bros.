@@ -41,8 +41,8 @@ local times = { -- register for each section/world
 	minTimer.toTicks{hrs = 0, mins = 0, secs = 2}, -- world 8
 	minTimer.toTicks{hrs = 0, mins = 0, secs = 2}, -- world 9
 	minTimer.toTicks{hrs = 0, mins = 0, secs = 2}, -- world A
-	minTimer.toTicks{hrs = 0, mins = 0, secs = 50}, -- world B
-	minTimer.toTicks{hrs = 0, mins = 0, secs = 2}, -- world C
+	minTimer.toTicks{hrs = 0, mins = 0, secs = 2}, -- world B
+	minTimer.toTicks{hrs = 0, mins = 0, secs = 50}, -- world C
 	minTimer.toTicks{hrs = 0, mins = 0, secs = 2}, -- world D
 	minTimer.toTicks{hrs = 0, mins = 0, secs = 2}, -- world minus
 }
