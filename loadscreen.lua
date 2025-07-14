@@ -120,8 +120,8 @@ function onDraw()
 
 	Graphics.drawBox{ -- rotating circle thing
 		texture = image,
-		x = (438 + 16),
-		y = (374 + 4),
+		x = (438 + 12),
+		y = (374 + 12),
 		width = 96,
 		height = 96,
         	rotation = rot,
