@@ -83,11 +83,11 @@ function onDraw()
 	
 	 textplus.print{
         	x = 16 - 6,
-        	y = 16,
+        	y = 24,
        		xscale = 4,
         	yscale = 4,
         	text = "RETRO TIP:",
-		font = textplus.loadFont("textplus/font/2.ini"),
+		font = textplus.loadFont("textplus/font/3.ini"),
         	pivot = {0, 0},
         	maxWidth = 432,
 		color = Color.white * math.min(1, time / 60),
@@ -105,7 +105,7 @@ function onDraw()
        			xscale = 2,
         		yscale = 2,
         		text = tipTable[tipNum],
-			font = textplus.loadFont("textplus/font/2.ini"),
+			font = textplus.loadFont("textplus/font/3.ini"),
         		pivot = {0, 0},
         		maxWidth = 432,
 			color = Color.white * math.min(1, time / 60),
@@ -115,13 +115,17 @@ function onDraw()
 
 	-- all the other things
 
+    	if time == 0 then
+        	Graphics.setMainFramebufferSize(512, 448)
+    	end
+
 	time = time + 1
 	rot = rot - 4
 
 	Graphics.drawBox{ -- rotating circle thing
 		texture = image,
-		x = (438 + 16),
-		y = (374 + 4),
+		x = (438 + 12),
+		y = (374 + 12),
 		width = 96,
 		height = 96,
         	rotation = rot,
@@ -138,7 +142,9 @@ function onDraw()
         	color = {1, 1, 1, math.min(1, time / 60)},
 	}
 
-        if Misc.getLoadingFinished() then -- smooth fade out (from battle arena)
+	-- smooth fade out (from battle arena)
+
+        if Misc.getLoadingFinished() then 
             	fadeOut = math.min(1,fadeOut + 1/20)
         end
 

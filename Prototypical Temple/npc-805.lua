@@ -61,6 +61,9 @@ local ancientSpinySettings = {
 	wanderTime = 4,
 	turnInterval = 24,
 
+	minFramespeed = 10,
+	maxFramespeed = 16,
+
 	spitTime = 2,
 	spitInterval = 12,
 
@@ -130,6 +133,7 @@ function ancientSpiny.onTickEndNPC(v)
 		data.timer = 0
 		data.state = WANDER
 		data.hp = config.health
+		data.frameSpeed = RNG.randomInt(config.minFramespeed, config.maxFramespeed)
 		data.spitFrame = 0
 	end
 
@@ -146,7 +150,7 @@ function ancientSpiny.onTickEndNPC(v)
 
 	if data.state == WANDER then
 		v.speedX = config.speed * v.direction
-		v.animationFrame = math.floor(data.timer / config.framespeed) % (config.frames / 2)
+		v.animationFrame = math.floor(data.timer / data.frameSpeed) % (config.frames / 2)
 		if (data.timer % config.turnInterval) == 0 then npcutils.faceNearestPlayer(v) end
 		if data.timer >= lunatime.toTicks(config.wanderTime) then
 			data.state = SPIT
@@ -168,6 +172,7 @@ function ancientSpiny.onTickEndNPC(v)
 		if data.timer >= lunatime.toTicks(config.spitTime) then
 			data.state = WANDER
 			data.timer = 0
+			data.frameSpeed = RNG.randomInt(config.minFramespeed, config.maxFramespeed)
 		end
 	end
 
