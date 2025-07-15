@@ -115,6 +115,10 @@ function onDraw()
 
 	-- all the other things
 
+    	if time == 0 then
+        	Graphics.setMainFramebufferSize(512, 448)
+    	end
+
 	time = time + 1
 	rot = rot - 4
 
@@ -138,7 +142,9 @@ function onDraw()
         	color = {1, 1, 1, math.min(1, time / 60)},
 	}
 
-        if Misc.getLoadingFinished() then -- smooth fade out (from battle arena)
+	-- smooth fade out (from battle arena)
+
+        if Misc.getLoadingFinished() then 
             	fadeOut = math.min(1,fadeOut + 1/20)
         end
 

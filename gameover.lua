@@ -23,6 +23,22 @@ local function outBounce(t, b, c, d) -- taken from easing.lua
   end
 end
 
+local characterDeathEffects = {
+	3,
+	5,
+	nil, -- peach
+	130,
+	nil, -- link
+	nil, -- megaman
+	150
+}
+
+-- Address of the first player's character. Equivalent to 'player.character', except the player class doesn't exist in loading screens
+local FIRST_PLAYER_CHARACTER_ADDR = mem(0x00B25A20,FIELD_DWORD) + 0x184 + 0xF0
+local charMem = mem(FIRST_PLAYER_CHARACTER_ADDR,FIELD_WORD)
+
+local deathEffectID = characterDeathEffects[charMem]
+
 function onDraw()
 	timeleft = timeleft - 1
 
@@ -42,7 +58,7 @@ function onDraw()
 		local imgw = img.width/2
 		local imgh = img.height
 
-		local img2 = Graphics.sprites.effect["3"].img
+		local img2 = Graphics.sprites.effect[deathEffectID].img
 		local imgw2 = img2.width*2
 
 		Graphics.drawBox{

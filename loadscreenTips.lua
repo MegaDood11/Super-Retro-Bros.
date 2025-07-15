@@ -69,7 +69,7 @@ loadTips.tipTable = {
 	"The Bubble Flower had a bug where the bubbles could consume almost anything. However, this was eventually fixed.",
 	"Also check out The Rip Lair's Powerup Pack!",
 	"Donkey Goomba",
-	"First, translate devious. to binary, then add all of the binary values together, and you get a Spring Mushroom!"
+	"First, translate devious. to binary, then add all of the binary values together, and you get a Spring Mushroom!",
 	"01101110 01100101 01110110 01100101 01110010 00100000 01100111 01101111 01101110 01101110 01100001 00100000 01100111 01101001 01110110 01100101 00100000 01111001 01101111 01110101 00100000 01110101 01110000",
 	"Mario Start!",
 	"Luigi Start!",
