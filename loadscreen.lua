@@ -83,11 +83,11 @@ function onDraw()
 	
 	 textplus.print{
         	x = 16 - 6,
-        	y = 16,
+        	y = 24,
        		xscale = 4,
         	yscale = 4,
         	text = "RETRO TIP:",
-		font = textplus.loadFont("textplus/font/2.ini"),
+		font = textplus.loadFont("textplus/font/3.ini"),
         	pivot = {0, 0},
         	maxWidth = 432,
 		color = Color.white * math.min(1, time / 60),
@@ -105,7 +105,7 @@ function onDraw()
        			xscale = 2,
         		yscale = 2,
         		text = tipTable[tipNum],
-			font = textplus.loadFont("textplus/font/2.ini"),
+			font = textplus.loadFont("textplus/font/3.ini"),
         		pivot = {0, 0},
         		maxWidth = 432,
 			color = Color.white * math.min(1, time / 60),
