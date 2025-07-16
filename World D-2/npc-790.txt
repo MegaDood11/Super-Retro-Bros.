@@ -1,0 +1,2 @@
+gfxwidth=48
+width=48
