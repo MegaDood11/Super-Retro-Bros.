@@ -176,6 +176,8 @@ function sampleNPC.onTickEndNPC(v)
 		v.direction = 1
 	end
 	
+	v.speedY = v.speedY + (-Defines.npc_grav + 0.15)
+	
 	--Speed control
 	if v.ai1 == 1 then
 		if v.collidesBlockBottom then
@@ -210,7 +212,7 @@ function sampleNPC.onTickEndNPC(v)
 		v.ai3 = math.random(1, 100)
 		
 		if v.ai3 == 20 and v.collidesBlockBottom then
-			v.speedY = -7
+			v.speedY = -5.5
 		end
 		
 		--Fire shooting

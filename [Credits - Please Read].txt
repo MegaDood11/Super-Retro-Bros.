@@ -9,21 +9,23 @@ World 2-1 - MegaDood
 World 2-3 - MrNameless
 World 3-1 - Ness-Wednesday
 World 3-2 - DeviousQuacks23
-World 4-1 - FireSeraphim
-World 4-2 - Dor_78
-World 4-3 - GDKeptr
-World 4-4 - FireSeraphim
-World 5-1 - Dor_78
-World 5-3 - MegaDood
-World 6-1 - FireSeraphim
-World 6-3 - cold soup
-World 8-1 - DeviousQuacks23
-World 8-3 - Radiance
+World 5-1 - FireSeraphim
+World 5-2 - Dor_78
+World 5-3 - GDKeptr
+World 5-4 - FireSeraphim
+World 6-1 - Dor_78
+World 6-3 - MegaDood
+World 7-1 - FireSeraphim
+World 7-3 - cold soup
+World 7-4 - Radiance
+World 9-1 - DeviousQuacks23
+World 9-3 - Radiance
 
 World B-2 - MegaDood
 World B-3 - Ness-Wednesday
 World C-1 - Dor_78 + MegaDood
 World C-3 - LumSht + MegaDood
+World D-2 - MegaDood
 
 Bonus Levels
 ─────────
