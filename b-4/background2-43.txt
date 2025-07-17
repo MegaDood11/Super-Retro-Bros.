@@ -1,0 +1,23 @@
+fill-color = #707170
+
+[BG]
+img=41
+parallaxX=0.5
+maxParallaxY=1
+alignY=BOTTOM
+repeatX=true
+repeatY=true
+fitY=true
+depth=100
+
+[Water]
+img = bgWater.png
+opacity = 0.65
+speedX = -0.4
+speedY = -0.4
+parallaxX = 0.85
+parallaxY = 1
+repeatX = true
+repeatY=true
+alignY = BOTTOM
+priority = -1

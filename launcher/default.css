@@ -1,0 +1,9 @@
+body {
+	background-image: url('background.png');
+	color: black;
+	text-align: center;
+	font-family: "Pixel Emulator";
+}
+p {
+	font-size: 24px;
+}

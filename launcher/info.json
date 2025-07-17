@@ -1,0 +1,9 @@
+{
+    	"characterNames": ["Mario", "Luigi"], 
+	"allowedCharacters": [1, 2],
+	"allowPlayerSelection": true,
+	"allowTwoPlayer": false,
+	"title" : "Super Ripro Bros.",
+	"mainPage": "index.html",
+	"episodeIcon": "icon.png"
+}

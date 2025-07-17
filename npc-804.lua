@@ -151,6 +151,7 @@ function sampleNPC.onTickNPC(v)
 	if Colliders.collide(player, v) then
 		player.speedX = 0
 		player.x = player.x - v.direction
+		player.y = v.y + v.height - player.height
 		SFX.play(bridgecollapse)
 		bridge.active = true
 		bridge.cameraX = camera.x
