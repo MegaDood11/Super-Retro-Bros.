@@ -1731,7 +1731,7 @@ ID:770;X:-193280;Y:-200704;D:-1;
 ID:770;X:-193440;Y:-200704;D:-1;
 ID:394;X:-192224;Y:-200992;D:-1;
 ID:770;X:-198944;Y:-200512;D:-1;XTRA:"{\n    \"length\"\: 10\,\n    \"number\"\: 2\,\n    \"speed\"\: 3\n}\n";
-ID:800;X:-199104;Y:-200576;D:-1;XTRA:"{\n    \"deathEffect\"\: 15\,\n    \"fire\"\: false\n}\n";
+ID:800;X:-199104;Y:-200576;D:-1;XTRA:"{\n    \"deathEffect\"\: 281\,\n    \"fire\"\: false\n}\n";
 ID:800;X:-198720;Y:-200416;D:-1;XTRA:"{\n    \"deathEffect\"\: 29\,\n    \"fire\"\: false\n}\n";
 ID:800;X:-199168;Y:-200416;D:-1;XTRA:"{\n    \"deathEffect\"\: 217\,\n    \"fire\"\: false\n}\n";
 ID:800;X:-198784;Y:-200576;D:-1;XTRA:"{\n    \"deathEffect\"\: 200\,\n    \"fire\"\: false\n}\n";
@@ -1740,7 +1740,7 @@ ID:800;X:-194112;Y:-200512;D:-1;XTRA:"{\n    \"deathEffect\"\: 86\,\n    \"hamme
 ID:800;X:-193216;Y:-200512;D:-1;XTRA:"{\n    \"hammers\"\: true\,\n    \"quake\"\: false\n}\n";
 ID:800;X:-198304;Y:-200544;D:-1;XTRA:"{\n    \"deathEffect\"\: 920\,\n    \"fire\"\: false\n}\n";
 ID:800;X:-197280;Y:-200544;D:-1;XTRA:"{\n    \"deathEffect\"\: 143\n}\n";
-ID:800;X:-197056;Y:-200416;D:-1;XTRA:"{\n    \"deathEffect\"\: 15\n}\n";
+ID:800;X:-197056;Y:-200416;D:-1;XTRA:"{\n    \"deathEffect\"\: 281\n}\n";
 ID:800;X:-196992;Y:-200544;D:-1;XTRA:"{\n    \"deathEffect\"\: 246\n}\n";
 ID:800;X:-193536;Y:-200512;D:-1;XTRA:"{\n    \"deathEffect\"\: 307\,\n    \"hammers\"\: true\n}\n";
 ID:770;X:-196096;Y:-200640;D:-1;XTRA:"{\n    \"length\"\: 8\,\n    \"speed\"\: 4\n}\n";
