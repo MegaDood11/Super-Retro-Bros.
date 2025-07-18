@@ -23,6 +23,7 @@ World 9-3 - Radiance
 
 World B-2 - MegaDood
 World B-3 - Ness-Wednesday
+World B-4 - DeviousQuacks23
 World C-1 - Dor_78 + MegaDood
 World C-3 - LumSht + MegaDood
 World D-2 - MegaDood
