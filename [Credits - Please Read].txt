@@ -38,6 +38,7 @@ World -8 - MegaDood
 Boo Races
 ─────────
 World 1 Race - MegaDood
+World 7 Race - MegaDood
 World C Race - MegaDood
 
 
