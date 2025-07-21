@@ -15,11 +15,11 @@ local racingSection = -1
 local startPositionX = {} -- automatically registers itself based on the location of the boo
 local winPosition = { -- register for each section/world
 	-192064, -- world 1
-	-179616, -- world 2
+	-173152, -- world 2
 	-179616, -- world 3
 	-179616, -- world 4
 	-179616, -- world 5
-	-179616, -- world 6
+	-93152, -- world 6
 	-72736, -- world 7
 	-179616, -- world 8
 	-179616, -- world 9
@@ -32,11 +32,11 @@ local winPosition = { -- register for each section/world
 
 local times = { -- register for each section/world
 	minTimer.toTicks{hrs = 0, mins = 0, secs = 42}, -- world 1
-	minTimer.toTicks{hrs = 0, mins = 0, secs = 2}, -- world 2
+	minTimer.toTicks{hrs = 0, mins = 0, secs = 55}, -- world 2
 	minTimer.toTicks{hrs = 0, mins = 0, secs = 2}, -- world 3
 	minTimer.toTicks{hrs = 0, mins = 0, secs = 2}, -- world 4
 	minTimer.toTicks{hrs = 0, mins = 0, secs = 2}, -- world 5
-	minTimer.toTicks{hrs = 0, mins = 0, secs = 2}, -- world 6
+	minTimer.toTicks{hrs = 0, mins = 0, secs = 35}, -- world 6
 	minTimer.toTicks{hrs = 0, mins = 1, secs = 0}, -- world 7
 	minTimer.toTicks{hrs = 0, mins = 0, secs = 2}, -- world 8
 	minTimer.toTicks{hrs = 0, mins = 0, secs = 2}, -- world 9

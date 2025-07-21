@@ -127,6 +127,7 @@ local function blockOnScreen()
 end
 
 function faceBlock.onTickBlock(v)
+	if v.isHidden then v.data.timer = 0 v.data.animationTimer = 0 end
 	if v.isHidden or v:mem(0x5A, FIELD_BOOL) then return end
 	
 	local data = v.data
@@ -150,6 +151,7 @@ function faceBlock.onTickBlock(v)
 end
 
 function faceBlock.onDrawBlock(v)
+	if v.isHidden then v.data.timer = 0 v.data.animationTimer = 0 end
 	if v.isHidden or v:mem(0x5A, FIELD_BOOL) then return end
 	
 	local data = v.data
