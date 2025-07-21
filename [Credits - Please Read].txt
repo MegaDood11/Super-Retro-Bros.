@@ -73,6 +73,7 @@ Scripts
 -Checkpoint blocks - Marioman2007
 -minTimer.lua - Marioman2007
 -Luigihitsblocksnormally - Megadood
+-Barrel NPC + Sprites - MegaDood
 -SMASpausemenu - Megadood
 -Titlecard Script - MegaDood
 -Accurate Timer by MegaDood
