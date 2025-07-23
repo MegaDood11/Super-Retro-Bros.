@@ -10,7 +10,7 @@ function fastFireballs.onInitAPI()
 end
 
 fastFireballs.limit = 2
-fastFireballs.shootingProjectiles = table.map{13,265,171}
+fastFireballs.shootingProjectiles = table.map{13,265,171,952}
 
 local isOwned = {}
 local linkChars = table.map{5,12,16}
