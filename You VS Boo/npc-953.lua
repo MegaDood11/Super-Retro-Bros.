@@ -14,7 +14,7 @@ local sampleNPCSettings = {
 	width = 32,
 	height = 32,
 	
-	frames = 2,
+	frames = 28,
 	framestyle = 1,
 	framespeed = 8, -- number of ticks (in-game frames) between animation frame changes
 
@@ -62,9 +62,9 @@ function sampleNPC.onTickEndNPC(v)
 	v.despawnTimer = 180
 
 	if data.state == 0 then
-		v.animationFrame = 0 + ((v.direction + 1) * sampleNPCSettings.frames / 2)
+		v.animationFrame = 0 + (player.section * 2) + ((v.direction + 1) * sampleNPCSettings.frames / 2)
 	elseif data.state == 1 then
-		v.animationFrame = 1 + ((v.direction + 1) * sampleNPCSettings.frames / 2)
+		v.animationFrame = 1 + (player.section * 2) + ((v.direction + 1) * sampleNPCSettings.frames / 2)
 	end
 end
 
