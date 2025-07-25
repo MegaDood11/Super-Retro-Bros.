@@ -21,6 +21,7 @@ World 7-4 - Radiance
 World 9-1 - DeviousQuacks23
 World 9-3 - Radiance
 
+World A-3 - Ness-Wednesday
 World B-2 - MegaDood
 World B-3 - Ness-Wednesday
 World B-4 - DeviousQuacks23
