@@ -48,7 +48,8 @@ local sampleNPCSettings = {
 	grabtop=false,
 
 	health=5,
-	quakestunframes = 70
+	quakestunframes = 70,
+	notcointransformable = true
 	--Identity-related flags. Apply various vanilla AI based on the flag:
 	--iswalker = false,
 	--isbot = false,
