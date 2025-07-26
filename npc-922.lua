@@ -23,7 +23,8 @@ local sampleNPCSettings = {
 	nofireball = true,
 	noiceball = true,
 	noyoshi= true, -- If true, Yoshi, Baby Yoshi and Chain Chomp can eat this NPC
-
+	nowaterphysics = true,
+	
 	--Various interactions
 	jumphurt = true, --If true, spiny-like (prevents regular jump bounces)
 	spinjumpsafe = false, --If true, prevents player hurt when spinjumping and causes a bounce
