@@ -41,7 +41,6 @@ loadTips.tipTable = {
 	"They say there's a castle filled with Bowsers, found in a place unknown...",
 	"The timer is much faster than normal (for the sake of accuracy), so... hurry up!",
 	"Beyond the goal pole, you might find a mysterious pipe... why don't you enter it?",
-	"There are nine worlds because Bowser forgot to buy Daisy pizza.",
 	"Hurry! After defeating Lakitu, he may return within a few seconds.",
 	"Bewear of poison mushrooms. Their icky taste will make you lose your powerup.",
 	"Don't stomp on the Bloopers underwater. You can only stomp on Bloopers that swim in the air.",

@@ -226,7 +226,7 @@ local function platformsAi(v, data, settings, cfg, layer)
 	for _, p in ipairs(Player.get()) do
 		local standingNPC = p.standingNPC
 		
-		if standingNPC and not Defines.levelFreeze then
+		if standingNPC and not Defines.levelFreeze and p.forcedState == 0 and p.deathTimer == 0 then
 			if not data.touched and (standingNPC == firstPlatform or standingNPC == secondPlatform) then
 				if data.lineguide and data.lineguide.lineSpeed == 0 then
 					data.lineguide.lineSpeed = 2
