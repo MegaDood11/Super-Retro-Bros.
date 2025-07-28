@@ -112,7 +112,7 @@ function sampleNPC.onInitAPI()
 	npcManager.registerEvent(npcID, sampleNPC, "onTickNPC")
 	--npcManager.registerEvent(npcID, sampleNPC, "onTickEndNPC")
 	--npcManager.registerEvent(npcID, sampleNPC, "onDrawNPC")
-	--registerEvent(sampleNPC, "onNPCKill")
+	registerEvent(sampleNPC, "onNPCKill")
 	registerEvent(sampleNPC, "onCameraUpdate")
 end
 
@@ -163,6 +163,7 @@ function sampleNPC.onTickNPC(v)
 		bridge.collapseHitboxDirection = v.direction
 		v:kill(HARM_TYPE_OFFSCREEN)
 		cameralock = nil
+		Misc.npcToCoins()
 	end
 end
 
@@ -184,6 +185,11 @@ function sampleNPC.onCameraUpdate()
 			end
 		end
 	end
+end
+
+function sampleNPC.onNPCKill()
+	if killedNPC ~= npcID then return end
+	Misc.npcToCoins()
 end
 
 --Gotta return the library table!
