@@ -80,7 +80,7 @@ local pokeySettings = {
 	waveSpeed = 8,
 	waveIntensity = 3,
 
-	rotate = true,
+	rotate = false,
 }
 
 npcManager.setNpcSettings(pokeySettings)

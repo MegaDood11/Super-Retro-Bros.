@@ -65,13 +65,13 @@ local pokeySettings = {
 	-- Custom settings
 
 	bodyID = bodyID,
-	segmentGap = 32,
+	segmentGap = 30,
 
 	toppleIfHeadless = true,
-	toppleTime = 8,
+	toppleTime = 4,
 
 	speed = 0.3,
-	chaseInterval = 80,
+	chaseInterval = 120,
 
 	cliffturn = true,
 }
