@@ -1,1 +1,2 @@
 force = 17
+notcointransformable=true
