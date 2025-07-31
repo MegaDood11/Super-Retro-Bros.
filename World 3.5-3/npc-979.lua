@@ -43,7 +43,7 @@ local gaoSettings = {
 	score = 5,
 
     -- Define custom properties below
-    projectilespeed = 3.5,
+    projectilespeed = 3,
 	muted = true
 }
 
@@ -132,7 +132,7 @@ function gao.onTickEndNPC(v)
     local data = v.data
     local settings = v.data._settings
     if settings.delay == nil then settings.delay = 180 end
-    data.spawnTimer = data.spawnTimer or settings.delay - 24
+    data.spawnTimer = data.spawnTimer or settings.delay - 48
 
     getAnimationFrame(v)
 
@@ -140,7 +140,7 @@ function gao.onTickEndNPC(v)
     if v:mem(0x12A, FIELD_WORD) <= 0 then
         -- Reset our properties, if necessary
         data.initialized = false
-        data.spawnTimer = settings.delay - 24
+        data.spawnTimer = settings.delay - 48
 		data.death = false
 		data.deathTimer = 0
         return

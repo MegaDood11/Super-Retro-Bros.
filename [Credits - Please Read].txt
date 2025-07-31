@@ -9,6 +9,7 @@ World 2-1 - MegaDood
 World 2-3 - MrNameless
 World 3-1 - Ness-Wednesday
 World 3-2 - DeviousQuacks23
+World 4-3 - MegaDood
 World 5-1 - FireSeraphim
 World 5-2 - Dor_78
 World 5-3 - GDKeptr
