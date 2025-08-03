@@ -1,5 +1,5 @@
 HEAD
-TL:"Warp Zone Zone";XTRA:"{\n    \"timer\"\: {\n        \"enable\"\: true\,\n        \"time\"\: 550\n    }\n}\n";CPID:"SMBX2";
+TL:"Warp Zone Zone";XTRA:"{\n    \"timer\"\: {\n        \"enable\"\: true\,\n        \"time\"\: 700\n    }\n}\n";CPID:"SMBX2";
 HEAD_END
 SECTION
 SC:0;L:-200000;R:-199200;T:-200600;B:-200000;MZ:24;MF:"Music/Going Underground.spc|0\;g=2\;e0";BG:55;
