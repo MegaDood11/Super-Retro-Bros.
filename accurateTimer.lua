@@ -48,6 +48,7 @@ function timer.onEvent(e)
 end
 
 function timer.onWarp(warp,p)
+	if Timer.getValue() > Timer.hurryTime then return end
     if warp.exitSection ~= currentSection then
 		if Section(currentSection).music == Section(warp.exitSection).music then return end
 		isWarping = true

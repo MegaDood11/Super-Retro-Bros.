@@ -440,6 +440,7 @@ function warpTransition.onCameraDraw(camIdx)
 
         if warpTransition.currentTransitionType ~= warpTransition.TRANSITION_NONE and warpTransition.musicFadeOut and exitHasDifferentMusic(warpTransition.currentWarp) then
             -- Music fade out
+			if player.hasStarman then return end
             if (middle ~= nil and middle ~= 0) and warpTransition.transitionTimer < middle then
                 Audio.MusicVolume(math.max(0,Audio.MusicVolume()-math.ceil(64/(middle-12))))
             elseif Audio.MusicVolume() == 0 then
