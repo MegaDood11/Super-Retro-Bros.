@@ -11,11 +11,11 @@ local npcID = NPC_ID
 local sampleNPCSettings = {
 	id = npcID,
 	--Sprite size
-	gfxwidth = 32,
-	gfxheight = 32,
+	gfxwidth = 40,
+	gfxheight = 36,
 	--Hitbox size. Bottom-center-bound to sprite size.
-	width = 32,
-	height = 32,
+	width = 40,
+	height = 36,
 	--Sprite offset from hitbox for adjusting hitbox anchor on sprite.
 	gfxoffsetx = 0,
 	gfxoffsety = 2,
@@ -95,12 +95,12 @@ npcManager.registerHarmTypes(npcID,
 	}, 
 	{
 		--[HARM_TYPE_JUMP]=10,
-		[HARM_TYPE_FROMBELOW]=33,
-		[HARM_TYPE_NPC]=33,
+		[HARM_TYPE_FROMBELOW]=887,
+		[HARM_TYPE_NPC]=887,
 		--[HARM_TYPE_PROJECTILE_USED]=10,
 		[HARM_TYPE_LAVA]={id=13, xoffset=0.5, xoffsetBack = 0, yoffset=1, yoffsetBack = 1.5},
-		[HARM_TYPE_HELD]=33,
-		[HARM_TYPE_TAIL]=33,
+		[HARM_TYPE_HELD]=887,
+		[HARM_TYPE_TAIL]=887,
 		[HARM_TYPE_SPINJUMP]=10,
 		--[HARM_TYPE_OFFSCREEN]=10,
 		[HARM_TYPE_SWORD]=10,

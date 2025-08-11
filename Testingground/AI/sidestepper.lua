@@ -44,9 +44,9 @@ function sidestepper.onTickEndNPC(v)
 	end
 	
 	--Execute main AI. This template just jumps when it touches the ground.
-	Text.print(v.ai1, 100, 100)
-	Text.print(v.ai2, 100, 116)
-	Text.print(v.direction, 100, 132)
+	--Text.print(v.ai1, 100, 100)
+	--Text.print(v.ai2, 100, 116)
+	--Text.print(v.direction, 100, 132)
 	
 	if v.ai3 > 0 then
 		v.ai3 = v.ai3 - 1

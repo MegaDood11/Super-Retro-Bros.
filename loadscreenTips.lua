@@ -77,7 +77,8 @@ loadTips.tipTable = {
 	"Luigi Start!",
 	"Wario Start!?",
 	"Look out behind you!",
-	"Sorry, no playable cow."
+	"Sorry, no playable cow.",
+	"kliklolklilkllklilkloklillkllkilkllokllikllkliklolklilkllklilklolklilkllklilklolklilklklilklolklilklkllikllokllikllklilklolkilkllklilkllolklilklkilklolklilkl"
 }
 
 return loadTips
