@@ -60,7 +60,6 @@ local function initialiseBody(v)
     	data.turnTimer = 0
 
     	data.isGrabbed = false
-    	data.isProj = false
 
     	updateBodyFrame(v)
 
@@ -249,16 +248,15 @@ function pokeys.onTickBody(v)
 		return
 	end
 
-	-- Projectile stuff (because block collision is still present)
+	-- Projectile stuff
 
 	if v.isProjectile then 
-		data.isProj = true
-		v.isProjectile = false 
-	end
+		v.collisionGroup = "pokeySegments"
+		Misc.groupsCollide["pokeySegments"][""] = false -- Disable collision
 
-	if data.isProj then
-            	for _,n in ipairs(NPC.getIntersecting(v.x,v.y,v.x+v.width,v.y+v.height)) do
-            		if n.idx ~= v.idx and not n.isHidden and not n.friendly and NPC.HITTABLE_MAP[n.id] then
+		-- Since we disabled collision, we'll have to re-add projectile logic
+            	for _,n in ipairs(NPC.getIntersecting(v.x + 8, v.y + 8, v.x + v.width - 8, v.y + v.height - 8)) do
+            		if n.idx ~= v.idx and not n.isHidden and not n.friendly and not v.friendly and NPC.HITTABLE_MAP[n.id] then
                     		n:harm(3)
 		    		v:harm(4)
             		end
