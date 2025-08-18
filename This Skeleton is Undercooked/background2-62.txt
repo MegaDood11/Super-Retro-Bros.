@@ -1,0 +1,17 @@
+fill-color = #3152BD
+
+[Clouds]
+img="Clouds.png"
+
+repeatX=true
+alignY=CENTRE
+
+parallaxX=0.25
+parallaxY=0.25
+depth=100
+
+[Sky]
+img="Sky.png"
+repeatX=true
+alignY=TOP
+depth=5000

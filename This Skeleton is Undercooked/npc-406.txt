@@ -1,0 +1,11 @@
+gfxoffsety=4
+gfxwidth=72
+gfxheight=68
+width=64
+height=40
+lightbrightness=0.9
+lightcolor=white
+lightoffsetx=32
+lightoffsety=-15
+lightradius=150
+nofireball=false

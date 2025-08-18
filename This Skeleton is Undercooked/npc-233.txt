@@ -1,0 +1,6 @@
+gfxoffsety=2
+gfxwidth=50
+gfxheight=32
+width=44
+height=24
+nofireball=true

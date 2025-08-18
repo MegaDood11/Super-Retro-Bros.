@@ -34,6 +34,7 @@ Bonus Levels
 ─────────
 
 World -1 - FireSeraphim
+World -2 - Ness-Wednesday
 World -3 - MegaDood
 World -7 - DeviousQuacks23
 World -8 - MegaDood
@@ -84,6 +85,7 @@ Scripts
 -retroResolution - PlumberGraduate (Fixed for this episode by Deltomx3)
 -Bloopers and Hammer Bros by Murphmario
 -Bowser boss + bridge by Murphmario
+-Sidesteppers by Murphmario
 -Convenient Firebars - IAmPlayer
 -Perpetual lift (npc-791) - cold soup
 -SMB1 HUD - MrNameless

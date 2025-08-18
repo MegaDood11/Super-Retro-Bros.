@@ -1,0 +1,33 @@
+[background2]
+name = "Underwater Coral"
+fill-color = #15214C
+
+[Coral]
+depth = 1000
+img = "Coral.png"
+repeatX = true
+alignY=TOP
+
+[Temple]
+depth=2000
+img="Temple.png"
+repeatX = true
+alignY=TOP
+
+[Underwater]
+depth=INFINITE
+img="Ocean Background.png"
+fitY=true
+alignY=TOP
+
+[Water]
+img = bgWater.png
+opacity = 0.65
+speedX = -0.4
+speedY = -0.4
+parallaxX = 0.85
+parallaxY = 1
+repeatX = true
+repeatY=true
+alignY = BOTTOM
+priority = -1
