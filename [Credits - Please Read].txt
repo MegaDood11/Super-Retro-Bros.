@@ -43,8 +43,10 @@ Boo Races
 ─────────
 World 1 Race - MegaDood
 World 2 Race - Dor_78
+World 5 Race - Dor_78
 World 6 Race - Dor_78
 World 7 Race - MegaDood
+World B Race - Ness-Wednesday
 World C Race - MegaDood
 
 

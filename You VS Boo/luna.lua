@@ -18,7 +18,7 @@ local winPosition = { -- register for each section/world
 	-173152, -- world 2
 	-179616, -- world 3
 	-179616, -- world 4
-	-179616, -- world 5
+	-111008, -- world 5  X=-111008; Y=-120256;
 	-93152, -- world 6
 	-72736, -- world 7
 	-179616, -- world 8
@@ -35,7 +35,7 @@ local times = { -- register for each section/world
 	minTimer.toTicks{hrs = 0, mins = 0, secs = 55}, -- world 2
 	minTimer.toTicks{hrs = 0, mins = 0, secs = 2}, -- world 3
 	minTimer.toTicks{hrs = 0, mins = 0, secs = 2}, -- world 4
-	minTimer.toTicks{hrs = 0, mins = 0, secs = 2}, -- world 5
+	minTimer.toTicks{hrs = 0, mins = 1, secs = 2}, -- world 5
 	minTimer.toTicks{hrs = 0, mins = 0, secs = 35}, -- world 6
 	minTimer.toTicks{hrs = 0, mins = 1, secs = 0}, -- world 7
 	minTimer.toTicks{hrs = 0, mins = 0, secs = 2}, -- world 8
