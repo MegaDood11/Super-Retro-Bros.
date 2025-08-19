@@ -65,6 +65,8 @@ function sampleNPC.onTickEndNPC(v)
 		v.animationFrame = 0 + (player.section * 2) + ((v.direction + 1) * sampleNPCSettings.frames / 2)
 	elseif data.state == 1 then
 		v.animationFrame = 1 + (player.section * 2) + ((v.direction + 1) * sampleNPCSettings.frames / 2)
+	elseif data.state == 2 then
+		v.animationFrame = math.floor(lunatime.tick() / 8) % 2 + (player.section * 2) + ((v.direction + 1) * sampleNPCSettings.frames / 2)
 	end
 end
 
