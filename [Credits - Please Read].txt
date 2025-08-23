@@ -65,7 +65,6 @@ Scripts
 
 -General player tweaks - MrNameless + LumSht
 
--Boom Boom - MDA
 -CustomCamera - MDA
 -Jumpbuffer - MDA
 -Warptransition - MDA
@@ -92,7 +91,6 @@ Scripts
 -Perpetual lift (npc-791) - cold soup
 -SMB1 HUD - MrNameless
 -Wind + Balance Platforms - KateBulka
--Bullet Bills - MDA, edited by LumSht + DeviousQuacks23
 -Classic Fireballs - MegoZ_ + MrNameless
 -Falling Lift - S.Koopa0
 -You vs. Boo Assets - S.Koopa0
@@ -116,7 +114,7 @@ Graphics
 -Bonus BG + Tiles - Valtteri
 -Venus fly trap heads taken from SuperSledgeBro's graphics
 -Dry Bones, Thwomp, Spike Top, Muncher - SuperSledgeBro + FireSeraphim
-Icicles - SuperSledgeBro + FireSeraphim
+-Icicles - SuperSledgeBro + FireSeraphim
 -Rex - REDBIRD030
 -Perpetual Lift - Crafink + cold soup
 -Titlecards - MegaDood, FireSeraphim, DeviousQuacks23, cold soup
@@ -131,6 +129,6 @@ Music and SFX
 
 -Ladiesman217
 -Nintendo
--Super Mario Construct
+-KookieCast/TheCrushedJoycon (Super Mario Construct)
 -Deltomx3
 -LumSht
