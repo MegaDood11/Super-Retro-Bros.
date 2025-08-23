@@ -1,0 +1,54 @@
+{
+	"style" : "groupbox",
+	"title" : "Fire Settings",
+	"layout": [
+		{
+			"control": "combobox",
+			"name": "algorithm",
+			"title": "Fire Algorithm",
+			"elements": ["Stationary", "Up and down once", "Up and Down three times, then stay risen"],
+			"value-default": 1
+		},
+		{
+			"control" : "group",
+			"title" : "Settings",
+			"name" : "config",
+			"children": [
+				{
+					"control": "spinBox",
+					"type": "double",
+					"name": "movementSpeed",
+					"title": "Fire Speed",
+					"tooltip": "Alters the Fire's speed.",
+					"value-default": 0.5,
+					"value-min": 0.1,
+					"value-max": 100,
+					"single-step": 0.1
+				},
+				{
+			
+					"control": "spinBox",
+					"type": "double",
+					"name": "restTime",
+					"title": "Rest Time",
+					"tooltip": "How long the fire will stay risen, in seconds.",
+					"value-default": 50,
+					"value-min": 0.1,
+					"value-max": 1000,
+					"single-step": 1
+				},
+				{
+					"control": "spinBox",
+					"type": "double",
+					"name": "hideTime",
+					"title": "Hide Time",
+					"tooltip": "How long the fire will stay lowered, in seconds.",
+					"value-default": 50,
+					"value-min": 0.1,
+					"value-max": 1000,
+					"single-step": 1
+				}
+			]
+		}
+	]
+}

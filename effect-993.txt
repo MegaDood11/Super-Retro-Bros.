@@ -1,0 +1,9 @@
+[1]
+onTick=TICK_drums
+frames=1
+framestyle=0
+lifetime=500
+gravity=0.3
+maxSpeedY=12
+speedX=2
+speedY=-7

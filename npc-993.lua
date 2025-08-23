@@ -1,0 +1,79 @@
+--NPCManager is required for setting basic NPC properties
+local npcManager = require("npcManager")
+local drums = require("Ai/drums")
+
+--Create the library table
+local drum = {}
+--NPC_ID is dynamic based on the name of the library file
+local npcID = NPC_ID
+
+--Defines NPC config for our NPC. You can remove superfluous definitions.
+local drumSettings = {
+	id = npcID,
+	gfxheight = 64,
+	gfxwidth = 64,
+	width = 64,
+	height = 64,
+	frames = 1,
+	framestyle = 0,
+	
+	npcblock = true,
+	npcblocktop = true, --Misnomer, affects whether thrown NPCs bounce off the NPC.
+	playerblock = true,
+	playerblocktop = true, --Also handles other NPCs walking atop this NPC.
+
+	nohurt=true,
+	nogravity = true,
+	noblockcollision = true,
+	nofireball = true,
+	noiceball = true,
+	noyoshi= true,
+	nowaterphysics = false,
+	--Various interactions
+	jumphurt = false, --If true, spiny-like
+	spinjumpsafe = false, --If true, prevents player hurt when spinjumping
+	harmlessgrab = false, --Held NPC hurts other NPCs if false
+	harmlessthrown = false, --Thrown NPC hurts other NPCs if false
+
+	grabside=false,
+	grabtop=false,
+
+	--Define custom properties below
+	
+} local config = npcManager.setNpcSettings(drumSettings)
+
+--Applies NPC settings
+npcManager.setNpcSettings(drumSettings)
+
+--Register the vulnerable harm types for this NPC. The first table defines the harm types the NPC should be affected by, while the second maps an effect to each, if desired.
+npcManager.registerHarmTypes(npcID,
+	{
+		--HARM_TYPE_JUMP,
+		--HARM_TYPE_FROMBELOW,
+		--HARM_TYPE_NPC,
+		--HARM_TYPE_PROJECTILE_USED,
+		--HARM_TYPE_LAVA,
+		--HARM_TYPE_HELD,
+		--HARM_TYPE_TAIL,
+		--HARM_TYPE_SPINJUMP,
+		HARM_TYPE_OFFSCREEN,
+		--HARM_TYPE_SWORD
+	}, 
+	{
+		--[HARM_TYPE_JUMP]=10,
+		--[HARM_TYPE_FROMBELOW]=10,
+		--[HARM_TYPE_NPC]=10,
+		--[HARM_TYPE_PROJECTILE_USED]=10,
+		--[HARM_TYPE_LAVA]={id=13, xoffset=0.5, xoffsetBack = 0, yoffset=1, yoffsetBack = 1.5},
+		--[HARM_TYPE_HELD]=npcID,
+		--[HARM_TYPE_TAIL]=10,
+		--[HARM_TYPE_SPINJUMP]=10,
+		[HARM_TYPE_OFFSCREEN]=npcID,
+		--[HARM_TYPE_SWORD]=10,
+	}
+);
+
+drums.register(npcID)
+
+--Gotta return the library table!
+return drum
