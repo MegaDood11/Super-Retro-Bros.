@@ -79,6 +79,7 @@ Scripts
 -minTimer.lua - Marioman2007
 -Luigihitsblocksnormally - Megadood
 -Barrel NPC + Sprites - MegaDood
+-Oil Drum NPC - MegaDood, sprites by Ness-Wednesday
 -SMASpausemenu - Megadood
 -Titlecard Script - MegaDood
 -Accurate Timer by MegaDood
