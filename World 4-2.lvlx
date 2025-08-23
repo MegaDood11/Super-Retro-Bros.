@@ -2,7 +2,7 @@ HEAD
 TL:"World 4-1";XTRA:"{\n    \"timer\"\: {\n        \"enable\"\: true\,\n        \"time\"\: 400\n    }\n}\n";CPID:"SMBX2";
 HEAD_END
 SECTION
-SC:0;L:-202400;R:-189856;T:-200600;B:-200000;MZ:24;MF:"Music/SMAS NSMB cave.ogg";BG:7;XTRA:"{\n    \"newTurnBack\"\: {\n        \"horizontal\"\: 1\n    }\n}\n";
+SC:0;L:-202400;R:-189856;T:-200600;B:-200000;MZ:24;MF:"Music/Underground.spc|0\;g=2\;e0";BG:7;XTRA:"{\n    \"newTurnBack\"\: {\n        \"horizontal\"\: 1\n    }\n}\n";
 SC:1;L:-180000;R:-177600;T:-180600;B:-180000;MZ:24;MF:"Music/Athletic.spc|0\;g=2\;e0";BG:50;XTRA:"{\n    \"newTurnBack\"\: {\n        \"horizontal\"\: 1\n    }\n}\n";
 SC:2;L:-160000;R:-159200;T:-160600;B:-160000;MZ:24;MF:"Music/Bonus.spc|0\;g=2\;e0";BG:17;
 SECTION_END

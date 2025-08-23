@@ -19,7 +19,7 @@ function onTick()
 		musTimer = musTimer + 1
 		if musTimer >= 210 then
 			if not hasPlayedNew then
-				Audio.MusicChange(0, "Music/SMAS NSMB cave.ogg")
+				Audio.MusicChange(0, 4)
 				hasPlayedNew = true
 			end
 		end
