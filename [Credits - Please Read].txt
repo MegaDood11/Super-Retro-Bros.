@@ -88,6 +88,7 @@ Scripts
 -Bloopers and Hammer Bros by Murphmario
 -Bowser boss + bridge by Murphmario
 -Sidesteppers by Murphmario
+-Fighter Flies originally by MegaDood, modified and worked on by Ness-Wednesday, sprites by Sans1m0n
 -Convenient Firebars - IAmPlayer
 -Perpetual lift (npc-791) - cold soup
 -SMB1 HUD - MrNameless
