@@ -7,6 +7,7 @@ World 1-2 - FireSeraphim
 World 1-4 - MegaDood
 World 2-1 - MegaDood
 World 2-3 - MrNameless
+World 2-4 - LumSht + MegaDood
 World 3-1 - Ness-Wednesday
 World 3-2 - DeviousQuacks23
 World 4-3 - MegaDood
@@ -88,6 +89,7 @@ Scripts
 -Bloopers and Hammer Bros by Murphmario
 -Bowser boss + bridge by Murphmario
 -Sidesteppers by Murphmario
+-airshipScroll.lua by Murphmario and autoscrollDX.lua by DeviousQuacks, used in the airship levels
 -Fighter Flies originally by MegaDood, modified and worked on by Ness-Wednesday, sprites by Sans1m0n
 -Convenient Firebars - IAmPlayer
 -Perpetual lift (npc-791) - cold soup
