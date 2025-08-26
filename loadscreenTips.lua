@@ -78,7 +78,11 @@ loadTips.tipTable = {
 	"Wario Start!?",
 	"Look out behind you!",
 	"Sorry, no playable cow.",
-	"kliklolklilkllklilkloklillkllkilkllokllikllkliklolklilkllklilklolklilkllklilklolklilklklilklolklilklkllikllokllikllklilklolkilkllklilkllolklilklkilklolklilkl"
+	"kliklolklilkllklilkloklillkllkilkllokllikllkliklolklilkllklilklolklilkllklilklolklilklklilklolklilklkllikllokllikllklilklolkilkllklilkllolklilklkilklolklilkl",
+	"Sidesteppers take two hits to defeat. The sturdiness of these crab is a mystery that spans across generations.",
+	"In some Boo races, dotted line blocks will automatically switch every 2 seconds.",
+	"Don't look inside the You Vs Boo folder.",
+	"This episode doesn't contain wall jumps or ground pounds. This includes the classic wall jump glitch. Sorry, Kosmic."
 }
 
 return loadTips
