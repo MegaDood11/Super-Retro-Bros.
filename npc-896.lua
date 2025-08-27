@@ -452,7 +452,7 @@ function sampleNPC.onNPCHarm(eventObj, v, reason, culprit)
 					if type(culprit) == "NPC" then
 						if culprit.id == 13  then
 							SFX.play(9)
-							data.health = data.health - 0.1
+							data.health = data.health - 0.3
 						elseif culprit.id == 171  then
 							SFX.play(9)
 							SFX.play(39)
