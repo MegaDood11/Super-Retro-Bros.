@@ -1,0 +1,21 @@
+fill-color = #C86E48
+
+[Clouds]
+img=62
+
+repeatX=true
+alignY=BOTTOM
+
+parallaxX=0.25
+parallaxY=0.25
+depth=100
+
+[BG]
+img="Pillars.png"
+
+repeatX=true
+alignY=BOTTOM
+
+parallaxX=0.5
+parallaxY=1
+depth=90
