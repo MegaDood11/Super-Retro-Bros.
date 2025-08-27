@@ -2,9 +2,9 @@ HEAD
 TL:"World A-3";XTRA:"{\n    \"timer\"\: {\n        \"enable\"\: true\,\n        \"time\"\: 500\n    }\n}\n";CPID:"SMBX2";
 HEAD_END
 SECTION
-SC:0;L:-200000;R:-184960;T:-200600;B:-200000;MZ:24;MF:"World 2-3/cloudy beach.spc|0\;t=0.64\;g=2\;e0";BG:70;XTRA:"{\n    \"effects\"\: {\n        \"screenEffects\"\: 14\,\n        \"weatherCustomPath\"\: \"p_petals.ini\"\,\n        \"weatherUseCustom\"\: true\n    }\,\n    \"newTurnBack\"\: {\n        \"horizontal\"\: 1\n    }\n}\n";
+SC:0;L:-200000;R:-184960;T:-200600;B:-200000;MZ:24;MF:"World A-3/Secret Garden SMAS Styled.ogg";BG:70;XTRA:"{\n    \"effects\"\: {\n        \"screenEffects\"\: 14\,\n        \"weatherCustomPath\"\: \"p_petals.ini\"\,\n        \"weatherUseCustom\"\: true\n    }\,\n    \"newTurnBack\"\: {\n        \"horizontal\"\: 1\n    }\n}\n";
 SC:1;L:-180000;R:-179488;T:-180448;B:-180000;MZ:24;MF:"Music/Bonus.spc|0\;g=2\;e0";BG:17;
-SC:2;L:-160000;R:-157600;T:-160600;B:-160000;MZ:24;MF:"Music/Bonus.spc|0\;g=2\;e0";BG:60;XTRA:"{\n    \"newTurnBack\"\: {\n        \"horizontal\"\: 1\n    }\n}\n";
+SC:2;L:-160000;R:-157600;T:-160600;B:-160000;MZ:24;MF:"Music/Bonus.spc|0\;g=2\;e0";BG:60;XTRA:"{\n    \"effects\"\: {\n        \"screenEffects\"\: 14\n    }\,\n    \"newTurnBack\"\: {\n        \"horizontal\"\: 1\n    }\n}\n";
 SC:3;L:-140000;R:-138464;T:-140448;B:-140000;MZ:24;MF:"Music/Bonus.spc|0\;g=2\;e0";BG:17;XTRA:"{\n    \"newTurnBack\"\: {\n        \"horizontal\"\: 1\n    }\n}\n";
 SECTION_END
 STARTPOINT
@@ -467,8 +467,6 @@ ID:840;X:-192992;Y:-200448;W:32;H:32;
 ID:830;X:-193056;Y:-200096;W:32;H:32;
 ID:830;X:-193024;Y:-200096;W:32;H:32;
 ID:830;X:-192992;Y:-200096;W:32;H:32;
-ID:758;X:-185232;Y:-200224;W:32;H:32;LR:"Warp Zone Text";XTRA:"{\n    \"fontSetting\"\: \"smb1HUD/smb1-font.ini\"\,\n    \"theActualText\"\: \"C\"\n}\n";
-ID:758;X:-185232;Y:-200272;W:32;H:32;LR:"Warp Zone Text";XTRA:"{\n    \"fontSetting\"\: \"smb1HUD/smb1-font.ini\"\,\n    \"maximumWide\"\: 384\,\n    \"theActualText\"\: \"WELCOME TO WARP ZONE!\"\n}\n";
 ID:830;X:-192960;Y:-200096;W:32;H:32;
 ID:801;X:-192512;Y:-200064;W:32;H:32;
 ID:801;X:-192480;Y:-200064;W:32;H:32;
@@ -3169,7 +3167,6 @@ ID:88;X:-195738;Y:-200352;D:-1;
 ID:88;X:-195674;Y:-200320;D:-1;
 ID:377;X:-195184;Y:-200128;D:-1;
 ID:377;X:-195056;Y:-200128;D:-1;
-ID:465;X:-184992;Y:-200416;D:-1;EA:"Warp Zone Activate";
 ID:793;X:-196576;Y:-200376;D:-1;XTRA:"{\n    \"len\"\: 155\,\n    \"width\"\: 288\n}\n";
 ID:207;X:-196416;Y:-200384;D:-1;
 ID:207;X:-194560;Y:-200416;D:1;
@@ -3223,9 +3220,9 @@ ID:222;X:-159832;Y:-160128;D:-1;
 ID:222;X:-159832;Y:-160160;D:-1;
 ID:222;X:-159832;Y:-160192;D:-1;
 ID:223;X:-159832;Y:-160216;D:-1;
-ID:88;X:-157866;Y:-160096;D:-1;
-ID:88;X:-157834;Y:-160096;D:-1;
-ID:88;X:-157802;Y:-160096;D:-1;
+ID:88;X:-157850;Y:-160128;D:-1;
+ID:88;X:-157818;Y:-160128;D:-1;
+ID:88;X:-157850;Y:-160096;D:-1;
 ID:792;X:-158512;Y:-160224;D:-1;
 ID:792;X:-158224;Y:-160224;D:-1;
 ID:792;X:-158816;Y:-160224;D:-1;
@@ -3252,7 +3249,7 @@ ID:176;X:-188864;Y:-200224;D:-1;S1:3;NM:1;
 ID:793;X:-188712;Y:-200304;D:-1;XTRA:"{\n    \"len\"\: 96\,\n    \"width\"\: 360\n}\n";
 ID:207;X:-188608;Y:-200448;D:-1;
 ID:207;X:-188544;Y:-200448;D:-1;
-ID:465;X:-189408;Y:-200288;D:-1;
+ID:465;X:-189408;Y:-200288;D:-1;EA:"Show";
 ID:465;X:-188576;Y:-200448;D:-1;
 ID:465;X:-188576;Y:-200384;D:-1;
 ID:207;X:-188608;Y:-200384;D:-1;
@@ -3281,7 +3278,7 @@ ID:88;X:-192346;Y:-200192;D:-1;
 ID:88;X:-192314;Y:-200192;D:-1;
 ID:88;X:-192218;Y:-200192;D:-1;
 ID:88;X:-192442;Y:-200192;D:-1;
-ID:377;X:-187792;Y:-200160;D:-1;LR:"Hide";
+ID:377;X:-187792;Y:-200160;D:-1;LR:"Show";
 ID:465;X:-187552;Y:-200064;D:-1;
 ID:465;X:-188544;Y:-200416;D:-1;
 ID:876;X:-139008;Y:-140448;D:-1;XTRA:"{\n    \"blockTime\"\: 444\,\n    \"maxCoins\"\: 44\n}\n";
@@ -3375,7 +3372,6 @@ ID:207;X:-139584;Y:-140352;D:1;
 ID:207;X:-139520;Y:-140352;D:1;
 ID:207;X:-139680;Y:-140192;D:1;
 ID:207;X:-139616;Y:-140192;D:1;
-ID:465;X:-139984;Y:-140320;D:-1;ED:"Hide";
 ID:375;X:-194560;Y:-200128;D:-1;
 ID:88;X:-188634;Y:-200480;D:-1;
 ID:88;X:-188602;Y:-200480;D:-1;
@@ -3393,6 +3389,7 @@ ID:88;X:-191514;Y:-200096;D:-1;
 ID:793;X:-191648;Y:-200340;D:-1;XTRA:"{\n    \"len\"\: 164\,\n    \"width\"\: 208\n}\n";
 ID:876;X:-139680;Y:-140448;D:-1;XTRA:"{\n    \"blockTime\"\: 333\,\n    \"maxCoins\"\: 23\n}\n";
 ID:876;X:-139552;Y:-140448;D:-1;XTRA:"{\n    \"blockTime\"\: 333\,\n    \"maxCoins\"\: 23\n}\n";
+ID:88;X:-157818;Y:-160096;D:-1;
 NPC_END
 DOORS
 IX:-196912;IY:-200096;OX:-179904;OY:-180096;DT:1;ID:3;OD:2;
@@ -3401,18 +3398,17 @@ IX:-160000;IY:-159968;OX:-190656;OY:-200192;DT:0;ID:1;OD:1;
 IX:-192960;IY:-200688;OX:-159840;OY:-160128;DT:0;ID:1;OD:1;
 IX:-189904;IY:-200064;OX:-139984;OY:-140320;DT:1;ID:3;OD:1;
 IX:-138624;IY:-140096;OX:-187792;OY:-200128;DT:1;ID:4;OD:3;
+IX:-185232;IY:-200192;DT:1;ID:3;OD:1;LF:"You VS Boo.lvlx";LI:10;EX:1;
 DOORS_END
 LAYERS
 LR:"Default";
 LR:"Destroyed Blocks";HD:1;
 LR:"Spawned NPCs";
-LR:"Warp Zone Text";HD:1;
-LR:"Hide";
+LR:"Show";HD:1;
 LAYERS_END
 EVENTS_CLASSIC
 ET:"Level - Start";AS:0;AX:0;AY:0;
 ET:"P Switch - Start";AS:0;AX:0;AY:0;
 ET:"P Switch - End";AS:0;AX:0;AY:0;
-ET:"Warp Zone Activate";LS:["Warp Zone Text"];DS:1;AS:0;AX:0;AY:0;
-ET:"Hide";LH:["Hide"];DS:1;AS:0;AX:0;AY:0;
+ET:"Show";LS:["Show"];DS:1;AS:0;AX:0;AY:0;
 EVENTS_CLASSIC_END
