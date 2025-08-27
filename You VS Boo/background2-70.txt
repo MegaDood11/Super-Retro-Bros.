@@ -1,0 +1,22 @@
+fill-color = #C86E48
+
+[Clouds]
+img="Sunset Clouds.png"
+
+repeatX=true
+alignY=BOTTOM
+
+parallaxX=0.25
+parallaxY=0.25
+depth=100
+
+
+[BG]
+img=70
+
+repeatX=true
+alignY=BOTTOM
+
+parallaxX=0.5
+parallaxY=0.5
+depth=90
