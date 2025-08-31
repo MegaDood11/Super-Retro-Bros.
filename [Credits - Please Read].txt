@@ -37,8 +37,8 @@ Bonus Levels
 World -1 - FireSeraphim
 World -2 - Ness-Wednesday
 World -3 - MegaDood
-World -7 - DeviousQuacks23
-World -8 - MegaDood
+World -8 - DeviousQuacks23
+World -9 - MegaDood
 
 Boo Races
 ─────────
@@ -122,13 +122,13 @@ Graphics
 -Icicles - SuperSledgeBro + FireSeraphim
 -Rex - REDBIRD030
 -Perpetual Lift - Crafink + cold soup
--Titlecards - MegaDood, FireSeraphim, DeviousQuacks23, cold soup
+-Titlecards - MegaDood, FireSeraphim, DeviousQuacks23, cold soup, and Ness-Wednesday
 -Edits to powerup forms by Murphmario
 -Bonus Image for Wario - C.Pariah
 -Bonus Image for Toadette - GlacialSiren484
 -Minus Medal - DeviousQuacks23
 
-SMB1 Toadette - GlacialSiren484, TomAndTheCats and xxx_JonnieWalker2005
+SMB1 Toadette - GlacialSiren484, TomAndTheCats, xxx_JonnieWalker2005, and The_Eggo55
 
 =============
 Music and SFX
