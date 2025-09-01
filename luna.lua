@@ -72,6 +72,7 @@ local lastDucked = false
 function onStart()
     Player.setCostume(CHARACTER_MARIO,"Smb1-mario",true)
     Player.setCostume(CHARACTER_LUIGI,"Smb1-luigi",true)
+	Player.setCostume(CHARACTER_TOAD,"Smb1-toadette",true)
 
     Graphics.setMainFramebufferSize(512,448)
 end
