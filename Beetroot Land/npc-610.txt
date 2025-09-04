@@ -1,0 +1,3 @@
+spawnid=859
+delay=112
+gfxheight=52
