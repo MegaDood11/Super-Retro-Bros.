@@ -1,5 +1,5 @@
 HEAD
-TL:"Beetroot Land";CPID:"SMBX2";
+TL:"Beetroot Land";XTRA:"{\n    \"timer\"\: {\n        \"enable\"\: true\,\n        \"time\"\: 450\n    }\n}\n";CPID:"SMBX2";
 HEAD_END
 SECTION
 SC:0;L:-200000;R:-183392;T:-200600;B:-200000;MZ:24;MF:"Music/City.ogg";BG:32;XTRA:"{\n    \"newTurnBack\"\: {\n        \"horizontal\"\: 1\n    }\n}\n";
