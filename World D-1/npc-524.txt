@@ -1,1 +1,2 @@
 ignoreplayers=true
+hidetime=60
