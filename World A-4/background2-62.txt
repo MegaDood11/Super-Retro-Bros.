@@ -1,0 +1,11 @@
+fill-color = #C86E48
+
+[Clouds]
+img=62
+
+repeatX=true
+alignY=BOTTOM
+
+parallaxX=0.25
+parallaxY=0.25
+depth=100

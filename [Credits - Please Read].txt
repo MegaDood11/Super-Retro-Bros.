@@ -1,0 +1,144 @@
+=========================================================================
+Level Design
+=========================================================================
+
+World 1-1 - FireSeraphim
+World 1-2 - FireSeraphim
+World 1-4 - MegaDood
+World 2-1 - MegaDood
+World 2-3 - MrNameless
+World 2-4 - LumSht + MegaDood
+World 3-1 - Ness-Wednesday
+World 3-2 - DeviousQuacks23
+World 4-3 - MegaDood
+World 5-1 - FireSeraphim
+World 5-2 - Dor_78
+World 5-3 - GDKeptr
+World 5-4 - FireSeraphim
+World 6-1 - Dor_78
+World 6-3 - MegaDood
+World 7-1 - FireSeraphim
+World 7-3 - cold soup
+World 7-4 - Radiance
+World 9-1 - DeviousQuacks23
+World 9-3 - Radiance
+
+World A-3 - Ness-Wednesday
+World A-4 - MegaDood
+World B-2 - MegaDood
+World B-3 - Ness-Wednesday
+World B-4 - DeviousQuacks23
+World C-1 - Dor_78 + MegaDood
+World C-3 - LumSht + MegaDood
+World D-1 - Ness-Wednesday
+World D-2 - MegaDood
+
+Bonus Levels
+─────────
+
+World -1 - FireSeraphim
+World -2 - Ness-Wednesday
+World -3 - MegaDood
+World -4 - MegaDood
+World -8 - DeviousQuacks23
+World -9 - MegaDood
+
+Boo Races
+─────────
+World 1 Race - MegaDood
+World 2 Race - Dor_78
+World 5 Race - Dor_78
+World 6 Race - Dor_78
+World 7 Race - MegaDood
+World A Race - Ness-Wednesday
+World B Race - Ness-Wednesday
+World C Race - MegaDood
+
+
+===============
+General Credits
+===============
+
+Super Mario Construct and MFGG, where many songs and tiles were taken from
+Sleepy Dee for originally starting the project
+MegaDood, Ness-Wednesday and DeviousQuacks23 for general project management, as well as quality checking and improving level design in some areas, as well as providing GFX and music improvements
+FireSeraphim, for many graphical additions and ideas, as well as making some of the world map tiles
+
+=======
+Scripts
+========
+
+-General player tweaks - MrNameless + LumSht
+
+-CustomCamera - MDA
+-Jumpbuffer - MDA
+-Warptransition - MDA
+-extentedKoopas - MDA
+-kindHurtBlocks - MDA
+-Coyotetime - Emral
+-Playerphysicspatch - Emral
+-Antizip - Emral
+-Spawnzones - Emral
+-newnoturnback - Marioman2007
+-Checkpoint blocks - Marioman2007
+-minTimer.lua - Marioman2007
+-Luigihitsblocksnormally - Megadood
+-Barrel NPC + Sprites - MegaDood
+-Oil Drum NPC - MegaDood, sprites by Ness-Wednesday
+-SMASpausemenu - Megadood
+-Titlecard Script - MegaDood
+-Accurate Timer by MegaDood
+-bonkFlipsMushrooms.lua by MegaDood
+-retroResolution - PlumberGraduate (Fixed for this episode by Deltomx3)
+-Bloopers and Hammer Bros by Murphmario
+-Bowser boss + bridge by Murphmario
+-Sidesteppers by Murphmario
+-airshipScroll.lua by Murphmario and autoscrollDX.lua by DeviousQuacks, used in the airship levels
+-Fighter Flies originally by MegaDood, modified and worked on by Ness-Wednesday, sprites by Sans1m0n
+-Convenient Firebars - IAmPlayer
+-Perpetual lift (npc-791) - cold soup
+-SMB1 HUD - MrNameless
+-Wind + Balance Platforms - KateBulka
+-Classic Fireballs - MegoZ_ + MrNameless
+-Falling Lift - S.Koopa0
+-You vs. Boo Assets - S.Koopa0
+-customPowerups - Marioman2007 + Emral
+-SMB Maze - Radiance + Marioman2007
+-Loadscreen - DeviousQuacks + Marioman2007
+-Text block by DeviousQuacks23
+-bonusChars.lua - DeviousQuacks23
+-Game Over script - DeviousQuacks23
+-You Vs. Boo setup - MegaDood + DeviousQuacks23
+-Bowser Jr. - Ma8lrk
+
+========
+Graphics
+========
+
+-Mr Rip intro card - Marioman2007
+-Smb1 Mario and Luigi - Nate-O
+-Enemies - SuperSledgeBro, Lumsht
+-Some Effects - Dr. SVH
+-Bonus BG + Tiles - Valtteri
+-Venus fly trap heads taken from SuperSledgeBro's graphics
+-Dry Bones, Thwomp, Spike Top, Muncher - SuperSledgeBro + FireSeraphim
+-Icicles - SuperSledgeBro + FireSeraphim
+-Rex - REDBIRD030
+-Perpetual Lift - Crafink + cold soup
+-Titlecards - MegaDood, FireSeraphim, DeviousQuacks23, cold soup, and Ness-Wednesday
+-Edits to powerup forms by Murphmario
+-Bonus Image for Wario - C.Pariah
+-Bonus Image for Toadette - GlacialSiren484
+-Minus Medal - DeviousQuacks23
+
+SMB1 Toadette - GlacialSiren484, TomAndTheCats, xxx_JonnieWalker2005, and The_Eggo55
+
+=============
+Music and SFX
+=============
+
+-Ladiesman217
+-Nintendo
+-KookieCast/TheCrushedJoycon (Super Mario Construct)
+-Deltomx3
+-LumSht

@@ -6,7 +6,7 @@ autoscrollDX.scrollRight(1)
 
 local smb1HUD = require("smb1HUD")
 
-smb1HUD.currentWorld = vector(2,4)
+smb1HUD.currentWorld = vector("A",4)
 
 
 airshipScroll.sections = {0} --What sections the effect should be applied to. Note that this is a table.
@@ -22,7 +22,7 @@ function onNPCKill(eventObj, v, reason)
 end
 
 function onTick()
-	if player.x >= -179160 and not active then
+	if player.x >= -179104 and not active then
 		triggerEvent("Toad Free 1")
 		active = true
 	end
@@ -35,7 +35,7 @@ function onEvent(e)
 		SFX.play("World Clear.spc")
 		local r = Routine.run(function() Routine.waitFrames(96) triggerEvent("Pillar") SFX.play("bridgecollapse.wav") end)
 	elseif e == "Toad Free 2" then
-		Effect.spawn(804,-179040, -180122)
+		Effect.spawn(804,-178976, -180122)
 	elseif e == "Toad Free 5" then
 		Level.endState(9)
 		endstates.setPlayer(player)
