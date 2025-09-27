@@ -4,6 +4,7 @@ Level Design
 
 World 1-1 - FireSeraphim
 World 1-2 - FireSeraphim
+World 1-3 - Sleepy Dee
 World 1-4 - MegaDood
 World 2-1 - MegaDood
 World 2-3 - MrNameless
