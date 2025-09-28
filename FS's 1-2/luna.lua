@@ -4,8 +4,68 @@ local textplus = require("textplus")
 local fakeHUD = Graphics.loadImageResolved("hudQuestion.png")
 local medalHUD = Graphics.loadImageResolved("medalHUD.png")
 
+local warpSFX = ("minusWarp.spc")
+
+local capture = Graphics.CaptureBuffer()
+local warpTime = 0
+local hasDisorted = false
+local opacity = 0
+local pipeTime = 0
+
+local shader = Shader()
+shader:compileFromFile(nil, Misc.resolveFile("wave.frag"))
+
+function onTick()
+	for k,p in ipairs(Player.get()) do
+    		if (p:mem(0x15E, FIELD_WORD) == 10 and p.forcedState == 3) then 
+			p:mem(0x124, FIELD_DFLOAT, 2) 
+			pipeTime = pipeTime + 1
+			if pipeTime == 40 then
+				Audio.MusicChange(5, 0)
+				SFX.play(warpSFX)
+				hasDisorted = true
+				Misc.pause()
+			end
+		end
+	end
+end
+
 function onDraw()
+	if hasDisorted then
+		capture:captureAt(9)
+		warpTime = warpTime + 1
+
+		if warpTime >= 300 then
+			hasDisorted = false
+			Misc.unpause()
+
+			Level.exit(6)
+		end
+
+		-- Text.print(warpTime, 0, 0)
+		
+		Graphics.drawBox{
+			texture = capture,
+			
+			x = 0,
+			y = 0,
+			
+			shader = shader,
+			uniforms = {
+				time = warpTime * (1 + (warpTime / 200)),
+				intensity = warpTime / (300 / 96),
+			},
+			
+			priority = 9
+		}
+	end
+
 	if player.section == 5 then
+		if warpTime >= 200 then
+			opacity = math.min(1, opacity + 0.01)
+			Graphics.drawScreen{priority = 12, color = Color.black .. opacity}
+		end
+
 		smb1HUD.currentWorld = vector(1,"")
 
 		Graphics.drawBox{
