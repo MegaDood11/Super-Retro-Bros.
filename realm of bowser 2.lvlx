@@ -1737,7 +1737,6 @@ ID:800;X:-199168;Y:-200416;D:-1;XTRA:"{\n    \"deathEffect\"\: 217\,\n    \"fire
 ID:800;X:-198784;Y:-200576;D:-1;XTRA:"{\n    \"deathEffect\"\: 200\,\n    \"fire\"\: false\n}\n";
 ID:800;X:-197888;Y:-200576;D:-1;XTRA:"{\n    \"deathEffect\"\: 161\n}\n";
 ID:800;X:-194112;Y:-200512;D:-1;XTRA:"{\n    \"deathEffect\"\: 86\,\n    \"hammers\"\: true\n}\n";
-ID:800;X:-193216;Y:-200512;D:-1;XTRA:"{\n    \"hammers\"\: true\,\n    \"quake\"\: false\n}\n";
 ID:800;X:-198304;Y:-200544;D:-1;XTRA:"{\n    \"deathEffect\"\: 920\,\n    \"fire\"\: false\n}\n";
 ID:800;X:-197280;Y:-200544;D:-1;XTRA:"{\n    \"deathEffect\"\: 143\n}\n";
 ID:800;X:-197056;Y:-200416;D:-1;XTRA:"{\n    \"deathEffect\"\: 281\n}\n";
@@ -1859,6 +1858,7 @@ ID:10;X:-192318;Y:-201216;D:-1;
 ID:10;X:-192286;Y:-201184;D:-1;
 ID:10;X:-192382;Y:-201280;D:-1;
 ID:10;X:-192350;Y:-201248;D:-1;
+ID:900;X:-193216;Y:-200512;D:-1;XTRA:"{\n    \"deathEffect\"\: 900\,\n    \"hammers\"\: true\n}\n";
 NPC_END
 DOORS
 IX:-200560;IY:-200480;OX:-199824;OY:-200576;DT:1;ID:3;OD:1;
