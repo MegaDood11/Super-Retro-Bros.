@@ -140,6 +140,7 @@ function sampleNPC.onTickEndNPC(v)
 		data.initialized = true
 		data.state = data.state or STATE_IDLE
 		data.timer = data.timer or 0
+		data.indicatorTimer = data.indicatorTimer or 0
 		data.health = settings.health
 		data.landTimer = 0
 		data.requiredJumps = RNG.randomEntry({1,2})
@@ -158,6 +159,7 @@ function sampleNPC.onTickEndNPC(v)
 	end
 
 	data.timer = data.timer + 1
+	data.indicatorTimer = data.indicatorTimer + 1
 
 	v.collisionGroup = "113"
 
@@ -511,12 +513,23 @@ function sampleNPC.onNPCHarm(eventObj, v, reason, culprit)
 	eventObj.cancelled = true
 end
 
+local gfx = Graphics.loadImageResolved("jump indicator.png")
+
 function sampleNPC.onDrawNPC(v)
 	local data = v.data
+
+	if data.indicatorTimer and data.indicatorTimer <= 140 then
+		if data.indicatorTimer % 32 <= 12 then
+			data.drawIndicatorImage = data.drawIndicatorImage or Sprite{texture = gfx, frames = 1}
+			data.drawIndicatorImage.position = vector(v.x - 16, v.y - 56)
+			data.drawIndicatorImage:draw{sceneCoords = true, frame = 1, priority = -45}
+		end
+	end
 	
     if data.state == STATE_SHELL then
 	    if data.timer > 2 and v.collidesBlockBottom then
 		    npcutils.drawNPC(v,{priority = -32})
+			data.indicatorTimer = 141
 	    end
     end
 end

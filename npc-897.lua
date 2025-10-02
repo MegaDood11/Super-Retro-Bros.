@@ -164,6 +164,7 @@ function sampleNPC.onTickEndNPC(v)
 			npcutils.hideNPC(v)
 			local jr = NPC.spawn(npcID-1,v.x+16,v.y+8,v.section,false,true)
 			jr.data.health = data.health
+			jr.data.indicatorTimer = 141
 			npcutils.faceNearestPlayer(jr)
 			jr.animationFrame = -999
 			jr.data.state = 4
