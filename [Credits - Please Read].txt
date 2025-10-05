@@ -17,6 +17,7 @@ World 5-2 - Dor_78
 World 5-3 - GDKeptr
 World 5-4 - FireSeraphim
 World 6-1 - Dor_78
+World 6-2 - GDKeptr
 World 6-3 - MegaDood
 World 6-4 - LumSht
 World 7-1 - FireSeraphim
