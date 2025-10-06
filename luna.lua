@@ -91,6 +91,12 @@ function onTick()
 	if player:mem(0x16,FIELD_WORD) > 2 then --Caps Toad's HP to 2
 		player:mem(0x16,FIELD_WORD,2)
 	end
+	
+	if player:mem(0x0A, FIELD_BOOL) then
+		ppp.speedXDecelerationModifier = -0.015
+	else
+		ppp.speedXDecelerationModifier = -0.0975
+	end
 
 	if (player.character > 2 and player.character < 5) and player.powerup == 3 and player.keys.altRun then
 		player.keys.altRun = false
