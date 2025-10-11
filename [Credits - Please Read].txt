@@ -56,6 +56,7 @@ World 7 Race - MegaDood
 World A Race - Ness-Wednesday
 World B Race - Ness-Wednesday
 World C Race - MegaDood
+World D Race - Sleepy Dee
 
 
 ===============
