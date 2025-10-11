@@ -125,6 +125,13 @@ function onTick()
 	else
 		Timer.add(0,true)
 	end
+	
+	if player.y >= camera.y + camera.height then
+		for k,w in ipairs(Effect.get({3, 5, 129, 130, 134, 149, 150, 151, 152, 153, 154, 155, 156, 159, 161})) do
+			w.timer = 0
+			w.animationFrame = -1000
+		end
+	end
 end
 
 function onTickEnd()

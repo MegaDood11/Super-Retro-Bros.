@@ -1,1 +1,2 @@
-Graphics: TomAndTheCats, MysticalGnocchi3264X
+Block developed by DisasterMaster and MegaDood
+Code adapted form KateBulka's wind script.

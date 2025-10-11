@@ -161,6 +161,11 @@ function sampleNPC.onTickNPC(v)
 		bridge.collapseHitboxWidth = 32
 		bridge.collapseHitboxHeight = 96
 		bridge.collapseHitboxDirection = v.direction
+		
+		for _,n in ipairs(NPC.get(800)) do
+			n.ai4 = 500
+		end
+		
 		v:kill(HARM_TYPE_OFFSCREEN)
 		cameralock = nil
 		Misc.npcToCoins()

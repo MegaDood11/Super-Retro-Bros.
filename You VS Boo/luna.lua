@@ -3,6 +3,8 @@ local textplus = require("textplus")
 local minTimer = require("minTimer")
 local blockutils = require("blocks/blockutils")
 
+local effect = Particles.Emitter(camera.x + camera.width,camera.y + camera.height, Misc.resolveFile("p_snowa.ini"))
+
 -- do not touch these values
 
 local canMove = false -- boolean to stop the player
@@ -26,7 +28,7 @@ local winPosition = { -- register for each section/world
 	-13056, -- world A
 	5568, -- world B
 	27808, -- world C
-	-179616, -- world D
+	51008, -- world D
 	-179616, -- world minus
 }
 
@@ -43,7 +45,7 @@ local times = { -- register for each section/world
 	minTimer.toTicks{hrs = 0, mins = 0, secs = 55}, -- world A
 	minTimer.toTicks{hrs = 0, mins = 1, secs = 4}, -- world B
 	minTimer.toTicks{hrs = 0, mins = 0, secs = 50}, -- world C
-	minTimer.toTicks{hrs = 0, mins = 0, secs = 2}, -- world D
+	minTimer.toTicks{hrs = 0, mins = 1, secs = 15}, -- world D
 	minTimer.toTicks{hrs = 0, mins = 0, secs = 2}, -- world minus
 }
 
@@ -367,4 +369,10 @@ function onDraw()
 		color = Color.white,
         	priority = 5,
     	}
+		
+	if player.section == 12 then
+      effect.x = camera.x + camera.width
+      effect.y = camera.y + camera.height
+      effect:Draw()
+    end
 end
