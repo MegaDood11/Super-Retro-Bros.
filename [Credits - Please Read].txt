@@ -23,6 +23,7 @@ World 6-4 - LumSht
 World 7-1 - FireSeraphim
 World 7-3 - cold soup
 World 7-4 - Radiance
+World 8-1 - KurttheKing
 World 9-1 - DeviousQuacks23
 World 9-3 - Radiance
 
