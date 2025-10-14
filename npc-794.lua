@@ -44,13 +44,13 @@ function npc.onTickEndNPC(v)
 	if v.ai1 == 2 then
 		v.speedY = v.speedY + Defines.npc_grav
 		
-		if v.speedY > 0 then
+		--[[if v.speedY > 0 then
 			for k,p in ipairs(Player.get()) do
 				if p.standingNPC and p.standingNPC == v then
 					platformFix(v, p)
 				end
 			end
-		end
+		end]]
 	elseif v.ai1 == 0 then
 		v.speedY = 3 * v.direction
 	end
