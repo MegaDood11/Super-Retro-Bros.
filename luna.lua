@@ -41,6 +41,8 @@ local bonusChars = require("bonusChars")
 
 local bonkFlipsMushrooms = require("bonkFlipsMushrooms")
 
+local dive = require("dive")
+
 -- Physics adjustments that make the game more like SMB1
 Defines.player_walkspeed = 2.4
 Defines.player_runspeed = 5.2

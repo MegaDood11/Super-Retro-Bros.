@@ -74,6 +74,7 @@ Scripts
 ========
 
 -General player tweaks - MrNameless + LumSht
+-Waluigi physics - MegoZ (Dive ability), MrNameless (Faster swimming physics), DeviousQuacks23 (additional edits)
 
 -CustomCamera - MDA
 -Jumpbuffer - MDA
