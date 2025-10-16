@@ -17,6 +17,7 @@
 ]]
 
 local playerManager = require("playerManager")
+local goaltape = require("npcs/ai/goaltape")
 
 local costume = {}
 
@@ -33,6 +34,19 @@ costume.hammerConfig = {
 	framespeed = 4,
 	framestyle = 1,
 }
+
+costume.bombID = 291
+costume.bombConfig = {
+	width = 38,
+	height = 44,
+	gfxwidth = 38,
+	gfxheight = 44,
+	frames = 9,
+	framespeed = 4,
+	framestyle = 0,
+}
+
+goaltape.registerVictoryPose("SMW-Daisy",28,29) -- this allows the player to use a custom frame after getting a goal tape
 
 
 
@@ -71,8 +85,8 @@ local smb2Characters = table.map{CHARACTER_PEACH,CHARACTER_TOAD}
 local hammerPropertiesList = table.unmap(costume.hammerConfig)
 local oldHammerConfig = {}
 
-local doWalkFall = false
-local walkFallTimer = 5
+local bombPropertiesList = table.unmap(costume.bombConfig)
+local oldbombConfig = {}
 
 
 -- Detects if the player is on the ground, the redigit way. Sometimes more reliable than just p:isOnGround().
@@ -243,21 +257,21 @@ local animations = {
 	walk = {3,2,1, frameDelay = 4},
 	run  = {18,17,16, frameDelay = 4},
 	walkHolding = {10,9,8, frameDelay = 4},
-	fall = {3},
+	fall = {5},
 	pipeEnter = {36},
 	duckSmall = {8},
 
 	-- Small only animation
-	walkSmall = {2,9,1,   frameDelay = 4},
-	runSmall  = {17,16, frameDelay = 4},
-	walkHoldingSmall = {6,10,5, frameDelay = 4},
+	walkSmall = {3,2,1,   frameDelay = 4},
+	runSmall  = {16,17,18, frameDelay = 4},
+	walkHoldingSmall = {10,9,8, frameDelay = 4},
 
-	fallSmall = {2},
+	fallSmall = {7},
 
 	-- SMB2 characters (like toad)
-	walkSmallSMB2 = {3,2,1,   frameDelay = 6},
-	runSmallSMB2  = {16,17, frameDelay = 6},
-	walkHoldingSmallSMB2 = {8,9,10, frameDelay = 6},
+	walkSmallSMB2 = {3,2,1,   frameDelay = 4},
+	runSmallSMB2  = {16,17,18, frameDelay = 4},
+	walkHoldingSmallSMB2 = {10,9,8, frameDelay = 4},
 
 
 	-- Some other animations
@@ -291,9 +305,9 @@ local animations = {
 
 
 	-- Swimming
-	swimIdle = {40,41,42, frameDelay = 10},
+	swimIdle = {40,41, frameDelay = 10},
 	swimStroke = {43,44,44, frameDelay = 4,loops = false},
-	swimStrokeSmall = {43,44,44, frameDelay = 4,loops = false},
+	swimStrokeSmall = {42,43,43, frameDelay = 4,loops = false},
 
 
 	-- To fix a dumb bug with toad's spinjump while holding an item
@@ -316,6 +330,7 @@ local function findAnimation(p)
 			atPSpeed = (data.pSpeed >= characterNeededPSpeeds[p.character])
 		end
 	end
+
 
 	if p.deathTimer > 0 then
 		return nil
@@ -517,7 +532,6 @@ local function findAnimation(p)
 		if p:mem(0x16E,FIELD_BOOL) then -- flying with leaf
 			return nil
 		end
-
 		
 		if atPSpeed then
 			if isSlowFalling(p) then
@@ -531,15 +545,16 @@ local function findAnimation(p)
 
 
 		if p.holdingNPC == nil then
-			if doWalkFall == true and (p:mem(0x11C, FIELD_WORD) == 0 or walkFallTimer == 0)then
-				if p.powerup == 1 then
+			if isSlowFalling(p) then
+				return "slowFall"
+			elseif data.useFallingFrame then
+				if p.powerup == PLAYER_SMALL and not smb2Characters[p.character] then
 					return "fallSmall"
+				elseif leafPowerups[p.powerup] and p.speedY <= 0 then
+					return "fallLeafUp"
 				else
 					return "fall"
 				end
-			elseif walkFallTimer > 0 and p.speedY < 0 then
-				doWalkFall = false
-				return
 			end
 		end
 
@@ -590,6 +605,14 @@ function costume.onInit(p)
 			config[name] = costume.hammerConfig[name]
 		end
 	end
+	if costume.bombID ~= nil and p.character == CHARACTER_PEACH then
+		local config = NPC.config[costume.bombID]
+
+		for _,name in ipairs(bombPropertiesList) do
+			oldbombConfig[name] = config[name]
+			config[name] = costume.bombConfig[name]
+		end	
+	end
 end
 
 function costume.onCleanup(p)
@@ -613,153 +636,151 @@ function costume.onCleanup(p)
 			oldHammerConfig[name] = nil
 		end
 	end
+	if costume.bombID ~= nil and p.character == CHARACTER_PEACH then
+		local config = NPC.config[costume.bombID]
+
+		for _,name in ipairs(bombPropertiesList) do
+			config[name] = oldbombConfig[name] or config[name]
+			oldbombConfig[name] = nil
+		end	
+	end
 end
 
 
 
 function costume.onTick()
 	for _,p in ipairs(costume.playersList) do
-		local data = costume.playerData[p]
+		if p.character == CHARACTER_PEACH then
+			local data = costume.playerData[p]
 
 
-		handleDucking(p)
+			handleDucking(p)
 
-		-- Yoshi hitting (creates a small delay between hitting the run button and yoshi actually sticking his tongue out)
-		if canHitYoshi(p) then
-			if data.yoshiHitTimer > 0 then
-				data.yoshiHitTimer = data.yoshiHitTimer + 1
+			-- Yoshi hitting (creates a small delay between hitting the run button and yoshi actually sticking his tongue out)
+			if canHitYoshi(p) then
+				if data.yoshiHitTimer > 0 then
+					data.yoshiHitTimer = data.yoshiHitTimer + 1
 
-				if data.yoshiHitTimer >= 8 then
-					-- Force yoshi's tongue out
-					p:mem(0x10C,FIELD_WORD,1) -- set tongue out
-					p:mem(0xB4,FIELD_WORD,0) -- set tongue length
-					p:mem(0xB6,FIELD_BOOL,false) -- set tongue retracting
+					if data.yoshiHitTimer >= 8 then
+						-- Force yoshi's tongue out
+						p:mem(0x10C,FIELD_WORD,1) -- set tongue out
+						p:mem(0xB4,FIELD_WORD,0) -- set tongue length
+						p:mem(0xB6,FIELD_BOOL,false) -- set tongue retracting
 
-					SFX.play(50)
+						SFX.play(50)
 
-					data.yoshiHitTimer = 0
-				else
+						data.yoshiHitTimer = 0
+					else
+						p:mem(0x172,FIELD_BOOL,false)
+					end
+				elseif p.keys.run and p:mem(0x172,FIELD_BOOL) and (p:mem(0x10C,FIELD_WORD) == 0 and p:mem(0xB8,FIELD_WORD) == 0 and p:mem(0xBA,FIELD_WORD) == 0) then
 					p:mem(0x172,FIELD_BOOL,false)
+					data.yoshiHitTimer = 1
 				end
-			elseif p.keys.run and p:mem(0x172,FIELD_BOOL) and (p:mem(0x10C,FIELD_WORD) == 0 and p:mem(0xB8,FIELD_WORD) == 0 and p:mem(0xBA,FIELD_WORD) == 0) then
-				p:mem(0x172,FIELD_BOOL,false)
-				data.yoshiHitTimer = 1
+			else
+				data.yoshiHitTimer = 0
 			end
-		else
-			data.yoshiHitTimer = 0
 		end
 	end
 end
 
 function costume.onTickEnd()
-	for _,p in ipairs(costume.playersList) do
-		local data = costume.playerData[p]
-
-
-		handleDucking(p)
-		
-		--SMB1 falling animation
-		if p:isOnGround() or p:isUnderwater() or p:isClimbing() then
-			if p.keys.jump == 1 or p:mem(0x11C, FIELD_WORD) > 0 then
-				doWalkFall = false
-				walkFallTimer = 0
+	for _,p in ipairs(costume.playersList) do	
+		if p.character == CHARACTER_PEACH then
+			local data = costume.playerData[p]
+			handleDucking(p)
+			-- P-Speed
+			if canBuildPSpeed(p) then
+				if isOnGround(p) then
+					if math.abs(p.speedX) >= Defines.player_runspeed*(characterSpeedModifiers[p.character] or 1) then
+						data.pSpeed = math.min(characterNeededPSpeeds[p.character] or 0,data.pSpeed + 1)
+					else
+						data.pSpeed = math.max(0,data.pSpeed - 0.3)
+					end
+				end
 			else
-				doWalkFall = true
-				walkFallTimer = 5
+				data.pSpeed = 0
 			end
-		elseif walkFallTimer > 0 and player.forcedState == 0 then
-			walkFallTimer = walkFallTimer - 1
-		end
 
-		-- P-Speed
-		if canBuildPSpeed(p) then
-			if isOnGround(p) then
-				if math.abs(p.speedX) >= Defines.player_runspeed*(characterSpeedModifiers[p.character] or 1) then
-					data.pSpeed = math.min(characterNeededPSpeeds[p.character] or 0,data.pSpeed + 1)
-				else
-					data.pSpeed = math.max(0,data.pSpeed - 0.3)
+			-- Falling (once you start the falling animation, you stay in it)
+			if canFall(p) then
+				data.useFallingFrame = (data.useFallingFrame or p.speedY > 0)
+			else
+				data.useFallingFrame = false
+			end
+
+			-- Yoshi hit (change yoshi's head frame)
+			if data.yoshiHitTimer >= 3 and canHitYoshi(p) then
+				local yoshiHeadFrame = p:mem(0x72,FIELD_WORD)
+
+				if yoshiHeadFrame == 0 or yoshiHeadFrame == 5 then
+					p:mem(0x72,FIELD_WORD, yoshiHeadFrame + 2)
 				end
 			end
-		else
-			data.pSpeed = 0
-		end
 
-		-- Falling (once you start the falling animation, you stay in it)
-		if canFall(p) then
-			data.useFallingFrame = (data.useFallingFrame or p.speedY > 0)
-		else
-			data.useFallingFrame = false
-		end
 
-		-- Yoshi hit (change yoshi's head frame)
-		if data.yoshiHitTimer >= 3 and canHitYoshi(p) then
-			local yoshiHeadFrame = p:mem(0x72,FIELD_WORD)
 
-			if yoshiHeadFrame == 0 or yoshiHeadFrame == 5 then
-				p:mem(0x72,FIELD_WORD, yoshiHeadFrame + 2)
+			-- Find and start the new animation
+			local newAnimation,newSpeed,forceRestart = findAnimation(p)
+
+			if data.currentAnimation ~= newAnimation or forceRestart then
+				data.currentAnimation = newAnimation
+				data.animationTimer = 0
+				data.animationFinished = false
+
+				if newAnimation ~= nil and animations[newAnimation] == nil then
+					error("Animation '".. newAnimation.. "' does not exist")
+				end
 			end
-		end
 
+			data.animationSpeed = newSpeed or 1
 
+			-- Progress the animation
+			local animationData = animations[data.currentAnimation]
 
-		-- Find and start the new animation
-		local newAnimation,newSpeed,forceRestart = findAnimation(p)
+			if animationData ~= nil then
+				local frameCount = #animationData
 
-		if data.currentAnimation ~= newAnimation or forceRestart then
-			data.currentAnimation = newAnimation
-			data.animationTimer = 0
-			data.animationFinished = false
+				local frameIndex = math.floor(data.animationTimer / (animationData.frameDelay or 1))
 
-			if newAnimation ~= nil and animations[newAnimation] == nil then
-				error("Animation '".. newAnimation.. "' does not exist")
-			end
-		end
+				if frameIndex >= frameCount then -- the animation is finished
+					if animationData.loops ~= false then -- this animation loops
+						frameIndex = frameIndex % frameCount
+					else -- this animation doesn't loop
+						frameIndex = frameCount - 1
+					end
 
-		data.animationSpeed = newSpeed or 1
-
-		-- Progress the animation
-		local animationData = animations[data.currentAnimation]
-
-		if animationData ~= nil then
-			local frameCount = #animationData
-
-			local frameIndex = math.floor(data.animationTimer / (animationData.frameDelay or 1))
-
-			if frameIndex >= frameCount then -- the animation is finished
-				if animationData.loops ~= false then -- this animation loops
-					frameIndex = frameIndex % frameCount
-				else -- this animation doesn't loop
-					frameIndex = frameCount - 1
+					data.animationFinished = true
 				end
 
-				data.animationFinished = true
+				p.frame = animationData[frameIndex + 1]
+				data.forcedFrame = p.frame
+
+				data.animationTimer = data.animationTimer + data.animationSpeed
+			else
+				data.forcedFrame = nil
 			end
 
-			p.frame = animationData[frameIndex + 1]
-			data.forcedFrame = p.frame
 
-			data.animationTimer = data.animationTimer + data.animationSpeed
-		else
-			data.forcedFrame = nil
+			-- For kicking
+			data.wasHoldingNPC = (p.holdingNPC ~= nil)
 		end
-
-
-		-- For kicking
-		data.wasHoldingNPC = (p.holdingNPC ~= nil)
 	end
 end
 
 function costume.onDraw()
 	for _,p in ipairs(costume.playersList) do
-		local data = costume.playerData[p]
+		if p.character == CHARACTER_PEACH then
+			local data = costume.playerData[p]
 
-		data.frameInOnDraw = p.frame
+			data.frameInOnDraw = p.frame
 
 
-		local animationData = animations[data.currentAnimation]
+			local animationData = animations[data.currentAnimation]
 
-		if (animationData ~= nil and animationData.setFrameInOnDraw) and data.forcedFrame ~= nil then
-			p.frame = data.forcedFrame
+			if (animationData ~= nil and animationData.setFrameInOnDraw) and data.forcedFrame ~= nil then
+				p.frame = data.forcedFrame
+			end
 		end
 	end
 

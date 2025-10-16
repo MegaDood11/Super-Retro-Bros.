@@ -51,6 +51,7 @@ Defines.player_grav = 0.571
 Defines.jumpheight = 22
 Defines.jumpheight_bounce = 24
 Defines.player_grabShellEnabled = false
+Defines.player_grabTopEnabled = false
 
 -- Physicspatch adjustments that make the game more like SMB1
 ppp.speedXDecelerationModifier = -0.0975
@@ -75,6 +76,7 @@ function onStart()
     Player.setCostume(CHARACTER_MARIO,"Smb1-mario",true)
     Player.setCostume(CHARACTER_LUIGI,"Smb1-luigi",true)
 	Player.setCostume(CHARACTER_TOAD,"Smb1-toadette",true)
+	Player.setCostume(3, "SMB1-WAAAAAAAAAAAAAA", true)
 
     Graphics.setMainFramebufferSize(512,448)
 end

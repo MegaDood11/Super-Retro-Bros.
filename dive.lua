@@ -19,9 +19,9 @@ local diveTimeline = {0,0}
 local diveCooldown = {0,0}
 
 --The Dive™
-dive.impulseY =		4.27
+dive.impulseY =		6.7
 dive.diveCooldown =		0
-dive.allowEveryCharacter = false
+dive.allowEveryCharacter = true
 
 --Animation
 local diveFrames = {41,41,41,2}
@@ -43,9 +43,9 @@ function dive.onTick() for k, p in ipairs(Player.get()) do
 	if p:mem(0x36,FIELD_BOOL) then
 		p:mem(0x38, FIELD_WORD, math.min(p:mem(0x38, FIELD_WORD), 5))
 		if p.keys.left then
-			p.speedX = p.speedX - 0.085
+			p.speedX = p.speedX - 0.095
 		elseif p.keys.right then
-			p.speedX = p.speedX + 0.085
+			p.speedX = p.speedX + 0.095
 		end
 	end
 
@@ -101,21 +101,28 @@ function dive.onTick() for k, p in ipairs(Player.get()) do
 	end
 
 
-	dive.controls = p.keys.down and p.keys.altJump
+	dive.controls = p.keys.altRun
 	if dive.controls and diveCooldown[k] > dive.diveCooldown then
 		isDiving[k] = true
 	elseif canDive() then
 		isDiving[k] = false
 		diveCooldown[k] = diveCooldown[k] + 1
 	else
-		diveCooldown[k] = 0
+		diveCooldown[k] = 1
 	end
 
 	if isDiving[k] then
 		diveTimeline[k] = diveTimeline[k] + 1
 
 		if diveTimeline[k] < animationSpeed*#diveFrames then
-			player.keys.down = false
+			p.keys.down = false
+		end
+
+		-- Bypass the speed limit
+		if math.abs(p.speedX) > 4 then
+ 			local excessSpeed = (math.abs(p.speedX) - 4)*math.sign(p.speedX)
+  			p:mem(0x138,FIELD_FLOAT,excessSpeed)
+  			p.speedX = p.speedX - excessSpeed
 		end
 	end
 
@@ -135,9 +142,9 @@ function dive.onTick() for k, p in ipairs(Player.get()) do
 		end
 
 		if math.abs(p.speedX) < 2 then
-			p.speedX = p.direction * (math.abs(p.speedX)+3) * 1.4
+			p.speedX = p.direction * (math.abs(p.speedX)+3) * 1.3
 		else
-			p.speedX = p.direction * (math.abs(p.speedX)+1.5) * 1.3
+			p.speedX = p.direction * (math.abs(p.speedX)+1.5) * 1.1
 		end
 		p.speedY = -dive.impulseY
 	end
