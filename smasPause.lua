@@ -57,17 +57,17 @@ function smasPause.onInputUpdate()
 			--move the cursor, and make it flash
 			if player.rawKeys.up == KEYS_PRESSED then
 				SFX.play(14)
-				if cursorPosition.y > 260 then
+				if cursorPosition.y > 184 then
 					cursorPosition.y = cursorPosition.y - 32
 				else
-					cursorPosition.y = 324
+					cursorPosition.y = 248
 				end
 			elseif player.rawKeys.down == KEYS_PRESSED then
 				SFX.play(14)
-				if cursorPosition.y < 324 then
+				if cursorPosition.y < 248 then
 					cursorPosition.y = cursorPosition.y + 32
 				else
-					cursorPosition.y = 260
+					cursorPosition.y = 184
 				end
 			end
 			
@@ -86,7 +86,7 @@ function smasPause.onInputUpdate()
 			pauseDir = -1
 			cursorthing = -1000
 			blinkTimer = 0
-			if cursorPosition.y == 260 then SFX.play(30) else SFX.play("smas-save.wav") end
+			if cursorPosition.y == 184 then SFX.play(30) else SFX.play("smas-save.wav") end
 		end
 		
 		--Always continue if pause is pressed again
@@ -110,20 +110,20 @@ function smasPause.onInputUpdate()
 			boxHeight = 32
 			
 			if not cantEnd then
-				if cursorPosition.y == 292 then
+				if cursorPosition.y == 216 then
 					if textImageType == 0 then
 						Level.exit()
 					else
 						Misc.saveGame()
 					end
-				elseif cursorPosition.y == 324 then
+				elseif cursorPosition.y == 248 then
 					if textImageType == 1 then Misc.saveGame() end
 					Misc.exitEngine()
 				end
 			end
 			cantEnd = nil
 			
-			cursorPosition.y = 260
+			cursorPosition.y = 184
 		end
 		
 	else
@@ -153,7 +153,7 @@ function smasPause.onDraw()
 			cursorSprite.position = cursorPosition
 			cursorSprite:draw{priority = cursorthing}
 		else
-			cursorPosition = vector(288, 260)
+			cursorPosition = vector(148, 184)
 		end
 		pauseBoxSprite = pauseBoxSprite or Sprite{texture = pauseBoxImage, width = boxWidth, height = boxHeight, pivot = vector(0.5,0.5)}
 		pauseBoxSprite.position = vector(camera.width/2, camera.height/2)
