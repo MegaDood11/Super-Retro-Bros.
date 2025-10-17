@@ -117,7 +117,9 @@ function sampleNPC.onTickEndNPC(v)
 		-- Handling
 	end
 
-	data.rotation = data.rotation + 16*v.direction
+	if lunatime.tick() % 4 == 0 then
+		data.rotation = data.rotation + 90*v.direction
+	end
 
 	data.scale = data.scale + 0.2
 

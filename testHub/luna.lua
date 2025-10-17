@@ -1,8 +1,13 @@
 local smb1HUD = require("smb1HUD")
-local textplus = require("textplus")
-
 smb1HUD.currentWorld = vector("TEST", "HUB")
 
+-- Level select system written by DeviousQuacks23
+
+-- Hey you, yeah you! If you wanna use this, you can!
+-- I'd just like you to give credit, but I don't really 
+-- mind that much if you don't though... 
+
+local textplus = require("textplus")
 local levelList = {}
 
 local enabled = false

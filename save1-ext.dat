@@ -1,0 +1,307 @@
+{
+--[1]--
+{
+   ["customPowerups"]={2},
+   ["__launcher"]={3},
+   ["_currencies"]={4},
+   ["__costumes"]={5},
+   ["_basegame"]={6},
+   ["_lakitushop"]={7}
+},
+--[2]--
+{
+   {8},
+   ["registeredFilenames"]={9}
+},
+--[3]--
+{
+
+},
+--[4]--
+{
+
+},
+--[5]--
+{
+
+},
+--[6]--
+{
+   ["hud"]={10},
+   ["_characterdata"]={11},
+   ["starcoin"]={12},
+   ["starcoinCounter"]=0,
+   ["bigSwitch"]={13}
+},
+--[7]--
+{
+   ["stock"]={14}
+},
+--[8]--
+{
+
+},
+--[9]--
+{
+   {15},
+   {16},
+   {17},
+   {18},
+   [7]={19}
+},
+--[10]--
+{
+   ["score"]=10000
+},
+--[11]--
+{
+   ["11"]={20},
+   ["13"]={21},
+   ["15"]={22},
+   ["14"]={23},
+   ["16"]={24},
+   ["10"]={25},
+   ["12"]={26},
+   ["6"]={27},
+   ["7"]={28},
+   ["8"]={29},
+   ["9"]={30}
+},
+--[12]--
+{
+   ["World  -Weird Level.lvlx"]={31},
+   ["FS's -1 Level.lvlx"]={32},
+   ["b-4.lvlx"]={33},
+   ["P'd Off Sun Run.lvlx"]={34},
+   ["testHub.lvlx"]={35},
+   ["Beetroot Land.lvlx"]={36}
+},
+--[13]--
+{
+
+},
+--[14]--
+{
+   ["Green Yoshi"]=-1,
+   ["Red Yoshi"]=-1,
+   ["Blue Yoshi"]=-1,
+   ["Super Mushroom"]=-1,
+   ["Yellow Yoshi"]=-1,
+   ["Fire Flower"]=-1,
+   ["Pink Yoshi"]=-1,
+   ["Ice Flower"]=-1,
+   ["Purple Yoshi"]=-1,
+   ["Cyan Yoshi"]=-1,
+   ["Super Leaf"]=-1,
+   ["Tanooki Suit"]=-1,
+   ["Hammer Suit"]=-1,
+   ["Starman"]=-1,
+   ["1-UP Mushroom"]=-1,
+   ["Kuribo Shoe"]=-1,
+   ["Podoboo Shoe"]=-1,
+   ["Lakitu Shoe"]=-1
+},
+--[15]--
+{
+   ["__default"]={37}
+},
+--[16]--
+{
+   ["__default"]={38}
+},
+--[17]--
+{
+   ["SMB1-WAAAAAAAAAAAAAA"]={39},
+   ["__default"]={40}
+},
+--[18]--
+{
+   ["__default"]={41}
+},
+--[19]--
+{
+   ["__default"]={42}
+},
+--[20]--
+{
+   ["0x108"]=0,
+   ["0x16"]=1,
+   ["0x10A"]=0,
+   ["reservePowerup"]=0,
+   ["powerup"]=1
+},
+--[21]--
+{
+   ["0x108"]=0,
+   ["0x16"]=1,
+   ["0x10A"]=0,
+   ["reservePowerup"]=0,
+   ["powerup"]=1
+},
+--[22]--
+{
+   ["0x108"]=0,
+   ["0x16"]=1,
+   ["0x10A"]=0,
+   ["reservePowerup"]=0,
+   ["powerup"]=1
+},
+--[23]--
+{
+   ["0x108"]=0,
+   ["0x16"]=1,
+   ["0x10A"]=0,
+   ["reservePowerup"]=0,
+   ["powerup"]=1
+},
+--[24]--
+{
+   ["0x108"]=0,
+   ["0x16"]=1,
+   ["0x10A"]=0,
+   ["reservePowerup"]=0,
+   ["powerup"]=1
+},
+--[25]--
+{
+   ["0x108"]=0,
+   ["0x16"]=1,
+   ["0x10A"]=0,
+   ["reservePowerup"]=0,
+   ["powerup"]=1
+},
+--[26]--
+{
+   ["0x108"]=0,
+   ["0x16"]=1,
+   ["0x10A"]=0,
+   ["reservePowerup"]=0,
+   ["powerup"]=1
+},
+--[27]--
+{
+   ["0x108"]=0,
+   ["0x16"]=1,
+   ["0x10A"]=0,
+   ["reservePowerup"]=0,
+   ["powerup"]=1
+},
+--[28]--
+{
+   ["0x108"]=0,
+   ["0x16"]=1,
+   ["0x10A"]=0,
+   ["reservePowerup"]=0,
+   ["powerup"]=1
+},
+--[29]--
+{
+   ["0x108"]=0,
+   ["0x16"]=1,
+   ["0x10A"]=0,
+   ["reservePowerup"]=0,
+   ["powerup"]=1
+},
+--[30]--
+{
+   ["0x108"]=0,
+   ["0x16"]=1,
+   ["0x10A"]=0,
+   ["reservePowerup"]=0,
+   ["powerup"]=1
+},
+--[31]--
+{
+   ["maxID"]=0,
+   ["alive"]={43}
+},
+--[32]--
+{
+   ["maxID"]=0,
+   ["alive"]={44}
+},
+--[33]--
+{
+   ["maxID"]=0,
+   ["alive"]={45}
+},
+--[34]--
+{
+   ["maxID"]=0,
+   ["alive"]={46}
+},
+--[35]--
+{
+   ["maxID"]=0,
+   ["alive"]={47}
+},
+--[36]--
+{
+   ["maxID"]=0,
+   ["alive"]={48}
+},
+--[37]--
+{
+   ["Jumping Lui-img"]="C:\\Program Files\\SMBX2\\data\\worlds\\super retro bros\\powerups/mario-jumpingLui.png",
+   ["Beetroot-img"]="C:\\Program Files\\SMBX2\\data\\worlds\\super retro bros\\powerups/mario-beetroot.png",
+   ["Jumping Lui-ini"]="C:\\Program Files\\SMBX2\\data\\worlds\\super retro bros\\powerups/mario-jumpingLui.ini",
+   ["Beetroot-ini"]="C:\\Program Files\\SMBX2\\data\\worlds\\super retro bros\\powerups/mario-beetroot.ini"
+},
+--[38]--
+{
+   ["Jumping Lui-img"]="C:\\Program Files\\SMBX2\\data\\worlds\\super retro bros\\powerups/luigi-jumpingLui.png",
+   ["Beetroot-img"]="C:\\Program Files\\SMBX2\\data\\worlds\\super retro bros\\powerups/luigi-beetroot.png",
+   ["Jumping Lui-ini"]="C:\\Program Files\\SMBX2\\data\\worlds\\super retro bros\\powerups/luigi-jumpingLui.ini",
+   ["Beetroot-ini"]="C:\\Program Files\\SMBX2\\data\\worlds\\super retro bros\\powerups/luigi-beetroot.ini"
+},
+--[39]--
+{
+   ["Jumping Lui-img"]="C:\\Program Files\\SMBX2\\data\\worlds\\super retro bros\\costumes\\peach\\SMB1-WAAAAAAAAAAAAAA\\peach-jumpingLui.png",
+   ["Beetroot-img"]="C:\\Program Files\\SMBX2\\data\\worlds\\super retro bros\\costumes\\peach\\SMB1-WAAAAAAAAAAAAAA\\peach-beetroot.png",
+   ["Jumping Lui-ini"]="C:\\Program Files\\SMBX2\\data\\worlds\\super retro bros\\costumes\\peach\\SMB1-WAAAAAAAAAAAAAA\\peach-jumpingLui.ini",
+   ["Beetroot-ini"]="C:\\Program Files\\SMBX2\\data\\worlds\\super retro bros\\costumes\\peach\\SMB1-WAAAAAAAAAAAAAA\\peach-beetroot.ini"
+},
+--[40]--
+{
+   ["Jumping Lui-img"]="C:\\Program Files\\SMBX2\\data\\worlds\\super retro bros\\powerups/peach-jumpingLui.png",
+   ["Beetroot-img"]="C:\\Program Files\\SMBX2\\data\\worlds\\super retro bros\\powerups/peach-beetroot.png",
+   ["Jumping Lui-ini"]="C:\\Program Files\\SMBX2\\data\\worlds\\super retro bros\\powerups/peach-jumpingLui.ini",
+   ["Beetroot-ini"]="C:\\Program Files\\SMBX2\\data\\worlds\\super retro bros\\powerups/peach-beetroot.ini"
+},
+--[41]--
+{
+   ["Jumping Lui-img"]="C:\\Program Files\\SMBX2\\data\\worlds\\super retro bros\\powerups/toad-jumpingLui.png",
+   ["Beetroot-img"]="C:\\Program Files\\SMBX2\\data\\worlds\\super retro bros\\powerups/toad-beetroot.png",
+   ["Jumping Lui-ini"]="C:\\Program Files\\SMBX2\\data\\worlds\\super retro bros\\powerups/toad-jumpingLui.ini",
+   ["Beetroot-ini"]="C:\\Program Files\\SMBX2\\data\\worlds\\super retro bros\\powerups/toad-beetroot.ini"
+},
+--[42]--
+{
+   ["Jumping Lui-ini"]="C:\\Program Files\\SMBX2\\data\\worlds\\super retro bros\\powerups/wario-jumpingLui.ini",
+   ["Jumping Lui-img"]="C:\\Program Files\\SMBX2\\data\\worlds\\super retro bros\\powerups/wario-jumpingLui.png"
+},
+--[43]--
+{
+
+},
+--[44]--
+{
+
+},
+--[45]--
+{
+
+},
+--[46]--
+{
+
+},
+--[47]--
+{
+
+},
+--[48]--
+{
+
+}
+}
