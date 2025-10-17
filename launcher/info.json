@@ -1,7 +1,5 @@
 {
-    	"characterNames": ["Mario", "Luigi"], 
-	"allowedCharacters": [1, 2],
-	"allowPlayerSelection": true,
+	"allowPlayerSelection": false,	
 	"allowTwoPlayer": false,
 	"title" : "Super Ripro Bros.",
 	"mainPage": "index.html",

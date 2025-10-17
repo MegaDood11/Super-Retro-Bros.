@@ -122,6 +122,7 @@ function onDraw()
 	time = time + 1
 	rot = rot - 4
 
+	if image then
 	Graphics.drawBox{ -- rotating circle thing
 		texture = image,
 		x = (438 + 12),
@@ -132,7 +133,9 @@ function onDraw()
 		centered = true,
         	color = {1, 1, 1, math.min(1, time / 60)},
 	}
+	end
 	
+	if image2 then
 	Graphics.drawBox{ -- logo
 		texture = image2,
 		x = 8,
@@ -141,6 +144,7 @@ function onDraw()
 		height = 56,
         	color = {1, 1, 1, math.min(1, time / 60)},
 	}
+	end
 
 	-- smooth fade out (from battle arena)
 
