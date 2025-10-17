@@ -68,6 +68,9 @@ ppp.aerialIdleDeceleration = 1
 smb1HUD.toggles.reserve = false
 smb1HUD.toggles.lives = false
 
+smb1HUD.characterNames[3] = "WALUIGI"
+smb1HUD.characterNames[4] = "TOADETTE"
+
 local lastDirection = 1
 local lastDucked = false
 
