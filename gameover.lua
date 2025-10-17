@@ -26,7 +26,7 @@ end
 local characterDeathEffects = {
 	3,
 	5,
-	nil, -- peach
+	129, -- peach
 	130,
 	nil, -- link
 	nil, -- megaman
