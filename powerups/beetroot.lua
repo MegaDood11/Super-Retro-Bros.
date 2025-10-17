@@ -117,7 +117,7 @@ function beetroot.onTickPowerup(p)
 	end
 
 	local flamethrowerActive = Cheats.get("flamethrower").active
-	local tryingToShoot = (p.keys.altRun == KEYS_PRESSED or p.keys.run == KEYS_PRESSED or p:mem(0x50, FIELD_BOOL)) 
+	local tryingToShoot = (p.keys.run == KEYS_PRESSED or p:mem(0x50, FIELD_BOOL)) 
 	
 	if p.keys.run == KEYS_DOWN and flamethrowerActive then 
 		tryingToShoot = true
@@ -156,33 +156,26 @@ function beetroot.onTickPowerup(p)
 				p:mem(0x162, FIELD_WORD,2)
 			end
 		else
-			-- handles making the projectile be held if the player is a SMB2 character & pressed altRun 
-			if smb2Chars[p.character] and p.holdingNPC == nil and p.keys.altRun then 
-				v.speedY = 0
-				v.heldIndex = p.idx
-				p:mem(0x154, FIELD_WORD, v.idx+1)
-			else -- handles normal shooting
-				if p.keys.up then -- sets the projectile upwards if you're holding up while shooting
-					local speedYMod = p.speedY * 0.1 -- adds extra vertical speed depending on how fast you were going vertically
-					if p.standingNPC then
-						speedYMod = p.standingNPC.speedY * 0.1
-					end
-					v.speedY = -6 + speedYMod
-				else
-					v.speedY = -4
+			if p.keys.up then -- sets the projectile upwards if you're holding up while shooting
+				local speedYMod = p.speedY * 0.1 -- adds extra vertical speed depending on how fast you were going vertically
+				if p.standingNPC then
+					speedYMod = p.standingNPC.speedY * 0.1
 				end
-				v.isProjectile = true
-				v.speedX = ((NPC.config[v.id].speed + 1) + p.speedX/3.5) * dir
-				v.direction = dir
-				p:mem(0x118, FIELD_FLOAT,110)
+				v.speedY = -6 + speedYMod
+			else
+				v.speedY = -4
 			end
-			v:mem(0x156, FIELD_WORD, 32) -- gives the NPC i-frames
-			p:mem(0x160, FIELD_WORD,projectileTimerMax[p.character])
-			SFX.play(18)
-	
-			if flamethrowerActive then
-				p:mem(0x160, FIELD_WORD,30)
-			end
+			v.isProjectile = true
+			v.speedX = ((NPC.config[v.id].speed + 1) + p.speedX/3.5) * dir
+			v.direction = dir
+			p:mem(0x118, FIELD_FLOAT,110)
+		end
+		v:mem(0x156, FIELD_WORD, 32) -- gives the NPC i-frames
+		p:mem(0x160, FIELD_WORD,projectileTimerMax[p.character])
+		SFX.play(18)
+
+		if flamethrowerActive then
+			p:mem(0x160, FIELD_WORD,30)
 		end
     end
 end
