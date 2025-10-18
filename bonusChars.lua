@@ -5,7 +5,7 @@ bonusChars.bgoID = 139
 bonusChars.characterImages = {
 	Graphics.loadImageResolved("bonusImages/mario.png"),
 	Graphics.loadImageResolved("bonusImages/luigi.png"),
-	nil,
+	Graphics.loadImageResolved("bonusImages/peach.png"),
 	Graphics.loadImageResolved("bonusImages/toad.png"),
 	nil, -- link
 	nil, -- megaman

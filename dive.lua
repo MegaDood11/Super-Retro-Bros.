@@ -127,7 +127,7 @@ function dive.onTick() for k, p in ipairs(Player.get()) do
 	end
 
 
-	if diveTimeline[k] == 1 then
+	if diveTimeline[k] == 1 and p.deathTimer <= 0 then
 		SFX.play(diveSfx)
 		diveAnim:play(p)
 
