@@ -4,7 +4,7 @@ HEAD_END
 SECTION
 SC:0;L:-200000;R:-185984;T:-200600;B:-200000;MZ:24;MF:"Music/Overworld.spc|0\;g=2\;e0";BG:1;XTRA:"{\n    \"newTurnBack\"\: {\n        \"horizontal\"\: 1\n    }\n}\n";
 SC:1;L:-180000;R:-179200;T:-180600;B:-180000;MZ:24;MF:"Music/Bonus.spc|0\;g=2\;e0";BG:1;XTRA:"{\n    \"darkness\"\: {\n        \"playerlight\"\: {\n            \"brightness\"\: 0\n        }\n    }\,\n    \"newTurnBack\"\: {\n        \"horizontal\"\: 0\n    }\n}\n";
-SC:2;L:-160000;R:-157792;T:-160600;B:-160000;MZ:24;MF:"Music/Bonus.spc|0\;g=2\;e0";BG:62;XTRA:"{\n    \"newTurnBack\"\: {\n        \"horizontal\"\: 1\n    }\n}\n";
+SC:2;L:-160000;R:-157792;T:-160600;B:-160000;MZ:24;MF:"Music/Bonus.spc|0\;g=2\;e0";BG:20;XTRA:"{\n    \"newTurnBack\"\: {\n        \"horizontal\"\: 1\n    }\n}\n";
 SC:3;L:-141152;R:-139200;T:-140600;B:-140000;MZ:24;MF:"Music/Bonus.spc|0\;g=2\;e0";BG:7;XTRA:"{\n    \"newTurnBack\"\: {\n        \"horizontal\"\: 2\n    }\n}\n";
 SECTION_END
 STARTPOINT
