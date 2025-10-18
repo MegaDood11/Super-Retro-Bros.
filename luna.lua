@@ -71,6 +71,9 @@ smb1HUD.toggles.lives = false
 smb1HUD.characterNames[3] = "WALUIGI"
 smb1HUD.characterNames[4] = "TOADETTE"
 
+Misc.setWindowIcon(Graphics.loadImageResolved("launcher/icon.png"))
+Misc.setWindowTitle("Super Ripro Bros.")
+
 local lastDirection = 1
 local lastDucked = false
 
