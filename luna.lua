@@ -105,7 +105,7 @@ function onTick()
 	if player:mem(0x0A, FIELD_BOOL) then
 		ppp.speedXDecelerationModifier = -0.015
 	else
-		ppp.speedXDecelerationModifier = -0.0975
+		if player.character == 2 then ppp.speedXDecelerationModifier = -0.08 else ppp.speedXDecelerationModifier = -0.0975 end
 	end
 
 	if (player.character > 2 and player.character < 5) and player.powerup == 3 and player.keys.altRun then
