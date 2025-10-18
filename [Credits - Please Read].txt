@@ -99,7 +99,7 @@ Scripts
 -Bloopers and Hammer Bros by Murphmario
 -Bowser boss + bridge by Murphmario
 -Sidesteppers by Murphmario
--airshipScroll.lua by Murphmario and autoscrollDX.lua by DeviousQuacks, used in the airship levels
+-airshipScroll.lua by Murphmario and autoscrollDX.lua by DeviousQuacks23, used in the airship levels
 -Fighter Flies originally by MegaDood, modified and worked on by Ness-Wednesday, sprites by Sans1m0n
 -Convenient Firebars - IAmPlayer
 -Perpetual lift (npc-791) - cold soup
@@ -139,6 +139,7 @@ Graphics
 
 SMB1 Toadette - GlacialSiren484, TomAndTheCats, xxx_JonnieWalker2005, and The_Eggo55
 SMB1 Waluigi - MisteryGX, imported by Sleepy Dee
+SMB1 Wario - MrNameless, Deltomx3 and Sleepy Dee
 
 =============
 Music and SFX

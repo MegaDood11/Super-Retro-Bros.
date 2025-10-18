@@ -1,0 +1,418 @@
+{
+--[1]--
+{
+   ["_basegame"]={2},
+   ["__launcher"]={3},
+   ["__costumes"]={4},
+   ["_currencies"]={5},
+   ["_lakitushop"]={6},
+   ["customPowerups"]={7},
+   ["minusMedals"]=8
+},
+--[2]--
+{
+   ["hud"]={8},
+   ["bigSwitch"]={9},
+   ["starcoinCounter"]=0,
+   ["_characterdata"]={10},
+   ["starcoin"]={11}
+},
+--[3]--
+{
+
+},
+--[4]--
+{
+
+},
+--[5]--
+{
+
+},
+--[6]--
+{
+   ["stock"]={12}
+},
+--[7]--
+{
+   {13},
+   ["registeredFilenames"]={14}
+},
+--[8]--
+{
+   ["score"]=153280
+},
+--[9]--
+{
+
+},
+--[10]--
+{
+   ["11"]={15},
+   ["12"]={16},
+   ["14"]={17},
+   ["7"]={18},
+   ["8"]={19},
+   ["15"]={20},
+   ["6"]={21},
+   ["10"]={22},
+   ["13"]={23},
+   ["9"]={24},
+   ["16"]={25}
+},
+--[11]--
+{
+   ["Ghosty Spoop.lvlx"]={26},
+   ["You VS Boo.lvlx"]={27},
+   ["FS's 1-2.lvlx"]={28},
+   ["World 5-2 - trampokeline.lvlx"]={29},
+   ["World B-3.lvlx"]={30},
+   ["Prototypical Temple.lvlx"]={31},
+   ["Beetroot Land.lvlx"]={32},
+   ["World 6-4.lvlx"]={33},
+   ["World 8-3.lvlx"]={34},
+   ["Pretty Cool Castle.lvlx"]={35},
+   ["b-4.lvlx"]={36},
+   ["World 3.5-3.lvlx"]={37},
+   ["World 1-4.lvlx"]={38},
+   ["P'd Off Sun Run.lvlx"]={39},
+   ["World 8-1.lvlx"]={40},
+   ["World A-3.lvlx"]={41},
+   ["testHub.lvlx"]={42}
+},
+--[12]--
+{
+   ["Lakitu Shoe"]=-1,
+   ["Super Leaf"]=-1,
+   ["Tanooki Suit"]=-1,
+   ["Ice Flower"]=-1,
+   ["Starman"]=-1,
+   ["Fire Flower"]=-1,
+   ["Green Yoshi"]=-1,
+   ["Super Mushroom"]=-1,
+   ["Blue Yoshi"]=-1,
+   ["Cyan Yoshi"]=-1,
+   ["1-UP Mushroom"]=-1,
+   ["Hammer Suit"]=-1,
+   ["Pink Yoshi"]=-1,
+   ["Yellow Yoshi"]=-1,
+   ["Kuribo Shoe"]=-1,
+   ["Podoboo Shoe"]=-1,
+   ["Purple Yoshi"]=-1,
+   ["Red Yoshi"]=-1
+},
+--[13]--
+{
+
+},
+--[14]--
+{
+   {43},
+   {44},
+   {45},
+   {46},
+   [7]={47}
+},
+--[15]--
+{
+   ["0x10A"]=0,
+   ["0x16"]=1,
+   ["powerup"]=1,
+   ["0x108"]=0,
+   ["reservePowerup"]=0
+},
+--[16]--
+{
+   ["0x10A"]=0,
+   ["0x16"]=1,
+   ["powerup"]=1,
+   ["0x108"]=0,
+   ["reservePowerup"]=0
+},
+--[17]--
+{
+   ["0x10A"]=0,
+   ["0x16"]=1,
+   ["powerup"]=1,
+   ["0x108"]=0,
+   ["reservePowerup"]=0
+},
+--[18]--
+{
+   ["0x10A"]=0,
+   ["0x16"]=1,
+   ["powerup"]=1,
+   ["0x108"]=0,
+   ["reservePowerup"]=0
+},
+--[19]--
+{
+   ["0x10A"]=0,
+   ["0x16"]=1,
+   ["powerup"]=1,
+   ["0x108"]=0,
+   ["reservePowerup"]=0
+},
+--[20]--
+{
+   ["0x10A"]=0,
+   ["0x16"]=1,
+   ["powerup"]=1,
+   ["0x108"]=0,
+   ["reservePowerup"]=0
+},
+--[21]--
+{
+   ["0x10A"]=0,
+   ["0x16"]=1,
+   ["powerup"]=1,
+   ["0x108"]=0,
+   ["reservePowerup"]=0
+},
+--[22]--
+{
+   ["0x10A"]=0,
+   ["0x16"]=1,
+   ["powerup"]=1,
+   ["0x108"]=0,
+   ["reservePowerup"]=0
+},
+--[23]--
+{
+   ["0x10A"]=0,
+   ["0x16"]=1,
+   ["powerup"]=1,
+   ["0x108"]=0,
+   ["reservePowerup"]=0
+},
+--[24]--
+{
+   ["0x10A"]=0,
+   ["0x16"]=1,
+   ["powerup"]=1,
+   ["0x108"]=0,
+   ["reservePowerup"]=0
+},
+--[25]--
+{
+   ["0x10A"]=0,
+   ["0x16"]=1,
+   ["powerup"]=1,
+   ["0x108"]=0,
+   ["reservePowerup"]=0
+},
+--[26]--
+{
+   ["maxID"]=0,
+   ["alive"]={48}
+},
+--[27]--
+{
+   ["maxID"]=0,
+   ["alive"]={49}
+},
+--[28]--
+{
+   ["maxID"]=0,
+   ["alive"]={50}
+},
+--[29]--
+{
+   ["maxID"]=0,
+   ["alive"]={51}
+},
+--[30]--
+{
+   ["maxID"]=0,
+   ["alive"]={52}
+},
+--[31]--
+{
+   ["maxID"]=0,
+   ["alive"]={53}
+},
+--[32]--
+{
+   ["maxID"]=0,
+   ["alive"]={54}
+},
+--[33]--
+{
+   ["maxID"]=0,
+   ["alive"]={55}
+},
+--[34]--
+{
+   ["maxID"]=0,
+   ["alive"]={56}
+},
+--[35]--
+{
+   ["maxID"]=0,
+   ["alive"]={57}
+},
+--[36]--
+{
+   ["maxID"]=0,
+   ["alive"]={58}
+},
+--[37]--
+{
+   ["maxID"]=0,
+   ["alive"]={59}
+},
+--[38]--
+{
+   ["maxID"]=0,
+   ["alive"]={60}
+},
+--[39]--
+{
+   ["maxID"]=0,
+   ["alive"]={61}
+},
+--[40]--
+{
+   ["maxID"]=0,
+   ["alive"]={62}
+},
+--[41]--
+{
+   ["maxID"]=0,
+   ["alive"]={63}
+},
+--[42]--
+{
+   ["maxID"]=0,
+   ["alive"]={64}
+},
+--[43]--
+{
+   ["__default"]={65}
+},
+--[44]--
+{
+   ["__default"]={66}
+},
+--[45]--
+{
+   ["SMB1-WAAAAAAAAAAAAAA"]={67},
+   ["__default"]={68}
+},
+--[46]--
+{
+   ["__default"]={69}
+},
+--[47]--
+{
+   ["__default"]={70}
+},
+--[48]--
+{
+
+},
+--[49]--
+{
+
+},
+--[50]--
+{
+
+},
+--[51]--
+{
+
+},
+--[52]--
+{
+
+},
+--[53]--
+{
+
+},
+--[54]--
+{
+
+},
+--[55]--
+{
+
+},
+--[56]--
+{
+
+},
+--[57]--
+{
+
+},
+--[58]--
+{
+
+},
+--[59]--
+{
+
+},
+--[60]--
+{
+
+},
+--[61]--
+{
+
+},
+--[62]--
+{
+
+},
+--[63]--
+{
+
+},
+--[64]--
+{
+
+},
+--[65]--
+{
+   ["Beetroot-ini"]="C:\\Program Files\\SMBX2\\data\\worlds\\super retro bros\\powerups/mario-beetroot.ini",
+   ["Beetroot-img"]="C:\\Program Files\\SMBX2\\data\\worlds\\super retro bros\\powerups/mario-beetroot.png",
+   ["Jumping Lui-ini"]="C:\\Program Files\\SMBX2\\data\\worlds\\super retro bros\\powerups/mario-jumpingLui.ini",
+   ["Jumping Lui-img"]="C:\\Program Files\\SMBX2\\data\\worlds\\super retro bros\\powerups/mario-jumpingLui.png"
+},
+--[66]--
+{
+   ["Beetroot-ini"]="C:\\Program Files\\SMBX2\\data\\worlds\\super retro bros\\powerups/luigi-beetroot.ini",
+   ["Beetroot-img"]="C:\\Program Files\\SMBX2\\data\\worlds\\super retro bros\\powerups/luigi-beetroot.png",
+   ["Jumping Lui-ini"]="C:\\Program Files\\SMBX2\\data\\worlds\\super retro bros\\powerups/luigi-jumpingLui.ini",
+   ["Jumping Lui-img"]="C:\\Program Files\\SMBX2\\data\\worlds\\super retro bros\\powerups/luigi-jumpingLui.png"
+},
+--[67]--
+{
+   ["Beetroot-ini"]="C:\\Program Files\\SMBX2\\data\\worlds\\super retro bros\\costumes\\peach\\SMB1-WAAAAAAAAAAAAAA\\peach-beetroot.ini",
+   ["Beetroot-img"]="C:\\Program Files\\SMBX2\\data\\worlds\\super retro bros\\costumes\\peach\\SMB1-WAAAAAAAAAAAAAA\\peach-beetroot.png",
+   ["Jumping Lui-ini"]="C:\\Program Files\\SMBX2\\data\\worlds\\super retro bros\\costumes\\peach\\SMB1-WAAAAAAAAAAAAAA\\peach-jumpingLui.ini",
+   ["Jumping Lui-img"]="C:\\Program Files\\SMBX2\\data\\worlds\\super retro bros\\costumes\\peach\\SMB1-WAAAAAAAAAAAAAA\\peach-jumpingLui.png"
+},
+--[68]--
+{
+   ["Beetroot-ini"]="C:\\Program Files\\SMBX2\\data\\worlds\\super retro bros\\powerups/peach-beetroot.ini",
+   ["Beetroot-img"]="C:\\Program Files\\SMBX2\\data\\worlds\\super retro bros\\powerups/peach-beetroot.png",
+   ["Jumping Lui-ini"]="C:\\Program Files\\SMBX2\\data\\worlds\\super retro bros\\powerups/peach-jumpingLui.ini",
+   ["Jumping Lui-img"]="C:\\Program Files\\SMBX2\\data\\worlds\\super retro bros\\powerups/peach-jumpingLui.png"
+},
+--[69]--
+{
+   ["Beetroot-ini"]="C:\\Program Files\\SMBX2\\data\\worlds\\super retro bros\\powerups/toad-beetroot.ini",
+   ["Beetroot-img"]="C:\\Program Files\\SMBX2\\data\\worlds\\super retro bros\\powerups/toad-beetroot.png",
+   ["Jumping Lui-ini"]="C:\\Program Files\\SMBX2\\data\\worlds\\super retro bros\\powerups/toad-jumpingLui.ini",
+   ["Jumping Lui-img"]="C:\\Program Files\\SMBX2\\data\\worlds\\super retro bros\\powerups/toad-jumpingLui.png"
+},
+--[70]--
+{
+   ["Jumping Lui-ini"]="C:\\Program Files\\SMBX2\\data\\worlds\\super retro bros\\powerups/wario-jumpingLui.ini",
+   ["Jumping Lui-img"]="C:\\Program Files\\SMBX2\\data\\worlds\\super retro bros\\powerups/wario-jumpingLui.png"
+}
+}
