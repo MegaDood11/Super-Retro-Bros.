@@ -26,7 +26,7 @@ end
 local characterDeathEffects = {
 	3,
 	5,
-	nil, -- peach
+	129, -- peach
 	130,
 	nil, -- link
 	nil, -- megaman
@@ -81,9 +81,9 @@ function onDraw()
 		Graphics.drawBox{
 			texture = img2,
 			x = screenw/2 - img2.width,
-			y = ease - imgh/2,
+			y = ease - img2.height,
 			width = imgw2,
-			height = 64,
+			height = img2.height*2,
 			color = {1.0, 1.0, 1.0, alpha}
 		}
 	end

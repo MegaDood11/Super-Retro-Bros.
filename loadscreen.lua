@@ -72,8 +72,8 @@ local tipNum = 0
 -- actual loadscreen stuffs
 
 local time = 0
-local image = Graphics.loadImage("loadscreen.png")
-local image2 = Graphics.loadImage("loadscreenLogo.png")
+local image = Graphics.loadImageResolved("loadscreen.png")
+local image2 = Graphics.loadImageResolved("loadscreenLogo.png")
 local rot = 0
 
 local fadeOut = 0
