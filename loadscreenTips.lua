@@ -34,7 +34,7 @@ loadTips.tipTable = {
 	"kill everything",
 	"If you see a grumpy looking green Toad with a monobrow, say hi!",
 	"If you jump 2401 times on the 20th tile in 1-3, you unlock Luigi!",
-	"If you jump 6814 times on the 61st tile in 4-2, you unlock Waluigi!",
+	"If you jump 6814 times on the 61st tile in 4-2, you unlock Waluigi! /j",
 	"You can use the Beetroot to plow through walls of bricks! Maybe you'll find something special in them...",
 	"Ripro is rip + retro.",
 	"In bonus rooms, the character head will change depending on your character.",
@@ -82,7 +82,13 @@ loadTips.tipTable = {
 	"Sidesteppers take two hits to defeat. The sturdiness of these crab is a mystery that spans across generations.",
 	"In some Boo races, dotted line blocks will automatically switch every 2 seconds.",
 	"Don't look inside the You Vs Boo folder.",
-	"This episode doesn't contain wall jumps or ground pounds. This includes the classic wall jump glitch. Sorry, Kosmic."
+	"This episode doesn't contain wall jumps or ground pounds. This includes the classic wall jump glitch. Sorry, Kosmic.",
+	"You can now play as Luigi.",
+	"I'm a chuckster!",
+	"Mini-Mario! Buy them all!",
+	"so ripro",
+	"Middle... Right... Left... Left... Right... Middle... Right... Left... Right... Right... Middle right right left middle middle left left left right left left left middle middle!",
+	"A winner is you!"
 }
 
 return loadTips
