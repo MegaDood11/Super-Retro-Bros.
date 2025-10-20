@@ -29,6 +29,8 @@ function beetroot.onInitPowerupLib()
 		beetroot:registerAsset(3, "peach-beetroot.png"),
 		beetroot:registerAsset(4, "toad-beetroot.png"),
 		beetroot:registerAsset(5, "link-beetroot.png"),
+		false,
+		beetroot:registerAsset(CHARACTER_WARIO, "wario-beetroot.png"),
 	}
 
 	-- needed to align the sprites relative to the player's hurtbox
@@ -38,6 +40,8 @@ function beetroot.onInitPowerupLib()
 		beetroot:registerAsset(3, "peach-beetroot.ini"),
 		beetroot:registerAsset(4, "toad-beetroot.ini"),
 		beetroot:registerAsset(5, "link-beetroot.ini"),
+		false,
+		beetroot:registerAsset(CHARACTER_WARIO, "wario-beetroot.ini"),
 	}
 
 	
@@ -59,7 +63,7 @@ local smb2Chars = table.map{3,4,6,9,10,11,16}
 local linkChars = table.map{5,12,16}
 
 -- Projectile cooldown timers for Mario, Luigi, Peach, Toad, and Link respectively
-local projectileTimerMax = {55, 55, 55, 50, 45}
+local projectileTimerMax = {55, 55, 55, 50, 45, 55, 55}
 
 -- calls in Marioman2007's Ground Pound if it's in the same level folder as this script (https://www.smbxgame.com/forums/viewtopic.php?t=28456)
 local GP
