@@ -36,6 +36,7 @@ World C-1 - Dor_78 + MegaDood
 World C-3 - LumSht + MegaDood
 World D-1 - Ness-Wednesday
 World D-2 - MegaDood
+World D-3 - Sleepy Dee + Ness-Wednesday
 
 Bonus Levels
 ─────────

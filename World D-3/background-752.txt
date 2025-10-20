@@ -1,0 +1,3 @@
+image = "background-752.png"
+frames = 1
+framespeed = 8

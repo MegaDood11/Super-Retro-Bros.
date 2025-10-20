@@ -1,0 +1,4 @@
+image = "background-751.png"
+frames = 4
+framespeed = 8
+priority=-1
