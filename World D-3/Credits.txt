@@ -1,2 +1,6 @@
+Background made by Sleepy and crafink
 Block developed by DisasterMaster and MegaDood
-Code adapted form KateBulka's wind script.
+Code adapted form KateBulka's wind script
+Music is "cold" by redngreen from smwc
+Snowy tiles by SuperSledgeBro
+Snowy trees by BroskiX
