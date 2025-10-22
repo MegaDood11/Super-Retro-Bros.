@@ -99,8 +99,10 @@ function autoscroll.onTick()
 			y1 = y1 + dY1
 			y2 = y2 + dY2
 			
-			if player.x < x1 then player.x = player.x + 2 end
-			if player.x > x1 + 486 then player.x = player.x - 2 end
+			if player.section == section then
+				if player.x < x1 then player.x = player.x + 2 end
+				if player.x > x1 + 486 then player.x = player.x - 2 end
+			end
 			
 			setSectionBounds(section, x1, y1, y2, x2)
 		end
