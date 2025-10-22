@@ -1,0 +1,19 @@
+[background2]
+; Name that will appear in the editor
+name = "SMB Overworld"
+; Backdrop fill color
+fill-color = black
+
+
+[layer1]
+img="sky.png"
+repeatX=true
+depth=1000
+alignY=BOTTOM
+
+
+[treetops]
+img="treetops.png"
+depth=750
+repeatX=true
+alignY=BOTTOM
