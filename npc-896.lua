@@ -368,7 +368,7 @@ function sampleNPC.onTickEndNPC(v)
 			v.animationFrame = math.floor(data.timer/8)%4+3
 
 			if data.timer == 23 then
-				data.npc = NPC.spawn(113,v.x+koopaSpawnOffset[v.direction],v.y-16,player.section)
+				data.npc = NPC.spawn(172,v.x+koopaSpawnOffset[v.direction],v.y-16,player.section)
 				data.npc.friendly = true
 				SFX.play(23)
 			end
