@@ -3,7 +3,7 @@ local ct = {}
 
 -- Customization Options:
 ct.frames = 5
-ct.onJump = function(p, isSpinJumping) end -- Override this in your own code if you have any special jump handling. Passes player and boolean.
+ct.onJump = function(p, isSpinJumping) if p.character == 3 then p:mem(0x11C,FIELD_WORD, 35) end -- Override this in your own code if you have any special jump handling. Passes player and boolean.
 
 -- Functionality
 
