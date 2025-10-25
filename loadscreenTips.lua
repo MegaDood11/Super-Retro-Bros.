@@ -91,4 +91,57 @@ loadTips.tipTable = {
 	"A winner is you!"
 }
 
+loadTips.dLevels = {
+	"World D-1.lvlx",
+	"World D-2.lvlx",
+	"World D-3.lvlx"
+}
+
+loadTips.minusLevels = {
+
+}
+
+loadTips.tipTableD = {
+	"You better stock up on lives for this one.",
+	"We at Team Rip apologise in advance.",
+	"You're F'd.",
+	"Remember hammer bros? They chase you now.",
+	"Play with a clear head, trust me.",
+	"Ptooies my beloved",
+	"This is it Luigi!",
+	"No more hints! They won't help you no more.",
+	"This is the end, or is it?",
+	"This world will make your life hell. Proceed anyway?",
+	"May Donkey Goomba have mercy on your soul.",
+	"I love cruelty. Have some. I had D-3's philosphy since the letter worlds were accepted into the project. -Sleepy",
+	"The D stands for death.",
+	"Bowser's not messing around anymore.",
+	"Some of our team felt bad making these levels.",
+	"Mike, crank those difficulties up to the max!",
+	"Mr. Rip gives this world a thumbs down.",
+	"If you struggle, try: up, up, down, down, left, right, left, right, run, jump. It won't do anything, but one can dream.",
+	"You better take cover - those winds can get pretty hectic!",
+	"Even the Lost Levels are easier than this!",
+	"Good luck. You'll really need it.",
+	"Good news: this is the final stretch. Bad news: you will die a LOT."
+}
+
+loadTips.tipTableMinus = {
+	"You found the Minus World! Can you reach the goal?",
+	"Beware of anomalies in this forbidden world...",
+	"You can thank Devious for adding this bonus world to the episode."
+}
+
+loadTips.wario = {
+	"You can now play as Wario.",
+	"Wario can do a powerful shoulder bash! Use it to pummel enemies and smash walls!",
+	"Wario can crawl through tight spaces - no more spam-jumping!"
+}
+
+loadTips.waluigi = {
+	"You can now play as Waluigi.",
+	"Waluigi can do a dive in the air. It gives you a big burst of speed too!",
+	"Waluigi can swim faster than any character."
+}
+
 return loadTips
