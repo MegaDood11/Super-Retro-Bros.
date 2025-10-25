@@ -1,4 +1,35 @@
 =========================================================================
+Cheats
+=========================================================================
+
+needamushroom (also works with "needasupermushroom", "mushroom", "supermushroom") - Spawns a Super Mushroom above the player's head
+needaflower (also works with "needafireflower", "flower", "fireflower") - Spawns a Fire Flower above the player's head
+needastarman (also works with "needasuperstar", "starman", "superstar") - Spawns a Starman above the player's head
+needabeetroot (also works with "beetroot") - Spawns a Beetroot above the player's head
+needajumpinglui (also works with "jumpinglui") - Spawns a Jumping Lui above the player's head
+needa1up (also works with "1up") - Spawns a Jumping Lui above the player's head
+needapoisonmushroom (also works with "poisonmushroom") - Spawns a Poison Mushroom above the player's head
+
+raisetheflag - Warps the player to the flagpole, doesn't work if a castle level
+
+mrrip - Plays a cool sound
+
+icanfly - Causes the player to launch into the air
+
+
+  *****************
+  Spoilers below!!!
+  *****************
+	|
+	|
+	|
+	|
+	V
+
+
+
+
+=========================================================================
 Level Design
 =========================================================================
 
@@ -34,6 +65,7 @@ World B-2 - MegaDood
 World B-3 - Ness-Wednesday
 World B-4 - DeviousQuacks23
 World C-1 - Dor_78 + MegaDood
+World C-2 - Sleepy Dee
 World C-3 - LumSht + MegaDood
 World D-1 - Ness-Wednesday
 World D-2 - MegaDood
@@ -97,6 +129,7 @@ Scripts
 -Titlecard Script - MegaDood
 -Accurate Timer by MegaDood
 -bonkFlipsMushrooms.lua by MegaDood
+-riproCheats - MegaDood
 -retroResolution - PlumberGraduate (Fixed for this episode by Deltomx3)
 -Bloopers and Hammer Bros by Murphmario
 -Bowser boss + bridge by Murphmario

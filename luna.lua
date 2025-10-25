@@ -41,6 +41,8 @@ local bonusChars = require("bonusChars")
 
 local bonkFlipsMushrooms = require("bonkFlipsMushrooms")
 
+local riproCheats = require("riproCheats")
+
 local dive = require("dive")
 
 -- Physics adjustments that make the game more like SMB1
@@ -83,7 +85,7 @@ function onStart()
     Player.setCostume(CHARACTER_LUIGI,"Smb1-luigi",true)
 	Player.setCostume(CHARACTER_TOAD,"Smb1-toadette",true)
 	Player.setCostume(3, "SMB1-WAAAAAAAAAAAAAA", true)
-Player.setCostume(CHARACTER_WARIO,"SMB1-Wario",true)
+	Player.setCostume(CHARACTER_WARIO,"SMB1-Wario",true)
 
     Graphics.setMainFramebufferSize(512,448)
 end
