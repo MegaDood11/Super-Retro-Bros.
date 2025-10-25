@@ -1,4 +1,4 @@
--- taken from betterfied 
+-- Taken from Betterfied 
 
 function table.clone(t)
     local rt = {};
@@ -65,21 +65,74 @@ local rng = require("base/rng")
 local textplus = require("textplus")
 
 local loadTips = require("loadscreenTips")
-local tipTable = loadTips.tipTable
+local tipTable
 
 local tipNum = 0
 
--- actual loadscreen stuffs
+-- Actual loadscreen stuffs
 
 local time = 0
 local image = Graphics.loadImageResolved("loadscreen.png")
 local image2 = Graphics.loadImageResolved("loadscreenLogo.png")
 local rot = 0
+local hasLoaded = false
 
 local fadeOut = 0
 
+local FIRST_PLAYER_CHARACTER_ADDR = mem(0x00B25A20, FIELD_DWORD) + 0x184 + 0xF0
+local charMem = mem(FIRST_PLAYER_CHARACTER_ADDR, FIELD_WORD)
+
+local loadingLevel = mem(0x00B25720, FIELD_STRING)
+
 function onDraw()    
 	-- tips
+
+	if not hasLoaded then
+		Graphics.setMainFramebufferSize(512, 448)
+
+		if loadTips.dLevels[loadingLevel] and (rng.randomInt(1, 2) == 1) then
+			tipTable = loadTips.tipTableD
+		elseif loadTips.minusLevels[loadingLevel] and (rng.randomInt(1, 3) == 1) then
+			tipTable = loadTips.tipTableMinus
+		elseif charMem == 7 and (rng.randomInt(1, 3) == 1) then
+			tipTable = loadTips.wario
+		elseif charMem == 3 and (rng.randomInt(1, 3) == 1) then
+			tipTable = loadTips.waluigi
+		else
+			tipTable = loadTips.tipTable
+		end
+
+		hasLoaded = true
+	end
+
+	-- Testing texts. Comment out when redundant.
+
+	 textplus.print{
+        	x = 0,
+        	y = 350,
+       		xscale = 2,
+        	yscale = 2,
+        	text = tostring(loadingLevel),
+		font = textplus.loadFont("textplus/font/3.ini"),
+        	pivot = {0, 0},
+        	maxWidth = 432,
+		color = Color.white,
+        	priority = -0.1,
+    	}
+	 textplus.print{
+        	x = 0,
+        	y = 366,
+       		xscale = 2,
+        	yscale = 2,
+        	text = tostring(loadTips.dLevels[loadingLevel]),
+		font = textplus.loadFont("textplus/font/3.ini"),
+        	pivot = {0, 0},
+        	maxWidth = 456,
+		color = Color.white,
+        	priority = -0.1,
+    	}
+
+---------------------------------------------
 	
 	 textplus.print{
         	x = 16 - 6,
@@ -94,7 +147,7 @@ function onDraw()
         	priority = -0.1,
     	}
 
-    	if tipNum == 0 then
+    	if tipNum == 0 and tipTable ~= nil then
         	tipNum = rng.randomInt(1, #tipTable)
     	end
 
@@ -113,17 +166,13 @@ function onDraw()
     		}
 	end
 
-	-- all the other things
-
-    	if time == 0 then
-        	Graphics.setMainFramebufferSize(512, 448)
-    	end
+	-- All the other things
 
 	time = time + 1
 	rot = rot - 4
 
 	if image then
-	Graphics.drawBox{ -- rotating circle thing
+	Graphics.drawBox{ -- Rotating circle thing
 		texture = image,
 		x = (438 + 12),
 		y = (374 + 12),
@@ -146,7 +195,7 @@ function onDraw()
 	}
 	end
 
-	-- smooth fade out (from battle arena)
+	-- Smooth fade out (from Battle Arena)
 
         if Misc.getLoadingFinished() then 
             	fadeOut = math.min(1,fadeOut + 1/20)
