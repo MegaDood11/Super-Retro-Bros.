@@ -107,7 +107,7 @@ function onDraw()
 
 	-- Testing texts. Comment out when redundant.
 
-	 textplus.print{
+	--[[ textplus.print{
         	x = 0,
         	y = 350,
        		xscale = 2,
@@ -130,7 +130,7 @@ function onDraw()
         	maxWidth = 456,
 		color = Color.white,
         	priority = -0.1,
-    	}
+    	}]]
 
 ---------------------------------------------
 	
