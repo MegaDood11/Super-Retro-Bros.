@@ -42,7 +42,7 @@ World 2-3 - MrNameless
 World 2-4 - LumSht + MegaDood
 World 3-1 - Ness-Wednesday
 World 3-2 - DeviousQuacks23
-World 3-4 - Suckerman7
+World 3-4 - Suckerman
 World 4-3 - MegaDood
 World 5-1 - FireSeraphim
 World 5-2 - Dor_78
@@ -66,7 +66,7 @@ World B-2 - MegaDood
 World B-3 - Ness-Wednesday
 World B-4 - DeviousQuacks23
 World C-1 - Dor_78 + MegaDood
-World C-2 - Sleepy Dee
+World C-2 - Sleepy Dee + Suckerman
 World C-3 - LumSht + MegaDood
 World D-1 - Ness-Wednesday
 World D-2 - MegaDood
