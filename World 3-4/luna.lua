@@ -40,5 +40,9 @@ function onEvent(e)
 	elseif e == "Toad Free 5" then
 		Level.endState(9)
 		endstates.setPlayer(player)
+	elseif e == "Pillar" then
+		for _,v in ipairs(NPC.get(695)) do
+			v:kill(9)
+		end
 	end
 end
