@@ -146,7 +146,7 @@ Scripts
 -You vs. Boo Assets - S.Koopa0
 -customPowerups - Marioman2007 + Emral
 -SMB Maze - Radiance + Marioman2007
--Loadscreen - DeviousQuacks + Marioman2007
+-Loadscreen - DeviousQuacks23 + Marioman2007
 -Text block by DeviousQuacks23
 -bonusChars.lua - DeviousQuacks23
 -Game Over script - DeviousQuacks23
@@ -174,7 +174,7 @@ Graphics
 -Minus Medal - DeviousQuacks23
 
 SMB1 Toadette - GlacialSiren484, TomAndTheCats, xxx_JonnieWalker2005, and The_Eggo55
-SMB1 Waluigi - MisteryGX, imported by Sleepy Dee
+SMB1 Waluigi - MisteryGX, tweaked and imported by Sleepy Dee
 SMB1 Wario - MrNameless, Deltomx3 and Sleepy Dee
 
 =============
