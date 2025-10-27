@@ -328,6 +328,10 @@ function npc.onTickEndNPC(v)
 	
 	v.despawnTimer = 180
 	
+	if v.generatorType == 1 and v.generatorDirection == 1 then
+		v.y = v.spawnY
+	end
+	
 	if v.despawnTimer <= 0 and data.platforms then
 		if not settings.noSaving then
 			beforeDespawning(v, data, settings, cfg)
