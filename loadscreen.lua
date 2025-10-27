@@ -92,7 +92,7 @@ function onDraw()
 
 		if loadTips.dLevels[loadingLevel] and (rng.randomInt(1, 2) == 1) then
 			tipTable = loadTips.tipTableD
-		elseif loadTips.minusLevels[loadingLevel] and (rng.randomInt(1, 3) == 1) then
+		elseif loadTips.tipTableMinus[loadingLevel] and (rng.randomInt(1, 3) == 1) then
 			tipTable = loadTips.tipTableMinus
 		elseif charMem == 7 and (rng.randomInt(1, 3) == 1) then
 			tipTable = loadTips.wario

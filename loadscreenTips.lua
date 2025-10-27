@@ -103,10 +103,6 @@ loadTips.dLevels = {
 	"World D-4.lvlx"
 }
 
-loadTips.minusLevels = {
-
-}
-
 loadTips.tipTableD = {
 	"You better stock up on lives for this one.",
 	"We at Team Rip apologise in advance.",
