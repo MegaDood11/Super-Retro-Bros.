@@ -75,6 +75,7 @@ loadTips.tipTable = {
 	"01101110 01100101 01110110 01100101 01110010 00100000 01100111 01101111 01101110 01101110 01100001 00100000 01100111 01101001 01110110 01100101 00100000 01111001 01101111 01110101 00100000 01110101 01110000",
 	"Mario Start!",
 	"Luigi Start!",
+	"Toadette Start!",
 	"Wario Start!?",
 	"Look out behind you!",
 	"Sorry, no playable cow.",
@@ -88,13 +89,18 @@ loadTips.tipTable = {
 	"Mini-Mario! Buy them all!",
 	"so ripro",
 	"Middle... Right... Left... Left... Right... Middle... Right... Left... Right... Right... Middle right right left middle middle left left left right left left left middle middle!",
-	"A winner is you!"
+	"Mario's a good all rounder, he neither excels nor struggles.",
+	"Luigi can jump extra high, at the cost of his movement.",
+	"Toadette is fast, and easy to pick up and play.",
+	"Be patient with firebars, and you'll overcome them.",
+	"Piranha plants come in all shapes and sizes.",
 }
 
 loadTips.dLevels = {
 	"World D-1.lvlx",
 	"World D-2.lvlx",
 	"World D-3.lvlx"
+	"World D-4.lvlx"
 }
 
 loadTips.minusLevels = {
@@ -109,7 +115,7 @@ loadTips.tipTableD = {
 	"Play with a clear head, trust me.",
 	"Ptooies my beloved",
 	"This is it Luigi!",
-	"No more hints! They won't help you no more.",
+	"No more hints! They won't help you any more.",
 	"This is the end, or is it?",
 	"This world will make your life hell. Proceed anyway?",
 	"May Donkey Goomba have mercy on your soul.",
@@ -117,7 +123,7 @@ loadTips.tipTableD = {
 	"The D stands for death.",
 	"Bowser's not messing around anymore.",
 	"Some of our team felt bad making these levels.",
-	"Mike, crank those difficulties up to the max!",
+	"Mike, crank the difficulty up to the max!",
 	"Mr. Rip gives this world a thumbs down.",
 	"If you struggle, try: up, up, down, down, left, right, left, right, run, jump. It won't do anything, but one can dream.",
 	"You better take cover - those winds can get pretty hectic!",
@@ -129,7 +135,7 @@ loadTips.tipTableD = {
 loadTips.tipTableMinus = {
 	"You found the Minus World! Can you reach the goal?",
 	"Beware of anomalies in this forbidden world...",
-	"You can thank Devious for adding this bonus world to the episode."
+	"A winner is you!"
 }
 
 loadTips.wario = {
