@@ -152,6 +152,7 @@ Scripts
 -Game Over script - DeviousQuacks23
 -You Vs. Boo setup - MegaDood + DeviousQuacks23
 -Bowser Jr. - Ma8lrk
+Yoshi Egg + Purple Prize stuff - MegaDood
 
 ========
 Graphics
@@ -172,6 +173,7 @@ Graphics
 -Bonus Image for Wario + Waluigi - C.Pariah
 -Bonus Image for Toadette - GlacialSiren484
 -Minus Medal - DeviousQuacks23
+-Purple Prize - FNC2002 + MegaDood
 
 SMB1 Toadette - GlacialSiren484, TomAndTheCats, xxx_JonnieWalker2005, and The_Eggo55
 SMB1 Waluigi - MisteryGX, tweaked and imported by Sleepy Dee

@@ -79,6 +79,8 @@ Misc.setWindowTitle("Super Ripro Bros.")
 local lastDirection = 1
 local lastDucked = false
 
+SaveData.waluigiProgress = SaveData.waluigiProgress or 0
+
 -- Run code on level start
 function onStart()
     Player.setCostume(CHARACTER_MARIO,"Smb1-mario",true)
