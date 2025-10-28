@@ -99,7 +99,7 @@ loadTips.tipTable = {
 loadTips.dLevels = {
 	"World D-1.lvlx",
 	"World D-2.lvlx",
-	"World D-3.lvlx"
+	"World D-3.lvlx",
 	"World D-4.lvlx"
 }
 
@@ -143,7 +143,8 @@ loadTips.wario = {
 loadTips.waluigi = {
 	"You can now play as Waluigi.",
 	"Waluigi can do a dive in the air. It gives you a big burst of speed too!",
-	"Waluigi can swim faster than any character."
+	"Waluigi can swim faster than any character.",
+	"Waluigi Start!!!"
 }
 
 return loadTips
