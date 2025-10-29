@@ -1,0 +1,9 @@
+[1]
+frames=20
+framestyle=0
+width=32
+height=32
+framespeed=3
+speedY=-2.5
+lifetime=60
+priority=-75
