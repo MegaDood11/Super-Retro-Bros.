@@ -119,8 +119,8 @@ function dive.onTick() for k, p in ipairs(Player.get()) do
 		end
 
 		-- Bypass the speed limit
-		if math.abs(p.speedX) > 4 then
- 			local excessSpeed = (math.abs(p.speedX) - 4)*math.sign(p.speedX)
+		if math.abs(p.speedX) > 5.3 then
+ 			local excessSpeed = (math.abs(p.speedX) - 5.3)*math.sign(p.speedX)
   			p:mem(0x138,FIELD_FLOAT,excessSpeed)
   			p.speedX = p.speedX - excessSpeed
 		end

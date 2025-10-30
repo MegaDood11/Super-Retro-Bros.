@@ -64,8 +64,8 @@ local characterSpeedModifiers = {
 local characterNeededPSpeeds = {
 	[CHARACTER_MARIO] = 35,
 	[CHARACTER_LUIGI] = 40,
-	[CHARACTER_PEACH] = 80,
-	[CHARACTER_TOAD]  = 60,
+	[CHARACTER_PEACH] = 40,
+	[CHARACTER_TOAD]  = 35,
 }
 local characterDeathEffects = {
 	[CHARACTER_MARIO] = 3,

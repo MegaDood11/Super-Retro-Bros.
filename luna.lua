@@ -103,9 +103,13 @@ function onTick()
 	player.reservePowerup = 0
 	player:mem(0x38, FIELD_WORD, math.min(player:mem(0x38, FIELD_WORD), 3))
 	player:mem(0x18,FIELD_BOOL,false) --Disable Peach's hover
+	player:mem(0x1C,FIELD_WORD,0) --Disable Peach's hover
 	if player:mem(0x16,FIELD_WORD) > 2 then --Caps Toad's HP to 2
 		player:mem(0x16,FIELD_WORD,2)
 	end
+	
+	
+	if player.character == 3 then Defines.player_walkspeed = 2.6 Defines.player_runspeed = 5.59 end
 	
 	if player:mem(0x0A, FIELD_BOOL) then
 		ppp.speedXDecelerationModifier = -0.015
