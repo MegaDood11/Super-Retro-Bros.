@@ -2,7 +2,7 @@ HEAD
 XTRA:"{\n    \"timer\"\: {\n        \"enable\"\: true\,\n        \"time\"\: 350\n    }\n}\n";CPID:"SMBX2";
 HEAD_END
 SECTION
-SC:0;L:-200000;R:-186720;T:-200600;B:-200000;MZ:24;MF:"Music/Badlands.ogg";BG:8;XTRA:"{\n    \"newTurnBack\"\: {\n        \"horizontal\"\: 1\n    }\n}\n";
+SC:0;L:-200000;R:-186720;T:-200600;B:-200000;MZ:24;MF:"Music/Badlands.ogg";BG:70;XTRA:"{\n    \"newTurnBack\"\: {\n        \"horizontal\"\: 1\n    }\n}\n";
 SECTION_END
 STARTPOINT
 ID:1;X:-199884;Y:-200118;D:1;
