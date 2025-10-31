@@ -1,2 +1,3 @@
-Background by FireSeraphim, edited by Shoe
-Tileset by WALMAKER2022
+Block developed by DisasterMaster and MegaDood
+Code adapted form KateBulka's wind script.
+Tileset by SuperSledgeBro.

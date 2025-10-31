@@ -9,3 +9,4 @@ npcblocktop=1
 grabside=0
 noyoshi=1
 nogravity=1
+noblockcollision=1
