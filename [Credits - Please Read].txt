@@ -60,6 +60,7 @@ World 8-4 - FNC2002
 World 9-1 - DeviousQuacks23
 World 9-3 - Radiance
 
+World A-1 - Sleepy Dee
 World A-3 - Ness-Wednesday
 World A-4 - MegaDood
 World B-2 - MegaDood
@@ -80,7 +81,7 @@ World -2 - Ness-Wednesday
 World -3 - MegaDood
 World -4 - MegaDood
 World -5 - Sleepy Dee
-World -6 - Apple Boy
+World -6 - Apple Boy + MegaDood
 World -8 - DeviousQuacks23
 World -9 - MegaDood
 
