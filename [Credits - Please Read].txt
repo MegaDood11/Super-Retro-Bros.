@@ -80,6 +80,7 @@ World -2 - Ness-Wednesday
 World -3 - MegaDood
 World -4 - MegaDood
 World -5 - Sleepy Dee
+World -6 - Apple Boy
 World -8 - DeviousQuacks23
 World -9 - MegaDood
 
