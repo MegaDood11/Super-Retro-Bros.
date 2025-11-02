@@ -138,6 +138,7 @@ loadTips.wario = {
 	"You can now play as Wario.",
 	"Wario can do a powerful shoulder bash! Use it to pummel enemies and smash walls!",
 	"Wario can crawl through tight spaces - no more spam-jumping!"
+	"Wario's a bit slow, but his shoulder bash makes up for it!"
 }
 
 loadTips.waluigi = {

@@ -116,7 +116,7 @@ hisPurpose.settings = {
 	------------ DUCK/CRAWLING SETTINGS ------------
 	
 	allowDuckSliding = false, -- Should wario be able to slide on the ground with less friction (false by default)
-	allowCrawling = false, -- Should wario be allowed to crawl (true by default)
+	allowCrawling = true, -- Should wario be allowed to crawl (true by default)
 	crawlAntizip = true, -- Should there be an antizip to prevent wario from unducking when a block is above him (true by default)
 	crawlspeed = 2, -- How fast should wario crawl (2 by default)
 	
