@@ -122,7 +122,7 @@ loadTips.tipTableD = {
 	"Mike, crank the difficulty up to the max!",
 	"Mr. Rip gives this world a thumbs down.",
 	"If you struggle, try: up, up, down, down, left, right, left, right, run, jump. It won't do anything, but one can dream.",
-	"You better take cover - those winds can get pretty hectic!",
+	"Take cover - those winds can get pretty hectic!",
 	"Even the Lost Levels are easier than this!",
 	"Good luck. You'll really need it.",
 	"Good news: this is the final stretch. Bad news: you will die a LOT."
@@ -131,14 +131,18 @@ loadTips.tipTableD = {
 loadTips.tipTableMinus = {
 	"You found the Minus World! Can you reach the goal?",
 	"Beware of anomalies in this forbidden world...",
-	"A winner is you!"
+	"A winner is you!",
+	"In this world, the level design can be anything.",
+	"The minus world doesn't count towards 100% completion!",
+	"Don't worry, those flying bloopers are normal here.",
+	"Mr. Rip gives this world a thumbs up.",
 }
 
 loadTips.wario = {
 	"You can now play as Wario.",
 	"Wario can do a powerful shoulder bash! Use it to pummel enemies and smash walls!",
-	"Wario can crawl through tight spaces - no more spam-jumping!"
-	"Wario's a bit slow, but his shoulder bash makes up for it!"
+	"Wario's a bit slow, but his shoulder bash makes up for it!",
+	"Wario can't smash through everything while small."
 }
 
 loadTips.waluigi = {
