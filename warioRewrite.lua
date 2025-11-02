@@ -131,7 +131,7 @@ hisPurpose.settings = {
 	
 	allowSmallAbilities = true, -- Should wario be able to use his unique abilites, even when he's small (false by default)
 	allowSpinjump = false, -- Should wario be able to spinjump (false by default)
-	allowCoinsOnKill = true, -- Will enemies be able to drop coins upon being killed (true by default)
+	allowCoinsOnKill = false, -- Will enemies be able to drop coins upon being killed (true by default)
 	baseWalkingSpeed = 4, -- What is the maximum speed wario can walk fast as (4 by default)
 	baseRunningSpeed = 4, -- What is the maximum speed wario can run fast as (4 by default)
 	droppedCoinId = 10, -- What npc/coin id will be dropped upon killing an enemy (10 by default) 

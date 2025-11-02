@@ -1,0 +1,5 @@
+[1]
+import=AI_ARC
+speedX = 0
+lifetime = 24
+gravity = 0.75

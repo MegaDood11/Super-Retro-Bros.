@@ -17,7 +17,7 @@ local sampleNPCSettings = {
 	width = 32,
 	height = 32,
 	--Frameloop-related
-	frames = 4,
+	frames = 1,
 	framestyle = 1,
 	framespeed = 8, -- number of ticks (in-game frames) between animation frame changes
 	
@@ -47,15 +47,15 @@ function sampleNPC.onInitAPI()
 	registerEvent(sampleNPC, "onPostNPCKill")
 end
 
-if not SaveData.prizeCollected then
-	SaveData.prizeCollected = {}
+if not SaveData.eggCollected then
+	SaveData.eggCollected = {}
 end
 
 local thingo = false
 
 function sampleNPC.onTickNPC(v)
 	if not v.data.id then v.data.id = Level.filename() end
-	for _,collect in ipairs(SaveData.prizeCollected) do
+	for _,collect in ipairs(SaveData.eggCollected) do
 		if v.data.id == collect then
 			if lunatime.tick() >= 8 then
 				v:kill(9)
@@ -74,7 +74,7 @@ function sampleNPC.onDraw()
 			display = true
 		end
 		
-		for _,collect in ipairs(SaveData.prizeCollected) do
+		for _,collect in ipairs(SaveData.eggCollected) do
 			if v.data.id == collect then
 				frame = 1
 			end
@@ -85,7 +85,7 @@ function sampleNPC.onDraw()
 	--Where the HUD display happens
 	if display and not thingo then
 		Graphics.drawImageWP(
-			Graphics.loadImageResolved("Purple Prize.png"),
+			Graphics.loadImageResolved("Yoshi Egg.png"),
 			2, 400,
 			0, frame * 46,
 			46, 46,
@@ -99,10 +99,16 @@ function sampleNPC.onPostNPCKill(v,reason)
 		local w = Effect.spawn(npcID,0,0)
 		w.x = (v.x+(v.width /2)-(w.width /2))
 		w.y = (v.y+(v.height/2)-(w.height/2))
-		Effect.spawn(249, v.x-(v.width /2), v.y+(v.height/2)-(w.height/2))
-		SFX.play("Purple Prize.wav")
-		SaveData.waluigiProgress = SaveData.waluigiProgress + 1
-		table.insert(SaveData.prizeCollected, v.data.id)
+		for i = 1,4 do
+			local e = Effect.spawn(80,0,0)
+			e.x = (v.x+(v.width * 0.25))
+			e.y = (v.y+(v.height * 0.25))
+			if i % 4 <= 1 then e.speedY = -2 else e.speedY = 2 end
+			if i % 2 == 1 then e.speedX = 2 else e.speedX = -2 end
+		end
+		SFX.play(48)
+		SaveData.letterWorldProgress = SaveData.letterWorldProgress + 1
+		table.insert(SaveData.eggCollected, v.data.id)
 		frame = 1
 	end
 end
