@@ -135,7 +135,10 @@ function sidestepper.onNPCHarm(eventObj, v, killReason, culprit)
 			v.ai2 = 1
 			v.ai3 = 20
 			v.ai4 = v.direction
-			v.speedX = (NPC.config[v.id].speed + .2) * culprit.direction
+			if culprit then v.speedX = (NPC.config[v.id].speed + .2) * culprit.direction else
+				if player.character == CHARACTER_WARIO and math.abs(player.x - v.x) <= 64 and math.abs(player.y - v.y) <= 64 then player.data.wario.dashTimer = 0 player.speedY = -4 player.speedX = 2 * -player.direction end
+				v.speedX = (NPC.config[v.id].speed + .2) * player.direction
+			end
 			v.speedY = -4
 		end
 	end

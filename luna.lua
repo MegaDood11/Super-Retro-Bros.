@@ -45,6 +45,11 @@ local riproCheats = require("riproCheats")
 
 local dive = require("dive")
 
+local playerManager = require("playerManager")
+local warioRewrite = require("warioRewrite")
+
+playerManager.overrideCharacterLib(CHARACTER_WARIO, warioRewrite) -- This is what activates warioRewrite to go overwrite the original basegame Wario script with itself!
+
 -- Physics adjustments that make the game more like SMB1
 Defines.player_walkspeed = 2.4
 Defines.player_runspeed = 5.2

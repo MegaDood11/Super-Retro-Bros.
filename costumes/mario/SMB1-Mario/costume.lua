@@ -655,7 +655,7 @@ function costume.onTickEnd()
 	for _,p in ipairs(costume.playersList) do
 		local data = costume.playerData[p]
 
-
+		if p.character == CHARACTER_MARIO then
 		handleDucking(p)
 		
 		--SMB1 falling animation
@@ -746,6 +746,7 @@ function costume.onTickEnd()
 
 		-- For kicking
 		data.wasHoldingNPC = (p.holdingNPC ~= nil)
+	end
 	end
 end
 

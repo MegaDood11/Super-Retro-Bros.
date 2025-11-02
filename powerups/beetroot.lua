@@ -61,6 +61,7 @@ local smb2Chars = table.map{3,4,6,9,10,11,16}
 
 -- Link, Snake, and Samus respectively
 local linkChars = table.map{5,12,16}
+local WARIO = table.map{7}
 
 -- Projectile cooldown timers for Mario, Luigi, Peach, Toad, and Link respectively
 local projectileTimerMax = {55, 55, 55, 50, 45, 55, 55}
@@ -75,6 +76,7 @@ pcall(function() aw = require("anotherwalljump") end)
 pcall(function() aw = aw or require("aw") end)
 
 local function canPlayShootAnim(p)
+	if (WARIO[p.character] and p.keys.altRun == KEYS_DOWN) then return end
     return (
         p.forcedState == 0
         and p.deathTimer == 0 -- not dead
@@ -128,7 +130,7 @@ function beetroot.onTickPowerup(p)
 	end
 
 	-- handles spawning the projectile if the player is pressing either run button, spinjumping, or at the apex(?) of link's sword slash animation respectively
-    if (tryingToShoot and not linkChars[p.character]) or player:mem(0x14, FIELD_WORD) == 2 then
+    if (tryingToShoot and not (linkChars[p.character])) or player:mem(0x14, FIELD_WORD) == 2 then
         local dir = p.direction
 		
 		-- reverses the direction the projectile goes when the player is spinjumping to make it be shot """in front""" of the player 
