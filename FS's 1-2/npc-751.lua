@@ -122,6 +122,8 @@ function trollWoodBlock.onTickEndNPC(v)
         	elseif data.offset < 0 then data.offset = data.offset + 4 end
 	end
 
+	v.despawnTimer = 180
+
 	if data.cooldown <= 0 then
 		for _,p in ipairs(Player.get()) do
 			if p.forcedState == FORCEDSTATE_NONE and p.deathTimer == 0 and not p:mem(0x13C,FIELD_BOOL) and Misc.canCollideWith(v, p) then
