@@ -93,7 +93,9 @@ loadTips.tipTable = {
 	"Luigi can jump extra high, at the cost of his movement.",
 	"Toadette is fast, and easy to pick up and play.",
 	"Be patient with firebars, and you'll overcome them.",
-	"Piranha Plants come in all shapes and sizes."
+	"Piranha Plants come in all shapes and sizes.",
+	"I'm Bowser Junior. And I'm gonna be taking my father... NOW!",
+	"SORRY NOTHING"
 }
 
 loadTips.dLevels = {
@@ -135,7 +137,9 @@ loadTips.tipTableMinus = {
 	"In this world, the level design can be anything.",
 	"The minus world doesn't count towards 100% completion!",
 	"Don't worry, those flying bloopers are normal here.",
-	"Mr. Rip gives this world a thumbs up."
+	"Mr. Rip gives this world a thumbs up.",
+	"WELCOME TO S L E E P W A V E",
+	"Under where?"
 }
 
 loadTips.wario = {
