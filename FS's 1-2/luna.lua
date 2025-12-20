@@ -12,6 +12,8 @@ local hasDisorted = false
 local opacity = 0
 local pipeTime = 0
 
+local oldTime
+
 local shader = Shader()
 shader:compileFromFile(nil, Misc.resolveFile("wave.frag"))
 
@@ -94,7 +96,17 @@ function onDraw()
 			color = Color.white,
         		priority = 5,
     		}
+
+		if oldTime then
+			Timer.set(RNG.randomInt(101,999), false)
+		else
+			oldTime = Timer.get()
+		end
 	else
 		smb1HUD.currentWorld = vector(1,2)
+		if oldTime then
+			Timer.set(oldTime, true)
+			oldTime = nil
+		end
 	end
 end

@@ -32,15 +32,15 @@ loadTips.tipTable = {
 	"Some bloopers can swim without the need of water!",
 	"kill everyone",
 	"kill everything",
-	"If you see a grumpy looking green Toad with a monobrow, say hi!",
-	"If you jump 2401 times on the 20th tile in 1-3, you unlock Luigi!",
+	"If you see a grumpy looking green Toad with a monobrow, say hi!", -- Todd
+	"If you jump 2401 times on the 20th tile in 1-3, you unlock Luigi!", -- Reference to the classic SM64 rumor
 	"If you jump 6814 times on the 61st tile in 4-2, you unlock Waluigi! /j",
 	"You can use the Beetroot to plow through walls of bricks! Maybe you'll find something special in them...",
 	"Ripro is rip + retro.",
 	"In bonus rooms, the character head will change depending on your character.",
-	"They say there's a castle filled with Bowsers, found in a place unknown...",
+	"They say there's a castle filled with Bowsers, found in a place unknown...", -- Realm of Bowser 2
 	"The timer is much faster than normal (for the sake of accuracy), so... hurry up!",
-	"Beyond the goal pole, you might find a mysterious pipe... why don't you enter it?",
+	"Beyond the goal pole, you might find a mysterious pipe... why don't you enter it?", -- You VS. Boo
 	"Hurry! After defeating Lakitu, he may return within a few seconds.",
 	"Bewear of poison mushrooms. Their icky taste will make you lose your powerup.",
 	"Don't stomp on the Bloopers underwater. You can only stomp on Bloopers that swim in the air.",
@@ -57,10 +57,10 @@ loadTips.tipTable = {
 	"Don't give up!",
 	"Boom Boom was planned for the episode, but he was ultimately scapped for Junior.",
 	"Remember, this is just a game - take a break if you need one.",
-	"Fire In The Hole",
-	"Onward and upward!",
-	"I wonder what Goombas taste like...",
-	"Peaches, Peaches, Peaches, Peaches, Peaches, Peaches, Peaches, Peaches, Peaches, Peaches",
+	"Fire In The Hole", -- Geometry Dash meme
+	"Onward and upward!", -- Talking Flower quote
+	"I wonder what Goombas taste like...", -- Same here
+	"Peaches, Peaches, Peaches, Peaches, Peaches, Peaches, Peaches, Peaches, Peaches, Peaches", -- from the Mario Movie
 	"If Mario, then only Bros!",
 	"|: |",
 	"Do not use AI for making assets. Don't even try.",
@@ -78,31 +78,45 @@ loadTips.tipTable = {
 	"Toadette Start!",
 	"Wario Start!?",
 	"Look out behind you!",
-	"Sorry, no playable cow.",
+	"Sorry, no playable cow.", -- Mario Kart World
 	"kliklolklilkllklilkloklillkllkilkllokllikllkliklolklilkllklilklolklilkllklilklolklilklklilklolklilklkllikllokllikllklilklolkilkllklilkllolklilklkilklolklilkl",
 	"Sidesteppers take two hits to defeat. The sturdiness of these crab is a mystery that spans across generations.",
 	"In some Boo races, dotted line blocks will automatically switch every 2 seconds.",
 	"Don't look inside the You Vs Boo folder.",
 	"This episode doesn't contain wall jumps or ground pounds. This includes the classic wall jump glitch. Sorry, Kosmic.",
-	"You can now play as Luigi.",
+	"You can now play as Luigi.", -- Super Mario Galaxy quote
 	"I'm a chuckster!",
 	"Mini-Mario! Buy them all!",
 	"so ripro",
-	"Middle... Right... Left... Left... Right... Middle... Right... Left... Right... Right... Middle right right left middle middle left left left right left left left middle middle!",
+	"Middle... Right... Left... Left... Right... Middle... Right... Left... Right... Right... Middle right right left middle middle left left left right left left left middle middle!", -- The very long code from SPM
 	"Mario's a good all rounder, he neither excels nor struggles.",
 	"Luigi can jump extra high, at the cost of his movement.",
 	"Toadette is fast, and easy to pick up and play.",
 	"Be patient with firebars, and you'll overcome them.",
 	"Piranha Plants come in all shapes and sizes.",
-	"I'm Bowser Junior. And I'm gonna be taking my father... NOW!",
-	"SORRY NOTHING"
+	"I'm Bowser Junior. And I'm gonna be taking my father... NOW!", -- Mario Galaxy Movie quote
+	"SORRY NOTHING", -- Super Boy quote
+	"Also check out Super Mario Construct!",
+	"Look guys look! It's one of my greatest achievements!", -- Wario Land 4
+	"Try beating a level without taking damage, for bragging rights!"
 }
 
-loadTips.dLevels = {
+loadTips.dLevels = { -- D World levels
 	"World D-1.lvlx",
 	"World D-2.lvlx",
 	"World D-3.lvlx",
 	"World D-4.lvlx"
+}
+
+loadTips.minusLevels = { -- Add minus world levels here
+	"Beetroot Land.lvlx",
+	"FS's -1 Level.lvlx",
+	"SLEEPWAVE.lvlx",
+	"realm of bowser 2.lvlx",
+	"This Skeleton is Undercooked.lvlx",
+	"Warp Zone Zone.lvlx",
+	"World  -Weird Level.lvlx",
+	"World -Cloud.lvlx"
 }
 
 loadTips.tipTableD = {
@@ -139,7 +153,7 @@ loadTips.tipTableMinus = {
 	"Don't worry, those flying bloopers are normal here.",
 	"Mr. Rip gives this world a thumbs up.",
 	"WELCOME TO S L E E P W A V E",
-	"Under where?"
+	"Under where?" -- Reference to the minus world cameo in SPM.
 }
 
 loadTips.wario = {

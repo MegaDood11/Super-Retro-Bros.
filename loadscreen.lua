@@ -9,6 +9,15 @@ function table.clone(t)
     return rt;
 end
 
+function table.contains(table, element)
+  for _, value in pairs(table) do
+    if value == element then
+      return true
+    end
+  end
+  return false
+end
+
 function math.clamp(a,mi,ma)
     mi = mi or 0;
     ma = ma or 1;
@@ -90,9 +99,9 @@ function onDraw()
 	if not hasLoaded then
 		Graphics.setMainFramebufferSize(512, 448)
 
-		if loadTips.dLevels[loadingLevel] and (rng.randomInt(1, 2) == 1) then
+		if table.contains(loadTips.dLevels,loadingLevel) then
 			tipTable = loadTips.tipTableD
-		elseif loadTips.tipTableMinus[loadingLevel] and (rng.randomInt(1, 3) == 1) then
+		elseif table.contains(loadTips.minusLevels,loadingLevel) and (rng.randomInt(1, 2) == 1) then
 			tipTable = loadTips.tipTableMinus
 		elseif charMem == 7 and (rng.randomInt(1, 3) == 1) then
 			tipTable = loadTips.wario
@@ -107,7 +116,7 @@ function onDraw()
 
 	-- Testing texts. Comment out when redundant.
 
-	--[[ textplus.print{
+	--[[textplus.print{
         	x = 0,
         	y = 350,
        		xscale = 2,
@@ -124,7 +133,7 @@ function onDraw()
         	y = 366,
        		xscale = 2,
         	yscale = 2,
-        	text = tostring(loadTips.dLevels[loadingLevel]),
+        	text = tostring(table.contains(loadTips.dLevels,loadingLevel)),
 		font = textplus.loadFont("textplus/font/3.ini"),
         	pivot = {0, 0},
         	maxWidth = 456,
