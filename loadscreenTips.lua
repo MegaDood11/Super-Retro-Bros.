@@ -98,7 +98,10 @@ loadTips.tipTable = {
 	"SORRY NOTHING", -- Super Boy quote
 	"Also check out Super Mario Construct!",
 	"Look guys look! It's one of my greatest achievements!", -- Wario Land 4
-	"Try beating a level without taking damage, for bragging rights!"
+	"Try beating a level without taking damage, for bragging rights!",
+	"This is... my son. Treat him well.", -- Grim Dealer from SMATRS
+	"6-7 is unfunny", -- If you think it's funny, go touch some grass. - Devious
+	"Was that the bite of '87!?" -- FNAF
 }
 
 loadTips.dLevels = { -- D World levels
