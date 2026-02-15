@@ -1,0 +1,12 @@
+[1]
+xAlign = LEFT
+yAlign = TOP
+spawnBindX = LEFT
+spawnBindY = TOP
+frames = 3
+framestyle = 0
+framespeed = 8
+xScale = 1
+yScale = 1
+lifetime = 24
+delay = 0

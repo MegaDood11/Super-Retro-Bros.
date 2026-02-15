@@ -30,8 +30,9 @@ function ripro.onTick()
 	registerHeldCheat("needapoisonmushroom", 153, {"poisonmushroom"})
 	
 	Cheats.register("raisetheflag",{isCheat = true,
-	onActivate = (function() 
-		for _,v in ipairs(NPC.get(394)) do
+	onActivate = (function()
+		local flagpoleNPCs = {394, 851}
+		for _,v in ipairs(NPC.get(flagpoleNPCs)) do
 			player.section = v.section
 			player.x = v.x + 16
 			player.y = v.y - 360

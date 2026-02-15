@@ -1186,7 +1186,6 @@ ID:524;X:-195120;Y:-200208;D:-1;LR:"Remove them?";XTRA:"{\n    \"fireAngle\"\: 7
 ID:895;X:-194240;Y:-200384;D:-1;S1:6;
 ID:895;X:-194176;Y:-200416;D:-1;S1:6;
 ID:893;X:-192960;Y:-200096;D:-1;S1:1;
-ID:394;X:-184416;Y:-200096;D:-1;
 ID:637;X:-190608;Y:-200384;D:-1;XTRA:"{\n    \"npc\"\: 902\n}\n";
 ID:524;X:-179760;Y:-180432;D:-1;FD:1;
 ID:700;X:-179680;Y:-180400;D:-1;CN:893;NM:1;XTRA:"{\n    \"invisible\"\: true\n}\n";
@@ -1278,6 +1277,7 @@ ID:455;X:-184992;Y:-200158;D:-1;
 ID:524;X:-186096;Y:-200352;D:1;XTRA:"{\n    \"fireAngle\"\: 0\,\n    \"firePerSpurt\"\: 1\,\n    \"fireSpurts\"\: 5\n}\n";
 ID:524;X:-185616;Y:-200352;D:1;XTRA:"{\n    \"fireAngle\"\: 0\,\n    \"firePerSpurt\"\: 1\,\n    \"fireSpurts\"\: 5\n}\n";
 ID:876;X:-193312;Y:-200160;D:-1;XTRA:"{\n    \"blockTime\"\: 192\,\n    \"maxCoins\"\: 99\n}\n";
+ID:851;X:-184416;Y:-200096;D:1;XTRA:"{\n    \"bgo\"\: 16\,\n    \"defaultwinanim\"\: false\,\n    \"fireworks\"\: 1\,\n    \"topbonus\"\: false\n}\n";
 NPC_END
 DOORS
 IX:-190416;IY:-200192;OX:-159952;OY:-160320;DT:1;ID:3;OD:1;

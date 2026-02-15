@@ -3859,7 +3859,6 @@ ID:512;X:-39984;Y:-40176;D:-1;
 ID:512;X:-39728;Y:-40096;D:-1;
 ID:512;X:-59376;Y:-60176;D:-1;
 ID:512;X:-19888;Y:-20176;D:-1;
-ID:394;X:-19296;Y:-20096;D:-1;
 ID:465;X:-136576;Y:-140384;D:-1;GE:1;GT:1;GD:1;GM:0;EA:"Warp Zone 3";ED:"Warp Zone 3";
 ID:465;X:-136576;Y:-140800;D:-1;GE:1;GT:1;GD:1;GM:0;EA:"Warp Zone 3";ED:"Warp Zone 3";
 ID:465;X:-136576;Y:-141152;D:-1;GE:1;GT:1;GD:1;GM:0;EA:"Warp Zone 3";ED:"Warp Zone 3";
@@ -3937,6 +3936,7 @@ ID:465;X:-136816;Y:-140192;D:-1;GE:1;GT:1;GD:1;GM:0;ED:"Warp Zone 3";
 ID:465;X:-136816;Y:-140320;D:-1;GE:1;GT:1;GD:1;GM:0;ED:"Warp Zone 3";
 ID:465;X:-136816;Y:-140640;D:-1;GE:1;GT:1;GD:1;GM:0;ED:"Warp Zone 3";
 ID:465;X:-136816;Y:-140928;D:-1;GE:1;GT:1;GD:1;GM:0;ED:"Warp Zone 3";
+ID:851;X:-19296;Y:-20096;D:1;XTRA:"{\n    \"block\"\: 59\,\n    \"defaultwinanim\"\: false\,\n    \"fireworks\"\: 1\,\n    \"topbonus\"\: false\n}\n";
 NPC_END
 DOORS
 IX:-199680;IY:-200128;OX:-179920;OY:-180192;DT:1;ID:4;OD:1;

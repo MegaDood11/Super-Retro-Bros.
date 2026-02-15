@@ -1140,7 +1140,6 @@ ID:461;X:-180640;Y:-200074;D:-1;XTRA:"{\n    \"turns\"\: true\,\n    \"useFixed\
 ID:459;X:-180320;Y:-200032;D:1;XTRA:"{\n    \"turns\"\: true\,\n    \"useFixed\"\: true\n}\n";
 ID:459;X:-179904;Y:-200032;D:-1;XTRA:"{\n    \"turns\"\: true\,\n    \"useFixed\"\: true\n}\n";
 ID:461;X:-180096;Y:-200074;D:-1;XTRA:"{\n    \"turns\"\: true\,\n    \"useFixed\"\: true\n}\n";
-ID:394;X:-178944;Y:-200096;D:-1;
 ID:523;X:-179728;Y:-200352;D:1;
 ID:459;X:-179296;Y:-200032;D:-1;XTRA:"{\n    \"turns\"\: true\,\n    \"useFixed\"\: true\n}\n";
 ID:88;X:-199322;Y:-200256;D:-1;
@@ -1249,6 +1248,7 @@ ID:88;X:-179738;Y:-200256;D:-1;
 ID:88;X:-179706;Y:-200256;D:-1;
 ID:420;X:-179083;Y:-200364;D:-1;
 ID:461;X:-186048;Y:-200074;D:-1;XTRA:"{\n    \"useFixed\"\: true\n}\n";
+ID:851;X:-178944;Y:-200096;D:1;XTRA:"{\n    \"defaultwinanim\"\: false\,\n    \"fireworks\"\: 1\,\n    \"topbonus\"\: false\n}\n";
 NPC_END
 LAYERS
 LR:"Default";

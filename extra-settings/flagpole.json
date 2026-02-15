@@ -1,0 +1,543 @@
+{
+	"style": "groupbox",
+	"title": "Flagpole settings",
+	"layout": [
+		{
+			"control": "group",
+			"name": "..",
+			"collapse": true,
+            "default-collapsed": false,
+			"title": "Flagpole Shape",
+			"children": [
+				{
+					"control": "spinBox",
+					"type": "double",
+					"name": "polelength",
+					"title" : "Pole Length",
+					"tooltip": "The length of the pole in segments.",
+					"value-default": 9,
+					"value-min": 1,
+					"value-max": 1024
+				},
+				{
+					"control": "spinBox",
+					"type": "int",
+					"name": "segmentlength",
+					"title" : "Segment Length",
+					"tooltip": "How long each segment is in pixels",
+					"value-default": 32,
+					"value-min": 1,
+					"value-max": 1024
+				},
+				{
+					"control": "itemSelect",
+					"type": "block",
+					"name": "block",
+					"title" : "Flagpole Base",
+					"tooltip": "Block that should be the flagpole's base (If none is selected, it'll use it's own GFX as a base. Doesn't work with animated blocks.)",
+					"value-default": 0
+				},
+				{
+					"control": "lineEdit",
+					"name": "poletoppath",
+					"title": "Pole Top GFX",
+					"tooltip": "The path of the graphics file for the pole's top.",
+					"value-default": "resources/poletop/green.png"
+				},
+				{
+					"control": "lineEdit",
+					"name": "polepath",
+					"title": "Pole GFX",
+					"tooltip": "The path of the graphics file for the pole",
+					"value-default": "resources/pole/regular.png"
+				},
+				{
+					"control": "checkBox",
+					"name": "repeatpole",
+					"title": "Repeat Pole Texture",
+					"tooltip": "You should only enable this if the pole texture's not just a straight line",
+					"value-default": false
+				},
+				{
+					"control": "lineEdit",
+					"name": "flagpath",
+					"title": "Flag GFX",
+					"tooltip": "The path of the graphics file to use for the flag.",
+					"value-default": "resources/flags/smb1.png"
+				},
+				{
+					"control": "lineEdit",
+					"name": "winflagpath",
+					"title": "Flag Completion GFX",
+					"tooltip": "The path of the graphics file to use for the flag when it's been collected. Leave blank for no transformation.",
+					"value-default": ""
+				},
+				{
+					"control": "lineEdit",
+					"name": "topflagpath",
+					"title": "Highest Flag GFX",
+					"tooltip": "The path of the graphics file to use for the flag when it's been raised to it's highest point. Only enabled when Stop Lowering Early and Top of pole bonus are enabled.",
+					"value-default": ""
+				},
+				{
+					"control": "spinBox",
+					"type": "int",
+					"name": "topradius",
+					"title" : "Top pole detection radius",
+					"tooltip": "The radius of the collider that's at the top of the pole.",
+					"value-default": 8,
+					"value-min": 1,
+					"value-max": 1024
+				},
+				{
+					"control": "checkBox",
+					"name": "flagmirror",
+					"title": "Mirror flag",
+					"value-default": false
+				}
+			]
+		},
+		{
+			"control": "group",
+			"name": "..",
+			"collapse": true,
+            "default-collapsed": false,
+			"title": "Flagpole Functionality",
+			"children": [
+				{
+					"control": "checkBox",
+					"name": "levelend",
+					"title": "End Level",
+					"tooltip": "If disabled, the flagpole won't end the level after it's been climbed on.",
+					"value-default": true
+				},
+				{
+					"control": "checkBox",
+					"name": "stopearly",
+					"title": "Stop Lowering Early",
+					"tooltip": "If enabled, the flag will stop moving (and the sound will stop) when the player reaches the base of the flagpole.",
+					"value-default": false
+				},
+				{
+					"control": "checkBox",
+					"name": "topbonus",
+					"title": "Top of pole bonus",
+					"tooltip": "If enabled, getting the top of the flag pole will result in a 1-up.",
+					"value-default": true
+				},
+				{
+					"control" : "combobox",
+					"name" : "endstate",
+					"title" : "Win Type",
+					"tooltip": "The kind of exit should the level be considered as.",
+					"elements" : ["SMB3 Card Roulette","SMB3 ?-Orb", "SMW Keyhole Exit","SMB2 Crystal Orb","Game End - Bowser Defeat victory","SMB3 Star Exit","SMW Goal Tape","Switch Palace","Flagpole","SMW Goal Orb"],
+					"value-default" : 8
+				},
+				{
+					"control": "spinBox",
+					"type": "double",
+					"name": "polespeed",
+					"title" : "Player Sliding Speed",
+					"tooltip": "The speed the player goes when sliding down the pole.",
+					"value-default": 3.2,
+					"value-min": 0.1,
+					"value-max": 1024
+				},
+				{
+					"control": "spinBox",
+					"type": "int",
+					"name": "delay",
+					"title" : "Flagpole Delay",
+					"tooltip": "The delay between grabbing the flagpole and going down it",
+					"value-default": 20,
+					"value-min": 0,
+					"value-max": 1024
+				},
+				{
+					"control": "spinBox",
+					"type": "int",
+					"name": "multidelay",
+					"title" : "Multiplayer Delay",
+					"tooltip": "How long the flagpole waits for players to get on before lowering. (Multiplayer only, doesn't work with default animation)",
+					"value-default": 320,
+					"value-min": 0,
+					"value-max": 1024
+				},
+				{
+					"control": "checkBox",
+					"name": "havegravity",
+					"title": "Enable Gravity",
+					"tooltip": "If enabled, the flagpole NPC will have gravity and block collision.",
+					"value-default": false
+				},
+				{
+					"control": "spinBox",
+					"type": "double",
+					"name": "requirementmultiplier",
+					"title" : "LTRM",
+					"tooltip": "(Leave Timer Requirement Multiplier. Was turned into an achronym because it holds too much space.) Hard to explain, but it's the multiplier for the delay between finishing sliding off the flag and leaving. 1 means there is no delay, 1.2 is the default delay, 2 means it'll take as long as the flagpole animation itself. numbers 0-1 mean the flagpole animation will finish as the player's still on it.",
+					"value-default": 1.2,
+					"value-min": 0,
+					"value-max": 1024,
+					"decimals": 2
+				}
+			]
+		},
+		{
+			"control": "group",
+			"name": "..",
+			"collapse": true,
+            "default-collapsed": false,
+			"title": "Win Animation Stuff",
+			"children": [
+				{
+					"control": "lineEdit",
+					"name": "flagsfx",
+					"title": "Flagpole SFX",
+					"tooltip": "The SFX of sliding down the flagpole.",
+					"value-default": "extended/flagpole"
+				},
+				{
+					"control": "lineEdit",
+					"name": "endsfx",
+					"title": "Victory SFX",
+					"tooltip": "The SFX of when the player gets off the flagpole.",
+					"value-default": "extended/smb1-course-clear"
+				},
+				{
+					"control": "lineEdit",
+					"name": "fireendsfx",
+					"title": "Bonus Victory SFX",
+					"tooltip": "The path of the SFX that plays when the player gets off the flagpole and is destined to recieve fireworks at the castle.",
+					"value-default": ""
+				},
+				{
+					"control": "combobox",
+					"name": "dismount",
+					"title": "Dismount Setting",
+					"tooltip": "How should the flagpole handle dismounts.",
+					"elements" : ["No Dismounting","Dismount Boots","Dismount Clown Cars","Dismount Yoshis","Dismount all"],
+					"value-default": 2
+				},
+				{
+					"control": "checkBox",
+					"name": "useforcedstate",
+					"title": "Use Forced States",
+					"tooltip": "Use forced states when animating the player going down the flagpole.",
+					"value-default": true
+				},
+				{
+					"control": "spinBox",
+					"type": "int",
+					"name": "delay",
+					"title" : "Flagpole Delay",
+					"tooltip": "The delay between grabbing the flagpole and going down it",
+					"value-default": 20,
+					"value-min": 0,
+					"value-max": 1024
+				},
+				{
+					"control": "checkBox",
+					"name": "invisible",
+					"title": "Turn player invisible",
+					"tooltip": "If disabled, the player will not turn invisible when at the castle.",
+					"value-default": true
+				},
+				{
+					"control": "spinBox",
+					"type": "double",
+					"name": "winwait",
+					"title" : "Win timer",
+					"tooltip": "How long until the level ends in seconds (Unless fireworks apply. They won't apply if the player isn't in a castle by the time it's up.)",
+					"value-default": 7,
+					"value-min": 0,
+					"value-max": 1024
+				},
+				{
+					"control": "checkBox",
+					"name": "defaultwinanim",
+					"title": "Use default win animations",
+					"tooltip": "If enabled, the appropriate default animation will play instead of the flagpole's own, disabling everything in this catagory.",
+					"value-default": false
+				}
+			]
+		},
+		{
+			"control": "group",
+			"name": "..",
+			"collapse": true,
+            "default-collapsed": false,
+			"title": "Castle and Castle Flag",
+			"children": [
+				{
+					"control": "itemSelect",
+					"type": "bgo",
+					"name": "bgo",
+					"title" : "Target BGO",
+					"tooltip": "The BGO to stop at and raise a flag on top of.",
+					"value-default": 16
+				},
+				{
+					"control": "lineEdit",
+					"name": "cflagpath",
+					"title": "Castle Flag GFX",
+					"tooltip": "The path of the graphics file to use for the flag that appears on the castle.",
+					"value-default": "resources/castleflag.png"
+				},
+				{
+					"control": "spinBox",
+					"type": "int",
+					"name": "cfoffsetx",
+					"title" : "Castle Flag X offset",
+					"tooltip": "Rendering offset of the Castle Flag's X position",
+					"value-default": 0,
+					"value-min": -2048,
+					"value-max": 2048
+				},
+				{
+					"control": "spinBox",
+					"type": "int",
+					"name": "cfoffsety",
+					"title" : "Castle Flag Y offset",
+					"tooltip": "Rendering offset of the Castle Flag's y position",
+					"value-default": 0,
+					"value-min": -2048,
+					"value-max": 2048
+				},
+				{
+					"control": "spinBox",
+					"type": "double",
+					"name": "cfprior",
+					"title" : "Castle Flag priority",
+					"tooltip": "Rendering priority of the castle flag. If set to -100, then it'll copy the bgo's priority.",
+					"value-default": -100,
+					"value-min": -100,
+					"value-max": 100,
+					"decimals": 2
+				},
+				{
+					"control" : "combobox",
+					"name" : "fireworks",
+					"title" : "Fireworks Deployment Rules",
+					"tooltip": "What rules should apply for when deploying fireworks?",
+					"elements" : ["No fireworks","SMB/SMB3DW rules","SMB: LL rules","NSMB/NSMBU rules","NSMBW rules","SM3DL rules","NSMB2 rules","Top of flagpole"],
+					"value-default" : 0
+				},
+				{
+					"control": "spinBox",
+					"type": "int",
+					"name": "fpoints",
+					"title" : "Firework points",
+					"tooltip": "How much does a firework add to the score counter?",
+					"value-default": 500,
+					"value-min": 0,
+					"value-max": 10000
+				},
+				{
+					"control": "spinBox",
+					"type": "int",
+					"name": "fwf",
+					"title" : "Firework Frequency",
+					"tooltip": "How long does it take for the fireworks to fire?",
+					"value-default": 32,
+					"value-min": 1,
+					"value-max": 1024
+				},
+				{
+					"control": "spinBox",
+					"type": "int",
+					"name": "feffect",
+					"title" : "Firework Effect",
+					"tooltip": "The effect of the firework.",
+					"value-default": 851,
+					"value-min": 1,
+					"value-max": 1000
+				},
+				{
+					"control": "lineEdit",
+					"name": "fireworksfx",
+					"title" : "Firework SFX",
+					"tooltip": "The sound effect of the firework",
+					"value-default": "22"
+				},
+				{
+					"control": "spinBox",
+					"type": "int",
+					"name": "world",
+					"title" : "Current World",
+					"tooltip": "What world is the flagpole situated in? (This only effects fireworks set with NSMB2 rules and can be ignored otherwise)",
+					"value-default": 1,
+					"value-min": 0,
+					"value-max": 9
+				}
+			]
+		},
+		{
+			"control": "group",
+			"name": "..",
+			"collapse": true,
+            "default-collapsed": false,
+			"title": "Flagpole Destruction",
+			"children": [
+				{
+					"control": "checkBox",
+					"name": "smashwin",
+					"title": "Win level if smashed",
+					"tooltip": "If disabled, the flagpole won't activate it's win condition if it's been knocked over via mega mushroom or other means.",
+					"value-default": true
+				},
+				{
+					"control": "spinBox",
+					"type": "int",
+					"name": "smashtime",
+					"title" : "Smash Delay",
+					"tooltip": "How long to wait between the smash and the win animation when the flag's being smashed.",
+					"value-default": 120,
+					"value-min": 0,
+					"value-max": 1024
+				},
+				{
+					"control": "spinBox",
+					"type": "double",
+					"name": "speedx",
+					"title" : "Bump speed",
+					"tooltip": "The horizontal speed the pole will go when smashed",
+					"value-default": 4,
+					"value-min": -256,
+					"value-max": 256
+				},
+				{
+					"control": "spinBox",
+					"type": "double",
+					"name": "speedy",
+					"title" : "Bump height",
+					"tooltip": "The vertical speed the pole will go when smashed",
+					"value-default": -2,
+					"value-min": -256,
+					"value-max": 256
+				},
+				{
+					"control": "lineEdit",
+					"name": "smashsound",
+					"title": "Smash sound",
+					"tooltip": "The SFX to play when the flagpole gets smashed.",
+					"value-default": "bowlingball.ogg"
+				},
+				{
+					"control": "lineEdit",
+					"name": "hitsound",
+					"title": "Hit sound",
+					"tooltip": "The SFX to play when the flagpole gets bumped.",
+					"value-default": "bowlingball.ogg"
+				},
+				{
+					"control" : "combobox",
+					"name" : "smashscore",
+					"title" : "Score Given",
+					"tooltip": "What should be given when the flag's been smashed.",
+					"elements" : ["Nothing","10 points","100 points","200 points","400 points","800 points","1000 points","2000 points","4000 points","8000 points","1UP","2UP","3UP","5UP"],
+					"value-default" : 9
+				}
+			]
+		},
+		{
+			"control": "group",
+			"name": "..",
+			"collapse": true,
+            "default-collapsed": false,
+			"title": "GFX things",
+			"children": [
+				{
+					"control": "spinBox",
+					"type": "int",
+					"name": "flagframes",
+					"title" : "Flag Frames",
+					"value-default": 4,
+					"value-min": 0,
+					"value-max": 1024
+				},
+				{
+					"control": "spinBox",
+					"type": "double",
+					"name": "flagscale",
+					"title" : "Flag Scale",
+					"value-default": 2,
+					"value-min": 0,
+					"value-max": 1024
+				},
+				{
+					"control": "spinBox",
+					"type": "int",
+					"name": "flagoffsetx",
+					"title" : "Flag Offset X (Top)",
+					"value-default": 16,
+					"value-min": -1024,
+					"value-max": 1024
+				},
+				{
+					"control": "spinBox",
+					"type": "int",
+					"name": "flagoffsety",
+					"title" : "Flag Offset Y (Top)",
+					"value-default": 0,
+					"value-min": -1024,
+					"value-max": 1024
+				},
+				{
+					"control": "spinBox",
+					"type": "int",
+					"name": "flagendoffsetx",
+					"title" : "Flag Offset X (Bottom)",
+					"value-default": 16,
+					"value-min": -1024,
+					"value-max": 1024
+				},
+				{
+					"control": "spinBox",
+					"type": "int",
+					"name": "flagendoffsety",
+					"title" : "Flag Offset Y (Bottom)",
+					"value-default": -32,
+					"value-min": -1024,
+					"value-max": 1024
+				},
+				{
+					"control": "spinBox",
+					"type": "double",
+					"name": "polegfxscale",
+					"title" : "Pole Scale",
+					"value-default": 2,
+					"value-min": 0,
+					"value-max": 1024
+				},
+				{
+					"control": "spinBox",
+					"type": "double",
+					"name": "poletopgfxscale",
+					"title" : "Pole Top Scale",
+					"value-default": 2,
+					"value-min": 0,
+					"value-max": 1024
+				},
+				{
+					"control": "spinBox",
+					"type": "int",
+					"name": "castleflagframes",
+					"title" : "Castle Flag Frames",
+					"value-default": 4,
+					"value-min": 0,
+					"value-max": 1024
+				},
+				{
+					"control": "spinBox",
+					"type": "double",
+					"name": "castleflagscale",
+					"title" : "Castle Flag Scale",
+					"value-default": 2,
+					"value-min": 0,
+					"value-max": 1024
+				}
+			]
+		}
+	]
+}
