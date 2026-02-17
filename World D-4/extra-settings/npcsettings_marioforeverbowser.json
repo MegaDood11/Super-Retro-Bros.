@@ -1,0 +1,2556 @@
+{
+	"style": "groupbox",
+	"title": "Bowser Settings",
+	"layout": [
+		{
+			"control": "group",
+			"name": "..",
+			"collapse": true,
+			"title": "Movement Settings",
+			"children": [
+				{
+					"control": "spinBox",
+					"name": "movement.speed",
+					"title": "Speed",
+					"tooltip": "Horizontal speed multiplier of the NPC.\n0.0 uses config value \"movement.speed\".",
+					"type": "double",
+					"value-default": 0.0,
+					"value-min": 0,
+					"value-max": 100
+				},
+				{
+					"control": "group",
+					"name": "..",
+					"title": "Idling Interval",
+					"children": [
+						{
+							"control": "description",
+							"name": "_",
+							"text": "The NPC will pick a random interval, in ticks, during which to idle."
+						},
+						{
+							"control": "group",
+							"name": "..",
+							"title": "Interval Lower Bound",
+							"children": [
+								{
+									"control": "description",
+									"name": "_",
+									"text": "Start of the idling interval will be randomly picked from the range [Range Lower Bound, Range Lower Bound + Range Length]."
+								},
+								{
+									"control": "spinBox",
+									"name": "movement.idle.start.start",
+									"title": "Range Lower Bound",
+									"tooltip": "-1 uses config value \"movement.idle.start.start\".",
+									"type": "int",
+									"value-default": -1,
+									"value-min": -1,
+									"value-max": 512
+								},
+								{
+									"control": "spinBox",
+									"name": "movement.idle.start.length",
+									"title": "Range Length",
+									"tooltip": "-1 uses config value \"movement.idle.start.length\"",
+									"type": "int",
+									"value-default": -1,
+									"value-min": -1,
+									"value-max": 512
+								}
+							]
+						},
+						{
+							"control": "group",
+							"name": "..",
+							"title": "Interval Length",
+							"children": [
+								{
+									"control": "description",
+									"name": "_",
+									"text": "Length of the idling interval will be randomly picked from the range [Range Lower Bound, Range Lower Bound + Range Length]."
+								},
+								{
+									"control": "spinBox",
+									"name": "movement.idle.length.start",
+									"title": "Range Lower Bound",
+									"tooltip": "-1 uses config value \"movement.idle.length.start\"",
+									"type": "int",
+									"value-default": -1,
+									"value-min": -1,
+									"value-max": 512
+								},
+								{
+									"control": "spinBox",
+									"name": "movement.idle.length.length",
+									"title": "Range Length",
+									"tooltip": "-1 uses config value \"movement.idle.length.length\"",
+									"type": "int",
+									"value-default": -1,
+									"value-min": -1,
+									"value-max": 512
+								}
+							]
+						}
+					]
+				},
+				{
+					"control": "group",
+					"name": "..",
+					"title": "Jump Settings",
+					"children": [
+						{
+							"control": "group",
+							"name": "..",
+							"title": "Cooldown",
+							"children": [
+								{
+									"control": "description",
+									"name": "_",
+									"text": "Cooldown between jumps will be randomly picked from the range [Range Lower Bound, Range Lower Bound + Range Length]."
+								},
+								{
+									"control": "spinBox",
+									"name": "movement.jump.time.start",
+									"title": "Range Lower Bound",
+									"tooltip": "-1 uses config value \"movement.jump.time.start\"",
+									"type": "int",
+									"value-default": -1,
+									"value-min": -1,
+									"value-max": 512
+								},
+								{
+									"control": "spinBox",
+									"name": "movement.jump.time.length",
+									"title": "Range Length",
+									"tooltip": "-1 uses config value \"movement.jump.time.length\".",
+									"type": "int",
+									"value-default": -1,
+									"value-min": -1,
+									"value-max": 512
+								}
+							]
+						},
+						{
+							"control": "group",
+							"name": "..",
+							"title": "Strength",
+							"children": [
+								{
+									"control": "description",
+									"name": "_",
+									"text": "Strength of a jump will be randomly picked from the range [Range Lower Bound, Range Lower Bound + Range Length]."
+								},
+								{
+									"control": "spinBox",
+									"name": "movement.jump.strength.start",
+									"title": "Range Lower Bound",
+									"tooltip": "0.0 uses config value \"movement.jump.strength.start\".",
+									"type": "double",
+									"value-default": 0.0,
+									"value-min": 0.0,
+									"value-max": 1000.0
+								},
+								{
+									"control": "spinBox",
+									"name": "movement.jump.strength.length",
+									"title": "Range Length",
+									"tooltip": "0.0 uses config value \"movement.jump.strength.length\".",
+									"type": "double",
+									"value-default": 0.0,
+									"value-min": 0.0,
+									"value-max": 1000.0
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"control": "group",
+			"name": "..",
+			"collapse": true,
+			"title": "Attack Settings",
+			"children": [
+				{
+					"control": "group",
+					"name": "..",
+					"title": "Timing",
+					"children": [
+						{
+							"control": "group",
+							"name": "..",
+							"title": "Cooldown",
+							"children": [
+								{
+									"control": "description",
+									"name": "_",
+									"text": "Time between successive attacks will be randomly picked from the range [Range Lower Bound, Range Lower Bound + Range Length]."
+								},
+								{
+									"control": "spinBox",
+									"name": "attack.timing.cooldown.start",
+									"title": "Range Lower Bound",
+									"tooltip": "-1 uses config value \"attack.timing.cooldown.start\".",
+									"type": "int",
+									"value-default": -1,
+									"value-min": -1,
+									"value-max": 512
+								},
+								{
+									"control": "spinBox",
+									"name": "attack.timing.cooldown.length",
+									"title": "Range Length",
+									"tooltip": "-1 uses config value \"attack.timing.cooldown.length\"",
+									"type": "int",
+									"value-default": -1,
+									"value-min": -1,
+									"value-max": 512
+								}
+							]
+						}
+					]
+				},
+				{
+					"control": "group",
+					"name": "..",
+					"collapse": true,
+					"title": "Standard",
+					"children": [
+						{
+							"control": "spinBox",
+							"name": "attack.standard.weight",
+							"title": "Weight",
+							"tooltip": "Attack weight.\nHigher weight gives this attack a higher chance to be picked, 0 disables it.\n-1 uses config value \"attack.standard.weight\".",
+							"type": "int",
+							"value-default": -1,
+							"value-min": -1,
+							"value-max": 1000
+						},
+						{
+							"control": "group",
+							"name": "..",
+							"title": "Breath",
+							"children": [
+								{
+									"control": "group",
+									"name": "..",
+									"title": "NPC",
+									"children": [
+										{
+											"control": "description",
+											"text": "What NPC to use as breath.\nIf \"Use Config\" is enabled, or no NPC is selected, uses config value \"attack.standard.breath.id\"."
+										},
+										{
+											"control": "checkBox",
+											"name": "attack.standard.breath.npc.config",
+											"title": "Use Config",
+											"value-default": true
+										},
+										{
+											"control": "itemSelect",
+											"name": "attack.standard.breath.npc.id",
+											"title": "ID",
+											"type": "npc",
+											"value-default": 0
+										}
+									]
+								},
+								{
+									"control": "spinBox",
+									"name": "attack.standard.breath.speed",
+									"title": "Speed",
+									"tooltip": "Movement speed of breath.\n0.0 uses config value \"attack.standard.breath.speed\".",
+									"type": "double",
+									"value-default": 0.0,
+									"value-min": 0.0,
+									"value-max": 100
+								},
+								{
+									"control": "group",
+									"name": "..",
+									"title": "Chase",
+									"children": [
+										{
+											"control": "description",
+											"text": "If enabled, breath NPC will move towards the nearest player's y position at the time of breath.\nMay be incompatible with another NPC than the default breath NPC.\n\"Default\" uses config value \"attack.standard.breath.chase.enabled\"."
+										},
+										{
+											"control": "comboBox",
+											"name": "attack.standard.breath.chase.enabled",
+											"title": "Enabled",
+											"elements": ["Default", "Enabled", "Disabled"],
+											"value-default": 0
+										},
+										{
+											"control": "group",
+											"name": "..",
+											"title": "Imprecision Range",
+											"children": [
+												{
+													"control": "description",
+													"text": "Deviation from the target will be randomly picked from the range [Range Lower Bound, Range Lower Bound + Range Length].\nIf \"Use Config\" is enabled, uses config values \"attack.standard.breath.chase.range.start\" and \"attack.standard.breath.chase.range.length\"."
+												},
+												{
+													"control": "checkBox",
+													"name": "attack.standard.breath.chase.range.config",
+													"title": "Use Config",
+													"value-default": true
+												},
+												{
+													"control": "spinBox",
+													"name": "attack.standard.breath.chase.range.start",
+													"title": "Range Lower Bound",
+													"type": "int",
+													"value-default": 0,
+													"value-min": -512,
+													"value-max": 512
+												},
+												{
+													"control": "spinBox",
+													"name": "attack.standard.breath.chase.range.length",
+													"title": "Range Length",
+													"type": "int",
+													"value-default": 0,
+													"value-min": 0,
+													"value-max": 1024
+												}
+											]
+										}
+									]
+								},
+								{
+									"control": "group",
+									"name": "..",
+									"title": "Audio",
+									"children": [
+										{
+											"control": "description",
+											"name": "_",
+											"text": "Audio file played on breath.\nIf \"ID\" is set to 0, uses the file. Otherwise, uses internal sound effect with the id \"ID\"."
+										},
+										{
+											"control": "spinBox",
+											"name": "attack.standard.breath.audio.volume",
+											"title": "Volume",
+											"tooltip": "0.0 uses config value \"attack.standard.breath.audio.volume\".",
+											"type": "double",
+											"value-min": 0.0,
+											"value-max": 1.0,
+											"value-default": 0.0
+										},
+										{
+											"control": "checkBox",
+											"name": "attack.standard.breath.audio.config",
+											"title": "Use Config",
+											"tooltip": "If checked, uses config value \"attack.standard.breath.audio.id\", or \"attack.standard.breath.audio.file\" if the former is 0.",
+											"value-default": true
+										},
+										{
+											"control": "group",
+											"name": "..",
+											"children": [
+												{
+													"control": "spinBox",
+													"name": "attack.standard.breath.audio.id",
+													"title": "ID",
+													"type": "int",
+													"value-min": 0,
+													"value-max": 1000,
+													"value-default": 0
+												},
+												{
+													"control": "soundFile",
+													"name": "attack.standard.breath.audio.file",
+													"title": "File",
+													"directory": "episode",
+													"directory-relative": "episode",
+													"value-default": ""
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"control": "group",
+							"name": "..",
+							"title": "Timing",
+							"children": [
+								{
+									"control": "spinBox",
+									"name": "attack.standard.timing.pre",
+									"title": "Prefire Time",
+									"tooltip": "Time it takes to prepare the breath, before shooting it out.\n-1 uses config value \"attack.standard.timing.pre\".",
+									"type": "int",
+									"value-default": -1,
+									"value-min": -1,
+									"value-max": 512
+								},
+								{
+									"control": "spinBox",
+									"name": "attack.standard.timing.post",
+									"title": "Postfire Time",
+									"tooltip": "Time it takes to return to normal state, after shooting the breath.\n-1 uses config value \"attack.standard.timing.post\".",
+									"type": "int",
+									"value-default": -1,
+									"value-min": -1,
+									"value-max": 512
+								}
+							]
+						},
+						{
+							"control": "group",
+							"name": "..",
+							"title": "Spawn",
+							"children": [
+								{
+									"control": "comboBox",
+									"name": "attack.standard.spawn.center",
+									"title": "Center",
+									"tooltip": "If enabled, breath NPC will be centered upon spawn.\n\"Default\" uses config value \"attack.standard.spawn.center\".",
+									"elements": ["Default", "Enabled", "Disabled"],
+									"value-default": 0
+								},
+								{
+									"control": "group",
+									"name": "..",
+									"title": "Offset",
+									"children": [
+										{
+											"control": "description",
+											"name": "_",
+											"text": "Pixel offset from the NPC's spawn pivot point at which to spawn the breath NPC.\nIf disabled, uses config values \"attack.standard.spawn.offset.x\" and \"attack.standard.spawn.offset.y\"."
+										},
+										{
+											"control": "checkBox",
+											"name": "attack.standard.spawn.offset.config",
+											"title": "Use Config",
+											"value-default": true
+										},
+										{
+											"control": "spinBox",
+											"name": "attack.standard.spawn.offset.x",
+											"title": "X",
+											"type": "int",
+											"value-default": 0,
+											"single-step": 8,
+											"value-min": -128,
+											"value-max": 128
+										},
+										{
+											"control": "spinBox",
+											"name": "attack.standard.spawn.offset.y",
+											"title": "Y",
+											"type": "int",
+											"value-default": 0,
+											"single-step": 8,
+											"value-min": -128,
+											"value-max": 128
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"control": "group",
+					"name": "..",
+					"collapse": true,
+					"title": "Multifire",
+					"children": [
+						{
+							"control": "spinBox",
+							"name": "attack.multi.weight",
+							"title": "Weight",
+							"tooltip": "Attack weight.\nHigher weight gives this attack a higher chance to be picked, 0 disables it.\n-1 uses config value \"attack.multi.weight\".",
+							"type": "int",
+							"value-default": -1,
+							"value-min": -1,
+							"value-max": 1000
+						},
+						{
+							"control": "group",
+							"name": "..",
+							"title": "Breath",
+							"children": [
+								{
+									"control": "group",
+									"name": "..",
+									"title": "NPC",
+									"children": [
+										{
+											"control": "description",
+											"text": "What NPC to use as breath.\nIf \"Use Config\" is enabled, or no NPC is selected, uses config value \"attack.multi.breath.id\"."
+										},
+										{
+											"control": "checkBox",
+											"name": "attack.multi.breath.npc.config",
+											"title": "Use Config",
+											"value-default": true
+										},
+										{
+											"control": "itemSelect",
+											"name": "attack.multi.breath.npc.id",
+											"title": "ID",
+											"type": "npc",
+											"value-default": 0
+										}
+									]
+								},
+								{
+									"control": "spinBox",
+									"name": "attack.multi.breath.speed",
+									"title": "Speed",
+									"tooltip": "Movement speed of breath.\n0.0 uses config value \"attack.multi.breath.speed\".",
+									"type": "double",
+									"value-default": 0.0,
+									"value-min": 0.0,
+									"value-max": 100
+								},
+								{
+									"control": "group",
+									"name": "..",
+									"title": "Chase",
+									"children": [
+										{
+											"control": "description",
+											"text": "If enabled, breath NPC will move towards the nearest player's y position at the time of breath.\nMay be incompatible with another NPC than the default breath NPC.\n\"Default\" uses config value \"attack.multi.breath.chase.enabled\"."
+										},
+										{
+											"control": "comboBox",
+											"name": "attack.multi.breath.chase.enabled",
+											"title": "Enabled",
+											"elements": ["Default", "Enabled", "Disabled"],
+											"value-default": 0
+										},
+										{
+											"control": "group",
+											"name": "..",
+											"title": "Imprecision Range",
+											"children": [
+												{
+													"control": "description",
+													"text": "Deviation from the target will be randomly picked from the range [Range Lower Bound, Range Lower Bound + Range Length].\nIf \"Use Config\" is enabled, uses config values \"attack.multi.breath.chase.range.start\" and \"attack.multi.breath.chase.range.length\"."
+												},
+												{
+													"control": "checkBox",
+													"name": "attack.multi.breath.chase.range.config",
+													"title": "Use Config",
+													"value-default": true
+												},
+												{
+													"control": "spinBox",
+													"name": "attack.multi.breath.chase.range.start",
+													"title": "Range Lower Bound",
+													"type": "int",
+													"value-default": 0,
+													"value-min": -512,
+													"value-max": 512
+												},
+												{
+													"control": "spinBox",
+													"name": "attack.multi.breath.chase.range.length",
+													"title": "Range Length",
+													"type": "int",
+													"value-default": 0,
+													"value-min": 0,
+													"value-max": 1024
+												}
+											]
+										}
+									]
+								},
+								{
+									"control": "group",
+									"name": "..",
+									"title": "Fire Count",
+									"children": [
+										{
+											"control": "description",
+											"name": "_",
+											"text": "Count of breathed fires will be randomly picked from the range [Range Lower Bound, Range Lower Bound + Range Length]."
+										},
+										{
+											"control": "spinBox",
+											"name": "attack.multi.breath.count.start",
+											"title": "Range Lower Bound",
+											"tooltip": "-1 uses config value \"attack.multi.breath.count.start\".",
+											"type": "int",
+											"value-default": -1,
+											"value-min": -1,
+											"value-max": 20
+										},
+										{
+											"control": "spinBox",
+											"name": "attack.multi.breath.count.length",
+											"title": "Range Length",
+											"tooltip": "-1 uses config value \"attack.multi.breath.count.length\".",
+											"type": "int",
+											"value-default": -1,
+											"value-min": -1,
+											"value-max": 20
+										}
+									]
+								},
+								{
+									"control": "group",
+									"name": "..",
+									"title": "Audio",
+									"children": [
+										{
+											"control": "description",
+											"name": "_",
+											"text": "Audio file played on breath.\nIf \"ID\" is set to 0, uses the file. Otherwise, uses internal sound effect with the id \"ID\"."
+										},
+										{
+											"control": "spinBox",
+											"name": "attack.multi.breath.audio.volume",
+											"title": "Volume",
+											"tooltip": "0.0 uses config value \"attack.multi.breath.audio.volume\".",
+											"type": "double",
+											"value-min": 0.0,
+											"value-max": 1.0,
+											"value-default": 0.0
+										},
+										{
+											"control": "checkBox",
+											"name": "attack.multi.breath.audio.config",
+											"title": "Use Config",
+											"tooltip": "If checked, uses config value \"attack.multi.breath.audio.id\", or \"attack.multi.breath.audio.file\" if the former is 0.",
+											"value-default": true
+										},
+										{
+											"control": "group",
+											"name": "..",
+											"children": [
+												{
+													"control": "spinBox",
+													"name": "attack.multi.breath.audio.id",
+													"title": "ID",
+													"type": "int",
+													"value-min": 0,
+													"value-max": 1000,
+													"value-default": 0
+												},
+												{
+													"control": "soundFile",
+													"name": "attack.multi.breath.audio.file",
+													"title": "File",
+													"directory": "episode",
+													"directory-relative": "episode",
+													"value-default": ""
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"control": "group",
+							"name": "..",
+							"title": "Timing",
+							"children": [
+								{
+									"control": "spinBox",
+									"name": "attack.multi.timing.pre",
+									"title": "Prefire Time",
+									"tooltip": "Time it takes to prepare the breath, before shooting it out.\n-1 uses config value \"attack.multi.timing.pre\".",
+									"type": "int",
+									"value-default": -1,
+									"value-min": -1,
+									"value-max": 512
+								},
+								{
+									"control": "spinBox",
+									"name": "attack.multi.timing.post",
+									"title": "Postfire Time",
+									"tooltip": "Time it takes to return to normal state, after shooting the breath.\n-1 uses config value \"attack.multi.timing.post\".",
+									"type": "int",
+									"value-default": -1,
+									"value-min": -1,
+									"value-max": 512
+								}
+							]
+						},
+						{
+							"control": "group",
+							"name": "..",
+							"title": "Spawn",
+							"children": [
+								{
+									"control": "comboBox",
+									"name": "attack.multi.spawn.center",
+									"title": "Center",
+									"tooltip": "If enabled, breath NPC will be centered upon spawn.\n\"Default\" uses config value \"attack.multi.spawn.center\".",
+									"elements": ["Default", "Enabled", "Disabled"],
+									"value-default": 0
+								},
+								{
+									"control": "group",
+									"name": "..",
+									"title": "Offset",
+									"children": [
+										{
+											"control": "description",
+											"name": "_",
+											"text": "Pixel offset from the NPC's spawn pivot point at which to spawn the breath NPC.\nIf disabled, uses config values \"attack.multi.spawn.offset.x\" and \"attack.multi.spawn.offset.y\"."
+										},
+										{
+											"control": "checkBox",
+											"name": "attack.multi.spawn.offset.config",
+											"title": "Use Config",
+											"value-default": true
+										},
+										{
+											"control": "spinBox",
+											"name": "attack.multi.spawn.offset.x",
+											"title": "X",
+											"type": "int",
+											"value-default": 0,
+											"single-step": 8,
+											"value-min": -128,
+											"value-max": 128
+										},
+										{
+											"control": "spinBox",
+											"name": "attack.multi.spawn.offset.y",
+											"title": "Y",
+											"type": "int",
+											"value-default": 0,
+											"single-step": 8,
+											"value-min": -128,
+											"value-max": 128
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"control": "group",
+					"name": "..",
+					"collapse": true,
+					"title": "Flamethrower",
+					"children": [
+						{
+							"control": "spinBox",
+							"name": "attack.flamethrower.weight",
+							"title": "Weight",
+							"tooltip": "Attack weight.\nHigher weight gives this attack a higher chance to be picked, 0 disables it.\n-1 uses config value \"attack.flamethrower.weight\".",
+							"type": "int",
+							"value-default": -1,
+							"value-min": -1,
+							"value-max": 1000
+						},
+						{
+							"control": "group",
+							"name": "..",
+							"title": "Breath",
+							"children": [
+								{
+									"control": "group",
+									"name": "..",
+									"title": "NPC",
+									"children": [
+										{
+											"control": "description",
+											"text": "What NPC to use as breath.\nIf \"Use Config\" is enabled, or no NPC is selected, uses config value \"attack.flamethrower.breath.id\"."
+										},
+										{
+											"control": "checkBox",
+											"name": "attack.flamethrower.breath.npc.config",
+											"title": "Use Config",
+											"value-default": true
+										},
+										{
+											"control": "itemSelect",
+											"name": "attack.flamethrower.breath.npc.id",
+											"title": "ID",
+											"type": "npc",
+											"value-default": 0
+										}
+									]
+								},
+								{
+									"control": "group",
+									"name": "..",
+									"title": "Speed",
+									"children": [
+										{
+											"control": "group",
+											"name": "..",
+											"title": "Horizontal Speed",
+											"children": [
+												{
+													"control": "description",
+													"name": "_",
+													"text": "Horizontal speed will be randomly picked from the range [Range Lower Bound, Range Lower Bound + Range Length]."
+												},
+												{
+													"control": "spinBox",
+													"name": "attack.flamethrower.breath.speed.x.start",
+													"title": "Range Lower Bound",
+													"tooltip": "0.0 uses config value \"attack.flamethrower.speed.x.start\".",
+													"type": "double",
+													"value-default": 0.0,
+													"value-min": 0.0,
+													"value-max": 100
+												},
+												{
+													"control": "spinBox",
+													"name": "attack.flamethrower.breath.speed.x.length",
+													"title": "Range Length",
+													"tooltip": "0.0 uses config value \"attack.flamethrower.speed.x.length\".",
+													"type": "double",
+													"value-default": 0.0,
+													"value-min": 0.0,
+													"value-max": 100
+												}
+											]
+										},
+										{
+											"control": "group",
+											"name": "..",
+											"title": "Vertical Speed",
+											"children": [
+												{
+													"control": "description",
+													"name": "_",
+													"text": "Vertical speed will be randomly picked from the range [Range Lower Bound, Range Lower Bound + Range Length]."
+												},
+												{
+													"control": "spinBox",
+													"name": "attack.flamethrower.breath.speed.y.start",
+													"title": "Range Lower Bound",
+													"tooltip": "0.0 uses config value \"attack.flamethrower.speed.y.start\".",
+													"type": "double",
+													"value-default": 0.0,
+													"value-min": 0.0,
+													"value-max": 100
+												},
+												{
+													"control": "spinBox",
+													"name": "attack.flamethrower.breath.speed.y.length",
+													"title": "Range Length",
+													"tooltip": "0.0 uses config value \"attack.flamethrower.speed.y.length\".",
+													"type": "double",
+													"value-default": 0.0,
+													"value-min": 0.0,
+													"value-max": 100
+												}
+											]
+										}
+									]
+								},
+								{
+									"control": "group",
+									"name": "..",
+									"title": "Fire Count",
+									"children": [
+										{
+											"control": "description",
+											"name": "_",
+											"text": "Count of breathed flames will be randomly picked from the range [Range Lower Bound, Range Lower Bound + Range Length]."
+										},
+										{
+											"control": "spinBox",
+											"name": "attack.flamethrower.breath.count.start",
+											"title": "Range Lower Bound",
+											"tooltip": "-1 uses config value \"attack.flamethrower.breath.count.start\".",
+											"type": "int",
+											"value-default": -1,
+											"value-min": -1,
+											"value-max": 200
+										},
+										{
+											"control": "spinBox",
+											"name": "attack.flamethrower.breath.count.length",
+											"title": "Range Length",
+											"tooltip": "-1 uses config value \"attack.flamethrower.breath.count.length\".",
+											"type": "int",
+											"value-default": -1,
+											"value-min": -1,
+											"value-max": 200
+										}
+									]
+								},
+								{
+									"control": "group",
+									"name": "..",
+									"title": "Audio",
+									"children": [
+										{
+											"control": "description",
+											"name": "_",
+											"text": "Audio file played during breath.\nThis will be looped for the entire duration.\nIf \"ID\" is set to 0, uses the file. Otherwise, uses internal sound effect with the id \"ID\"."
+										},
+										{
+											"control": "spinBox",
+											"name": "attack.flamethrower.breath.audio.volume",
+											"title": "Volume",
+											"tooltip": "0.0 uses config value \"attack.flamethrower.breath.audio.volume\".",
+											"type": "double",
+											"value-min": 0.0,
+											"value-max": 1.0,
+											"value-default": 0.0
+										},
+										{
+											"control": "checkBox",
+											"name": "attack.flamethrower.breath.audio.config",
+											"title": "Use Config",
+											"tooltip": "If checked, uses config value \"attack.flamethrower.breath.audio.id\", or \"attack.flamethrower.breath.audio.file\" if the former is 0.",
+											"value-default": true
+										},
+										{
+											"control": "group",
+											"name": "..",
+											"children": [
+												{
+													"control": "spinBox",
+													"name": "attack.flamethrower.breath.audio.id",
+													"title": "ID",
+													"type": "int",
+													"value-min": 0,
+													"value-max": 1000,
+													"value-default": 0
+												},
+												{
+													"control": "soundFile",
+													"name": "attack.flamethrower.breath.audio.file",
+													"title": "File",
+													"directory": "episode",
+													"directory-relative": "episode",
+													"value-default": ""
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"control": "group",
+							"name": "..",
+							"title": "Timing",
+							"children": [
+								{
+									"control": "spinBox",
+									"name": "attack.flamethrower.timing.pre",
+									"title": "Prefire Time",
+									"tooltip": "Time it takes to prepare the breath, before shooting it out.\n-1 uses config value \"attack.flamethrower.timing.pre\".",
+									"type": "int",
+									"value-default": -1,
+									"value-min": -1,
+									"value-max": 512
+								},
+								{
+									"control": "spinBox",
+									"name": "attack.flamethrower.timing.cooldown",
+									"title": "Cooldown Time",
+									"tooltip": "Time it takes between each flame.\n-1 uses config value \"attack.flamethrower.timing.cooldown\".",
+									"type": "int",
+									"value-default": -1,
+									"value-min": -1,
+									"value-max": 512
+								},
+								{
+									"control": "group",
+									"name": "..",
+									"title": "Audio Fade Time",
+									"children": [
+										{
+											"control": "spinBox",
+											"name": "attack.flamethrower.timing.fade.in",
+											"title": "In",
+											"tooltip": "Time it takes to fade the audio in, when starting breathe.\n-1 uses config value \"attack.flamethrower.timing.fade.in\".",
+											"type": "int",
+											"value-default": -1,
+											"value-min": -1,
+											"value-max": 512
+										},
+										{
+											"control": "spinBox",
+											"name": "attack.flamethrower.timing.fade.out",
+											"title": "Out",
+											"tooltip": "Time it takes to fade the audio out, when ending breathe.\n-1 uses config value \"attack.flamethrower.timing.fade.out\".",
+											"type": "int",
+											"value-default": -1,
+											"value-min": -1,
+											"value-max": 512
+										}
+									]
+								}
+							]
+						},
+						{
+							"control": "group",
+							"name": "..",
+							"title": "Spawn",
+							"children": [
+								{
+									"control": "comboBox",
+									"name": "attack.flamethrower.spawn.center",
+									"title": "Center",
+									"tooltip": "If enabled, breath NPC will be centered upon spawn.\n\"Default\" uses config value \"attack.flamethrower.spawn.center\".",
+									"elements": ["Default", "Enabled", "Disabled"],
+									"value-default": 0
+								},
+								{
+									"control": "group",
+									"name": "..",
+									"title": "Offset",
+									"children": [
+										{
+											"control": "description",
+											"name": "_",
+											"text": "Pixel offset from the NPC's spawn pivot point at which to spawn the breath NPC.\nIf disabled, uses config values \"attack.flamethrower.spawn.offset.x\" and \"attack.flamethrower.spawn.offset.y\"."
+										},
+										{
+											"control": "checkBox",
+											"name": "attack.flamethrower.spawn.offset.config",
+											"title": "Use Config",
+											"value-default": true
+										},
+										{
+											"control": "spinBox",
+											"name": "attack.flamethrower.spawn.offset.x",
+											"title": "X",
+											"type": "int",
+											"value-default": 0,
+											"single-step": 8,
+											"value-min": -128,
+											"value-max": 128
+										},
+										{
+											"control": "spinBox",
+											"name": "attack.flamethrower.spawn.offset.y",
+											"title": "Y",
+											"type": "int",
+											"value-default": 0,
+											"single-step": 8,
+											"value-min": -128,
+											"value-max": 128
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"control": "group",
+					"name": "..",
+					"collapse": true,
+					"title": "Hammer",
+					"children": [
+						{
+							"control": "spinBox",
+							"name": "attack.hammer.weight",
+							"title": "Weight",
+							"tooltip": "Attack weight.\nHigher weight gives this attack a higher chance to be picked, 0 disables it.\n-1 uses config value \"attack.hammer.weight\".",
+							"type": "int",
+							"value-default": -1,
+							"value-min": -1,
+							"value-max": 1000
+						},
+						{
+							"control": "group",
+							"name": "..",
+							"title": "Projectile",
+							"children": [
+								{
+									"control": "group",
+									"name": "..",
+									"title": "NPC",
+									"children": [
+										{
+											"control": "description",
+											"text": "What NPC to use as projectile.\nIf \"Use Config\" is enabled, or no NPC is selected, uses config value \"attack.hammer.breath.id\"."
+										},
+										{
+											"control": "checkBox",
+											"name": "attack.hammer.breath.npc.config",
+											"title": "Use Config",
+											"value-default": true
+										},
+										{
+											"control": "itemSelect",
+											"name": "attack.hammer.breath.npc.id",
+											"title": "ID",
+											"type": "npc",
+											"value-default": 0
+										}
+									]
+								},
+								{
+									"control": "group",
+									"name": "..",
+									"title": "Speed",
+									"children": [
+										{
+											"control": "group",
+											"name": "..",
+											"title": "Horizontal Speed",
+											"children": [
+												{
+													"control": "description",
+													"name": "_",
+													"text": "Horizontal speed will be randomly picked from the range [Range Lower Bound, Range Lower Bound + Range Length]."
+												},
+												{
+													"control": "spinBox",
+													"name": "attack.hammer.projectile.speed.x.start",
+													"title": "Range Lower Bound",
+													"tooltip": "0.0 uses config value \"attack.hammer.speed.x.start\".",
+													"type": "double",
+													"value-default": 0.0,
+													"value-min": 0.0,
+													"value-max": 100
+												},
+												{
+													"control": "spinBox",
+													"name": "attack.hammer.projectile.speed.x.length",
+													"title": "Range Length",
+													"tooltip": "0.0 uses config value \"attack.hammer.speed.x.length\".",
+													"type": "double",
+													"value-default": 0.0,
+													"value-min": 0.0,
+													"value-max": 100
+												}
+											]
+										},
+										{
+											"control": "group",
+											"name": "..",
+											"title": "Vertical Speed",
+											"children": [
+												{
+													"control": "description",
+													"name": "_",
+													"text": "Vertical speed will be randomly picked from the range [Range Lower Bound, Range Lower Bound + Range Length]."
+												},
+												{
+													"control": "spinBox",
+													"name": "attack.hammer.projectile.speed.y.start",
+													"title": "Range Lower Bound",
+													"tooltip": "0.0 uses config value \"attack.hammer.speed.y.start\".",
+													"type": "double",
+													"value-default": 0.0,
+													"value-min": 0.0,
+													"value-max": 100
+												},
+												{
+													"control": "spinBox",
+													"name": "attack.hammer.projectile.speed.y.length",
+													"title": "Range Length",
+													"tooltip": "0.0 uses config value \"attack.hammer.speed.y.length\".",
+													"type": "double",
+													"value-default": 0.0,
+													"value-min": 0.0,
+													"value-max": 100
+												}
+											]
+										}
+									]
+								},
+								{
+									"control": "group",
+									"name": "..",
+									"title": "Projectile Count",
+									"children": [
+										{
+											"control": "description",
+											"name": "_",
+											"text": "Count of thrown projectiles will be randomly picked from the range [Range Lower Bound, Range Lower Bound + Range Length]."
+										},
+										{
+											"control": "spinBox",
+											"name": "attack.hammer.projectile.count.start",
+											"title": "Range Lower Bound",
+											"tooltip": "-1 uses config value \"attack.hammer.projectile.count.start\".",
+											"type": "int",
+											"value-default": -1,
+											"value-min": -1,
+											"value-max": 200
+										},
+										{
+											"control": "spinBox",
+											"name": "attack.hammer.projectile.count.length",
+											"title": "Range Length",
+											"tooltip": "-1 uses config value \"attack.hammer.projectile.count.length\".",
+											"type": "int",
+											"value-default": -1,
+											"value-min": -1,
+											"value-max": 200
+										}
+									]
+								},
+								{
+									"control": "group",
+									"name": "..",
+									"title": "Audio",
+									"children": [
+										{
+											"control": "description",
+											"name": "_",
+											"text": "Audio file played on projectile throw.\nIf \"ID\" is set to 0, uses the file. Otherwise, uses internal sound effect with the id \"ID\"."
+										},
+										{
+											"control": "spinBox",
+											"name": "attack.hammer.projectile.audio.volume",
+											"title": "Volume",
+											"tooltip": "0.0 uses config value \"attack.hammer.projectile.audio.volume\".",
+											"type": "double",
+											"value-min": 0.0,
+											"value-max": 1.0,
+											"value-default": 0.0
+										},
+										{
+											"control": "checkBox",
+											"name": "attack.hammer.projectile.audio.config",
+											"title": "Use Config",
+											"tooltip": "If checked, uses config value \"attack.hammer.projectile.audio.id\", or \"attack.hammer.projectile.audio.file\" if the former is 0.",
+											"value-default": true
+										},
+										{
+											"control": "group",
+											"name": "..",
+											"children": [
+												{
+													"control": "spinBox",
+													"name": "attack.hammer.projectile.audio.id",
+													"title": "ID",
+													"type": "int",
+													"value-min": 0,
+													"value-max": 1000,
+													"value-default": 0
+												},
+												{
+													"control": "soundFile",
+													"name": "attack.hammer.projectile.audio.file",
+													"title": "File",
+													"directory": "episode",
+													"directory-relative": "episode",
+													"value-default": ""
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"control": "group",
+							"name": "..",
+							"title": "Timing",
+							"children": [
+								{
+									"control": "spinBox",
+									"name": "attack.hammer.timing.pre",
+									"title": "Prefire Time",
+									"tooltip": "Time it takes to prepare the projectile, before throwing them.\n-1 uses config value \"attack.hammer.timing.pre\".",
+									"type": "int",
+									"value-default": -1,
+									"value-min": -1,
+									"value-max": 512
+								},
+								{
+									"control": "spinBox",
+									"name": "attack.hammer.timing.cooldown",
+									"title": "Cooldown Time",
+									"tooltip": "Time it takes between each projectile.\n-1 uses config value \"attack.hammer.timing.cooldown\".",
+									"type": "int",
+									"value-default": -1,
+									"value-min": -1,
+									"value-max": 512
+								}
+							]
+						},
+						{
+							"control": "group",
+							"name": "..",
+							"title": "Spawn",
+							"children": [
+								{
+									"control": "comboBox",
+									"name": "attack.hammer.spawn.center",
+									"title": "Center",
+									"tooltip": "If enabled, breath NPC will be centered upon spawn.\n\"Default\" uses config value \"attack.hammer.spawn.center\".",
+									"elements": ["Default", "Enabled", "Disabled"],
+									"value-default": 0
+								},
+								{
+									"control": "group",
+									"name": "..",
+									"title": "Offset",
+									"children": [
+										{
+											"control": "description",
+											"name": "_",
+											"text": "Pixel offset from the NPC's spawn pivot point at which to spawn the projectile NPC.\nIf disabled, uses config values \"attack.hammer.spawn.offset.x\" and \"attack.hammer.spawn.offset.y\"."
+										},
+										{
+											"control": "checkBox",
+											"name": "attack.hammer.spawn.offset.config",
+											"title": "Use Config",
+											"value-default": true
+										},
+										{
+											"control": "spinBox",
+											"name": "attack.hammer.spawn.offset.x",
+											"title": "X",
+											"type": "int",
+											"value-default": 0,
+											"single-step": 8,
+											"value-min": -128,
+											"value-max": 128
+										},
+										{
+											"control": "spinBox",
+											"name": "attack.hammer.spawn.offset.y",
+											"title": "Y",
+											"type": "int",
+											"value-default": 0,
+											"single-step": 8,
+											"value-min": -128,
+											"value-max": 128
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"control": "group",
+			"name": "..",
+			"collapse": true,
+			"title": "Hit Settings",
+			"children": [
+				{
+					"control": "group",
+					"name": "..",
+					"title": "Health",
+					"children": [
+						{
+							"control": "spinBox",
+							"name": "hit.health.hp",
+							"title": "HP",
+							"tooltip": "Number of hitpoints the NPC has.\n0 uses config value \"hit.health.hp\".",
+							"type": "int",
+							"value-default": 0,
+							"value-min": 0,
+							"value-max": 100
+						},
+						{
+							"control": "spinBox",
+							"name": "hit.health.sub",
+							"title": "Sub HP",
+							"tooltip": "Number of hits from a player projectile required to knock down one HP.\n0 uses config value \"hit.health.sub\".",
+							"type": "int",
+							"value-default": 0,
+							"value-min": 0,
+							"value-max": 100
+						},
+						{
+							"control": "spinBox",
+							"name": "hit.health.invulnerability",
+							"title": "Invulnerability",
+							"tooltip": "Ticks that the NPC will be invulnerable for after HP decreases.\n-1 uses config value \"hit.health.invulnerability\".",
+							"type": "int",
+							"value-default": -1,
+							"value-min": -1,
+							"value-max": 100000
+						},
+						{
+							"control": "group",
+							"name": "..",
+							"title": "Audio",
+							"children": [
+								{
+									"control": "group",
+									"name": "..",
+									"title": "Hurt",
+									"children": [
+										{
+											"control": "description",
+											"name": "_",
+											"text": "Audio file played when the HP decreases.\nIf \"ID\" is set to 0, uses the file. Otherwise, uses internal sound effect with the id \"ID\"."
+										},
+										{
+											"control": "spinBox",
+											"name": "hit.health.audio.hurt.volume",
+											"title": "Volume",
+											"tooltip": "0.0 uses config value \"hit.health.audio.hurt.volume\".",
+											"type": "double",
+											"value-min": 0.0,
+											"value-max": 1.0,
+											"value-default": 0.0
+										},
+										{
+											"control": "checkBox",
+											"name": "hit.health.audio.hurt.config",
+											"title": "Use Config",
+											"tooltip": "If checked, uses config value \"hit.health.audio.hurt.id\", or \"hit.health.audio.hurt.file\" if the former is 0.",
+											"value-default": true
+										},
+										{
+											"control": "group",
+											"name": "..",
+											"children": [
+												{
+													"control": "spinBox",
+													"name": "hit.health.audio.hurt.id",
+													"title": "ID",
+													"type": "int",
+													"value-min": 0,
+													"value-max": 1000,
+													"value-default": 0
+												},
+												{
+													"control": "soundFile",
+													"name": "hit.health.audio.hurt.file",
+													"title": "File",
+													"directory": "episode",
+													"directory-relative": "episode",
+													"value-default": ""
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"control": "group",
+							"name": "..",
+							"title": "Graphics",
+							"children": [
+								{
+									"control": "group",
+									"name": "..",
+									"title": "Transition",
+									"children": [
+										{
+											"control": "spinBox",
+											"name": "hit.health.graphics.transition.time",
+											"title": "Time",
+											"tooltip": "How long the transition into the screen should take.\n-1 uses config value \"hit.health.graphics.transition.time\".",
+											"type": "int",
+											"value-default": -1,
+											"value-min": -1,
+											"value-max": 10000
+										},
+										{
+											"control": "group",
+											"name": "..",
+											"title": "Relative Position",
+											"children": [
+												{
+													"control": "description",
+													"name": "_",
+													"text": "How far from its usual position will the GUI be positioned at the beginning of the transition.\nMoves to (0, 0) over time.\n-1 uses config values \"hit.health.graphics.transition.position.x\" and \"hit.health.graphics.transition.position.y\"."
+												},
+												{
+													"control": "spinBox",
+													"name": "hit.health.graphics.transition.position.x",
+													"title": "X",
+													"tooltip": "0 uses config value \"hit.health.graphics.transition.position.x\".",
+													"type": "int",
+													"value-default": 0,
+													"value-min": -100000,
+													"value-max": 100000
+												},
+												{
+													"control": "spinBox",
+													"name": "hit.health.graphics.transition.position.y",
+													"title": "Y",
+													"tooltip": "0 uses config value \"hit.health.graphics.transition.position.y\".",
+													"type": "int",
+													"value-default": 0,
+													"value-min": -100000,
+													"value-max": 100000
+												}
+											]
+										}
+									]
+								},
+								{
+									"control": "group",
+									"name": "..",
+									"title": "Icon",
+									"children": [
+										{
+											"control": "description",
+											"name": "_",
+											"text": "Icon displayed next to the health bar.\nHealth is positioned relative to this."
+										},
+										{
+											"control": "checkBox",
+											"name": "hit.health.graphics.icon.config",
+											"title": "Use Config",
+											"tooltip": "Uses config value \"hit.health.graphics.icon.file\" if enabled.",
+											"value-default": true
+										},
+										{
+											"control": "file",
+											"name": "hit.health.graphics.icon.file",
+											"title": "File",
+											"filters": ["*.png", "*.gif"],
+											"value-default": ""
+										},
+										{
+											"control": "group",
+											"name": "..",
+											"title": "Position",
+											"children": [
+												{
+													"control": "spinBox",
+													"name": "hit.health.graphics.icon.position.x",
+													"title": "X",
+													"tooltip": "-1 uses config value \"hit.health.graphics.icon.position.x\".",
+													"type": "int",
+													"value-default": -1,
+													"value-min": -1,
+													"value-max": 100000
+												},
+												{
+													"control": "spinBox",
+													"name": "hit.health.graphics.icon.position.y",
+													"title": "Y",
+													"tooltip": "-1 uses config value \"hit.health.graphics.icon.position.y\".",
+													"type": "int",
+													"value-default": -1,
+													"value-min": -1,
+													"value-max": 100000
+												}
+											]
+										}
+									]
+								},
+								{
+									"control": "group",
+									"name": "..",
+									"title": "Health",
+									"children": [
+										{
+											"control": "description",
+											"name": "_",
+											"text": "One sliver of health.\nPositioned relative to the icon."
+										},
+										{
+											"control": "checkBox",
+											"name": "hit.health.graphics.health.config",
+											"title": "Use Config",
+											"tooltip": "Uses config value \"hit.health.graphics.health.file\" if enabled.",
+											"value-default": true
+										},
+										{
+											"control": "file",
+											"name": "hit.health.graphics.health.file",
+											"title": "File",
+											"filters": ["*.png", "*.gif"],
+											"value-default": ""
+										},
+										{
+											"control": "group",
+											"name": "..",
+											"title": "Relative Position",
+											"children": [
+												{
+													"control": "spinBox",
+													"name": "hit.health.graphics.health.position.x",
+													"title": "X",
+													"tooltip": "Multiplied by a factor for every health sliver.\n0 uses config value \"hit.health.graphics.health.position.x\".",
+													"type": "int",
+													"value-default": 0,
+													"value-min": -100000,
+													"value-max": 100000
+												},
+												{
+													"control": "spinBox",
+													"name": "hit.health.graphics.health.position.offsetx",
+													"title": "X Offset",
+													"tooltip": "Static value for every health sliver.\n0 uses config value \"hit.health.graphics.health.position.offsetx\".",
+													"type": "int",
+													"value-default": 0,
+													"value-min": -100000,
+													"value-max": 100000
+												},
+												{
+													"control": "spinBox",
+													"name": "hit.health.graphics.health.position.y",
+													"title": "Y",
+													"tooltip": "Multiplied by a factor for every health sliver.\n0 uses config value \"hit.health.graphics.health.position.y\".",
+													"type": "int",
+													"value-default": 0,
+													"value-min": -100000,
+													"value-max": 100000
+												},
+												{
+													"control": "spinBox",
+													"name": "hit.health.graphics.health.position.offsety",
+													"title": "Y Offset",
+													"tooltip": "Static value for every health sliver.\n0 uses config value \"hit.health.graphics.health.position.offsety\".",
+													"type": "int",
+													"value-default": 0,
+													"value-min": -100000,
+													"value-max": 100000
+												}
+											]
+										}
+									]
+								},
+								{
+									"control": "group",
+									"name": "..",
+									"title": "Armor",
+									"children": [
+										{
+											"control": "description",
+											"name": "_",
+											"text": "One sliver of armor.\nOnly appears above 50 HP.\nPositioned relative to the icon."
+										},
+										{
+											"control": "checkBox",
+											"name": "hit.health.graphics.armor.config",
+											"title": "Use Config",
+											"tooltip": "Uses config value \"hit.health.graphics.armor.file\" if enabled.",
+											"value-default": true
+										},
+										{
+											"control": "file",
+											"name": "hit.health.graphics.armor.file",
+											"title": "File",
+											"filters": ["*.png", "*.gif"],
+											"value-default": ""
+										},
+										{
+											"control": "group",
+											"name": "..",
+											"title": "Relative Position",
+											"children": [
+												{
+													"control": "spinBox",
+													"name": "hit.health.graphics.armor.position.x",
+													"title": "X",
+													"tooltip": "Multiplied by a factor for every health sliver.\n0 uses config value \"hit.health.graphics.armor.position.x\".",
+													"type": "int",
+													"value-default": 0,
+													"value-min": -100000,
+													"value-max": 100000
+												},
+												{
+													"control": "spinBox",
+													"name": "hit.health.graphics.armor.position.offsetx",
+													"title": "X Offset",
+													"tooltip": "Static value for every armor sliver.\n0 uses config value \"hit.health.graphics.armor.position.offsetx\".",
+													"type": "int",
+													"value-default": 0,
+													"value-min": -100000,
+													"value-max": 100000
+												},
+												{
+													"control": "spinBox",
+													"name": "hit.health.graphics.armor.position.y",
+													"title": "Y",
+													"tooltip": "Multiplied by a factor for every armor sliver.\n0 uses config value \"hit.health.graphics.armor.position.y\".",
+													"type": "int",
+													"value-default": 0,
+													"value-min": -100000,
+													"value-max": 100000
+												},
+												{
+													"control": "spinBox",
+													"name": "hit.health.graphics.health.position.offsety",
+													"title": "Y Offset",
+													"tooltip": "Static value for every armor sliver.\n0 uses config value \"hit.health.graphics.armor.position.offsety\".",
+													"type": "int",
+													"value-default": 0,
+													"value-min": -100000,
+													"value-max": 100000
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"control": "group",
+					"name": "..",
+					"collapse": true,
+					"title": "Definitions",
+					"children": [
+						{
+							"control": "description",
+							"name": "_",
+							"text": "Settings relating to when the NPC is hit by the player, one of their projectiles or another, unrelated cause.\nSetting 0 damage of both types for some cases, such as a jump, will result in the player taking damage instead."
+						},
+						{
+							"control": "group",
+							"name": "..",
+							"title": "Jump",
+							"children": [
+								{
+									"control": "description",
+									"name": "_",
+									"text": "Triggers when the player performs a regular jump on the NPC."
+								},
+								{
+									"control": "spinBox",
+									"name": "hit.definition.jump.damage",
+									"title": "Damage",
+									"tooltip": "HP deducted from the NPC by this harm type.\n-1 uses config value \"hit.definition.jump.damage\".",
+									"type": "int",
+									"value-default": -1,
+									"value-min": -1,
+									"value-max": 100000
+								},
+								{
+									"control": "spinBox",
+									"name": "hit.definition.jump.sub",
+									"title": "Sub Damage",
+									"tooltip": "Sub HP deducted from the NPC by this harm type.\n-1 uses config value \"hit.definition.jump.sub\".",
+									"type": "int",
+									"value-default": -1,
+									"value-min": -1,
+									"value-max": 100000
+								}
+							]
+						},
+						{
+							"control": "group",
+							"name": "..",
+							"title": "From Below",
+							"children": [
+								{
+									"control": "description",
+									"name": "_",
+									"text": "Triggers when the player hits a bumpable block below the NPC."
+								},
+								{
+									"control": "spinBox",
+									"name": "hit.definition.below.damage",
+									"title": "Damage",
+									"tooltip": "HP deducted from the NPC by this harm type.\n-1 uses config value \"hit.definition.below.damage\".",
+									"type": "int",
+									"value-default": -1,
+									"value-min": -1,
+									"value-max": 100000
+								},
+								{
+									"control": "spinBox",
+									"name": "hit.definition.below.sub",
+									"title": "Sub Damage",
+									"tooltip": "Sub HP deducted from the NPC by this harm type.\n-1 uses config value \"hit.definition.below.sub\".",
+									"type": "int",
+									"value-default": -1,
+									"value-min": -1,
+									"value-max": 100000
+								}
+							]
+						},
+						{
+							"control": "group",
+							"name": "..",
+							"title": "NPC",
+							"children": [
+								{
+									"control": "description",
+									"name": "_",
+									"text": "Triggers from a variety of cases not handled by other harm types, such as player fireballs or hammers. See <a href=\"https://docs.codehaus.moe/#/constants/enemy-harm-types\">documentation</a> for more information."
+								},
+								{
+									"control": "spinBox",
+									"name": "hit.definition.npc.damage",
+									"title": "Damage",
+									"tooltip": "HP deducted from the NPC by this harm type.\n-1 uses config value \"hit.definition.npc.damage\".",
+									"type": "int",
+									"value-default": -1,
+									"value-min": -1,
+									"value-max": 100000
+								},
+								{
+									"control": "spinBox",
+									"name": "hit.definition.npc.sub",
+									"title": "Sub Damage",
+									"tooltip": "Sub HP deducted from the NPC by this harm type.\n-1 uses config value \"hit.definition.npc.sub\".",
+									"type": "int",
+									"value-default": -1,
+									"value-min": -1,
+									"value-max": 100000
+								}
+							]
+						},
+						{
+							"control": "group",
+							"name": "..",
+							"title": "Projectile",
+							"children": [
+								{
+									"control": "description",
+									"name": "_",
+									"text": "Triggers when hit by a projectile NPC, most commonly thrown by players."
+								},
+								{
+									"control": "spinBox",
+									"name": "hit.definition.projectile.damage",
+									"title": "Damage",
+									"tooltip": "HP deducted from the NPC by this harm type.\n-1 uses config value \"hit.definition.projectile.damage\".",
+									"type": "int",
+									"value-default": -1,
+									"value-min": -1,
+									"value-max": 100000
+								},
+								{
+									"control": "spinBox",
+									"name": "hit.definition.projectile.sub",
+									"title": "Sub Damage",
+									"tooltip": "Sub HP deducted from the NPC by this harm type.\n-1 uses config value \"hit.definition.projectile.sub\".",
+									"type": "int",
+									"value-default": -1,
+									"value-min": -1,
+									"value-max": 100000
+								}
+							]
+						},
+						{
+							"control": "group",
+							"name": "..",
+							"title": "Held NPC",
+							"children": [
+								{
+									"control": "description",
+									"name": "_",
+									"text": "Triggers when hit by an NPC held by a player."
+								},
+								{
+									"control": "spinBox",
+									"name": "hit.definition.held.damage",
+									"title": "Damage",
+									"tooltip": "HP deducted from the NPC by this harm type.\n-1 uses config value \"hit.definition.held.damage\".",
+									"type": "int",
+									"value-default": -1,
+									"value-min": -1,
+									"value-max": 10000
+								},
+								{
+									"control": "spinBox",
+									"name": "hit.definition.held.sub",
+									"title": "Sub Damage",
+									"tooltip": "Sub HP deducted from the NPC by this harm type.\n-1 uses config value \"hit.definition.held.sub\".",
+									"type": "int",
+									"value-default": -1,
+									"value-min": -1,
+									"value-max": 10000
+								}
+							]
+						},
+						{
+							"control": "group",
+							"name": "..",
+							"title": "Lava",
+							"children": [
+								{
+									"control": "description",
+									"name": "_",
+									"text": "Triggers when touching lava."
+								},
+								{
+									"control": "spinBox",
+									"name": "hit.definition.lava.damage",
+									"title": "Damage",
+									"tooltip": "HP deducted from the NPC by this harm type.\n-1 uses config value \"hit.definition.lava.damage\".",
+									"type": "int",
+									"value-default": -1,
+									"value-min": -1,
+									"value-max": 10000
+								},
+								{
+									"control": "spinBox",
+									"name": "hit.definition.lava.sub",
+									"title": "Sub Damage",
+									"tooltip": "Sub HP deducted from the NPC by this harm type.\n-1 uses config value \"hit.definition.lava.sub\".",
+									"type": "int",
+									"value-default": -1,
+									"value-min": -1,
+									"value-max": 10000
+								}
+							]
+						},
+						{
+							"control": "group",
+							"name": "..",
+							"title": "Tail",
+							"children": [
+								{
+									"control": "description",
+									"name": "_",
+									"text": "Triggers when hit by the player's tail."
+								},
+								{
+									"control": "spinBox",
+									"name": "hit.definition.tail.damage",
+									"title": "Damage",
+									"tooltip": "HP deducted from the NPC by this harm type.\n-1 uses config value \"hit.definition.tail.damage\".",
+									"type": "int",
+									"value-default": -1,
+									"value-min": -1,
+									"value-max": 10000
+								},
+								{
+									"control": "spinBox",
+									"name": "hit.definition.tail.sub",
+									"title": "Sub Damage",
+									"tooltip": "Sub HP deducted from the NPC by this harm type.\n-1 uses config value \"hit.definition.tail.sub\".",
+									"type": "int",
+									"value-default": -1,
+									"value-min": -1,
+									"value-max": 10000
+								}
+							]
+						},
+						{
+							"control": "group",
+							"name": "..",
+							"title": "Spinjump",
+							"children": [
+								{
+									"control": "description",
+									"name": "_",
+									"text": "Triggers when the player performs a spin jump on the NPC."
+								},
+								{
+									"control": "spinBox",
+									"name": "hit.definition.spinjump.damage",
+									"title": "Damage",
+									"tooltip": "HP deducted from the NPC by this harm type.\n-1 uses config value \"hit.definition.spinjump.damage\".",
+									"type": "int",
+									"value-default": -1,
+									"value-min": -1,
+									"value-max": 10000
+								},
+								{
+									"control": "spinBox",
+									"name": "hit.definition.spinjump.sub",
+									"title": "Sub Damage",
+									"tooltip": "Sub HP deducted from the NPC by this harm type.\n-1 uses config value \"hit.definition.spinjump.sub\".",
+									"type": "int",
+									"value-default": -1,
+									"value-min": -1,
+									"value-max": 10000
+								}
+							]
+						},
+						{
+							"control": "group",
+							"name": "..",
+							"title": "Sword",
+							"children": [
+								{
+									"control": "description",
+									"name": "_",
+									"text": "Triggers when the player attacks as Link."
+								},
+								{
+									"control": "spinBox",
+									"name": "hit.definition.sword.damage",
+									"title": "Damage",
+									"tooltip": "HP deducted from the NPC by this harm type.\n-1 uses config value \"hit.definition.sword.damage\".",
+									"type": "int",
+									"value-default": -1,
+									"value-min": -1,
+									"value-max": 10000
+								},
+								{
+									"control": "spinBox",
+									"name": "hit.definition.sword.sub",
+									"title": "Sub Damage",
+									"tooltip": "Sub HP deducted from the NPC by this harm type.\n-1 uses config value \"hit.definition.sword.sub\".",
+									"type": "int",
+									"value-default": -1,
+									"value-min": -1,
+									"value-max": 10000
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"control": "group",
+			"name": "..",
+			"collapse": true,
+			"title": "Battle Settings",
+			"children": [
+				{
+					"control": "group",
+					"name": "..",
+					"title": "Music",
+					"children": [
+						{
+							"control": "description",
+							"name": "_",
+							"text": "Audio file played during the fight."
+						},
+						{
+							"control": "checkBox",
+							"name": "battle.music.config",
+							"title": "Use Config",
+							"tooltip": "If enabled, uses config value \"battle.music.id\", or \"battle.music.file\" if the former is -1.",
+							"value-default": true
+						},
+						{
+							"control": "group",
+							"name": "..",
+							"children": [
+								{
+									"control": "description",
+									"name": "_",
+									"text": "If \"ID\" is set to -1, uses the file. Otherwise, uses internal music with the 0-indexed id \"ID\"."
+								},
+								{
+									"control": "comboBox",
+									"name": "battle.music.change",
+									"title": "Change",
+									"tooltip": "If disabled, will not change music of the current section.\n\"Default\" uses config value \"battle.music.change\".",
+									"elements": ["Default", "Enabled", "Disabled"],
+									"value-default": 0
+								},
+								{
+									"control": "spinBox",
+									"name": "battle.music.id",
+									"title": "ID",
+									"type": "int",
+									"value-min": -1,
+									"value-max": 100,
+									"value-default": -1
+								},
+								{
+									"control": "musicFile",
+									"name": "battle.music.file",
+									"title": "File",
+									"directory": "episode",
+									"directory-relative": "episode",
+									"value-default": ""
+								}
+							]
+						}
+					]
+				},
+				{
+					"control": "group",
+					"name": "..",
+					"title": "Room Lock",
+					"children": [
+						{
+							"control": "group",
+							"name": "..",
+							"title": "Area",
+							"children": [
+								{
+									"control": "comboBox",
+									"name": "battle.room.area.enabled",
+									"title": "Enabled",
+									"tooltip": "If disabled, will not lock the section to the bounds found.\n\"Default\" uses config value \"battle.room.area.enabled\".",
+									"elements": ["Default", "Enabled", "Disabled"],
+									"value-default": 0
+								},
+								{
+									"control": "spinBox",
+									"name": "battle.room.area.id",
+									"title": "ID",
+									"tooltip": "ID of the area bounds that the section will be locked into.\n-1 uses first found touching area. May be inaccurate with multiple touching areas.",
+									"type": "int",
+									"value-default": -1,
+									"value-min": -1,
+									"value-max": 100
+								},
+								{
+									"control": "spinBox",
+									"name": "battle.room.area.speed",
+									"title": "Transition Speed",
+									"tooltip": "Speed factor for transitioning to the specified bounds.\n0.0 use config value \"battle.room.area.speed\".",
+									"type": "double",
+									"value-default": 0.0,
+									"value-min": 0.0,
+									"value-max": 100
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"control": "group",
+			"name": "..",
+			"collapse": true,
+			"title": "Defeat Settings",
+			"children": [
+				{
+					"control": "group",
+					"name": "..",
+					"title": "Lava Interaction",
+					"children": [
+						{
+							"control": "comboBox",
+							"name": "defeat.lava.ignore",
+							"title": "Ignore Lava",
+							"tooltip": "If enabled, will not react to touching lava after defeat.\n\"Default\" uses config value \"defeat.lava.ignore\".",
+							"elements": ["Default", "Enabled", "Disabled"],
+							"value-default": 0
+						},
+						{
+							"control": "group",
+							"name": "..",
+							"title": "Splash",
+							"children": [
+								{
+									"control": "comboBox",
+									"name": "defeat.lava.splash.enabled",
+									"title": "Splash Lava",
+									"tooltip": "If enabled, will splash the lava around when coming in contact.\n\"Default\" uses config value \"defeat.lava.splash.enabled\".",
+									"elements": ["Default", "Enabled", "Disabled"],
+									"value-default": 0
+								},
+								{
+									"control": "spinBox",
+									"name": "defeat.lava.splash.range",
+									"title": "Splash Range",
+									"tooltip": "How far the splash will be extended in each direction.\n0 uses config value \"defeat.lava.splash.range\".",
+									"type": "int",
+									"value-default": 0,
+									"value-min": 0,
+									"value-max": 512
+								},
+								{
+									"control": "spinBox",
+									"name": "defeat.lava.splash.strength",
+									"title": "Splash Strength",
+									"tooltip": "Multiplier for the distance traversed by splashing lava.\n0 uses config value \"defeat.lava.splash.strength\".",
+									"type": "double",
+									"value-default": 0,
+									"value-min": 0,
+									"value-max": 512
+								},
+								{
+									"control": "spinBox",
+									"name": "defeat.lava.splash.time",
+									"title": "Splash Time",
+									"tooltip": "How long the splash is.\n-1 uses config value \"defeat.lava.splash.time\".",
+									"type": "int",
+									"value-default": -1,
+									"value-min": -1,
+									"value-max": 1024
+								},
+								{
+									"control": "spinBox",
+									"name": "defeat.lava.splash.timelag",
+									"title": "Splash Time Lag",
+									"tooltip": "The delay between horizontally adjacent lava blocks.\n-1 uses config value \"defeat.lava.splash.timelag\".",
+									"type": "int",
+									"value-default": -1,
+									"value-min": -1,
+									"value-max": 10000
+								}
+							]
+						}
+					]
+				},
+				{
+					"control": "lineEdit",
+					"name": "defeat.event",
+					"title": "Event",
+					"tooltip": "Event to run on stun.\nEmpty string uses config value \"defeat.event\".",
+					"value-default": "",
+					"placeholder": "MyCoolEvent"
+				},
+				{
+					"control": "group",
+					"name": "..",
+					"title": "Default Behaviour",
+					"children": [
+						{
+							"control": "description",
+							"name": "_",
+							"text": "Upon defeat, unless explicitly disabled, many actions will occur in succession:\n- Stopping the music in the current section\n- Stopping all player input\n- Stopping the level timer\n- Playing the defeat jingle\n- Forcing player movement to the right and offscreen.\nFor best results, add a few blocks offscreen that the player can walk on, so they don't die during the cutscene."
+						},
+						{
+							"control": "comboBox",
+							"name": "defeat.default.enabled",
+							"title": "Enabled",
+							"tooltip": "If enabled, will run default behaviour.\n\"Default\" uses config value \"defeat.default.enabled\".",
+							"elements": ["Default", "Enabled", "Disabled"],
+							"value-default": 0
+						},
+						{
+							"control": "comboBox",
+							"name": "defeat.default.direction",
+							"title": "Direction",
+							"tooltip": "Determines what direction the player will walk in.\n\"Default\" uses config value \"defeat.default.direction\".",
+							"elements": ["Default", "Left", "Right"],
+							"value-default": 0
+						},
+						{
+							"control": "spinBox",
+							"name": "defeat.default.extension",
+							"title": "Section Extension",
+							"tooltip": "How far the section will be extended to allow walking offscreen.\nUseful changing if using a wide player sprite.\n-1 uses config value \"defeat.default.extension\".",
+							"type": "int",
+							"value-default": -1,
+							"value-min": -1,
+							"value-max": 1000
+						},
+						{
+							"control": "spinBox",
+							"name": "defeat.default.wintype",
+							"title": "Level Win Type",
+							"tooltip": "Type of win given to the player on completion.\n0 uses config value \"defeat.default.wintype\".",
+							"type": "int",
+							"value-default": 0,
+							"value-min": 0,
+							"value-max": 11
+						},
+						{
+							"control": "description",
+							"name": "_",
+							"text": "See <a href=\"https://docs.codehaus.moe/#/constants/level-victory\">documentation</a> for more information about \"Level Win Type\"."
+						}
+					]
+				},
+				{
+					"control": "group",
+					"name": "..",
+					"title": "Fall",
+					"children": [
+						{
+							"control": "spinBox",
+							"name": "defeat.fall.coyotetime",
+							"title": "Coyote Time",
+							"tooltip": "Time it takes for the NPC to start falling after being defeated.\n-1 uses config value \"defeat.fall.coyotetime\".",
+							"type": "int",
+							"value-default": -1,
+							"value-min": -1,
+							"value-max": 10000
+						},
+						{
+							"control": "spinBox",
+							"name": "defeat.fall.speed",
+							"title": "Speed",
+							"tooltip": "Speed at which to fall.\n0 uses config value \"defeat.fall.speed\".",
+							"type": "double",
+							"value-default": 0,
+							"value-min": 0,
+							"value-max": 100
+						},
+						{
+							"control": "spinBox",
+							"name": "defeat.fall.lavaspeed",
+							"title": "Lava Speed",
+							"tooltip": "Speed at which to fall in lava.\nHas no effect if \"Ignore Lava\" is enabled.\n0 uses config value \"defeat.fall.lavaspeed\".",
+							"type": "double",
+							"value-default": 0,
+							"value-min": 0,
+							"value-max": 100
+						}		
+					]
+				},
+				{
+					"control": "group",
+					"name": "..",
+					"title": "Audio",
+					"children": [
+						{
+							"control": "group",
+							"name": "..",
+							"title": "Stun",
+							"children": [
+								{
+									"control": "description",
+									"name": "_",
+									"text": "Audio file played when the last hit is dealt.\nIf \"ID\" is set to 0, uses the file. Otherwise, uses internal sound effect with the id \"ID\"."
+								},
+								{
+									"control": "spinBox",
+									"name": "defeat.audio.stun.volume",
+									"title": "Volume",
+									"tooltip": "0.0 uses config value \"defeat.audio.stun.volume\".",
+									"type": "double",
+									"value-min": 0.0,
+									"value-max": 1.0,
+									"value-default": 0.0
+								},
+								{
+									"control": "checkBox",
+									"name": "defeat.audio.stun.config",
+									"title": "Use Config",
+									"tooltip": "If checked, uses config value \"defeat.audio.fall.id\", or \"defeat.audio.fall.file\" if the former is 0.",
+									"value-default": true
+								},
+								{
+									"control": "group",
+									"name": "..",
+									"children": [
+										{
+											"control": "spinBox",
+											"name": "defeat.audio.stun.id",
+											"title": "ID",
+											"type": "int",
+											"value-min": 0,
+											"value-max": 1000,
+											"value-default": 0
+										},
+										{
+											"control": "soundFile",
+											"name": "defeat.audio.stun.file",
+											"title": "File",
+											"directory": "episode",
+											"directory-relative": "episode",
+											"value-default": ""
+										}
+									]
+								}
+							]
+						},
+						{
+							"control": "group",
+							"name": "..",
+							"title": "Fall",
+							"children": [
+								{
+									"control": "description",
+									"name": "_",
+									"text": "Audio file played when the NPC starts falling.\nIf \"ID\" is set to 0, uses the file. Otherwise, uses internal sound effect with the id \"ID\"."
+								},
+								{
+									"control": "spinBox",
+									"name": "defeat.audio.fall.volume",
+									"title": "Volume",
+									"tooltip": "0.0 uses config value \"defeat.audio.fall.volume\".",
+									"type": "double",
+									"value-min": 0.0,
+									"value-max": 1.0,
+									"value-default": 0.0
+								},
+								{
+									"control": "checkBox",
+									"name": "defeat.audio.fall.config",
+									"title": "Use Config",
+									"tooltip": "If checked, uses config value \"defeat.audio.fall.id\", \"defeat.audio.fall.file\" if the former is 0.",
+									"value-default": true
+								},
+								{
+									"control": "group",
+									"name": "..",
+									"children": [
+										{
+											"control": "spinBox",
+											"name": "defeat.audio.fall.id",
+											"title": "ID",
+											"type": "int",
+											"value-min": 0,
+											"value-max": 1000,
+											"value-default": 0
+										},
+										{
+											"control": "soundFile",
+											"name": "defeat.audio.fall.file",
+											"title": "File",
+											"directory": "episode",
+											"directory-relative": "episode",
+											"value-default": ""
+										}
+									]
+								}
+							]
+						},
+						{
+							"control": "group",
+							"name": "..",
+							"title": "Lava",
+							"children": [
+								{
+									"control": "description",
+									"name": "_",
+									"text": "Audio file played when the falling NPC hits lava.\nIf \"ID\" is set to 0, uses the file. Otherwise, uses internal sound effect with the id \"ID\".\nWill not play if \"Ignore Lava\" is enabled."
+								},
+								{
+									"control": "spinBox",
+									"name": "defeat.audio.lava.volume",
+									"title": "Volume",
+									"tooltip": "0.0 uses config value \"defeat.audio.lava.volume\".",
+									"type": "double",
+									"value-min": 0.0,
+									"value-max": 1.0,
+									"value-default": 0.0
+								},
+								{
+									"control": "checkBox",
+									"name": "defeat.audio.lava.config",
+									"title": "Use Config",
+									"tooltip": "If checked, uses config value \"defeat.audio.lava.id\", or \"defeat.audio.lava.file\" if the former is 0.",
+									"value-default": true
+								},
+								{
+									"control": "group",
+									"name": "..",
+									"children": [
+										{
+											"control": "spinBox",
+											"name": "defeat.audio.lava.id",
+											"title": "ID",
+											"type": "int",
+											"value-min": 0,
+											"value-max": 1000,
+											"value-default": 0
+										},
+										{
+											"control": "soundFile",
+											"name": "defeat.audio.lava.file",
+											"title": "File",
+											"directory": "episode",
+											"directory-relative": "episode",
+											"value-default": ""
+										}
+									]
+								}
+							]
+						},
+						{
+							"control": "group",
+							"name": "..",
+							"title": "Jingle",
+							"children": [
+								{
+									"control": "description",
+									"name": "_",
+									"text": "Audio file played when the NPC goes offscreen.\nIf \"ID\" is set to 0, uses the file. Otherwise, uses internal sound effect with the id \"ID\".\nWill not play if the default behaviour is disabled."
+								},
+								{
+									"control": "spinBox",
+									"name": "defeat.audio.jingle.volume",
+									"title": "Volume",
+									"tooltip": "0.0 uses config value \"defeat.audio.jingle.volume\".",
+									"type": "double",
+									"value-min": 0.0,
+									"value-max": 1.0,
+									"value-default": 0.0
+								},
+								{
+									"control": "checkBox",
+									"name": "defeat.audio.jingle.config",
+									"title": "Use Config",
+									"tooltip": "If checked, uses config value \"defeat.audio.jingle.id\", or \"defeat.audio.jingle.file\" if the former is 0.",
+									"value-default": true
+								},
+								{
+									"control": "group",
+									"name": "..",
+									"children": [
+										{
+											"control": "spinBox",
+											"name": "defeat.audio.jingle.id",
+											"title": "ID",
+											"type": "int",
+											"value-min": 0,
+											"value-max": 1000,
+											"value-default": 0
+										},
+										{
+											"control": "soundFile",
+											"name": "defeat.audio.jingle.file",
+											"title": "File",
+											"directory": "episode",
+											"directory-relative": "episode",
+											"value-default": ""
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"control": "group",
+			"name": "..",
+			"collapse": true,
+			"title": "Miscellaneous Settings",
+			"children": [
+				{
+					"control": "spinBox",
+					"name": "misc.startstate",
+					"title": "Start State",
+					"tooltip": "0-indexed, what state to start in.\n-1 uses config value \"misc.startstate\".",
+					"type": "int",
+					"value-default": -1,
+					"value-min": -1,
+					"value-max": 1000,
+					"single-step": 1
+				},
+				{
+					"control": "group",
+					"name": "..",
+					"title": "Turnaround NPC",
+					"children": [
+						{
+							"control": "description",
+							"text": "What NPC to check for collision and copy the direction of.\nIf \"Use Config\" is enabled, or no NPC is selected, uses config value \"misc.turnaround.id\"."
+						},
+						{
+							"control": "checkBox",
+							"name": "misc.turnaround.config",
+							"title": "Use Config",
+							"value-default": true
+						},
+						{
+							"control": "itemSelect",
+							"name": "misc.turnaround.id",
+							"title": "ID",
+							"type": "npc",
+							"value-default": 0
+						}
+					]
+				},
+				{
+					"control": "group",
+					"name": "..",
+					"title": "Area Block",
+					"children": [
+						{
+							"control": "description",
+							"text": "What Block to search for and lock the section to.\nIf \"Use Config\" is enabled, or no NPC is selected, uses config value \"misc.area.id\"."
+						},
+						{
+							"control": "checkBox",
+							"name": "misc.area.config",
+							"title": "Use Config",
+							"value-default": true
+						},
+						{
+							"control": "itemSelect",
+							"name": "misc.area.id",
+							"title": "ID",
+							"type": "block",
+							"value-default": 0
+						}
+					]
+				}
+			]
+		}
+	]
+}

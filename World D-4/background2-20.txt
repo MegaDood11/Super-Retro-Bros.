@@ -1,0 +1,14 @@
+fill-color = #181818
+
+[Castle]
+name="Castle"
+priority = -99
+alignY=TOP
+y = -64
+img="castle.png"
+repeatX=true
+repeatY=false
+alignY=BOTTOM
+parallaxX=0.3
+parallaxY=0.3
+frames = 4

@@ -1,0 +1,10 @@
+gfxwidth = 48
+gfxheight = 48
+width = 32
+height = 16
+gfxofsetx = 0
+gfxoffsety = 2
+
+frames = 2
+framestyle = 1
+framespeed = 8

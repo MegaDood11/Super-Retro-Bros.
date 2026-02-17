@@ -1,0 +1,16 @@
+{
+	"style": "groupbox",
+	"title": "Bowser Area Settings",
+	"layout": [
+		{
+			"control": "spinBox",
+			"name": "id",
+			"title": "Bounds ID",
+			"tooltip": "ID used to find this block.\nCan leave unchanged if Bowser's \"Battle Settings/Room Lock/Area/ID\" is -1.",
+			"type": "int",
+			"value-default": 0,
+			"value-min": 0,
+			"value-max": 100
+		}
+	]
+}

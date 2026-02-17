@@ -1,0 +1,106 @@
+;Graphics
+gfxoffsetx=0
+gfxoffsety=4
+width=17
+height=18
+gfxwidth=25
+gfxheight=26
+
+;Rendering
+frames=1
+framestyle=0
+framespeed=8
+foreground=false
+
+;Solidity
+playerblock=false
+playerblocktop=false
+npcblock=false
+npcblocktop=false
+
+;Throwing
+grabside=false
+grabtop=false
+harmlessgrab=false
+harmlessthrown=false
+nowalldeath = true
+isstationary = false
+ignorethrownnpcs = false
+standsonclowncar=false
+
+;Player harm
+jumphurt=true
+nohurt=false
+spinjumpsafe=false
+
+;Movement
+speed=1
+cliffturn=false
+staticdirection=true
+luahandlesspeed=false
+noblockcollision=true
+nogravity=false
+
+;Link
+linkshieldable=true
+noshieldfireeffect=false
+
+;Identity
+isshell=false
+isinteractable=false
+iscoin=false
+isvine=false
+iscollectablegoal=false
+isflying=false
+iswaternpc=false
+isshoe=false
+isyoshi=false
+isbot=false
+isvegetable=false
+iswalker=false
+istoad=false
+
+;Line Guide
+lineguided=false
+linespeed=2
+linejumpspeed=4
+collideswhenattached=false
+usehiddenlines=false
+lineactivebydefault=false
+lineactivateonstanding=false
+lineactivatenearby=false
+linefallwheninactive=false
+linesensoralignh=0.5
+linesensoralignv=0.5
+linesensoroffsetx=0
+linesensoroffsety=0
+extendeddespawntimer=false
+
+;Darkness
+lightoffsetx = 0
+lightoffsety = 0
+lightradius = 128
+lightbrightness = 1
+lightcolor = white
+lightflicker = false
+
+;Elemental properties
+ishot=true
+iscold=false
+;durability=-1
+
+;Clear Pipes
+useclearpipe = false
+;clearpipegroup = fireballs
+
+;Miscellaneous interaction
+weight = 0
+buoyant=false
+notcointransformable=false
+nofireball=false
+noiceball=false
+nogliding=false
+noyoshi=false
+nowaterphysics=false
+nopowblock=false
+;score=2
