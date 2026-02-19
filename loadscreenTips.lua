@@ -131,7 +131,7 @@ loadTips.minusLevels = { -- Add minus world levels here
 loadTips.tipTableD = {
 	"You better stock up on lives for this one.",
 	"We at Team Rip apologise in advance.",
-	"You're F'd.",
+	"You're f'cked.",
 	"Remember hammer bros? They chase you now.",
 	"Play with a clear head, trust me.",
 	"Ptooies my beloved",
@@ -151,6 +151,8 @@ loadTips.tipTableD = {
 	"Even the Lost Levels are easier than this!",
 	"Good luck. You'll really need it.",
 	"There there, don't smile because it happened... CRY BECAUSE IT'S OVER!", -- Antonblast quote
+	"Jajajaja! You have not win! You... DIED!", -- GD quote
+	"I hope you're familar with the player physics...",
 	"Good news: this is the final stretch. Bad news: you will die a LOT."
 }
 
