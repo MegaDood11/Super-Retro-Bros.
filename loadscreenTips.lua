@@ -104,6 +104,7 @@ loadTips.tipTable = {
 	"Was that the bite of '87!?", -- FNAF
 	"When you quit the game to play something else, we start talking about you behind your back...", -- Antonblast, Satan quote
 	"Take a screenshot, it'll last longer!", -- Same here
+	"AHEM! My eyes are up here!", -- One more
 	"Who... is... this... RED GUY!??", -- Another one
 	"Delightful Mario! Round and jubilent in nature!", -- Jumbo Mario
 	"welllllwelkwellwelelwellwellwelwelewlewlwelwelwlelwelw-Welsh coal"
