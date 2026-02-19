@@ -55,7 +55,7 @@ loadTips.tipTable = {
 	"Bunnings Warehouse",
 	"This has become a bit. My sanity has perished. Help me.",
 	"Don't give up!",
-	"Boom Boom was planned for the episode, but he was ultimately scapped for Junior.",
+	"Boom Boom was planned for the episode, but in the end he was scapped for Junior.",
 	"Remember, this is just a game - take a break if you need one.",
 	"Fire In The Hole", -- Geometry Dash meme
 	"Onward and upward!", -- Talking Flower quote
@@ -101,7 +101,12 @@ loadTips.tipTable = {
 	"Try beating a level without taking damage, for bragging rights!",
 	"This is... my son. Treat him well.", -- Grim Dealer from SMATRS
 	"6-7 is unfunny", -- If you think it's funny, go touch some grass. - Devious
-	"Was that the bite of '87!?" -- FNAF
+	"Was that the bite of '87!?", -- FNAF
+	"When you quit the game to play something else, we start talking about you behind your back...", -- Antonblast, Satan quote
+	"Take a screenshot, it'll last longer!", -- Same here
+	"Who... is... this... RED GUY!??", -- Another one
+	"Delightful Mario! Round and jubilent in nature!", -- Jumbo Mario
+	"welllllwelkwellwelelwellwellwelwelewlewlwelwelwlelwelw-Welsh coal"
 }
 
 loadTips.dLevels = { -- D World levels
@@ -144,6 +149,7 @@ loadTips.tipTableD = {
 	"Take cover - those winds can get pretty hectic!",
 	"Even the Lost Levels are easier than this!",
 	"Good luck. You'll really need it.",
+	"There there, don't smile because it happened... CRY BECAUSE IT'S OVER!", -- Antonblast quote
 	"Good news: this is the final stretch. Bad news: you will die a LOT."
 }
 
