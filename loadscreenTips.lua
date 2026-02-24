@@ -71,10 +71,12 @@ loadTips.tipTable = {
 	"Toadette is fast, and easy to pick up and play.",
 	"Be patient with firebars, and you'll overcome them.",
 	"Piranha Plants come in all shapes and sizes.",
+	"Press F11 to starting recording a GIF. Press F11 again to stop recording.",
 	"Press F12 to take a screenshot.",
 	"Some castles loop you back to the beginning - find the right path to progress.",
 	"There are Yoshi Eggs hidden in some levels, look carefully!",
 	"You cannot stomp on Fighter Flies.",
+	"Most levels have checkpoints in them.",
 }
 
 loadTips.dLevels = { -- D World levels
@@ -117,7 +119,6 @@ loadTips.tipTableD = {
 	"Take cover - those winds can get pretty hectic!",
 	"Even the Lost Levels are easier than this!",
 	"Good luck. You'll really need it.",
-	"There there, don't smile because it happened... CRY BECAUSE IT'S OVER!", -- Antonblast quote
 	"Jajajaja! You have not win! You... DIED!", -- GD quote
 	"I hope you're familar with the player physics...",
 	"Good news: this is the final stretch. Bad news: you will die a LOT."
