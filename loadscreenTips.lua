@@ -9,37 +9,31 @@ loadTips.tipTable = {
 	"Some goal poles can be jumped over, see what happens if you do!",
 	"The Beetroot can defeat enemies that fireballs can't.",
 	"Use the Jumping Lui to your advantage. Some ceilings can be jumped over!",
-	"Check the credits file to see who made what level!",
+	"Check the credits file to see who made each level!",
 	"Not all bonus areas are underground, sometimes a vine can take you to the skies!",
 	"Defeat Bowser with fireballs and you might find an imposter!",
 	"Keep searching, the end of the game might not be the end of the levels.",
 	"Luigi can jump higher, but be careful as he's a lot more slippery!",
-	"There might be more characters to unlock than just the Mario Bros.",
+	"There might be more characters to unlock than just the starting three.",
 	"Hammer Bros. are no joke, it's usually best to just run under them, or bonk them from below.",
 	"Cheep Cheeps like to jump out of the water sometimes, so be careful on bridges!",
 	"Hit every block you can, you never know what's inside...",
 	"Low on lives? 1-UP Mushrooms are often found in hidden nooks.",
 	"Did you know these are randomized?",
 	"Ever feel stuck? Just walk to the right!",
-	"Ever feel stuck? Just walk to the left if you even can!",
+	"Ever feel stuck? Just walk to the left! (sometimes)",
 	"Kondor Koopas are unused in the original SMB1!",
 	"Todd. was. here.",
 	"so retro",
-	"So Retro.",
-	"SO RETRO!",
 	"The Rip Lair is a group of random people who do cool (and random) stuff",
 	"Beware of strong winds! They can push you off ledges.",
 	"Some bloopers can swim without the need of water!",
-	"kill everyone",
-	"kill everything",
-	"If you see a grumpy looking green Toad with a monobrow, say hi!", -- Todd
 	"If you jump 2401 times on the 20th tile in 1-3, you unlock Luigi!", -- Reference to the classic SM64 rumor
-	"If you jump 6814 times on the 61st tile in 4-2, you unlock Waluigi! /j",
 	"You can use the Beetroot to plow through walls of bricks! Maybe you'll find something special in them...",
 	"Ripro is rip + retro.",
 	"In bonus rooms, the character head will change depending on your character.",
 	"They say there's a castle filled with Bowsers, found in a place unknown...", -- Realm of Bowser 2
-	"The timer is much faster than normal (for the sake of accuracy), so... hurry up!",
+	"The timer is much faster than normal... so hurry up!",
 	"Beyond the goal pole, you might find a mysterious pipe... why don't you enter it?", -- You VS. Boo
 	"Hurry! After defeating Lakitu, he may return within a few seconds.",
 	"Bewear of poison mushrooms. Their icky taste will make you lose your powerup.",
@@ -50,64 +44,33 @@ loadTips.tipTable = {
 	"Larger Goombas will split into two smaller Goombas when stomping on them.",
 	"Bowser Jr. is full of surprises. He'll sometimes throw shells or toss hammers just like his dad.",
 	"Remember to introduce the first enemy of your level in a safe environment.",
-	"The FitnessGram Pacer Test is a multistage aerobic capacity test that progressively gets more difficult as it continues.",
 	"Trans rights are human rights!",
 	"Bunnings Warehouse",
-	"This has become a bit. My sanity has perished. Help me.",
 	"Don't give up!",
 	"Boom Boom was planned for the episode, but in the end he was scapped for Junior.",
 	"Remember, this is just a game - take a break if you need one.",
-	"Fire In The Hole", -- Geometry Dash meme
-	"Onward and upward!", -- Talking Flower quote
-	"I wonder what Goombas taste like...", -- Same here
-	"Peaches, Peaches, Peaches, Peaches, Peaches, Peaches, Peaches, Peaches, Peaches, Peaches", -- from the Mario Movie
-	"If Mario, then only Bros!",
-	"|: |",
-	"Do not use AI for making assets. Don't even try.",
 	"Never share your passwords!",
-	"written by devious",
-	"The Bubble Flower had a bug where the bubbles could consume almost anything. However, this was eventually fixed.",
 	"Also check out The Rip Lair's Powerup Pack!",
+	"Also check out The Rip Lair's Battle Pack!",
 	"Also check out The Online GFX Pack!",
 	"Remember the minus world glitch from the original game?",
 	"Donkey Goomba",
-	"First, translate devious. to binary, then add all of the binary values together, and you get a Spring Mushroom!",
-	"01101110 01100101 01110110 01100101 01110010 00100000 01100111 01101111 01101110 01101110 01100001 00100000 01100111 01101001 01110110 01100101 00100000 01111001 01101111 01110101 00100000 01110101 01110000",
 	"Mario Start!",
 	"Luigi Start!",
 	"Toadette Start!",
 	"Wario Start!?",
-	"Look out behind you!",
 	"Sorry, no playable cow.", -- Mario Kart World
-	"kliklolklilkllklilkloklillkllkilkllokllikllkliklolklilkllklilklolklilkllklilklolklilklklilklolklilklkllikllokllikllklilklolkilkllklilkllolklilklkilklolklilkl",
 	"Sidesteppers take two hits to defeat. The sturdiness of these crab is a mystery that spans across generations.",
 	"In some Boo races, dotted line blocks will automatically switch every 2 seconds.",
 	"Don't look inside the You Vs Boo folder.",
 	"This episode doesn't contain wall jumps or ground pounds. This includes the classic wall jump glitch. Sorry, Kosmic.",
 	"You can now play as Luigi.", -- Super Mario Galaxy quote
-	"I'm a chuckster!",
-	"Mini-Mario! Buy them all!",
 	"so ripro",
-	"Middle... Right... Left... Left... Right... Middle... Right... Left... Right... Right... Middle right right left middle middle left left left right left left left middle middle!", -- The very long code from SPM
 	"Mario's a good all rounder, he neither excels nor struggles.",
 	"Luigi can jump extra high, at the cost of his movement.",
 	"Toadette is fast, and easy to pick up and play.",
 	"Be patient with firebars, and you'll overcome them.",
 	"Piranha Plants come in all shapes and sizes.",
-	"I'm Bowser Junior. And I'm gonna be taking my father... NOW!", -- Mario Galaxy Movie quote
-	"SORRY NOTHING", -- Super Boy quote
-	"Also check out Super Mario Construct!",
-	"Look guys look! It's one of my greatest achievements!", -- Wario Land 4
-	"Try beating a level without taking damage, for bragging rights!",
-	"This is... my son. Treat him well.", -- Grim Dealer from SMATRS
-	"6-7 is unfunny", -- If you think it's funny, go touch some grass. - Devious
-	"Was that the bite of '87!?", -- FNAF
-	"When you quit the game to play something else, we start talking about you behind your back...", -- Antonblast, Satan quote
-	"Take a screenshot, it'll last longer!", -- Same here
-	"AHEM! My eyes are up here!", -- One more
-	"Who... is... this... RED GUY!??", -- Another one
-	"Delightful Mario! Round and jubilent in nature!", -- Jumbo Mario
-	"welllllwelkwellwelelwellwellwelwelewlewlwelwelwlelwelw-Welsh coal"
 }
 
 loadTips.dLevels = { -- D World levels
