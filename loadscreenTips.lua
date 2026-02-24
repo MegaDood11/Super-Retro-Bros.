@@ -71,6 +71,7 @@ loadTips.tipTable = {
 	"Toadette is fast, and easy to pick up and play.",
 	"Be patient with firebars, and you'll overcome them.",
 	"Piranha Plants come in all shapes and sizes.",
+	"Press F12 to take a screenshot.",
 }
 
 loadTips.dLevels = { -- D World levels
