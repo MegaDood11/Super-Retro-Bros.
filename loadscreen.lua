@@ -83,7 +83,6 @@ local tipNum = 0
 local time = 0
 local image = Graphics.loadImageResolved("loadscreen.png")
 local image2 = Graphics.loadImageResolved("loadscreenLogo.png")
-local rot = 0
 local hasLoaded = false
 
 local fadeOut = 0
@@ -99,49 +98,24 @@ function onDraw()
 	if not hasLoaded then
 		Graphics.setMainFramebufferSize(512, 448)
 
-		if table.contains(loadTips.dLevels,loadingLevel) then
+		if table.contains(loadTips.dLevels,loadingLevel) then -- D World Tips
 			tipTable = loadTips.tipTableD
-		elseif table.contains(loadTips.minusLevels,loadingLevel) and (rng.randomInt(1, 2) == 1) then
+		elseif table.contains(loadTips.minusLevels,loadingLevel) and (rng.randomInt(1, 2) == 1) then -- Minus World Tips
 			tipTable = loadTips.tipTableMinus
-		elseif charMem == 7 and (rng.randomInt(1, 3) == 1) then
+		elseif charMem == 7 and (rng.randomInt(1, 3) == 1) then -- Wario Tips
 			tipTable = loadTips.wario
-		elseif charMem == 3 and (rng.randomInt(1, 3) == 1) then
+		elseif charMem == 3 and (rng.randomInt(1, 3) == 1) then -- Waluigi Tips
 			tipTable = loadTips.waluigi
 		else
-			tipTable = loadTips.tipTable
+			if (rng.randomInt(1, 10) == 1) then -- Meme tips
+				tipTable = loadTips.memeTips
+			else
+				tipTable = loadTips.tipTable -- Regular tips
+			end
 		end
 
 		hasLoaded = true
 	end
-
-	-- Testing texts. Comment out when redundant.
-
-	--[[textplus.print{
-        	x = 0,
-        	y = 350,
-       		xscale = 2,
-        	yscale = 2,
-        	text = tostring(loadingLevel),
-		font = textplus.loadFont("textplus/font/3.ini"),
-        	pivot = {0, 0},
-        	maxWidth = 432,
-		color = Color.white,
-        	priority = -0.1,
-    	}
-	 textplus.print{
-        	x = 0,
-        	y = 366,
-       		xscale = 2,
-        	yscale = 2,
-        	text = tostring(table.contains(loadTips.dLevels,loadingLevel)),
-		font = textplus.loadFont("textplus/font/3.ini"),
-        	pivot = {0, 0},
-        	maxWidth = 456,
-		color = Color.white,
-        	priority = -0.1,
-    	}]]
-
----------------------------------------------
 	
 	 textplus.print{
         	x = 16 - 6,
@@ -178,17 +152,16 @@ function onDraw()
 	-- All the other things
 
 	time = time + 1
-	rot = rot - 4
 
 	if image then
-	Graphics.drawBox{ -- Rotating circle thing
+	Graphics.drawBox{
 		texture = image,
-		x = (438 + 12),
-		y = (374 + 12),
+		x = 512-96,
+		y = 448-96 - (math.sin(time / 6) * 5),
 		width = 96,
 		height = 96,
-        	rotation = rot,
-		centered = true,
+		sourceY = (charMem - 1) * 16,
+		sourceHeight = 16,
         	color = {1, 1, 1, math.min(1, time / 60)},
 	}
 	end

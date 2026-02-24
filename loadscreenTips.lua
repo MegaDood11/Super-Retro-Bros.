@@ -2,7 +2,7 @@ local loadTips = {}
 
 -- Add loadscreen tips here
 
-loadTips.tipTable = {
+loadTips.tipTable = { -- Regular tips
 	"This was a pain to code :'(",
 	"The power of a starman lets you stomp on enemies like normal!",
 	"Collect Minus Medals and you might be in for a surprise...",
@@ -77,6 +77,47 @@ loadTips.tipTable = {
 	"There are Yoshi Eggs hidden in some levels, look carefully!",
 	"You cannot stomp on Fighter Flies.",
 	"Most levels have checkpoints in them.",
+}
+
+loadTips.memeTips = { -- Memes and corny ass references
+	"So Retro.",
+	"SO RETRO!",
+	"kill everyone",
+	"kill everything",
+	"If you see a grumpy looking green Toad with a monobrow, say hi!", -- Todd
+	"If you jump 6814 times on the 61st tile in 4-2, you unlock Waluigi! /j",
+	"The FitnessGram Pacer Test is a multistage aerobic capacity test that progressively gets more difficult as it continues.",
+	"This has become a bit. My sanity has perished. Help me.",
+	"Fire In The Hole", -- Geometry Dash meme
+	"Onward and upward!", -- Talking Flower quote
+	"I wonder what Goombas taste like...", -- Same here
+	"Peaches, Peaches, Peaches, Peaches, Peaches, Peaches, Peaches, Peaches, Peaches, Peaches", -- from the Mario Movie
+	"If Mario, then only Bros!",
+	"|: |",
+	"Do not use AI for making assets. Don't even try.",
+	"written by devious",
+	"The Bubble Flower had a bug where the bubbles could consume almost anything. However, this was eventually fixed.",
+	"First, translate devious. to binary, then add all of the binary values together, and you get a Spring Mushroom!",
+	"01101110 01100101 01110110 01100101 01110010 00100000 01100111 01101111 01101110 01101110 01100001 00100000 01100111 01101001 01110110 01100101 00100000 01111001 01101111 01110101 00100000 01110101 01110000",
+	"Look out behind you!",
+	"kliklolklilkllklilkloklillkllkilkllokllikllkliklolklilkllklilklolklilkllklilklolklilklklilklolklilklkllikllokllikllklilklolkilkllklilkllolklilklkilklolklilkl",
+	"I'm a chuckster!",
+	"Mini-Mario! Buy them all!",
+	"Middle... Right... Left... Left... Right... Middle... Right... Left... Right... Right... Middle right right left middle middle left left left right left left left middle middle!", -- The very long code from SPM
+	"I'm Bowser Junior. And I'm gonna be taking my father... NOW!", -- Mario Galaxy Movie quote
+	"SORRY NOTHING", -- Super Boy quote
+	"Also check out Super Mario Construct!",
+	"Look guys look! It's one of my greatest achievements!", -- Wario Land 4
+	"Try beating a level without taking damage, for bragging rights!",
+	"This is... my son. Treat him well.", -- Grim Dealer from SMATRS
+	"6-7 is unfunny", -- If you think it's funny, go touch some grass. - Devious
+	"Was that the bite of '87!?", -- FNAF
+	"When you quit the game to play something else, we start talking about you behind your back...", -- Antonblast, Satan quote
+	"Take a screenshot, it'll last longer!", -- Same here
+	"AHEM! My eyes are up here!", -- One more
+	"Who... is... this... RED GUY!??", -- Another one
+	"Delightful Mario! Round and jubilent in nature!", -- Jumbo Mario
+	"welllllwelkwellwelelwellwellwelwelewlewlwelwelwlelwelw-Welsh coal",
 }
 
 loadTips.dLevels = { -- D World levels
