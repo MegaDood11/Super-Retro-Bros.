@@ -72,6 +72,9 @@ loadTips.tipTable = {
 	"Be patient with firebars, and you'll overcome them.",
 	"Piranha Plants come in all shapes and sizes.",
 	"Press F12 to take a screenshot.",
+	"Some castles loop you back to the beginning - find the right path to progress.",
+	"There are Yoshi Eggs hidden in some levels, look carefully!",
+	"You cannot stomp on Fighter Flies.",
 }
 
 loadTips.dLevels = { -- D World levels
