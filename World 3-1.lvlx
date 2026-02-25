@@ -2838,7 +2838,7 @@ ID:876;X:-194880;Y:-200352;D:-1;XTRA:"{\n    \"blockTime\"\: 295\,\n    \"maxCoi
 ID:89;X:-199072;Y:-200256;D:-1;
 ID:803;X:-197184;Y:-200240;D:-1;
 ID:851;X:-153632;Y:-160096;D:1;XTRA:"{\n    \"defaultwinanim\"\: false\,\n    \"fireworks\"\: 1\,\n    \"topbonus\"\: false\n}\n";
-ID:949;X:-155872;Y:-160448;D:-1;
+ID:949;X:-155072;Y:-160128;D:-1;
 NPC_END
 DOORS
 IX:-197616;IY:-200224;OX:-179952;OY:-180160;DT:1;ID:3;OD:1;
