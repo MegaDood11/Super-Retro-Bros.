@@ -119,6 +119,7 @@ Scripts
 -Warptransition - MDA
 -extentedKoopas - MDA
 -kindHurtBlocks - MDA
+-SMWMap - MDA
 -Coyotetime - Emral
 -Playerphysicspatch - Emral
 -Antizip - Emral
