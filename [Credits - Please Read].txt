@@ -172,6 +172,9 @@ Graphics
 -Bonus BG + Tiles - Valtteri
 -Venus fly trap heads taken from SuperSledgeBro's graphics
 -Dry Bones, Thwomp, Spike Top, Muncher - SuperSledgeBro + FireSeraphim
+-World Map Decorations - MultiDiegoDani
+-World Map Paths, Levels, Decorations - FireSeraphim
+-World Map Terrain - Crafink
 -Icicles - SuperSledgeBro + FireSeraphim
 -Rex - REDBIRD030
 -Perpetual Lift - Crafink + cold soup
