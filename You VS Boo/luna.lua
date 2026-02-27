@@ -125,7 +125,7 @@ function timer1:onEnd(win)
 		end
 
 		local r = Routine.run(function()
-			Routine.waitFrames(224)
+			Routine.wait(4.75)
 
 			doWinCondition = true
 			doWinConditionTimer = 500
@@ -153,7 +153,7 @@ function timer1:onEnd(win)
 
 			SFX.play("Win Race.spc")
 
-			Routine.waitFrames(240)
+			Routine.wait(4.5)
 
 			doWinCondition = true
 
