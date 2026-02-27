@@ -132,7 +132,7 @@ function timer1:onEnd(win)
 			medalOffset = -1000
 		end)
 
-		SFX.play("battleDraw.ogg")
+		SFX.play("Tie Race.spc")
     	else -- You win
 		for _,n in ipairs(NPC.get(953)) do
 			n.speedX = 0
@@ -151,7 +151,7 @@ function timer1:onEnd(win)
 		local r2 = Routine.run(function()
 			Routine.waitFrames(64)
 
-			SFX.play("Music/Battle Mode Winner.spc")
+			SFX.play("Win Race.spc")
 
 			Routine.waitFrames(240)
 
