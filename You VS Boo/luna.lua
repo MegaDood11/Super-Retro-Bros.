@@ -125,14 +125,14 @@ function timer1:onEnd(win)
 		end
 
 		local r = Routine.run(function()
-			Routine.waitFrames(224)
+			Routine.wait(4.75)
 
 			doWinCondition = true
 			doWinConditionTimer = 500
 			medalOffset = -1000
 		end)
 
-		SFX.play("battleDraw.ogg")
+		SFX.play("Tie Race.spc")
     	else -- You win
 		for _,n in ipairs(NPC.get(953)) do
 			n.speedX = 0
@@ -151,9 +151,9 @@ function timer1:onEnd(win)
 		local r2 = Routine.run(function()
 			Routine.waitFrames(64)
 
-			SFX.play("Music/Battle Mode Winner.spc")
+			SFX.play("Win Race.spc")
 
-			Routine.waitFrames(240)
+			Routine.wait(4.5)
 
 			doWinCondition = true
 
