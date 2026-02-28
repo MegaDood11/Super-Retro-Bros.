@@ -3,16 +3,16 @@ TL:"You Vs. Boo";CPID:"SMBX2";
 HEAD_END
 SECTION
 SC:0;L:-200000;R:-190496;T:-200864;B:-200000;MZ:24;MF:"You VS Boo/You vs Boo.spc|0\;g=1.5\;e0";BG:10;XTRA:"{\n    \"newTurnBack\"\: {\n        \"horizontal\"\: 1\n    }\n}\n";
-SC:1;L:-180000;R:-172096;T:-180600;B:-180000;MZ:24;MF:"You VS Boo/You vs Boo.spc|0\;g=1.5\;e0";BG:69;XTRA:"{\n    \"newTurnBack\"\: {\n        \"horizontal\"\: 0\n    }\n}\n";
+SC:1;L:-180000;R:-172096;T:-180600;B:-180000;MZ:24;MF:"Music/Challenge Menu & Toy Box.spc|0\;g=1.5\;e0";BG:69;XTRA:"{\n    \"newTurnBack\"\: {\n        \"horizontal\"\: 0\n    }\n}\n";
 SC:2;L:-160000;R:-159200;T:-160600;B:-160000;MZ:24;MF:"You VS Boo/You vs Boo.spc|0\;g=1.5\;e0";BG:10;
 SC:3;L:-140000;R:-139200;T:-140600;B:-140000;MZ:24;MF:"You VS Boo/You vs Boo.spc|0\;g=1.5\;e0";BG:0;
 SC:4;L:-120000;R:-109600;T:-120600;B:-120000;MZ:24;MF:"You VS Boo/You vs Boo.spc|0\;g=1.5\;e0";BG:7;XTRA:"{\n    \"newTurnBack\"\: {\n        \"horizontal\"\: 1\n    }\n}\n";
-SC:5;L:-100000;R:-92000;T:-100600;B:-100000;MZ:24;MF:"You VS Boo/You vs Boo.spc|0\;g=1.5\;e0";BG:63;XTRA:"{\n    \"newTurnBack\"\: {\n        \"horizontal\"\: 1\n    }\n}\n";
+SC:5;L:-100000;R:-92000;T:-100600;B:-100000;MZ:24;MF:"Music/Super Players.spc|0\;g=1.5\;e0";BG:63;XTRA:"{\n    \"newTurnBack\"\: {\n        \"horizontal\"\: 1\n    }\n}\n";
 SC:6;L:-80000;R:-71200;T:-80600;B:-80000;MZ:24;MF:"You VS Boo/You vs Boo.spc|0\;g=1.5\;e0";BG:48;XTRA:"{\n    \"newTurnBack\"\: {\n        \"horizontal\"\: 1\n    }\n}\n";
 SC:7;L:-60000;R:-59200;T:-60600;B:-60000;MZ:24;MF:"You VS Boo/You vs Boo.spc|0\;g=1.5\;e0";BG:0;
 SC:8;L:-40000;R:-39200;T:-40600;B:-40000;MZ:24;MF:"You VS Boo/You vs Boo.spc|0\;g=1.5\;e0";BG:0;
-SC:9;L:-20000;R:-11488;T:-20600;B:-20000;MZ:24;MF:"You VS Boo/You vs Boo.spc|0\;g=1.5\;e0";BG:70;XTRA:"{\n    \"effects\"\: {\n        \"screenEffects\"\: 14\,\n        \"weatherCustomPath\"\: \"World A-3/p_petals.ini\"\,\n        \"weatherUseCustom\"\: true\n    }\,\n    \"newTurnBack\"\: {\n        \"horizontal\"\: 1\n    }\n}\n";
-SC:10;L:0;R:7072;T:-600;B:0;MZ:24;MF:"You VS Boo/You vs Boo.spc|0\;g=1.5\;e0";BG:42;XTRA:"{\n    \"effects\"\: {\n        \"screenEffects\"\: 1\n    }\,\n    \"newTurnBack\"\: {\n        \"horizontal\"\: 1\n    }\n}\n";
+SC:9;L:-20000;R:-11488;T:-20600;B:-20000;MZ:24;MF:"Music/Challenge Menu & Toy Box.spc|0\;g=1.5\;e0";BG:70;XTRA:"{\n    \"effects\"\: {\n        \"screenEffects\"\: 14\,\n        \"weatherCustomPath\"\: \"World A-3/p_petals.ini\"\,\n        \"weatherUseCustom\"\: true\n    }\,\n    \"newTurnBack\"\: {\n        \"horizontal\"\: 1\n    }\n}\n";
+SC:10;L:0;R:7072;T:-600;B:0;MZ:24;MF:"Music/Super Players.spc|0\;g=1.5\;e0";BG:42;XTRA:"{\n    \"effects\"\: {\n        \"screenEffects\"\: 1\n    }\,\n    \"newTurnBack\"\: {\n        \"horizontal\"\: 1\n    }\n}\n";
 SC:11;L:20000;R:28800;T:19400;B:20000;MZ:24;MF:"You VS Boo/You vs Boo.spc|0\;g=1.5\;e0";BG:1;XTRA:"{\n    \"newTurnBack\"\: {\n        \"horizontal\"\: 1\n    }\n}\n";
 SC:12;L:39904;R:52000;T:39400;B:40000;MZ:24;MF:"You VS Boo/You vs Boo.spc|0\;g=1.5\;e0";BG:30;SR:1;XTRA:"{\n    \"darkness\"\: {\n        \"ambient\"\: \"#7979e2ff\"\,\n        \"enableDarkness\"\: true\,\n        \"playerlight\"\: {\n            \"enabled\"\: true\n        }\n    }\,\n    \"effects\"\: {\n        \"screenEffects\"\: 0\,\n        \"weather\"\: 2\n    }\n}\n";
 SC:13;L:60000;R:60800;T:59400;B:60000;MZ:24;MF:"You VS Boo/You vs Boo.spc|0\;g=1.5\;e0";BG:0;
