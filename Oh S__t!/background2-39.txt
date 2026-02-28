@@ -1,0 +1,30 @@
+fill-color = #000000
+
+[back]
+img = bg-bg.png
+parallaxX = 0.25
+parallaxY = 0.25
+repeatX = true
+repeatY = true
+alignY = BOTTOM
+depth = 99
+
+[mid]
+img = bg-mg.png
+parallaxX = 0.5
+parallaxY = 0.5
+repeatX = true
+repeatY = true
+alignY = BOTTOM
+depth = 98
+
+[front]
+img = bg-fg.png
+parallaxX = 0.75
+parallaxY = 0.75
+repeatX = true
+repeatY = true
+alignY = BOTTOM
+depth = 97
+
+
