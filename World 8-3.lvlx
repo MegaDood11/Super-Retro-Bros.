@@ -966,7 +966,7 @@ ID:857;X:-193792;Y:-200368;D:-1;
 ID:21;X:-199008;Y:-200256;D:-1;
 ID:21;X:-198848;Y:-200352;D:-1;
 ID:21;X:-198816;Y:-200384;D:-1;
-ID:851;X:-187264;Y:-200096;D:1;XTRA:"{\n    \"bgo\"\: 17\,\n    \"defaultwinanim\"\: false\,\n    \"fireworks\"\: 1\,\n    \"topbonus\"\: false\n}\n";
+ID:851;X:-187264;Y:-200096;D:1;XTRA:"{\n    \"bgo\"\: 17\,\n    \"defaultwinanim\"\: false\,\n    \"endstate\"\: 1\,\n    \"fireworks\"\: 1\,\n    \"topbonus\"\: false\n}\n";
 NPC_END
 LAYERS
 LR:"Default";

@@ -3388,7 +3388,7 @@ ID:793;X:-191648;Y:-200340;D:-1;XTRA:"{\n    \"len\"\: 164\,\n    \"width\"\: 20
 ID:876;X:-139680;Y:-140448;D:-1;XTRA:"{\n    \"blockTime\"\: 333\,\n    \"maxCoins\"\: 23\n}\n";
 ID:876;X:-139552;Y:-140448;D:-1;XTRA:"{\n    \"blockTime\"\: 333\,\n    \"maxCoins\"\: 23\n}\n";
 ID:88;X:-157818;Y:-160096;D:-1;
-ID:851;X:-187200;Y:-200096;D:1;XTRA:"{\n    \"bgo\"\: 17\,\n    \"defaultwinanim\"\: false\,\n    \"fireworks\"\: 1\,\n    \"topbonus\"\: false\n}\n";
+ID:851;X:-187200;Y:-200096;D:1;XTRA:"{\n    \"bgo\"\: 17\,\n    \"defaultwinanim\"\: false\,\n    \"endstate\"\: 1\,\n    \"fireworks\"\: 1\,\n    \"topbonus\"\: false\n}\n";
 NPC_END
 DOORS
 IX:-196912;IY:-200096;OX:-179904;OY:-180096;DT:1;ID:3;OD:2;

@@ -1160,7 +1160,7 @@ ID:465;X:-159904;Y:-160160;D:-1;ED:"Disappear";
 ID:465;X:-159936;Y:-160160;D:-1;ED:"Disappear";
 ID:377;X:-189552;Y:-200160;D:-1;LR:"Thing";
 ID:377;X:-189456;Y:-200160;D:-1;LR:"Thing";
-ID:851;X:-186304;Y:-200096;D:1;XTRA:"{\n    \"bgo\"\: 16\,\n    \"defaultwinanim\"\: false\,\n    \"fireworks\"\: 1\,\n    \"topbonus\"\: false\n}\n";
+ID:851;X:-186304;Y:-200096;D:1;XTRA:"{\n    \"bgo\"\: 16\,\n    \"defaultwinanim\"\: false\,\n    \"endstate\"\: 1\,\n    \"fireworks\"\: 1\,\n    \"topbonus\"\: false\n}\n";
 NPC_END
 DOORS
 IX:-194432;IY:-200608;OX:-179856;OY:-180160;DT:3;ID:1;OD:1;LR:"Vine";

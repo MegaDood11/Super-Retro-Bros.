@@ -1,0 +1,34 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "Map.tmx",
+    "expandedProjectPaths": [
+    ],
+    "fileStates": {
+        "Map.tmx": {
+            "scale": 1.438701923076923,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 216.8621553884712,
+                "y": 198.44277360066837
+            }
+        },
+        "Terrain.tsx": {
+            "scaleInDock": 1
+        }
+    },
+    "last.externalTilesetPath": "C:/Users/megad/Desktop/The RIP SMB1 project/map",
+    "map.height": 11,
+    "map.lastUsedFormat": "tmx",
+    "map.width": 13,
+    "openFiles": [
+        "Map.tmx"
+    ],
+    "project": "Map.tiled-project",
+    "recentFiles": [
+        "Map.tmx"
+    ],
+    "tileset.lastUsedFilter": "Tiled tileset files (*.tsx *.xml)"
+}

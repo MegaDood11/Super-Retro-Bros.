@@ -1355,7 +1355,7 @@ ID:637;X:-196864;Y:-200448;D:-1;XTRA:"{\n    \"delay\"\: 224\,\n    \"npc\"\: 61
 ID:637;X:-192896;Y:-200448;D:-1;XTRA:"{\n    \"despawnMethod\"\: 5\n}\n";
 ID:876;X:-196128;Y:-200320;D:-1;XTRA:"{\n    \"blockTime\"\: 192\,\n    \"maxCoins\"\: 99\n}\n";
 ID:516;X:-199312;Y:-200224;D:-1;
-ID:851;X:-192352;Y:-200096;D:1;XTRA:"{\n    \"defaultwinanim\"\: false\,\n    \"fireworks\"\: 1\,\n    \"topbonus\"\: false\n}\n";
+ID:851;X:-192352;Y:-200096;D:1;XTRA:"{\n    \"defaultwinanim\"\: false\,\n    \"endstate\"\: 1\,\n    \"fireworks\"\: 1\,\n    \"topbonus\"\: false\n}\n";
 NPC_END
 DOORS
 IX:-197200;IY:-200224;OX:-179952;OY:-180192;DT:1;ID:3;OD:1;

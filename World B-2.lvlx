@@ -3891,7 +3891,7 @@ ID:88;X:-119578;Y:-120224;D:-1;
 ID:88;X:-119546;Y:-120224;D:-1;
 ID:88;X:-119514;Y:-120224;D:-1;
 ID:921;X:-168864;Y:-180352;D:-1;
-ID:851;X:-118624;Y:-120128;D:1;XTRA:"{\n    \"bgo\"\: 16\,\n    \"defaultwinanim\"\: false\,\n    \"fireworks\"\: 1\,\n    \"topbonus\"\: false\n}\n";
+ID:851;X:-118624;Y:-120128;D:1;XTRA:"{\n    \"bgo\"\: 16\,\n    \"defaultwinanim\"\: false\,\n    \"endstate\"\: 1\,\n    \"fireworks\"\: 1\,\n    \"topbonus\"\: false\n}\n";
 ID:950;X:-168944;Y:-180080;D:-1;
 NPC_END
 PHYSICS

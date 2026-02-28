@@ -960,7 +960,7 @@ ID:88;X:-189370;Y:-200416;D:-1;
 ID:88;X:-189338;Y:-200416;D:-1;
 ID:88;X:-189306;Y:-200416;D:-1;
 ID:88;X:-189274;Y:-200416;D:-1;
-ID:851;X:-185792;Y:-200096;D:1;XTRA:"{\n    \"bgo\"\: 17\,\n    \"block\"\: 59\,\n    \"defaultwinanim\"\: false\,\n    \"fireworks\"\: 1\,\n    \"topbonus\"\: false\n}\n";
+ID:851;X:-185792;Y:-200096;D:1;XTRA:"{\n    \"bgo\"\: 17\,\n    \"block\"\: 59\,\n    \"defaultwinanim\"\: false\,\n    \"endstate\"\: 1\,\n    \"fireworks\"\: 1\,\n    \"topbonus\"\: false\n}\n";
 NPC_END
 DOORS
 IX:-184560;IY:-200288;DT:1;ID:3;OD:1;LF:"You VS Boo.lvlx";LI:8;EX:1;

@@ -3176,7 +3176,7 @@ ID:465;X:-199280;Y:-199040;D:-1;
 ID:88;X:-159082;Y:-160384;D:-1;
 ID:88;X:-159114;Y:-160320;D:-1;
 ID:921;X:-159872;Y:-160256;D:-1;
-ID:851;X:-157984;Y:-160096;D:1;XTRA:"{\n    \"defaultwinanim\"\: false\,\n    \"fireworks\"\: 1\,\n    \"topbonus\"\: false\n}\n";
+ID:851;X:-157984;Y:-160096;D:1;XTRA:"{\n    \"defaultwinanim\"\: false\,\n    \"endstate\"\: 1\,\n    \"fireworks\"\: 1\,\n    \"topbonus\"\: false\n}\n";
 NPC_END
 DOORS
 IX:-201840;IY:-200064;OX:-139760;OY:-140096;DT:1;ID:3;OD:3;

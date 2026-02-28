@@ -23,8 +23,6 @@ loadTips.tipTable = { -- Regular tips
 	"Ever feel stuck? Just walk to the right!",
 	"Ever feel stuck? Just walk to the left! (sometimes)",
 	"Kondor Koopas are unused in the original SMB1!",
-	"Todd. was. here.",
-	"so retro",
 	"The Rip Lair is a group of random people who do cool (and random) stuff",
 	"Beware of strong winds! They can push you off ledges.",
 	"Some bloopers can swim without the need of water!",
@@ -59,13 +57,10 @@ loadTips.tipTable = { -- Regular tips
 	"Luigi Start!",
 	"Toadette Start!",
 	"Wario Start!?",
-	"Sorry, no playable cow.", -- Mario Kart World
 	"Sidesteppers take two hits to defeat. The sturdiness of these crab is a mystery that spans across generations.",
 	"In some Boo races, dotted line blocks will automatically switch every 2 seconds.",
 	"Don't look inside the You Vs Boo folder.",
 	"This episode doesn't contain wall jumps or ground pounds. This includes the classic wall jump glitch. Sorry, Kosmic.",
-	"You can now play as Luigi.", -- Super Mario Galaxy quote
-	"so ripro",
 	"Mario's a good all rounder, he neither excels nor struggles.",
 	"Luigi can jump extra high, at the cost of his movement.",
 	"Toadette is fast, and easy to pick up and play.",
@@ -76,12 +71,16 @@ loadTips.tipTable = { -- Regular tips
 	"Some castles loop you back to the beginning - find the right path to progress.",
 	"There are Yoshi Eggs hidden in some levels, look carefully!",
 	"You cannot stomp on Fighter Flies.",
-	"Most levels have checkpoints in them.",
 }
 
 loadTips.memeTips = { -- Memes and corny ass references
+	"Todd. was. here.",
+	"so retro",
 	"So Retro.",
 	"SO RETRO!",
+	"so ripro",
+	"Sorry, no playable cow.", -- Mario Kart World
+	"You can now play as Luigi.", -- Super Mario Galaxy quote
 	"kill everyone",
 	"kill everything",
 	"If you see a grumpy looking green Toad with a monobrow, say hi!", -- Todd
@@ -100,7 +99,6 @@ loadTips.memeTips = { -- Memes and corny ass references
 	"First, translate devious. to binary, then add all of the binary values together, and you get a Spring Mushroom!",
 	"01101110 01100101 01110110 01100101 01110010 00100000 01100111 01101111 01101110 01101110 01100001 00100000 01100111 01101001 01110110 01100101 00100000 01111001 01101111 01110101 00100000 01110101 01110000",
 	"Look out behind you!",
-	"kliklolklilkllklilkloklillkllkilkllokllikllkliklolklilkllklilklolklilkllklilklolklilklklilklolklilklkllikllokllikllklilklolkilkllklilkllolklilklkilklolklilkl",
 	"I'm a chuckster!",
 	"Mini-Mario! Buy them all!",
 	"Middle... Right... Left... Left... Right... Middle... Right... Left... Right... Right... Middle right right left middle middle left left left right left left left middle middle!", -- The very long code from SPM
@@ -117,7 +115,6 @@ loadTips.memeTips = { -- Memes and corny ass references
 	"AHEM! My eyes are up here!", -- One more
 	"Who... is... this... RED GUY!??", -- Another one
 	"Delightful Mario! Round and jubilent in nature!", -- Jumbo Mario
-	"welllllwelkwellwelelwellwellwelwelewlewlwelwelwlelwelw-Welsh coal",
 }
 
 loadTips.dLevels = { -- D World levels

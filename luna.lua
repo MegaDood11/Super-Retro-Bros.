@@ -45,6 +45,8 @@ local riproCheats = require("riproCheats")
 
 local dive = require("dive")
 
+local smwMap = require("smwMap")
+
 local playerManager = require("playerManager")
 local warioRewrite = require("warioRewrite")
 

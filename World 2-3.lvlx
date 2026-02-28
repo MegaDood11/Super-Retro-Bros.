@@ -3156,7 +3156,7 @@ ID:876;X:-198784;Y:-200256;D:-1;XTRA:"{\n    \"blockTime\"\: 192\,\n    \"maxCoi
 ID:88;X:-198682;Y:-200384;D:-1;
 ID:88;X:-198714;Y:-200384;D:-1;
 ID:920;X:-199296;Y:-200288;D:-1;
-ID:851;X:-188864;Y:-200128;D:1;XTRA:"{\n    \"bgo\"\: 17\,\n    \"defaultwinanim\"\: false\,\n    \"fireworks\"\: 1\,\n    \"topbonus\"\: false\n}\n";
+ID:851;X:-188864;Y:-200128;D:1;XTRA:"{\n    \"bgo\"\: 17\,\n    \"defaultwinanim\"\: false\,\n    \"endstate\"\: 1\,\n    \"fireworks\"\: 1\,\n    \"topbonus\"\: false\n}\n";
 NPC_END
 PHYSICS
 ET:0;X:-190848;Y:-200240;W:160;H:64;

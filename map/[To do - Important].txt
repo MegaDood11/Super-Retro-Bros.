@@ -1,0 +1,11 @@
+In order of importance:
+
+
+
+Make level exits unlock paths
+
+Find a way to make the player reload a level automatically if they die in it, don't send them back to the map
+Also, the same to you vs boo
+
+Display yoshi egg and purple prize on the map for the levels that have one, you can use the existing pngs in the main episode folder titled "Yoshi Egg" and "Purple Prize"
+

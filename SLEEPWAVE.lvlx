@@ -1248,7 +1248,7 @@ ID:88;X:-179738;Y:-200256;D:-1;
 ID:88;X:-179706;Y:-200256;D:-1;
 ID:420;X:-179083;Y:-200364;D:-1;
 ID:461;X:-186048;Y:-200074;D:-1;XTRA:"{\n    \"useFixed\"\: true\n}\n";
-ID:851;X:-178944;Y:-200096;D:1;XTRA:"{\n    \"defaultwinanim\"\: false\,\n    \"fireworks\"\: 1\,\n    \"topbonus\"\: false\n}\n";
+ID:851;X:-178944;Y:-200096;D:1;XTRA:"{\n    \"defaultwinanim\"\: false\,\n    \"endstate\"\: 1\,\n    \"fireworks\"\: 1\,\n    \"topbonus\"\: false\n}\n";
 NPC_END
 LAYERS
 LR:"Default";

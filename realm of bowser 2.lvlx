@@ -1859,7 +1859,7 @@ ID:10;X:-192286;Y:-201184;D:-1;
 ID:10;X:-192382;Y:-201280;D:-1;
 ID:10;X:-192350;Y:-201248;D:-1;
 ID:900;X:-193216;Y:-200512;D:-1;XTRA:"{\n    \"deathEffect\"\: 900\,\n    \"hammers\"\: true\n}\n";
-ID:851;X:-192224;Y:-200992;D:1;XTRA:"{\n    \"defaultwinanim\"\: false\,\n    \"fireworks\"\: 1\,\n    \"topbonus\"\: false\n}\n";
+ID:851;X:-192224;Y:-200992;D:1;XTRA:"{\n    \"defaultwinanim\"\: false\,\n    \"endstate\"\: 1\,\n    \"fireworks\"\: 1\,\n    \"topbonus\"\: false\n}\n";
 NPC_END
 DOORS
 IX:-200560;IY:-200480;OX:-199824;OY:-200576;DT:1;ID:3;OD:1;

@@ -17,7 +17,7 @@ function onEvent(e)
 	elseif e == "Toad Free 2" then
 		Effect.spawn(804,-188096, -200120)
 	elseif e == "Toad Free 5" then
-		Level.endState(9)
+		Level.endState(1)
 		endstates.setPlayer(player)
 	end
 end

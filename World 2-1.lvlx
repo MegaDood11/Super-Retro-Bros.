@@ -2304,7 +2304,7 @@ ID:89;X:-197696;Y:-200160;D:-1;
 ID:89;X:-197760;Y:-200160;D:-1;
 ID:176;X:-198624;Y:-200288;D:-1;S1:5;
 ID:28;X:-198016;Y:-200096;D:-1;
-ID:851;X:-188864;Y:-200064;D:1;XTRA:"{\n    \"defaultwinanim\"\: false\,\n    \"fireworks\"\: 1\,\n    \"topbonus\"\: false\n}\n";
+ID:851;X:-188864;Y:-200064;D:1;XTRA:"{\n    \"defaultwinanim\"\: false\,\n    \"endstate\"\: 1\,\n    \"fireworks\"\: 1\,\n    \"topbonus\"\: false\n}\n";
 ID:949;X:-176736;Y:-180352;D:-1;
 NPC_END
 PHYSICS

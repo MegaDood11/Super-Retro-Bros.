@@ -685,7 +685,7 @@ ID:88;X:-179802;Y:-180224;D:-1;LR:"show coins";
 ID:88;X:-179738;Y:-180224;D:-1;LR:"show coins";
 ID:895;X:-196256;Y:-200320;D:-1;S1:6;
 ID:949;X:-179616;Y:-180448;D:-1;
-ID:851;X:-186400;Y:-200096;D:1;XTRA:"{\n    \"bgo\"\: 17\,\n    \"defaultwinanim\"\: false\,\n    \"fireworks\"\: 1\,\n    \"topbonus\"\: false\n}\n";
+ID:851;X:-186400;Y:-200096;D:1;XTRA:"{\n    \"bgo\"\: 17\,\n    \"defaultwinanim\"\: false\,\n    \"endstate\"\: 1\,\n    \"fireworks\"\: 1\,\n    \"topbonus\"\: false\n}\n";
 NPC_END
 DOORS
 IX:-197104;IY:-200128;OX:-179936;OY:-180096;DT:1;ID:3;OD:2;

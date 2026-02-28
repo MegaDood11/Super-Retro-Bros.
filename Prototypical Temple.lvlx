@@ -2352,7 +2352,7 @@ ID:876;X:-192416;Y:-200416;D:-1;XTRA:"{\n    \"blockTime\"\: 192\,\n    \"maxCoi
 ID:10;X:-195902;Y:-200128;D:-1;
 ID:10;X:-190494;Y:-200096;D:-1;
 ID:10;X:-190494;Y:-200064;D:-1;
-ID:851;X:-190240;Y:-200096;D:1;XTRA:"{\n    \"defaultwinanim\"\: false\,\n    \"fireworks\"\: 1\,\n    \"topbonus\"\: false\n}\n";
+ID:851;X:-190240;Y:-200096;D:1;XTRA:"{\n    \"defaultwinanim\"\: false\,\n    \"endstate\"\: 1\,\n    \"fireworks\"\: 1\,\n    \"topbonus\"\: false\n}\n";
 ID:10;X:-188094;Y:-200192;D:-1;
 ID:10;X:-187966;Y:-200192;D:-1;
 ID:10;X:-188030;Y:-200320;D:-1;

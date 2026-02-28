@@ -2227,7 +2227,7 @@ ID:88;X:-139194;Y:-140192;D:-1;
 ID:88;X:-139226;Y:-140320;D:-1;
 ID:516;X:-159024;Y:-160384;D:1;
 ID:790;X:-153952;Y:-160256;D:-1;XTRA:"{\n    \"direction\"\: 0\n}\n";
-ID:851;X:-150592;Y:-160096;D:1;XTRA:"{\n    \"defaultwinanim\"\: false\,\n    \"fireworks\"\: 1\,\n    \"topbonus\"\: false\n}\n";
+ID:851;X:-150592;Y:-160096;D:1;XTRA:"{\n    \"defaultwinanim\"\: false\,\n    \"endstate\"\: 1\,\n    \"fireworks\"\: 1\,\n    \"topbonus\"\: false\n}\n";
 NPC_END
 DOORS
 IX:-193744;IY:-200288;OX:-179952;OY:-180192;DT:1;ID:3;OD:1;

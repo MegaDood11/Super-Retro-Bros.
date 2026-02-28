@@ -1,0 +1,40 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "Terrain.tsx",
+    "expandedProjectPaths": [
+    ],
+    "file.lastUsedOpenFilter": "All Files (*)",
+    "fileStates": {
+        "C:/Users/megad/Desktop/The RIP SMB1 project/World Map/Terrain.tsx": {
+            "scaleInDock": 1
+        },
+        "Map.tmx": {
+            "scale": 1.4522135416666666,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 191.0875997489465,
+                "y": 121.53859947996057
+            }
+        },
+        "Terrain.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        }
+    },
+    "last.imagePath": "C:/Users/megad/Desktop/The RIP SMB1 project/map",
+    "map.height": 10,
+    "map.lastUsedFormat": "tmx",
+    "map.width": 12,
+    "openFiles": [
+        "Terrain.tsx"
+    ],
+    "project": "World Map.tiled-project",
+    "recentFiles": [
+        "Terrain.tsx",
+        "Map.tmx"
+    ],
+    "tileset.lastUsedFormat": "tsx"
+}

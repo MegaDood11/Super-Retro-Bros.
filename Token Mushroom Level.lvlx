@@ -567,7 +567,7 @@ ID:177;X:-193632;Y:-200160;D:-1;S1:3;
 ID:177;X:-192256;Y:-200224;D:-1;S1:3;
 ID:177;X:-192256;Y:-200160;D:-1;S1:3;
 ID:876;X:-190144;Y:-200256;D:-1;XTRA:"{\n    \"blockTime\"\: 192\,\n    \"maxCoins\"\: 99\n}\n";
-ID:851;X:-191360;Y:-200096;D:1;XTRA:"{\n    \"defaultwinanim\"\: false\,\n    \"fireworks\"\: 1\,\n    \"topbonus\"\: false\n}\n";
+ID:851;X:-191360;Y:-200096;D:1;XTRA:"{\n    \"defaultwinanim\"\: false\,\n    \"endstate\"\: 1\,\n    \"fireworks\"\: 1\,\n    \"topbonus\"\: false\n}\n";
 NPC_END
 DOORS
 IX:-197312;IY:-200528;OX:-179840;OY:-180128;DT:3;ID:1;OD:3;LR:"Vine";

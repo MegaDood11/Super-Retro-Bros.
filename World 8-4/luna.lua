@@ -35,7 +35,7 @@ function onEvent(e)
 		SFX.play("World Clear.spc")
 		local r = Routine.run(function() Routine.waitFrames(96) triggerEvent("Pillar") SFX.play("bridgecollapse.wav") end)
 	elseif e == "Toad Free 5" then
-		Level.endState(9)
+		Level.endState(1)
 		endstates.setPlayer(player)
 	end
 end
