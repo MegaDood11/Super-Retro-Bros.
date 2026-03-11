@@ -177,8 +177,10 @@ end
 
 --Load the level when you die, handy for boo races
 function onPostPlayerKill(p)
+	if mem(0x00B2C5AC,FIELD_FLOAT) <= 0 then return end
 	Routine.run(function()
 		Routine.wait(3)
+		mem(0x00B2C5AC,FIELD_FLOAT, (mem(0x00B2C5AC,FIELD_FLOAT) - 1))
 		Level.load(Level.filename(), nil, enteredWarp)
 	end)
 end
