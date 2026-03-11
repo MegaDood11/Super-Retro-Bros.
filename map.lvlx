@@ -2,7 +2,7 @@ HEAD
 TL:"map";CPID:"SMBX2";
 HEAD_END
 SECTION
-SC:0;L:-200000;R:-198304;T:-200600;B:-200000;MZ:0;MF:"";BG:0;
+SC:0;L:-200000;R:-198304;T:-200600;B:-200000;MZ:0;MF:"";BG:0;XTRA:"{\n    \"darkness\"\: {\n        \"enableDarkness\"\: false\n    }\n}\n";
 SECTION_END
 BLOCK
 ID:751;X:-199772;Y:-200380;W:24;H:24;
@@ -26,16 +26,60 @@ ID:772;X:-199456;Y:-200320;W:32;H:32;
 ID:771;X:-199424;Y:-200320;W:32;H:32;
 ID:773;X:-199488;Y:-200320;W:32;H:32;
 ID:769;X:-199428;Y:-200432;W:32;H:32;
-ID:767;X:-199008;Y:-200336;W:32;H:32;
-ID:767;X:-198912;Y:-200288;W:32;H:32;
-ID:764;X:-199104;Y:-200416;W:32;H:32;
-ID:764;X:-198960;Y:-200400;W:32;H:32;
-ID:764;X:-198880;Y:-200208;W:32;H:32;
+ID:767;X:-199072;Y:-200336;W:32;H:32;
+ID:767;X:-198976;Y:-200288;W:32;H:32;
+ID:764;X:-199168;Y:-200416;W:32;H:32;
+ID:764;X:-199024;Y:-200400;W:32;H:32;
+ID:764;X:-198944;Y:-200208;W:32;H:32;
+ID:812;X:-198696;Y:-200456;W:48;H:16;
+ID:813;X:-198528;Y:-200288;W:48;H:16;
+ID:814;X:-198752;Y:-200224;W:64;H:16;
+ID:814;X:-198480;Y:-200368;W:64;H:16;
+ID:814;X:-198784;Y:-200240;W:64;H:16;
+ID:815;X:-198680;Y:-200472;W:64;H:16;
+ID:815;X:-198528;Y:-200192;W:64;H:16;
+ID:814;X:-198800;Y:-200464;W:64;H:16;
+ID:814;X:-198520;Y:-200344;W:64;H:16;
+ID:813;X:-198544;Y:-200384;W:48;H:16;
+ID:812;X:-198448;Y:-200224;W:48;H:16;
+ID:813;X:-198656;Y:-200336;W:48;H:16;
+ID:751;X:-198564;Y:-200276;W:24;H:24;
+ID:751;X:-198756;Y:-200372;W:24;H:24;
+ID:751;X:-198564;Y:-200372;W:24;H:24;
+ID:758;X:-198440;Y:-200232;W:64;H:64;
+ID:758;X:-198520;Y:-200272;W:64;H:64;
+ID:758;X:-198448;Y:-200400;W:64;H:64;
+ID:779;X:-198680;Y:-200312;W:32;H:32;
+ID:779;X:-198792;Y:-200208;W:32;H:32;
+ID:779;X:-198816;Y:-200352;W:32;H:32;
+ID:779;X:-198608;Y:-200408;W:32;H:32;
+ID:779;X:-198784;Y:-200416;W:32;H:32;
+ID:779;X:-198808;Y:-200392;W:32;H:32;
+ID:779;X:-198744;Y:-200416;W:32;H:32;
+ID:779;X:-198800;Y:-200304;W:32;H:32;
+ID:779;X:-198824;Y:-200272;W:32;H:32;
+ID:779;X:-198808;Y:-200240;W:32;H:32;
+ID:779;X:-198744;Y:-200192;W:32;H:32;
+ID:779;X:-198728;Y:-200224;W:32;H:32;
+ID:779;X:-198760;Y:-200240;W:32;H:32;
+ID:779;X:-198640;Y:-200328;W:32;H:32;
+ID:779;X:-198712;Y:-200336;W:32;H:32;
+ID:779;X:-198672;Y:-200344;W:32;H:32;
+ID:779;X:-198408;Y:-200312;W:32;H:32;
+ID:779;X:-198496;Y:-200400;W:32;H:32;
+ID:779;X:-198560;Y:-200416;W:32;H:32;
+ID:779;X:-198640;Y:-200416;W:32;H:32;
+ID:779;X:-198448;Y:-200272;W:32;H:32;
+ID:759;X:-198816;Y:-200504;W:448;H:352;LR:"Darkness";
+ID:814;X:-198496;Y:-200480;W:64;H:16;
+ID:813;X:-198592;Y:-200456;W:48;H:16;
+ID:813;X:-198424;Y:-200448;W:48;H:16;
+ID:814;X:-198672;Y:-200184;W:64;H:16;
 BLOCK_END
 BGO
 ID:751;X:-199840;Y:-200504;
-ID:752;X:-199264;Y:-200512;
-ID:751;X:-198752;Y:-200512;
+ID:752;X:-199328;Y:-200512;
+ID:753;X:-198816;Y:-200512;
 BGO_END
 NPC
 ID:805;X:-199648;Y:-200216;D:-1;XTRA:"{\n    \"alwaysVisible\"\: true\,\n    \"levelFilename\"\: \"FS's 1-1 Candidate.lvlx\"\,\n    \"path_down\"\: \"\"\,\n    \"path_left\"\: \"to1-1\"\,\n    \"path_up\"\: \"to1-2\"\,\n    \"unlock_down\"\: 0\,\n    \"unlock_left\"\: 1\n}\n";
@@ -44,32 +88,43 @@ ID:752;X:-199520;Y:-200360;D:-1;XTRA:"{\n    \"hideIfLocked\"\: true\,\n    \"na
 ID:752;X:-199648;Y:-200248;D:-1;XTRA:"{\n    \"hideIfLocked\"\: false\,\n    \"name\"\: \"to1-2\"\,\n    \"points\"\: \"0\,32\, 0\,-64\, -128\,-64\"\,\n    \"smoothness\"\: 0.05\,\n    \"types\"\: \"normal\"\n}\n";
 ID:806;X:-199776;Y:-200312;D:-1;XTRA:"{\n    \"alwaysVisible\"\: true\,\n    \"levelFilename\"\: \"FS's 1-2.lvlx\"\,\n    \"path_right\"\: \"to1-2\"\,\n    \"path_up\"\: \"to1-3\"\n}\n";
 ID:811;X:-199776;Y:-200216;D:-1;XTRA:"{\n    \"alwaysVisible\"\: true\,\n    \"path_right\"\: \"to1-1\"\,\n    \"path_up\"\: \"\"\,\n    \"unlock_right\"\: 1\,\n    \"unlock_up\"\: 0\n}\n";
-ID:753;X:-199776;Y:-200440;D:-1;XTRA:"{\n    \"backgroundName\"\: \"water\"\,\n    \"customMusicPath\"\: \"Music/Name Entry.spc|0\;g=1.5\;e0\"\,\n    \"height\"\: 404\,\n    \"music\"\: 2\,\n    \"restrictCamera\"\: true\,\n    \"width\"\: 668\n}\n";
+ID:753;X:-199776;Y:-200440;D:-1;XTRA:"{\n    \"backgroundName\"\: \"water\"\,\n    \"customMusicPath\"\: \"Music/Album.spc|0\;g=1.5\;e0\"\,\n    \"height\"\: 404\,\n    \"music\"\: 2\,\n    \"restrictCamera\"\: true\,\n    \"width\"\: 668\n}\n";
 ID:821;X:-199520;Y:-200248;D:-1;XTRA:"{\n    \"destinationWarpName\"\: \"2\"\,\n    \"path_up\"\: \"toworld2\"\,\n    \"warpName\"\: \"1\"\n}\n";
 ID:752;X:-199776;Y:-200344;D:-1;XTRA:"{\n    \"hideIfLocked\"\: false\,\n    \"name\"\: \"to1-3\"\,\n    \"points\"\: \"0\,32\, 0\,-40\, 128\,-40\"\,\n    \"smoothness\"\: 0.05\,\n    \"types\"\: \"normal\"\n}\n";
 ID:752;X:-199744;Y:-200216;D:-1;XTRA:"{\n    \"hideIfLocked\"\: false\,\n    \"name\"\: \"to1-1\"\,\n    \"points\"\: \"-32\,0\,96\,0\"\,\n    \"smoothness\"\: 0.2\,\n    \"types\"\: \"\"\n}\n";
 ID:813;X:-199520;Y:-200388;D:-1;XTRA:"{\n    \"alwaysVisible\"\: true\,\n    \"destroyAfterWin\"\: true\,\n    \"levelFilename\"\: \"World 1-4.lvlx\"\,\n    \"path_down\"\: \"toworld2\"\,\n    \"path_left\"\: \"to1-4\"\,\n    \"path_right\"\: \"\"\n}\n";
 ID:810;X:-199648;Y:-200384;D:-1;XTRA:"{\n    \"alwaysVisible\"\: true\,\n    \"levelFilename\"\: \"World 1-3.lvlx\"\,\n    \"path_left\"\: \"to1-3\"\,\n    \"path_right\"\: \"to1-4\"\,\n    \"unlock_right\"\: 2\n}\n";
 ID:752;X:-199616;Y:-200384;D:-1;XTRA:"{\n    \"name\"\: \"to1-4\"\,\n    \"points\"\: \"-32\,0\,100\,0\"\n}\n";
-ID:753;X:-199200;Y:-200448;D:-1;XTRA:"{\n    \"backgroundName\"\: \"water\"\,\n    \"customMusicPath\"\: \"Music/Name Entry.spc|0\;g=1.5\;e0\"\,\n    \"height\"\: 404\,\n    \"music\"\: 2\,\n    \"restrictCamera\"\: true\,\n    \"width\"\: 668\,\n    \"worldName\"\: 2\n}\n";
-ID:752;X:-199200;Y:-200416;D:-1;XTRA:"{\n    \"name\"\: \"to2-1\"\,\n    \"points\"\: \"0\,-32\,0\,24\,0\,64\"\,\n    \"types\"\: \"water\,normal\"\n}\n";
-ID:805;X:-199200;Y:-200352;D:-1;XTRA:"{\n    \"alwaysVisible\"\: true\,\n    \"levelFilename\"\: \"World 2-1.lvlx\"\,\n    \"path_right\"\: \"to2-2\"\,\n    \"path_up\"\: \"to2-1\"\n}\n";
-ID:806;X:-198944;Y:-200352;D:-1;XTRA:"{\n    \"alwaysVisible\"\: true\,\n    \"path_down\"\: \"to2-3\"\,\n    \"path_left\"\: \"to2-2\"\n}\n";
-ID:752;X:-199168;Y:-200352;D:-1;XTRA:"{\n    \"name\"\: \"to2-2\"\,\n    \"points\"\: \"-32\,0\,56\,0\,140\,0\,232\,0\"\,\n    \"types\"\: \"normal\,bridge\,normal\"\n}\n";
-ID:832;X:-199200;Y:-200448;D:-1;XTRA:"{\n    \"destinationWarpName\"\: \"1\"\,\n    \"path_down\"\: \"to2-1\"\,\n    \"warpName\"\: \"2\"\n}\n";
-ID:752;X:-198944;Y:-200320;D:-1;XTRA:"{\n    \"name\"\: \"to2-3\"\,\n    \"points\"\: \"0\,-32\,0\,80\"\n}\n";
-ID:752;X:-198976;Y:-200256;D:-1;XTRA:"{\n    \"name\"\: \"to2-4\"\,\n    \"points\"\: \"4\,0\,-128\,0\"\,\n    \"types\"\: \"water\"\n}\n";
-ID:821;X:-199200;Y:-200256;D:-1;XTRA:"{\n    \"destinationWarpName\"\: \"4\"\,\n    \"path_right\"\: \"toworld3\"\,\n    \"path_up\"\: \"\"\,\n    \"warpName\"\: \"3\"\n}\n";
-ID:752;X:-199136;Y:-200256;D:-1;XTRA:"{\n    \"hideIfLocked\"\: true\,\n    \"name\"\: \"toworld3\"\,\n    \"points\"\: \"8\,0\,-48\,0\"\,\n    \"types\"\: \"water\"\n}\n";
-ID:753;X:-198688;Y:-200448;D:-1;XTRA:"{\n    \"backgroundName\"\: \"water\"\,\n    \"customMusicPath\"\: \"Music/Name Entry.spc|0\;g=1.5\;e0\"\,\n    \"height\"\: 404\,\n    \"music\"\: 2\,\n    \"restrictCamera\"\: true\,\n    \"width\"\: 668\,\n    \"worldName\"\: 3\n}\n";
-ID:821;X:-198560;Y:-200224;D:-1;XTRA:"{\n    \"alwaysVisible\"\: false\,\n    \"destinationWarpName\"\: \"3\"\,\n    \"path_up\"\: \"to3-1\"\,\n    \"warpName\"\: \"4\"\n}\n";
-ID:808;X:-198944;Y:-200256;D:-1;XTRA:"{\n    \"alwaysVisible\"\: true\,\n    \"levelFilename\"\: \"World 2-3.lvlx\"\,\n    \"path_left\"\: \"to2-4\"\,\n    \"path_up\"\: \"to2-3\"\n}\n";
-ID:766;X:-199104;Y:-200256;D:-1;XTRA:"{\n    \"alwaysVisible\"\: true\,\n    \"levelFilename\"\: \"Airshippi.lvlx\"\,\n    \"path_left\"\: \"toworld3\"\,\n    \"path_right\"\: \"to2-4\"\n}\n";
+ID:753;X:-199264;Y:-200448;D:-1;XTRA:"{\n    \"backgroundName\"\: \"water\"\,\n    \"customMusicPath\"\: \"Music/Album.spc|0\;g=1.5\;e0\"\,\n    \"height\"\: 404\,\n    \"music\"\: 2\,\n    \"restrictCamera\"\: true\,\n    \"width\"\: 668\,\n    \"worldName\"\: 2\n}\n";
+ID:752;X:-199264;Y:-200416;D:-1;XTRA:"{\n    \"name\"\: \"to2-1\"\,\n    \"points\"\: \"0\,-32\,0\,24\,0\,64\"\,\n    \"types\"\: \"invisible\,normal\"\n}\n";
+ID:805;X:-199264;Y:-200352;D:-1;XTRA:"{\n    \"alwaysVisible\"\: true\,\n    \"levelFilename\"\: \"World 2-1.lvlx\"\,\n    \"path_right\"\: \"to2-2\"\,\n    \"path_up\"\: \"to2-1\"\n}\n";
+ID:806;X:-199008;Y:-200352;D:-1;XTRA:"{\n    \"alwaysVisible\"\: true\,\n    \"path_down\"\: \"to2-3\"\,\n    \"path_left\"\: \"to2-2\"\n}\n";
+ID:752;X:-199232;Y:-200352;D:-1;XTRA:"{\n    \"name\"\: \"to2-2\"\,\n    \"points\"\: \"-32\,0\,56\,0\,140\,0\,232\,0\"\,\n    \"types\"\: \"normal\,bridge\,normal\"\n}\n";
+ID:832;X:-199264;Y:-200448;D:-1;XTRA:"{\n    \"destinationWarpName\"\: \"1\"\,\n    \"path_down\"\: \"to2-1\"\,\n    \"warpName\"\: \"2\"\n}\n";
+ID:752;X:-199008;Y:-200320;D:-1;XTRA:"{\n    \"name\"\: \"to2-3\"\,\n    \"points\"\: \"0\,-32\,0\,80\"\n}\n";
+ID:752;X:-199040;Y:-200256;D:-1;XTRA:"{\n    \"name\"\: \"to2-4\"\,\n    \"points\"\: \"4\,0\,-128\,0\"\,\n    \"types\"\: \"water\"\n}\n";
+ID:821;X:-199264;Y:-200256;D:-1;XTRA:"{\n    \"destinationWarpName\"\: \"4\"\,\n    \"path_right\"\: \"toworld3\"\,\n    \"path_up\"\: \"\"\,\n    \"warpName\"\: \"3\"\n}\n";
+ID:752;X:-199200;Y:-200256;D:-1;XTRA:"{\n    \"hideIfLocked\"\: true\,\n    \"name\"\: \"toworld3\"\,\n    \"points\"\: \"8\,0\,-48\,0\"\,\n    \"types\"\: \"water\"\n}\n";
+ID:753;X:-198752;Y:-200448;D:-1;XTRA:"{\n    \"backgroundName\"\: \"\"\,\n    \"customMusicPath\"\: \"Music/Album.spc|0\;g=1.5\;e0\"\,\n    \"height\"\: 404\,\n    \"music\"\: 2\,\n    \"restrictCamera\"\: true\,\n    \"width\"\: 668\,\n    \"worldName\"\: 3\n}\n";
+ID:821;X:-198688;Y:-200224;D:-1;XTRA:"{\n    \"alwaysVisible\"\: false\,\n    \"destinationWarpName\"\: \"3\"\,\n    \"path_right\"\: \"to3-1\"\,\n    \"path_up\"\: \"\"\,\n    \"warpName\"\: \"4\"\n}\n";
+ID:808;X:-199008;Y:-200256;D:-1;XTRA:"{\n    \"alwaysVisible\"\: true\,\n    \"levelFilename\"\: \"World 2-3.lvlx\"\,\n    \"path_left\"\: \"to2-4\"\,\n    \"path_up\"\: \"to2-3\"\n}\n";
+ID:766;X:-199168;Y:-200256;D:-1;XTRA:"{\n    \"alwaysVisible\"\: true\,\n    \"levelFilename\"\: \"Airshippi.lvlx\"\,\n    \"path_left\"\: \"toworld3\"\,\n    \"path_right\"\: \"to2-4\"\n}\n";
+ID:806;X:-198760;Y:-200280;D:-1;XTRA:"{\n    \"alwaysVisible\"\: true\,\n    \"path_right\"\: \"to3-2\"\,\n    \"path_up\"\: \"to3-3\"\n}\n";
+ID:831;X:-198568;Y:-200328;D:-1;XTRA:"{\n    \"alwaysVisible\"\: true\,\n    \"path_right\"\: \"toworld4\"\,\n    \"path_up\"\: \"to3-4\"\n}\n";
+ID:810;X:-198680;Y:-200376;D:-1;XTRA:"{\n    \"alwaysVisible\"\: true\,\n    \"path_left\"\: \"to3-3\"\,\n    \"path_right\"\: \"to3-4\"\n}\n";
+ID:752;X:-198656;Y:-200224;D:-1;XTRA:"{\n    \"name\"\: \"to3-1\"\,\n    \"points\"\: \"-32\,0\,96\,0\"\n}\n";
+ID:752;X:-198568;Y:-200256;D:-1;XTRA:"{\n    \"name\"\: \"to3-2\"\,\n    \"points\"\: \"0\,32\,-2\,-24\,-192\,-24\"\,\n    \"smoothness\"\: 0.05\n}\n";
+ID:805;X:-198568;Y:-200224;D:-1;XTRA:"{\n    \"alwaysVisible\"\: true\,\n    \"levelFilename\"\: \"World 3-1.lvlx\"\,\n    \"path_left\"\: \"to3-1\"\,\n    \"path_up\"\: \"to3-2\"\n}\n";
+ID:752;X:-198760;Y:-200312;D:-1;XTRA:"{\n    \"name\"\: \"to3-3\"\,\n    \"points\"\: \"0\,32\,0\,-64\,96\,-64\"\,\n    \"smoothness\"\: 0.05\n}\n";
+ID:752;X:-198648;Y:-200376;D:-1;XTRA:"{\n    \"name\"\: \"to3-4\"\,\n    \"points\"\: \"-32\,0\,80\,0\,80\,38\"\,\n    \"smoothness\"\: 0.05\n}\n";
+ID:752;X:-198536;Y:-200328;D:-1;XTRA:"{\n    \"hideIfLocked\"\: true\,\n    \"name\"\: \"toworld4\"\,\n    \"points\"\: \"-16\,0\,64\,0\"\n}\n";
+ID:821;X:-198456;Y:-200328;D:-1;XTRA:"{\n    \"path_left\"\: \"toworld4\"\n}\n";
 NPC_END
 LAYERS
 LR:"Default";
 LR:"Destroyed Blocks";HD:1;
 LR:"Spawned NPCs";
+LR:"Darkness";HD:1;
 LAYERS_END
 EVENTS_CLASSIC
 ET:"Level - Start";AS:0;AX:0;AY:0;
