@@ -85,6 +85,7 @@ Misc.setWindowTitle("Super Ripro Bros.")
 
 local lastDirection = 1
 local lastDucked = false
+local enteredWarp = nil
 
 SaveData.waluigiProgress = SaveData.waluigiProgress or 0
 SaveData.letterWorldProgress = SaveData.letterWorldProgress or 0
@@ -98,6 +99,10 @@ function onStart()
 	Player.setCostume(CHARACTER_WARIO,"SMB1-Wario",true)
 
     Graphics.setMainFramebufferSize(512,448)
+	
+	for _,warp in ipairs(Warp.getIntersectingExit(player.x, player.y, player.x + player.width, player.y + player.height)) do
+		enteredWarp = warp.idx + 1
+	end
 end
 
 function onCameraUpdate()
@@ -170,6 +175,13 @@ function onTickEnd()
 	end
 end
 
+--Load the level when you die, handy for boo races
+function onPostPlayerKill(p)
+	Routine.run(function()
+		Routine.wait(3)
+		Level.load(Level.filename(), nil, enteredWarp)
+	end)
+end
 
 -- Run code when internal event of the SMBX Engine has been triggered
 -- eventName - name of triggered event

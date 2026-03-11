@@ -1,9 +1,5 @@
 In order of importance:
 
-
-
-Make level exits unlock paths
-
 Find a way to make the player reload a level automatically if they die in it, don't send them back to the map
 Also, the same to you vs boo
 

@@ -18,8 +18,16 @@ smwMap.setObjSettings(npcID,{
     framesY = 4,
 
     onTickObj = (function(v)
-        v.frameY = smwMap.doBasicAnimation(v,smwMap.getObjectConfig(v.id).framesY,6)
+        local totalFrames = smwMap.getObjectConfig(v.id).framesY
+		v.frameY = smwMap.doBasicAnimation(v,totalFrames - 1,4)
+		v.graphicsOffsetX = -4
+		v.graphicsOffsetY = -10 + math.cos(v.data.animationTimer / 16) * 4
     end),
+
+    isLevel = true,
+	isWater = true,
+
+    hasDestroyedAnimation = false,
 })
 
 

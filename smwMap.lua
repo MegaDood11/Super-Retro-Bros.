@@ -3093,7 +3093,7 @@ do
 
 
         -- Draw main player to the buffer
-        doBasicGlDrawSetup(texture,v.buffer.width*0.5 + mainXOffset - width*0.5,v.buffer.height*0.5 + mainYOffset - height*0.5,width,height,v.direction*width,v.frame*height,width,height)
+        doBasicGlDrawSetup(texture,v.buffer.width*0.5 + mainXOffset - width*0.5,v.buffer.height*0.5 + mainYOffset - height*0.5,width,height,v.direction*width,(math.floor(lunatime.tick() / 8) % 2 + (math.clamp(player.powerup * 2 - 2,0,2)))*height,width,height)
 
         basicGlDrawArgs.priority = -99
 
@@ -4194,6 +4194,7 @@ smwMap.playerSettings = {
         [CHARACTER_LUIGI] = Graphics.loadImageResolved("smwMap/player-luigi.png"),
         [CHARACTER_PEACH] = Graphics.loadImageResolved("smwMap/player-peach.png"),
         [CHARACTER_TOAD ] = Graphics.loadImageResolved("smwMap/player-toad.png"),
+		[CHARACTER_WARIO ] = Graphics.loadImageResolved("smwMap/player-wario.png"),
     },
 
     shadowImage = Graphics.loadImageResolved("smwMap/shadow.png"),

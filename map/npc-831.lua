@@ -21,7 +21,7 @@ smwMap.setObjSettings(npcID,{
         local totalFrames = smwMap.getObjectConfig(v.id).framesY
 		v.frameY = smwMap.doBasicAnimation(v,totalFrames - 1,4)
 		v.graphicsOffsetX = -4
-		v.graphicsOffsetY = -40 + math.cos(v.data.animationTimer / 16) * 4
+		v.graphicsOffsetY = -10 + math.cos(v.data.animationTimer / 16) * 4
     end),
 
     isLevel = true,
