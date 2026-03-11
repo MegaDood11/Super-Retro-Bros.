@@ -21,6 +21,7 @@
             "scaleInEditor": 1
         }
     },
+    "last.imagePath": "C:/Users/megad/Desktop/The RIP SMB1 project/map",
     "map.height": 11,
     "map.lastUsedFormat": "tmx",
     "map.width": 14,
@@ -32,5 +33,6 @@
     "recentFiles": [
         "Terrain.tsx",
         "Map.tmx"
-    ]
+    ],
+    "tileset.lastUsedFormat": "tsx"
 }
