@@ -30,11 +30,20 @@ function smasPause.onInitAPI()
 	registerEvent(smasPause,"onDraw")
 end
 
+local START_LEVEL_ADDR = 0x00B25724
+local HUB_WORLD_ADDR   = 0x00B25728
+
 function smasPause.onInputUpdate()
 
 	--Depending on if its on the overworld or not, display two different menus with different uses
 	if not textImage then
-		if isOverworld then textImage = Graphics.loadImageResolved("text_map_smas_pause_screen.png") textImageType = 1 else textImage = Graphics.loadImageResolved("text_smas_pause_screen.png") textImageType = 0 end
+		if (isOverworld or (mem(START_LEVEL_ADDR,FIELD_STRING) == Level.filename() and mem(HUB_WORLD_ADDR,FIELD_BOOL))) then 
+			textImage = Graphics.loadImageResolved("text_map_smas_pause_screen.png") 
+			textImageType = 1 
+		else 
+			textImage = Graphics.loadImageResolved("text_smas_pause_screen.png") 
+			textImageType = 0 
+		end
 	end
 
 	if isPaused and not Misc.isPausedByLua() then
