@@ -2,7 +2,7 @@ HEAD
 TL:"map";CPID:"SMBX2";
 HEAD_END
 SECTION
-SC:0;L:-200608;R:-198304;T:-200600;B:-200000;MZ:0;MF:"";BG:0;XTRA:"{\n    \"darkness\"\: {\n        \"enableDarkness\"\: false\n    }\n}\n";
+SC:0;L:-200896;R:-198304;T:-200600;B:-200000;MZ:0;MF:"";BG:0;XTRA:"{\n    \"darkness\"\: {\n        \"enableDarkness\"\: false\n    }\n}\n";
 SECTION_END
 BLOCK
 ID:751;X:-199644;Y:-200308;W:24;H:24;
@@ -75,12 +75,71 @@ ID:813;X:-198424;Y:-200448;W:48;H:16;
 ID:814;X:-198672;Y:-200184;W:64;H:16;
 ID:751;X:-199772;Y:-200380;W:24;H:24;
 ID:776;X:-199712;Y:-200352;W:32;H:32;
+ID:751;X:-199772;Y:-200272;W:24;H:24;XTRA:"{\n    \"global\"\: {\n        \"showPathName\"\: \"toDonutPlainsYI\"\n    }\n}\n";
+ID:751;X:-199644;Y:-200268;W:24;H:24;XTRA:"{\n    \"global\"\: {\n        \"showDelay\"\: 2\,\n        \"showPathName\"\: \"toDonutPlainsYI\"\n    }\n}\n";
+ID:751;X:-200832;Y:-200096;W:24;H:24;
+ID:751;X:-200792;Y:-200096;W:24;H:24;
+ID:751;X:-200832;Y:-200064;W:24;H:24;
+ID:751;X:-200792;Y:-200064;W:24;H:24;
+ID:751;X:-200824;Y:-200056;W:24;H:24;
+ID:751;X:-200800;Y:-200056;W:24;H:24;
+ID:751;X:-200808;Y:-200048;W:24;H:24;
+ID:751;X:-200816;Y:-200048;W:24;H:24;
+ID:792;X:-199984;Y:-200288;W:16;H:16;
+ID:792;X:-200000;Y:-200288;W:16;H:16;
+ID:792;X:-200016;Y:-200288;W:16;H:16;
+ID:792;X:-200032;Y:-200288;W:16;H:16;
+ID:792;X:-200048;Y:-200288;W:16;H:16;
+ID:792;X:-200064;Y:-200288;W:16;H:16;
+ID:792;X:-200080;Y:-200288;W:16;H:16;
+ID:792;X:-200096;Y:-200288;W:16;H:16;
+ID:792;X:-200112;Y:-200288;W:16;H:16;
+ID:792;X:-200128;Y:-200288;W:16;H:16;
+ID:792;X:-200144;Y:-200288;W:16;H:16;
+ID:792;X:-200160;Y:-200288;W:16;H:16;
+ID:792;X:-200176;Y:-200288;W:16;H:16;
+ID:792;X:-200192;Y:-200288;W:16;H:16;
+ID:792;X:-200208;Y:-200288;W:16;H:16;
+ID:792;X:-200224;Y:-200288;W:16;H:16;
+ID:792;X:-200240;Y:-200288;W:16;H:16;
+ID:792;X:-200256;Y:-200288;W:16;H:16;
+ID:792;X:-200128;Y:-200400;W:16;H:16;
+ID:792;X:-200128;Y:-200384;W:16;H:16;
+ID:792;X:-200144;Y:-200384;W:16;H:16;
+ID:792;X:-200144;Y:-200368;W:16;H:16;
+ID:792;X:-200160;Y:-200368;W:16;H:16;
+ID:792;X:-200160;Y:-200352;W:16;H:16;
+ID:792;X:-200176;Y:-200352;W:16;H:16;
+ID:792;X:-200192;Y:-200336;W:16;H:16;
+ID:792;X:-200208;Y:-200336;W:16;H:16;
+ID:792;X:-200224;Y:-200320;W:16;H:16;
+ID:792;X:-200240;Y:-200320;W:16;H:16;
+ID:792;X:-200256;Y:-200320;W:16;H:16;
+ID:792;X:-200256;Y:-200304;W:16;H:16;
+ID:792;X:-200272;Y:-200304;W:16;H:16;
+ID:792;X:-200288;Y:-200304;W:16;H:16;
+ID:792;X:-200288;Y:-200288;W:16;H:16;
+ID:792;X:-200272;Y:-200272;W:16;H:16;
+ID:792;X:-200272;Y:-200256;W:16;H:16;
+ID:792;X:-200256;Y:-200256;W:16;H:16;
+ID:792;X:-200240;Y:-200240;W:16;H:16;
+ID:792;X:-200224;Y:-200240;W:16;H:16;
+ID:792;X:-200224;Y:-200224;W:16;H:16;
+ID:792;X:-200208;Y:-200224;W:16;H:16;
+ID:792;X:-200208;Y:-200208;W:16;H:16;
+ID:792;X:-200192;Y:-200208;W:16;H:16;
+ID:792;X:-200192;Y:-200192;W:16;H:16;
+ID:792;X:-200176;Y:-200192;W:16;H:16;
+ID:792;X:-200160;Y:-200176;W:16;H:16;
+ID:792;X:-200144;Y:-200176;W:16;H:16;
+ID:792;X:-200128;Y:-200160;W:16;H:16;
+ID:792;X:-200112;Y:-200160;W:16;H:16;
 BLOCK_END
 BGO
 ID:751;X:-199840;Y:-200504;
 ID:752;X:-199328;Y:-200512;
 ID:753;X:-198816;Y:-200512;
-ID:756;X:-200576;Y:-200480;
+ID:756;X:-200832;Y:-200480;
 BGO_END
 NPC
 ID:805;X:-199648;Y:-200216;D:-1;XTRA:"{\n    \"alwaysVisible\"\: true\,\n    \"levelFilename\"\: \"FS's 1-1 Candidate.lvlx\"\,\n    \"path_down\"\: \"\"\,\n    \"path_left\"\: \"to1-1\"\,\n    \"path_up\"\: \"to1-2\"\,\n    \"unlock_down\"\: 0\,\n    \"unlock_left\"\: 1\n}\n";
@@ -118,14 +177,14 @@ ID:752;X:-198760;Y:-200312;D:-1;XTRA:"{\n    \"name\"\: \"to3-3\"\,\n    \"point
 ID:752;X:-198648;Y:-200376;D:-1;XTRA:"{\n    \"name\"\: \"to3-4\"\,\n    \"points\"\: \"-32\,0\,80\,0\,80\,38\"\,\n    \"smoothness\"\: 0.05\n}\n";
 ID:752;X:-198536;Y:-200328;D:-1;XTRA:"{\n    \"hideIfLocked\"\: true\,\n    \"name\"\: \"toworld4\"\,\n    \"points\"\: \"-16\,0\,64\,0\"\n}\n";
 ID:821;X:-198456;Y:-200328;D:-1;XTRA:"{\n    \"path_left\"\: \"toworld4\"\n}\n";
-ID:753;X:-200512;Y:-200408;D:-1;XTRA:"{\n    \"backgroundName\"\: \"water\"\,\n    \"customMusicPath\"\: \"map/Mystery Room.spc\"\,\n    \"height\"\: 352\,\n    \"music\"\: 2\,\n    \"restrictCamera\"\: true\,\n    \"width\"\: 448\,\n    \"worldName\"\: 14\n}\n";
 ID:752;X:-199776;Y:-200344;D:-1;XTRA:"{\n    \"hideIfLocked\"\: false\,\n    \"name\"\: \"to1-3\"\,\n    \"points\"\: \"0\,32\, 0\,-40\, 128\,-40\"\,\n    \"smoothness\"\: 0.05\,\n    \"types\"\: \"normal\"\n}\n";
-ID:806;X:-199776;Y:-200312;D:-1;XTRA:"{\n    \"alwaysVisible\"\: true\,\n    \"levelFilename\"\: \"FS's 1-2.lvlx\"\,\n    \"path_left\"\: \"toDonutPlainsYI\"\,\n    \"path_right\"\: \"to1-2\"\,\n    \"path_up\"\: \"to1-3\"\,\n    \"unlock_left\"\: 8\,\n    \"unlock_up\"\: 4\n}\n";
-ID:823;X:-200160;Y:-200288;D:-1;XTRA:"{\n    \"destinationPathName\"\: \"toDonutPlainsYI\"\,\n    \"pathWalkingDirection\"\: 1\,\n    \"warpName\"\: \"toDonutPlainsMain\"\n}\n";
-ID:752;X:-200224;Y:-200288;D:-1;XTRA:"{\n    \"hideIfLocked\"\: true\,\n    \"name\"\: \"toDonutPlainsMain\"\,\n    \"points\"\: \"-24\,0\, 68\,0\,\"\,\n    \"types\"\: \"\"\n}\n";
-ID:805;X:-200256;Y:-200288;D:-1;XTRA:"{\n    \"levelFilename\"\: \"FS's -1 Level.lvlx\"\,\n    \"path_right\"\: \"toDonutPlainsMain\"\n}\n";
-ID:752;X:-199808;Y:-200312;D:-1;XTRA:"{\n    \"hideIfLocked\"\: true\,\n    \"name\"\: \"toDonutPlainsYI\"\,\n    \"points\"\: \"32\,0\, -36\,0\,\"\,\n    \"types\"\: \"\"\n}\n";
-ID:823;X:-199840;Y:-200312;D:-1;XTRA:"{\n    \"destinationPathName\"\: \"toDonutPlainsMain\"\,\n    \"pathWalkingDirection\"\: 0\,\n    \"warpName\"\: \"toDonutPlainsYI\"\n}\n";
+ID:806;X:-199776;Y:-200312;D:-1;XTRA:"{\n    \"alwaysVisible\"\: true\,\n    \"levelFilename\"\: \"FS's 1-2.lvlx\"\,\n    \"path_down\"\: \"toDonutPlainsYI\"\,\n    \"path_left\"\: \"\"\,\n    \"path_right\"\: \"to1-2\"\,\n    \"path_up\"\: \"to1-3\"\,\n    \"unlock_down\"\: 8\,\n    \"unlock_left\"\: 0\,\n    \"unlock_up\"\: 4\n}\n";
+ID:805;X:-200576;Y:-200224;D:-1;XTRA:"{\n    \"levelFilename\"\: \"FS's -1 Level.lvlx\"\,\n    \"path_right\"\: \"toDonutPlainsMain\"\n}\n";
+ID:752;X:-199776;Y:-200280;D:-1;XTRA:"{\n    \"hideIfLocked\"\: true\,\n    \"name\"\: \"toDonutPlainsYI\"\,\n    \"points\"\: \"0\,-32\, 0\,8\, 176\,8\"\,\n    \"smoothness\"\: 0\,\n    \"types\"\: \"\"\n}\n";
+ID:752;X:-200544;Y:-200224;D:-1;XTRA:"{\n    \"hideIfLocked\"\: true\,\n    \"name\"\: \"toDonutPlainsMain\"\,\n    \"points\"\: \"-4\,0\, 96\,0\,\"\,\n    \"types\"\: \"\"\n}\n";
+ID:753;X:-200672;Y:-200384;D:-1;XTRA:"{\n    \"backgroundName\"\: \"water\"\,\n    \"customMusicPath\"\: \"map/Mystery Room.spc\"\,\n    \"height\"\: 352\,\n    \"music\"\: 2\,\n    \"restrictCamera\"\: true\,\n    \"width\"\: 448\,\n    \"worldName\"\: 14\n}\n";
+ID:833;X:-199584;Y:-200280;D:-1;XTRA:"{\n    \"destinationWarpName\"\: \"256\"\,\n    \"levelTitle\"\: \"????????\"\,\n    \"path_left\"\: \"toDonutPlainsYI\"\,\n    \"path_right\"\: \"\"\,\n    \"warpName\"\: \"255\"\n}\n";
+ID:833;X:-200448;Y:-200224;D:-1;XTRA:"{\n    \"destinationWarpName\"\: \"255\"\,\n    \"path_left\"\: \"toDonutPlainsMain\"\,\n    \"warpName\"\: \"256\"\n}\n";
 NPC_END
 LAYERS
 LR:"Default";
