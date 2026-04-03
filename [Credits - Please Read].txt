@@ -169,6 +169,7 @@ Graphics
 -Smb1 Mario and Luigi - Nate-O
 -Enemies - SuperSledgeBro, Lumsht
 -Some Effects - Dr. SVH
+-Sidesteppers - DonkeyKongMariofan
 -Bonus BG + Tiles - Valtteri
 -Venus fly trap heads taken from SuperSledgeBro's graphics
 -Dry Bones, Thwomp, Spike Top, Muncher - SuperSledgeBro + FireSeraphim
