@@ -7,7 +7,7 @@ spawnBindX = CENTER
 spawnBindY = CENTER
 xAlign = MID
 yAlign = MID
-rotation = 2
+rotation = 6
 
 speedX = 3
 speedY = -6
