@@ -18,7 +18,7 @@ local startPositionX = {} -- automatically registers itself based on the locatio
 local winPosition = { -- register for each section/world
 	-192064, -- world 1
 	-173152, -- world 2
-	-179616, -- world 3
+	-152832, -- world 3
 	-179616, -- world 4
 	-111008, -- world 5  X=-111008; Y=-120256;
 	-93152, -- world 6
@@ -35,18 +35,18 @@ local winPosition = { -- register for each section/world
 local times = { -- register for each section/world
 	minTimer.toTicks{hrs = 0, mins = 0, secs = 42}, -- world 1
 	minTimer.toTicks{hrs = 0, mins = 0, secs = 55}, -- world 2
-	minTimer.toTicks{hrs = 0, mins = 0, secs = 2}, -- world 3
-	minTimer.toTicks{hrs = 0, mins = 0, secs = 2}, -- world 4
+	minTimer.toTicks{hrs = 0, mins = 0, secs = 42}, -- world 3
+	minTimer.toTicks{hrs = 0, mins = 1, secs = 7}, -- world 4
 	minTimer.toTicks{hrs = 0, mins = 1, secs = 2}, -- world 5
 	minTimer.toTicks{hrs = 0, mins = 0, secs = 35}, -- world 6
 	minTimer.toTicks{hrs = 0, mins = 1, secs = 0}, -- world 7
-	minTimer.toTicks{hrs = 0, mins = 0, secs = 2}, -- world 8
-	minTimer.toTicks{hrs = 0, mins = 0, secs = 2}, -- world 9
+	minTimer.toTicks{hrs = 0, mins = 1, secs = 7}, -- world 8
+	minTimer.toTicks{hrs = 0, mins = 1, secs = 7}, -- world 9
 	minTimer.toTicks{hrs = 0, mins = 0, secs = 55}, -- world A
 	minTimer.toTicks{hrs = 0, mins = 1, secs = 4}, -- world B
 	minTimer.toTicks{hrs = 0, mins = 0, secs = 50}, -- world C
 	minTimer.toTicks{hrs = 0, mins = 1, secs = 15}, -- world D
-	minTimer.toTicks{hrs = 0, mins = 0, secs = 2}, -- world minus
+	minTimer.toTicks{hrs = 0, mins = 1, secs = 7}, -- world minus
 }
 
 local timer1 = minTimer.create{initValue = 0} -- create a timer object
@@ -190,6 +190,10 @@ function onTick()
 		end
 	end
 end
+
+--function onTickEnd()
+	--Audio.MusicVolume(0)
+--end --If you want to test the races without music
 
 local gfx = Graphics.loadImageResolved("minusMedal.png")
 
