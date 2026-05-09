@@ -141,8 +141,9 @@ function onTick()
 	then
 		player.speedX = player.speedX * 0.95
 	end
+	
 	-- prevents the player from ducking/unducking in midair
-	if player.forcedState == 0 then
+	if player.forcedState == 0 and not player:isClimbing() then
 		if not player:isGroundTouching() and lastDucked then
 			player.keys.down = KEYS_DOWN
 			player:mem(0x12E,FIELD_BOOL,true)
@@ -173,6 +174,7 @@ function onTickEnd()
 	else
 		player.direction = lastDirection
 	end
+	if player:isClimbing() then lastDucked = false end
 end
 
 --Load the level when you die, handy for boo races
