@@ -1207,7 +1207,7 @@ ID:524;X:-188528;Y:-200368;D:-1;XTRA:"{\n    \"fireAngle\"\: 12\,\n    \"firePer
 ID:524;X:-189712;Y:-200400;D:-1;XTRA:"{\n    \"fireAngle\"\: 8.5\,\n    \"firePerSpurt\"\: 1\,\n    \"fireSpeed\"\: 8.5\,\n    \"fireSpurtDelay\"\: 5\,\n    \"fireSpurts\"\: 5\n}\n";
 ID:455;X:-190560;Y:-200126;D:-1;
 ID:895;X:-189824;Y:-200256;D:-1;S1:1;
-ID:524;X:-190480;Y:-200336;D:-1;XTRA:"{\n    \"fireAngle\"\: 18.60000000000001\,\n    \"firePerSpurt\"\: 1\,\n    \"fireSpeed\"\: 6.1\,\n    \"fireSpurtDelay\"\: 3\,\n    \"fireSpurts\"\: 9\n}\n";
+ID:524;X:-190480;Y:-200336;D:-1;XTRA:"{\n    \"fireAngle\"\: 18.60000000000001\,\n    \"firePerSpurt\"\: 1\,\n    \"fireSpeed\"\: 6.1\,\n    \"fireSpurtDelay\"\: 3\,\n    \"fireSpurts\"\: 5\n}\n";
 ID:455;X:-193952;Y:-200126;D:-1;
 ID:455;X:-189568;Y:-200126;D:-1;
 ID:857;X:-189120;Y:-200240;D:-1;
