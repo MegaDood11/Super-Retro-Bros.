@@ -14,3 +14,5 @@ speedY = -6
 gravity = 0.25
 
 sound = "pipeKnocked.ogg"
+lifetime = 185
+onDeath = DEATH_KNOCKED_PIPE

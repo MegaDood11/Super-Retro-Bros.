@@ -1,5 +1,6 @@
 local smb1HUD = require("smb1HUD")
 local textplus = require("textplus")
+local effectconfig = require("game/effectconfig")
 
 local fakeHUD = Graphics.loadImageResolved("hudQuestion.png")
 local medalHUD = Graphics.loadImageResolved("medalHUD.png")
@@ -108,5 +109,16 @@ function onDraw()
 			Timer.set(oldTime, true)
 			oldTime = nil
 		end
+	end
+end
+
+function effectconfig.onDeath.DEATH_KNOCKED_PIPE(v)
+	SFX.play("pipeSlam.wav")
+	Defines.earthquake = math.max(Defines.earthquake, 6)
+
+	for i = 1, 32 do
+		local e = Effect.spawn(131, v.x + v.width * 0.5, camera.y + camera.height)
+		e.speedX = RNG.random(-16, 16)
+		e.speedY = RNG.random(0, -16)
 	end
 end

@@ -1,8 +1,11 @@
  - Angry Sun - 
 Originally written by Emral, SMB1 sprites by Askywalker
 
- - BG and Tileset -
+ - Tileset -
 Sednaiur
+
+ - Background -
+Sednaiur + Sleepy Dee + DeviousQuacks23
 
  - Music -
 TheCrushedJoycon (SMC)
