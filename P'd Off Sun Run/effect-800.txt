@@ -1,0 +1,6 @@
+[1]
+onTick=TICK_BUB
+frames=4
+framespeed=12
+lifetime=500
+speedY=-1:-3
