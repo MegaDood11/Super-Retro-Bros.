@@ -42,6 +42,7 @@ World 2-3 - MrNameless
 World 2-4 - LumSht + MegaDood
 World 3-1 - Ness-Wednesday
 World 3-2 - DeviousQuacks23
+World 3-3 - Sleepy Dee + MegaDood
 World 3-4 - Suckerman
 World 4-3 - MegaDood
 World 5-1 - FireSeraphim
@@ -57,6 +58,7 @@ World 7-2 - Apple Boy + MegaDood
 World 7-3 - cold soup
 World 7-4 - Radiance
 World 8-1 - KurttheKing
+World 8-2 - Sleepy Dee + MegaDood
 World 8-4 - FNC2002
 World 9-1 - DeviousQuacks23
 World 9-3 - Radiance

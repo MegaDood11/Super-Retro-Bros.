@@ -10,8 +10,8 @@ SC:4;L:-120000;R:-119360;T:-120480;B:-120000;MZ:24;MF:"Music/Bonus.spc|0\;g=2\;e
 SC:5;L:-100000;R:-98528;T:-100448;B:-100000;MZ:24;MF:"FS's 1-2/Mysterious Chamber.spc";BG:7;XTRA:"{\n    \"darkness\"\: {\n        \"ambient\"\: \"#444444ff\"\,\n        \"enableDarkness\"\: true\,\n        \"falloff\"\: 4\,\n        \"playerlight\"\: {\n            \"color\"\: \"#8d8d8dff\"\,\n            \"enabled\"\: true\,\n            \"flicker\"\: true\,\n            \"radius\"\: 145\n        }\n    }\,\n    \"effects\"\: {\n        \"color\"\: \"#000000ff\"\,\n        \"priority1\"\: 0\,\n        \"screenEffects\"\: 5\,\n        \"weather\"\: 9\n    }\,\n    \"newTurnBack\"\: {\n        \"horizontal\"\: 0\n    }\n}\n";
 SECTION_END
 STARTPOINT
-ID:2;X:-199948;Y:-200156;D:1;
 ID:1;X:-199916;Y:-200150;D:1;
+ID:2;X:-199948;Y:-200156;D:1;
 STARTPOINT_END
 BLOCK
 ID:1017;X:-199904;Y:-200032;W:32;H:32;
@@ -1115,7 +1115,7 @@ ID:323;X:-170432;Y:-180032;W:32;H:32;
 ID:538;X:-170496;Y:-180032;W:32;H:32;
 ID:538;X:-170560;Y:-180032;W:32;H:32;
 ID:538;X:-170368;Y:-180032;W:32;H:32;
-ID:996;X:-174400;Y:-180352;W:32;H:288;
+ID:996;X:-174400;Y:-180608;W:32;H:544;
 ID:58;X:-174912;Y:-180064;W:32;H:32;
 ID:330;X:-174912;Y:-180032;W:32;H:32;
 ID:56;X:-170656;Y:-180064;W:32;H:32;
