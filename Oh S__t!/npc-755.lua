@@ -112,7 +112,7 @@ function hammer.onTick()
 	
 	if hammer_isActive then
 		hammerTimer = hammerTimer - 1
-		player:mem(0x140, FIELD_WORD, 4)
+		player:mem(0x140, FIELD_WORD, 64)
 		if player.forcedState == 0 and not player:mem(0x142, FIELD_BOOL) then
 			player:mem(0x142, FIELD_BOOL, false)
 		end
