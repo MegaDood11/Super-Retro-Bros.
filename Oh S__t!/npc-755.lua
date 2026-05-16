@@ -116,6 +116,8 @@ function hammer.onTick()
 		if player.forcedState == 0 and not player:mem(0x142, FIELD_BOOL) then
 			player:mem(0x142, FIELD_BOOL, false)
 		end
+
+		if hammerTimer == 60 then SFX.play("smw-runout.ogg") end
 		
 		if hammerTimer_set == 0 then
 			for _, e in ipairs(NPC.get(NPC.HITTABLE)) do
