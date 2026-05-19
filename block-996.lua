@@ -13,11 +13,11 @@ local checkpointSettings = {
 
 
 	-- you can use textplus tags
-	checkpointText = "Checkpoint!",
+	checkpointText = "CHECKPOINT!",
 
 	-- settings passed to textplus.parse
 	fontSettings = {
-		font   = textplus.loadFont("textplus/font/6.ini"),
+		font   = textplus.loadFont("smb1HUD/smb1-font.ini"),
 		xscale = 2,
 		yscale = 2,
 		plainText = true,
