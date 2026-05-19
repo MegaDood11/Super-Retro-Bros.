@@ -55,8 +55,8 @@ function onDraw()
 			
 			shader = shader,
 			uniforms = {
-				time = warpTime * (1 + (warpTime / 200)),
-				intensity = warpTime / (300 / 96),
+				time = warpTime * (1 + (warpTime / 100)),
+				intensity = warpTime / (200 / 96),
 			},
 			
 			priority = 9
@@ -114,11 +114,38 @@ end
 
 function effectconfig.onDeath.DEATH_KNOCKED_PIPE(v)
 	SFX.play("pipeSlam.wav")
-	Defines.earthquake = math.max(Defines.earthquake, 6)
+	Defines.earthquake = math.max(Defines.earthquake, 8)
 
 	for i = 1, 32 do
 		local e = Effect.spawn(131, v.x + v.width * 0.5, camera.y + camera.height)
 		e.speedX = RNG.random(-16, 16)
 		e.speedY = RNG.random(0, -16)
+	end
+end
+
+local function doCoolCircleEffect(v, id, amount, speedX, speedY)
+	for b = 1, amount do
+		local e = Effect.spawn(id, v.x + v.width * 0.5, v.y + v.height * 0.5)
+        	e.x = e.x - e.width * 0.5
+        	e.y = e.y - e.height * 0.5
+
+		e.x = e.x - 32
+		e.y = e.y - 64
+
+		e.speedX = -speedX * math.sin(b * 2 * math.pi / amount)
+		e.speedY = speedY * math.cos(b * 2 * math.pi / amount)
+	end
+end
+
+function effectconfig.onInit.INIT_KNOCKED_PIPE(v)
+	Defines.earthquake = math.max(Defines.earthquake, 4)
+	doCoolCircleEffect(v, 131, 10, 4, 8)
+	doCoolCircleEffect(v, 131, 20, 8, 12)
+	doCoolCircleEffect(v, 131, 30, 12, 16)
+
+	if RNG.randomInt(1, 100) == 1 then
+		SFX.play("metalPipe.ogg")
+	else
+		SFX.play("pipeKnocked.ogg")
 	end
 end

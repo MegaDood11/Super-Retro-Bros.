@@ -7,12 +7,12 @@ spawnBindX = CENTER
 spawnBindY = CENTER
 xAlign = MID
 yAlign = MID
-rotation = 6
+rotation = 4
 
-speedX = 3
+speedX = 3.5
 speedY = -6
 gravity = 0.25
 
-sound = "pipeKnocked.ogg"
 lifetime = 185
+onInit = INIT_KNOCKED_PIPE
 onDeath = DEATH_KNOCKED_PIPE
