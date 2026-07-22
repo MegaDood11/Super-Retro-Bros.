@@ -1,0 +1,17 @@
+[back]
+img="beehive_back.png"
+priority=-100
+alignY=BOTTOM
+repeatX=true
+repeatY=true
+parallaxX=0.25
+parallaxY=0.2
+
+[front]
+img="beehive_front.png"
+parallaxX=0.3
+parallaxY=0.25
+alignY=BOTTOM
+repeatX=true
+repeatY=true
+priority=-99
