@@ -5,6 +5,7 @@ img=62
 
 repeatX=true
 alignY=BOTTOM
+y=-100
 
 parallaxX=0.25
 parallaxY=0.25
@@ -16,6 +17,7 @@ img=70
 
 repeatX=true
 alignY=BOTTOM
+y=-76
 
 parallaxX=0.5
 parallaxY=0.5
